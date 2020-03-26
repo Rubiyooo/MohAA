@@ -1,0 +1,181 @@
+path models/human/heads
+
+// Skins allowed:
+// bensonazi, bignose, dolf, hans, gunter, gustav
+
+// Heads allowed:
+// 1, 2, 4, 6, 7, 8
+
+case headskin bensonazi
+{
+	surface head shader bensonazi
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin bignose
+{
+	surface head shader bignose
+
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	// heads 1, 2 & 8 are not allowed with this skin, so make them use head4 instead
+	case headmodel head1 head2 head8
+	{
+		skelmodel head4.skd
+	}
+}
+
+case headskin dolf
+{
+	surface head shader dolf
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin hans
+{
+	surface head shader hans
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+	// head4 is not allowed with this skin, so make it use head6 instead
+	case headmodel head4
+	{
+		skelmodel head6.skd
+	}
+}
+
+case headskin gunter
+{
+	surface head shader gunter
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin gustav
+{
+	surface head shader gustav
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4	// Not appropriate for Gustav
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}

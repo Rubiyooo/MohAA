@@ -1,0 +1,31 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 0.52
+	path models/animal/dog
+	skelmodel german_shepherd.skd
+	surface german_shepherd2 shader german_shepherd
+      surface german_shepherd1 shader german_shepherd
+
+	radius 20				// defines size of shadow
+}
+
+init
+{
+	server
+	{
+		classname Animate
+		setsize "-16 -16 0" "16 16 92"
+	}
+}
+
+animations
+{
+	idle     german_shepherd.skc
+}
+
+/*QUAKED posed_german-shepherd-v3(0.5 .25 0.25) (-16 -16 0) (16 16 92)
+badass
+*/

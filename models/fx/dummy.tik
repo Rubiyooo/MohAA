@@ -1,0 +1,32 @@
+TIKI
+setup
+{
+	scale 0.52				// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/fx/dummy
+	skelmodel dummy3.skd
+//	surface c473 shader c47
+//	surface c472 shader c47
+//	surface c471 shader c47
+}
+
+init
+{
+	server
+	{
+	      classname ScriptModel
+		rendereffects +dontdraw
+		notsolid
+
+//      	classname drivablevehicle
+//   	 	setsize "-60 -40 0" "60 40 120"
+//   	 	seatoffset "-14 0 24"
+//	 	gravity 1.0
+//	 	vehiclespeed 800
+	}
+}
+
+animations
+{
+	idle     dummy3.skc
+}
+

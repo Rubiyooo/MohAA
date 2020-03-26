@@ -1,0 +1,41 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		//cache some stuff used in this effect
+		cache models/fx/bh_grass_piece.tik
+
+		// grass bits
+		sfx originspawn
+		(
+			model models/fx/bh_grass_piece.tik
+			spawnrange 1536
+			alpha 1.0
+			count 8
+			angles random 360 random 360 0
+			avelocity crandom 180 crandom 180 0
+			velocity 40
+			randvelaxis random 120 crandom 80 crandom 80
+			accel 0 0 -450
+			wind
+			life 0.75 1.25
+			scalemin 1.4
+			scalemax 1.8
+			fadedelay 0.7
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

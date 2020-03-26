@@ -1,0 +1,82 @@
+TIKI
+setup
+{
+	path models/human/german_misc_scientist	// Set path to set skelmodel from
+	skelmodel scientist.skd			// Set body model
+
+	surface coat shader scientistcoat
+	surface pants shader scientistpants
+	surface inside shader scientistpants
+	surface cull_coat shader cull_scientistcoat
+	surface cull_pants shader cull_scientistpants
+
+
+
+//	path models/human/heads			// Set new path for head model
+//	skelmodel head8.skd			// Set head model
+//	surface head shader hopper
+	$include models/human/heads/german_old_heads.tik
+
+	path models/human/hands
+	skelmodel hand.skd
+	surface hand shader handsnew
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+	path models/equipment/germangear
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** p-38 pistol
+	case weapon "walter p38"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+//*** end weapon equipment assignment
+//************************************
+
+	scale 0.52				// Set default scale to 16/30.5 since world is
+						// in 16 units per foot and model is in cm's
+	path models/human/protoanimations	// Set path to set animations from
+
+	radius 20				// Defines size of shadow
+}
+
+
+init
+{
+	server
+	{
+//		attachmodel models/miscobj/attached_clipboard.tik	tag_weapon_right
+//		attachmodel	models/miscobj/pencil.tik	tag_weapon_left
+  
+    	classname Actor
+		setsize "-16 -16 0" "16 16 92"
+		german
+		health 100
+		weapon "Walter P38"
+
+		// Make him mumble but not breathe steam
+		exec global/breathe.scr 0 1
+
+		// Create a variable that the scripts can use to see if he's a scientist
+		exec global/setisscientist.scr
+	}
+}
+
+//
+// include the base animations definition
+//
+
+$include models/human/animation/dialogue/generic_dialogue_german.tik
+$include models/human/new_generic_human.tik
+$include models/human/animation/scripted/scientist.tik
+
+/*QUAKED ai_german_misc_scientist (1.0 0.5 0.0) (-16 -16 0) (16 16 92)
+*/

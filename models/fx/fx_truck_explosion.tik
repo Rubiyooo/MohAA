@@ -1,0 +1,112 @@
+TIKI
+setup
+{
+	scale 1.00
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		cache models/fx/bp_debris1.tik
+		cache models/fx/heavy_pipe.tik
+		cache models/fx/gas_mushroom_cloud.tik
+		cache gren_explosion.spr
+		cache vsssource.spr
+	}
+}
+
+animations
+{
+	aaaa dummy2.skc // hack to allow the idle anim's entry commands to run
+	idle dummy2.skc
+	{
+		client
+		{
+		//	enter sound gas_explode
+
+			enter originspawn
+			(
+				model vsssource.spr
+				count 3
+				alpha 0.90
+				color 0.10 0.10 0.10
+				life 3.00
+				scalerate 14.00
+				velocity 300.00
+				accel 0.00 0.00 10.00
+				friction 1.00
+				fade
+				sphere
+				randomroll
+			)
+
+			enter originspawn
+			(
+				model models/fx/bp_debris1.tik
+				count 6
+				alpha 0.00
+				color 1.00 1.00 1.00
+				scale 0.20
+				life 2.00
+				velocity 600.00
+				accel 0.00 0.00 -200.00
+				angles range 40 -120 range 500 -110 crandom -120
+				avelocity 50 50 50
+				scalemin 0.20
+				scalemax 0.40
+				inwardsphere
+			)
+
+			enter originspawn
+			(
+				model models/fx/heavy_pipe.tik
+				count 3
+				color 1.00 1.00 1.00
+				collision
+				bouncefactor 0.40
+				scale 0.05
+				life 1.50
+				velocity 300.00
+				avelocity 300 60 60
+				sphere
+				randomroll
+			)
+
+			enter originspawn
+			(
+				model gren_explosion.spr
+				color 1.00 1.00 1.00
+				scale 3.00
+				life 0.70
+				angles range 50 -250 range 50 -250 range 50 -250
+				fade
+			)
+
+			enter commanddelay 0.100 originspawn
+			(
+				model gren_explosion.spr
+				color 1.00 1.00 1.00
+				life 0.70
+				scalerate 2.50
+				offsetalongaxis 0 0 60
+				angles range 50 -260 range 50 -260 range 50 -260
+				scalemin 1.00
+				scalemax 2.00
+				fade
+			)
+			enter originspawn
+			(
+				model models/fx/gas_mushroom_cloud.tik
+				randvel 0 0 192
+				offset 0 0 32
+				life 2
+			)
+		}
+	}
+}
+/*QUAKED fx_truck_explosion (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+explosion for Opel
+*/

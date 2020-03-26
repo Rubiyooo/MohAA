@@ -1,0 +1,19 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/natural
+	skelmodel bush_buckthorn.skd
+	surface bush4_3 shader static_bush4_2
+	surface bush4_2 shader static_bush4_2
+	surface bush4_1 shader static_bush4_1
+	surface bush4_4 shader static_bush4_2
+}
+
+animations
+{
+	idle     bush_buckthorn.skc
+}
+
+/*QUAKED static_natural_bush_buckthorn (0.5 0.0 0.5) (-28 -28 0) (28 28 136)
+*/

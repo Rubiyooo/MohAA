@@ -1,0 +1,62 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter steam1
+		(
+			spawnrate 24.00
+			model vsssource.spr
+			alpha 0.50
+			color 1.00 1.00 1.00
+			scale 0.30
+			life 1.00
+			scalerate 0.50
+			velocity 150.00
+			accel 0.00 0.00 300.00
+			friction 5.00
+			scalemin 0.30
+			scalemax 0.80
+			fade
+			randomroll
+		)
+      }
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron steam1
+              }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff steam1
+              }
+	}
+}
+
+/*QUAKED fx_steam_piping (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+quick full steam
+follows editor directional pointer
+Doesn't collide.
+*/

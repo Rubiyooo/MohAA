@@ -1,0 +1,126 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+ 
+init
+{
+	server  
+	{
+	//	hide
+	//	ghost
+		classname    Explosion
+		radiusdamage 120
+		meansofdeath explosion
+		life         0
+	//	svflags +sendonce
+		classname Animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache models/fx/ibeam_piece.tik
+		cache vsssource.spr
+		cache explosed.spr
+		cache air_explosion.spr
+	}
+}
+
+animations
+{
+	idle dummy2.skc
+	start dummy2.skc
+	{
+		server    
+		{ 
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+		//	entry sound grenade_explode
+
+			enter originspawn
+			(
+				model models/fx/ibeam_piece.tik
+				count 8
+				color 1.00 1.00 1.00
+				collision
+				bouncefactor 0.30
+				life 2.00
+				radius 10.00
+				velocity 400.00
+				radialvelocity 10.00 10.00 100.00
+				accel 0.00 0.00 -100.00
+				angles range -220 -440 crandom -220 range -220 110
+				avelocity crandom -400 crandom -400 crandom -300
+				scalemin 0.30
+				scalemax 2.00
+			//	sphere
+			)
+
+			enter originspawn
+			(
+				spawnrate 1.00
+				model air_explosion.spr
+				alpha 0.50
+				color 0.40 0.40 0.40
+				varycolor
+				scale 0.50
+				life 1.00
+				scalerate 10.00
+				scalemin 0.20
+				scalemax 0.80
+				fade
+				align
+			)
+
+			enter originspawn
+			(
+			//	spawnrate 13.00
+				model explosed.spr
+				count 13
+				alpha 0.40
+				color 0.50 0.50 0.50
+				life 0.30
+				scalerate 3.00
+				radius 1.00
+				radialvelocity 2.00 20.00 20.00
+				randvelaxis range -60 30 range -60 30 crandom -30
+				accel 0.00 0.00 1000.00
+				offset 0 crandom -20 0
+				offsetalongaxis 0 range -40 20 0
+				angles random 30 30 23
+				avelocity 30 random 30 30
+				scalemin 0.50
+				scalemax 2.00
+				fade
+				sphere
+				randomroll
+			)
+
+			// mushroom cloud
+			(
+			model vsssource.spr
+			color 0.2 0.2 0.2
+			alpha .7
+			fadein 1
+			fadedelay 1
+			spawnrate 32
+			life 3 1
+			circle
+			radius 16
+			radialvelocity 0 96 144
+			friction 0.7
+			scalemin 3
+			scalemax 4
+			scalerate .25
+			)
+		}
+
+	}
+}

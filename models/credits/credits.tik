@@ -1,0 +1,42 @@
+TIKI
+setup
+{
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+ 
+init
+{
+	client
+	{
+		cachefont handle-18
+		cachefont handle-22
+		cachefont handle-23
+
+		cacheimage textures/mohmenu/credits/bocage
+		cacheimage textures/mohmenu/credits/bottomborder
+		cacheimage textures/mohmenu/credits/creditbackmoh
+		cacheimage textures/mohmenu/credits/creditbacksalute
+		cacheimage textures/mohmenu/credits/creditbacksky
+		cacheimage textures/mohmenu/credits/creditbacktrrops
+		cacheimage textures/mohmenu/credits/creditbacktrrops2
+		cacheimage textures/mohmenu/credits/dedication
+		cacheimage textures/mohmenu/credits/group
+		cacheimage textures/mohmenu/credits/lineup
+		cacheimage textures/mohmenu/credits/p47-1
+		cacheimage textures/mohmenu/credits/p47-2
+		cacheimage textures/mohmenu/credits/p47-3
+		cacheimage textures/mohmenu/credits/p47-4
+		cacheimage textures/mohmenu/credits/p47-5
+		cacheimage textures/mohmenu/credits/p47-6
+		cacheimage textures/mohmenu/credits/p47-7
+		cacheimage textures/mohmenu/credits/p47-8
+		cacheimage textures/mohmenu/credits/sub
+		cacheimage textures/mohmenu/credits/topborder
+	}
+}
+
+animations
+{
+	idle dummy2.skc
+}

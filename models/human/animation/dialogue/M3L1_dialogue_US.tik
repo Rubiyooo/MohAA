@@ -1,0 +1,918 @@
+setup
+{
+	path models/human/animation/dialogue/m3l1/a
+}
+
+animations
+{
+//	$mapspec M3L1
+//	{
+////////////////////////////////////////////////////////////////////new//////////////////////////////////////////////////////////////////////////////
+	medic_heal1		actor_M3L1_dr1.skc
+	{
+		client
+		{
+			first sound medic_heal1
+		}
+	}
+
+	medic_heal2		actor_M3L1_dr3.skc
+	{
+		client
+		{
+			first sound medic_heal2
+		}
+	}
+
+
+	dfr_scripted_m3l1_001i		actor_M3L1_002.skc
+	{
+		client
+		{
+			first sound dfr_scripted_m3l1_001i
+		}
+	}
+
+	dfr_scripted_m3l1_002i		actor_M3L1_002.skc
+	{
+		client
+		{
+			first sound dfr_scripted_m3l1_002i
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_005a		actor_M3L1_005.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_005a
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_006a		actor_M3L1_006.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_006a
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_007a		actor_M3L1_007.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_007a
+		}
+	}
+
+
+//(FULLBODY)
+	dfr_scripted_M3L1_014a				actor_m3l1_14.skc
+	{
+		client
+		{						// MOVE UP
+			first sound dfr_scripted_M3L1_014a
+		}
+	}
+
+//(FULLBODY)
+	streamed_dfr_scripted_M3L1_015g				actor_m3l1_15.skc
+	{
+		client
+		{						
+			first sound streamed_dfr_scripted_M3L1_015g
+		}
+	}
+
+//(fullbody)
+	streamed_dfr_scripted_M3L1_016a				actor_m3l1_16.skc
+	{
+		client
+		{						// you stay in one spot...
+			first sound streamed_dfr_scripted_M3L1_016a
+		}
+	}
+
+///NEW (fullbody)
+	dfr_scripted_M3L1_017f					actor_m3l1_17.skc
+
+	{
+		client
+		{						// were getting off this damn beach!
+			first sound dfr_scripted_M3L1_017f
+		}
+	}
+	
+//(fullbody)
+	streamed_dfr_scripted_M3L1_018e				actor_m3l1_18.skc
+	{
+		client
+		{						// Sir, what's the rallying point?!
+			first sound streamed_dfr_scripted_M3L1_018e
+		}
+	}
+
+//(fullbody)
+	streamed_dfr_scripted_M3L1_019f-2			actor_m3l1_300.skc
+	{
+		client
+		{							// just get up the beach.
+			first sound dfr_M3L1_300f
+		}
+	}
+
+///NEW
+	streamed_dfr_scripted_M3L1_021g		actor_m3l1_21.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_021g
+		}
+	} 
+
+//(fullbody)
+	streamed_dfr_scripted_M3L1_022e				actor_m3l1_22.skc
+	{
+		client
+		{							// This is suicide! I’m staying here!
+			first sound streamed_dfr_scripted_M3L1_022e
+		}
+	}
+
+///NEW (fullbody)
+	dfr_scripted_M3L1_023h				actor_m3l1_23.skc
+	{
+		client
+		{						// Who the hell are you guys? 
+			3 sound dfr_scripted_M3L1_023h
+		}
+	}
+
+///NEW (fullbody)	
+	dfr_scripted_M3L1_025h				actor_m3l1_25.skc
+	{
+		client
+		{							// Are you nuts?! This is the only cover between here and the shingle!
+			first sound dfr_scripted_M3L1_025h
+		}
+	}
+
+///NEW (fullbody)	
+	streamed_dfr_scripted_M3L1_030g				actor_m3l1_30.skc
+	{
+		client
+		{							// where are the tanks
+			first sound dfr_scripted_M3L1_030g
+		}
+	}
+
+///NEW (fullbody)	
+	streamed_dfr_scripted_M3L1_031f				actor_m3l1_31.skc
+	{
+		client
+		{							// destroyed
+			first sound dfr_scripted_M3L1_031f
+		}
+	}
+
+///NEW (fullbody)	
+	streamed_dfr_scripted_M3L1_032g				actor_m3l1_32.skc
+	{
+		client
+		{							// cant take the beach without them
+			first sound dfr_scripted_M3L1_032g
+		}
+	}
+
+///NEW (fullbody)	
+	streamed_dfr_scripted_M3L1_033f				actor_m3l1_33.skc
+	{
+		client
+		{							// all we can do is die
+			first sound dfr_scripted_M3L1_033f
+		}
+	}
+
+///NEW (headneck)
+	dfr_scripted_M3L1_035k			actor_m3l1_35.skc
+	{
+		client
+		{							//Just hold on, Private. You’re gonna be ok
+			first sound dfr_scripted_M3L1_035k
+		}
+	}
+
+///NEW (headneck)	//*** Shore party – gap teams and assault infantry are pinned down at beach obstacles! Request additional supporting fire, over!
+	streamed_dfr_scripted_M3L1_036h			actor_m3l1_36.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_036h
+		}
+	}
+
+///NEW (morph)	//*** It’s a firing squad up there!
+	streamed_dfr_scripted_M3L1_038e			actor_m3l1_38.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_038e
+		}
+	}
+
+//(MORPH)	//*** It’s a firing squad up there!
+	dfr_panic_05g					actor_m3l1_panic_05.skc
+	{
+		client
+		{
+			first sound dfr_panic_05g
+		}
+	}
+
+//(fullbody)	//*** You can either stay here and die in the sand, or you can get yourself to the seawall! Follow me!
+	streamed_dfr_scripted_M3L1_041c		actor_m3l1_41.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_041c
+		}
+	}
+
+
+//(fullbody)
+	streamed_dfr_scripted_M3L1_044a				actor_m3l1_44.skc
+	{
+		client
+		{							// Get up the beach! Anyone that can move....
+			first sound streamed_dfr_scripted_M3L1_044a
+		}
+	}
+
+//(fullbody)
+	streamed_dfr_scripted_M3L1_046e				actor_m3l1_46.skc
+	{
+		client
+		{						//Sir…sir! It's a massacre! What the hell are we doing here?!
+			first sound streamed_dfr_scripted_M3L1_046e
+		}
+	}
+
+//(action)
+	streamed_dfr_scripted_M3L1_049g				actor_m3l1_49.skc
+	{
+		client
+		{						
+			first sound streamed_dfr_scripted_M3L1_049g
+		}
+	}
+
+///NEW
+	dfr_scripted_M3L1_052e					actor_m3l1_52.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_052e
+		}
+	}
+
+///NEW (FULLBODY)
+	streamed_dfr_scripted_M3L1_054e			actor_m3l1_54.skc
+	{
+		client
+		{						// the bombers....
+			first sound dfr_scripted_M3L1_054e
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_060f					actor_m3l1_60.skc
+	{
+		client		/// WE CANT STAY HERE
+		{
+			first sound streamed_dfr_scripted_M3L1_060f
+		}
+	}
+
+///NEW 
+	dfr_scripted_M3L1_061d					actor_m3l1_61.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_061d
+		}
+	}
+
+///NEW (FULLBODY)
+	dfr_scripted_M3L1_062a_1				actor_m3l1_62.skc
+	{
+		client
+		{						// pOWELL GET THE MEN UP THE BEACH...
+			first sound dfr_scripted_M3L1_062a_1
+		}
+	}
+
+///NEW (HEADNECK)
+	dfr_scripted_M3L1_063a				actor_m3l1_63.skc
+	{
+		client
+		{						// dEFELADE UP AHEAD....
+			first sound dfr_scripted_M3L1_063a
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_068f					actor_m3l1_68.skc
+	{
+		client		/// theres no way
+		{
+			first sound streamed_dfr_scripted_M3L1_068f
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_069b					actor_m3l1_69.skc
+	{
+		client		/// theres gotta be a way
+		{
+			first sound streamed_dfr_scripted_M3L1_069b
+		}
+	}
+
+	dfr_scripted_M3L1_070e					actor_m3l1_70.skc
+	{
+		client		/// there are no others
+		{
+			first sound dfr_scripted_M3L1_070e
+		}
+	}
+
+///NEW
+	streamed_dfr_scripted_M3L1_072g		actor_m3l1_72.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_072g
+		}
+	}
+
+///NEW (FULLBODY)
+	dfr_scripted_M3L1_073a_1				actor_m3l1_73.skc
+	{
+		client
+		{						// pOWELL GET OVER HERE
+			first sound dfr_scripted_M3L1_073a_1
+		}
+	}
+
+///NEW (headneck)
+	dfr_scripted_M3L1_073a_prone				actor_m3l1_73_prone.skc
+	{
+		client
+		{						// pOWELL GET OVER HERE
+			first sound dfr_scripted_M3L1_073a_1
+		}
+	}
+
+
+///NEW (HEADNECK)
+	dfr_scripted_M3L1_074e				actor_m3l1_74.skc
+	{
+		client
+		{						//pOWELL THEY NEED YOU DOWN THERE
+			first sound dfr_scripted_M3L1_074e
+		}
+	}
+
+///NEW (HEADNECK)
+	dfr_scripted_M3L1_075k				actor_m3l1_75.skc
+	{
+		client
+		{						//POWELL GET DOWN THE LINE
+			first sound dfr_scripted_M3L1_075k
+		}
+	}
+
+//(fullbody)
+	streamed_dfr_scripted_M3L1_076a				actor_m3l1_76.skc
+	{
+		client
+		{						// powell we need some bangalores up here...
+			first sound streamed_dfr_scripted_M3L1_076a
+		}
+	}
+
+//(fullbody)
+	streamed_dfr_scripted_M3L1_079a				actor_m3l1_79.skc
+	{
+		client
+		{						// pOWELL GO BACK DOWN THEREA ND GRAB....
+			first sound streamed_dfr_scripted_M3L1_079a
+		}
+	}
+
+//(fullbody)
+	streamed_dfr_scripted_M3L1_080a				actor_m3l1_80.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_080a
+		}
+	}
+
+//(HEADNECK)
+	streamed_dfr_scripted_M3L1_084a				actor_m3l1_84.skc
+	{
+		client
+		{						// good job powell, lets get this stuff....
+			first sound streamed_dfr_scripted_M3L1_084a
+		}
+	}
+//(HEADNECK)
+	streamed_dfr_scripted_M3L1_085a				actor_m3l1_85.skc	
+	{
+		client
+		{						// OK GUYS BANGERS COMING YOUR WAY....
+			first sound streamed_dfr_scripted_M3L1_085a
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_088g				actor_m3l1_88.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_088g
+		}
+	}
+
+//(HEADNECK)
+	streamed_dfr_scripted_M3L1_089a				actor_m3l1_89.skc
+	{
+		client
+		{						// BANGALORES CLEAR THE SHINGLE
+			first sound streamed_dfr_scripted_M3L1_089a
+		}
+	}
+
+	dfr_scripted_M3L1_093e				actor_m3l1_93.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_093e
+		}
+	}
+
+//(FULLBODY)
+	dfr_scripted_M3L1_094a				actor_m3l1_94.skc
+	{
+		client
+		{						// GET DOWN
+			3 sound dfr_scripted_M3L1_094a
+		}
+	}
+
+///NEW (fullbody)
+	dfr_scripted_M3L1_098a_2				actor_m3l1_98.skc
+	{
+		client
+		{							/// Hold up right here! Stay in cover! 
+			first sound dfr_scripted_M3L1_098a_2
+		}
+	}
+
+///NEW (fullbody)
+	dfr_scripted_M3L1_099a_2				actor_m3l1_99.skc
+	{
+		client
+		{							/// Two MG-42s, plus enfilade from that bunker – we’ve got to find a way up the bluff, we gotta get up there and take out that artillery!
+			first sound dfr_scripted_M3L1_099a_2
+		}
+	}
+
+///NEW (fullbody)
+	dfr_scripted_M3L1_100a_2				actor_m3l1_100.skc
+	{
+		client
+		{							/// Jefferson, Webber, you’re up! Get ready! Head for that trench over there!
+			first sound dfr_scripted_M3L1_100a_2
+		}
+	}
+
+///NEW (action)
+	dfr_scripted_M3L1_101a_2				actor_m3l1_101.skc
+	{
+		client
+		{						// Covering fire!
+			3 sound dfr_scripted_M3L1_101a_2
+		}
+	}
+
+///NEW (action)
+	dfr_scripted_M3L1_102a_2				actor_m3l1_102.skc
+	{
+		client
+		{							/// go go get moving!
+			first sound dfr_scripted_M3L1_102a_2
+		}
+	}
+
+///NEW (fullbody)
+	dfr_scripted_M3L1_104a_2				actor_m3l1_104.skc
+	{
+		client
+		{							/// Powell stick to those impact craters...
+			first sound dfr_scripted_M3L1_104a_2
+		}
+	}
+
+///NEW (action)
+	dfr_scripted_M3L1_105a_1			actor_m3l1_105.skc
+	{
+		client
+		{						// go!
+			3 sound dfr_scripted_M3L1_105a_1
+		}
+	}
+
+//(FULLBODY)
+	streamed_dfr_scripted_M3L1_106f				actor_m3l1_106.skc
+	{
+		client
+		{						// HOLD UP THERES AN MG42.....
+			first sound streamed_dfr_scripted_M3L1_106f
+		}
+	}
+
+//(FULLBODY)
+	streamed_dfr_scripted_M3L1_108a				actor_m3l1_108.skc
+	{
+		client
+		{						// weve got wounded back here...
+			first sound streamed_dfr_scripted_M3L1_108a
+		}
+	}
+
+///NEW (fullbody)
+	dfr_M3L1_300f				actor_m3l1_300.skc
+	{
+		client
+		{							// just get up the beach.
+			first sound dfr_M3L1_300f
+		}
+	}
+
+///NEW (fullbody)
+	dfr_M3L1_301i				actor_m3l1_24.skc
+	{
+		client
+		{							// Special Engineers! We are blowing these barriers to make holes for the tanks.
+			first sound dfr_M3L1_301i
+		}
+	}
+
+///NEW (fullbody)	
+	dfr_M3L1_302i				actor_m3l1_26.skc
+	{
+		client
+		{							// Move up the line, this one is going!
+			first sound dfr_M3L1_302i
+		}
+	}
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////morpholny animtype/////////////////////////////////////////////////////////////
+
+
+	dfr_scripted_M3L1_011f	dfr_scripted_M3L1_011f.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_011f
+		}
+	}
+
+	dfr_scripted_M3L1_020e	dfr_scripted_M3L1_020e.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_020e
+		}
+	}
+
+	dfr_scripted_M3L1_027b	dfr_scripted_M3L1_027b.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_027b
+		}
+	}
+	dfr_scripted_M3L1_029b	dfr_scripted_M3L1_029b.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_029b
+		}
+	}
+	dfr_scripted_M3L1_034e	dfr_scripted_M3L1_034e.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_034e
+		}
+	}
+
+
+	dfr_scripted_M3L1_039g	dfr_scripted_M3L1_039g.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_039g
+		}
+	}
+	dfr_scripted_M3L1_040e	dfr_scripted_M3L1_040e.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_040e
+		}
+	}
+
+
+	dfr_scripted_M3L1_087a	dfr_scripted_M3L1_087a.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_087a
+		}
+	}
+	dfr_scripted_M3L1_090g	dfr_scripted_M3L1_090g.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_090g
+		}
+	}
+
+
+	dfr_scripted_M3L1_097d	dfr_scripted_M3L1_097d.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_097d
+		}
+	}
+
+	dfr_scripted_M3L1_116i	dfr_scripted_M3L1_116i.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_116i
+		}
+	}
+
+	dfr_scripted_M3L1_117i	dfr_scripted_M3L1_117i.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M3L1_117i
+		}
+	}
+	streamed_dfr_scripted_M3L1_003i  streamed_dfr_scripted_M3L1_003i.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_003i
+		}
+	}
+	streamed_dfr_scripted_M3L1_004i	streamed_dfr_scripted_M3L1_004i.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_004i
+		}
+	}	
+	streamed_dfr_scripted_M3L1_008a	streamed_dfr_scripted_M3L1_008a.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_008a
+		}
+	}
+	streamed_dfr_scripted_M3L1_013c	streamed_dfr_scripted_M3L1_013c.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_013c
+		}
+	}
+
+	//*** Had to ditch it, sir! Almost drowned!
+	streamed_dfr_scripted_M3L1_028e	streamed_dfr_scripted_M3L1_028e.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_028e
+		}
+	}
+
+
+
+	//*** I may die here today on this Godforsaken beach, but not before I do my job. I need some help-- who's with me?
+	streamed_dfr_scripted_M3L1_042d	streamed_dfr_scripted_M3L1_042d.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_042d
+		}
+	}
+
+	//*** I am sir! Come on, let's do this!
+	streamed_dfr_scripted_M3L1_043g	streamed_dfr_scripted_M3L1_043g.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_043g
+		}
+	}
+
+	//*** Any senior noncom, take the men off the beach…!  
+	streamed_dfr_scripted_M3L1_045a	streamed_dfr_scripted_M3L1_045a.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_045a
+		}
+	}
+	
+	//*** We don’t stand a chance! What are we supposed to do, sir? 
+ 	streamed_dfr_scripted_M3L1_048e		actor_m3l1_48.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_048e
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_050e	streamed_dfr_scripted_M3L1_050e.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_050e
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_051g	streamed_dfr_scripted_M3L1_051g.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_051g
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_053g	streamed_dfr_scripted_M3L1_053g.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_053g
+		}
+	}
+
+
+	streamed_dfr_scripted_M3L1_055g	streamed_dfr_scripted_M3L1_055g.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_055g
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_056e	streamed_dfr_scripted_M3L1_056e.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_056e
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_056e-2  streamed_dfr_scripted_M3L1_056e-2.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_056e-2
+		}
+	}
+
+
+
+	streamed_dfr_scripted_M3L1_064a	streamed_dfr_scripted_M3L1_064a.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_064a
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_065a	streamed_dfr_scripted_M3L1_065a.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_065a
+		}
+	}
+
+
+	streamed_dfr_scripted_M3L1_077a	streamed_dfr_scripted_M3L1_077a.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_077a
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_078d	streamed_dfr_scripted_M3L1_078d.skc
+	{
+		client
+		{
+			3 sound streamed_dfr_scripted_M3L1_078d
+		}
+	}
+
+
+
+	streamed_dfr_scripted_M3L1_081e	streamed_dfr_scripted_M3L1_081e.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_081e
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_082g	streamed_dfr_scripted_M3L1_082g.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_082g
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_083a	streamed_dfr_scripted_M3L1_083a.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_083a
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_086e	streamed_dfr_scripted_M3L1_086e.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_086e
+		}
+	}
+
+
+
+	streamed_dfr_scripted_M3L1_096a	streamed_dfr_scripted_M3L1_096a.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_096a
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_107f				actor_m3l1_107.skc
+	{
+		client
+		{						// i'LL TOSS SOME GRENADES IN ... 
+			first sound streamed_dfr_scripted_M3L1_107f
+		}
+	}
+
+
+	streamed_dfr_scripted_M3L1_109d	streamed_dfr_scripted_M3L1_109d.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_109d
+		}
+	}
+
+	streamed_dfr_scripted_M3L1_110f	streamed_dfr_scripted_M3L1_110f.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_110f
+		}
+	}
+	streamed_dfr_scripted_M3L1_111h	streamed_dfr_scripted_M3L1_111h.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M3L1_111h
+		}
+	}
+//	}//end mapspec m3l1
+
+}

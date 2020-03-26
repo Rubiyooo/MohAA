@@ -1,0 +1,240 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+		angles 270 0 0
+	}
+	client
+	{
+		cache grndblst1.spr
+		cache mortar_dirthit.spr
+		cache vsssource.spr
+		cache bh_dirt_piece.spr
+		cache models/emitters/explosion_mine_shockwave.tik
+
+		originemitter smoke1
+		(
+			model vsssource.spr
+			startoff
+			alpha 0.75
+			color 0.90 0.90 0.90
+			life 5.00
+			spawnrate 12.00
+			scalerate 0.20
+			accel 3 0 -8
+			offset crandom 16 crandom 16 range 16 16
+			randvel crandom 8 crandom 8 range 48 20
+			scalemin 1
+			scalemax 1.5
+			fade
+			fadein 0.25
+		)
+
+		originemitter smoke2
+		(
+			model vsssource.spr
+			startoff
+			alpha 0.625
+			color 0.90 0.90 0.90
+			life 4.00
+			spawnrate 9.00
+			scalerate 0.20
+			accel 3 0 -8
+			offset crandom 16 crandom 16 range 16 16
+			randvel crandom 8 crandom 8 range 44 16
+			scalemin 1
+			scalemax 1.5
+			fade
+			fadein 0.25
+		)
+
+		originemitter smoke3
+		(
+			model vsssource.spr
+			startoff
+			alpha 0.4
+			color 0.90 0.90 0.90
+			life 3.00
+			spawnrate 7.00
+			scalerate 0.20
+			accel 3 0 -8
+			offset crandom 16 crandom 16 range 16 16
+			randvel crandom 8 crandom 8 range 40 16
+			scalemin 1.25
+			scalemax 1.75
+			fade
+			fadein 0.25
+		)
+
+		originemitter smoke4
+		(
+			model vsssource.spr
+			startoff
+			alpha 0.2
+			color 0.90 0.90 0.90
+			life 2.00
+			spawnrate 5.00
+			scalerate 0.20
+			accel 3 0 -8
+			offset crandom 16 crandom 16 range 16 16
+			randvel crandom 8 crandom 8 range 32 16
+			scalemin 1.5
+			scalemax 2
+			fade
+			fadein 0.25
+		)
+ 	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+			enter sound explode_mine
+
+			enter                 emitteron  smoke1
+			enter commanddelay  5 emitteroff smoke1
+			enter commanddelay  5 emitteron  smoke2
+			enter commanddelay 10 emitteroff smoke2
+			enter commanddelay 10 emitteron  smoke3
+			enter commanddelay 15 emitteroff smoke3
+			enter commanddelay 15 emitteron  smoke4
+			enter commanddelay 18 emitteroff smoke4
+
+			// lingering mist
+//			enter originspawn
+//			(
+//				volumetric
+//				model mist
+//				collision
+//				count 30
+//				life 15
+//				color .8 .8 .8 .5
+//				scale 6
+//				randvel 32 32 random 32
+//				offsetalongaxis crandom 64 crandom 64 random 32
+//				smokeparms 0 2.5 2.5
+//			)
+
+			// central explosion sprite
+			enter originspawn
+			(
+				model mortar_dirthit.spr
+				life 1.8
+				scale .0625
+				scalerate 16
+				randvel 0 0 256
+				accel 0 0 -320
+				offset 0 0 80
+				fadedelay .8
+				physicsrate every
+			)
+
+			// bright flash
+			enter originspawn
+			(
+				model grndblst1.spr
+				offset 0 0 32
+				scale .375
+				scalerate 64
+				randvel 0 0 464
+				life .125
+				fade
+				color 1 .9 .7
+			)
+
+			enter blockdlight 450 0.25
+			(
+				color 1 .9 .7
+				colorvelocity -0.5 -0.5 -0.5
+				scalerate -0.6
+				offset 0 0 32
+			)
+
+			// central explosion cloud
+			enter originspawn
+			(
+				model vsssource.spr
+				count 47
+				life 2.5 1
+				scale 1.5 2.5
+				scalerate 1
+				offset crandom 16 crandom 16 range 32 32
+				randvel crandom 48 crandom 48 range 48 512
+				accel 0 0 -800
+				clampvel -256 256 -256 256 -175 9999
+				fadedelay 1.5
+				alpha 0.5
+				color .32 .28 .24
+			)
+
+			enter originspawn
+			(
+				model vsssource.spr
+				life 2.5 1
+				scale 1.5 2.5
+				scalerate 1
+				offset 0 0 64
+				randvel 0 0 576
+				accel 0 0 -800
+				clampvel -256 256 -256 256 -150 9999
+				fadedelay 1.5
+				alpha 0.5
+				color .32 .28 .24
+			)
+
+			// central explosion pieces
+			enter originspawn
+			(
+				model bh_dirt_piece.spr
+				spawnrange 1536
+				spritegridlighting
+				alpha 0.75
+				angles 0 0 random 360
+				avelocity 0 0 range 360 360
+				circle
+				radius 32
+				offset 0 0 range 16 16
+				radialvelocity 0 512 768
+				count 32
+				accel 0 0 -600
+				life 1.6 0.7
+				scalemin .25
+				scalemax 1.5
+				fadedelay 1.5
+			)
+
+			// shockwave dust
+			enter originspawn
+			(
+				model models/emitters/explosion_mine_shockwave.tik
+				life .1
+				angles 270 0 0
+			)
+		}
+	}
+}
+
+/*QUAKED animate_fx_explosion-mine (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Benson Russell - 9-27-2001 - explosion effect for land mines
+*/

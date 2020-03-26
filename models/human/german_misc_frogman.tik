@@ -1,0 +1,38 @@
+TIKI
+setup
+{
+	scale 0.52					// Set default scale to 16/30.5 since world is in 16 units/foot and model is in cm's
+//	scale 0.55					// Seems to work better than 0.52
+	path models/human/german_wehrmact_soldier	// Set path relative to game directory
+	skelmodel wehrmacht_nohead.skd			// Set base model for skeletal animation
+	surface pants shader wehrmact_pants
+	surface tunic shader wehrmact_tunic 
+	surface hands shader hand
+
+//	skelmodel head1.skd
+//	surface head1 shader dolf
+	$include models/human/heads/german_young_heads.tik
+
+	radius 20					// Defines size of shadow
+}
+
+init
+{
+	server
+	{
+  	    	classname Actor
+  	    	german
+		setsize "-16 -16 0" "16 16 92"
+		health 100
+		weapon "M1 Garand"
+
+		// Make him mumble but not breathe steam
+		exec global/breathe.scr 0 1
+	}
+}
+
+$include models/human/animation/dialogue/generic_dialogue_german.tik
+$include models/human/new_generic_human.tik
+
+/*QUAKED posed_german_misc_frogman (1.0 0.5 0.0) (-16 -16 0) (16 16 92)
+*/

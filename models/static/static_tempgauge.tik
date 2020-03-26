@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel tempgauge.skd
+	surface material1 shader static_tempgauge
+	surface material2 shader static_castiron
+	surface material3 shader static_glass
+}
+
+animations
+{
+	idle     tempgauge.skc
+}
+
+/*QUAKED static_uboat_engine-temperature-gauge (-8 -8 -8) (-16 -16 0) (8 8 8)
+*/

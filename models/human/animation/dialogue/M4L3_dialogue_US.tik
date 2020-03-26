@@ -1,0 +1,40 @@
+setup
+{
+	path models/human/animation/dialogue/M4L3/A
+}
+
+animations
+{
+//	$mapspec M4L3
+//	{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////    animations    ///////////////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+
+			////// Manon at the truck ///////
+
+
+	dfr_M4L1_417n_2			actor_M4L3_417.skc
+	{
+		client			/// Powell hurry get into the truck.
+		{
+			first sound dfr_M4L1_417n_2
+		}
+	}
+
+	dfr_M4L1_418n_2			actor_M4L3_418.skc
+	{
+		client			/// We must get away from here.
+		{
+			first sound dfr_M4L1_418n_2
+		}
+	}
+
+			////////////////////////////////
+
+
+//	}//end mapspec M4L3
+}

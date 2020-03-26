@@ -1,0 +1,72 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+ 
+init
+{
+	server  
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+
+		//**********************
+		// cached data goes here
+		//**********************
+
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+			//*****************
+			//sound played here
+			//*****************
+			//enter sound
+
+			//**************************************
+			//
+			//
+			//
+			//
+			//
+			//	Dumped data goes in here
+			//
+			//
+			//
+			//
+			//
+			//**************************************
+		}
+	}
+}
+
+//************************************
+//***        IMPORTANT
+//***     RENAME THE QUAKE-ED COMMENT
+//***     IN CONJUNCTION WITH THE
+//***  LD ENTITY MENU LAYOUT.DOC
+//***   UP IN SOURCE SAFE!!!!!!!!!!!!
+//************************************
+
+/*QUAKED fx_rename_me (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+description of effect to appear in entity dialog
+*/

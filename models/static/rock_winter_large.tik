@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	//scale 1.33			// Convert from inches to game units
+	path models/static/natural
+	skelmodel rock_winter_large.skd
+	surface lrock1 shader static_lrock1 
+}
+
+animations
+{
+	idle     rock_winter_large.skc
+}
+
+/*QUAKED static_natural_rock_winter-large (0.5 0.0 0.5) (-56 -72 -8) (64 64 112)
+*/

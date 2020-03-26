@@ -1,0 +1,125 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter smoke2
+		(
+			spawnrate 7.00
+			model vsssource.spr
+			count 7
+			alpha 0.70
+			color 0.20 0.20 0.20
+			life 1.00
+			scalerate 1.00
+			velocity 34.00
+			randvel range 66 -122 crandom -32 crandom 4
+			accel 0.00 0.00 200.00
+			fade
+		)
+            originemitter chunk2
+		(
+			spawnrate 23.00
+			model models/fx/concrete2.tik
+			count 17
+			color 1.00 1.00 1.00
+			scale 0.04
+			life 1.00
+			velocity 350.00
+			randvelaxis range 3 -32 range -12 6 random -56
+			accel 3.00 0.00 -30.00
+			friction -0.90
+			offset 0 crandom -30 0
+			offsetalongaxis crandom -5 range 10 -5 crandom -4
+			angles range 180 -350 range -160 300 crandom -100
+			avelocity range 120 -60 range 62 -164 crandom 150
+			scalemin 0.04
+			scalemax 0.10
+			fade
+			sphere
+			randomroll
+		)
+            originemitter smoke1
+		(
+			spawnrate 5.00
+			model vsssource.spr
+			count 5
+			alpha 0.50
+			color 0.70 0.70 0.70
+			scale 2.00
+			life 0.40
+			scalerate 6.00
+			velocity 200.00
+			randvel random -32 crandom -8 range 2 -20
+			accel 0.00 0.00 -150.00
+			offset crandom -4 crandom -10 crandom -40
+			avelocity range 60 -320 crandom -5 0
+			fade
+			fadein 0.000000
+			sphere
+			randomroll
+		)
+		originemitter chunk1
+		(
+			spawnrate 5.00
+			model models/fx/concrete1.tik
+			count 5
+			color 1.00 1.00 1.00
+			scale 0.03
+			life 2.00
+			randvel random -32 crandom -4 range 1 -10
+			accel 0.00 0.00 -150.00
+			offset crandom 2 range 10 -5 crandom -20
+			offsetalongaxis crandom 30 crandom -20 crandom -10
+			angles range 32 -122 crandom -10 crandom -32
+			avelocity range 60 -320 0 0
+			scalemin 0.03
+			scalemax 0.20
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron smoke1
+			enter emitteron smoke2
+			enter emitteron chunk2
+			enter emitteron chunk1
+
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff smoke1
+			enter emitteroff smoke2
+			enter emitteroff chunk2
+			enter emitteroff chunk1
+
+		}
+	}
+}
+
+/*QUAKED fx_exploder_concjibs1 (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Smoke from fire.
+Doesn't collide.
+*/

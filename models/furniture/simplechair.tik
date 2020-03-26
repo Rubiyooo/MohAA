@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/furniture/chairs
+	skelmodel simplechair.skd
+	surface simplechair shader simplechair
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     simplechair.skc
+}
+
+/*QUAKED static_furniture_simplechair (0.0 0.75 0.5) (0 0 0) (0 0 0)
+*/

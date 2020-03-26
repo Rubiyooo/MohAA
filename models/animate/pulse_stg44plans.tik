@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52
+	path models/items/stg44plans
+	skelmodel stg44plans.skd
+	surface material1 shader pulsating_stg44plans
+}
+
+init
+{
+	server
+	{
+		classname animate
+	}
+}
+
+animations
+{
+	idle     stg44plans.skc
+}
+
+/*QUAKED animate_item_stg44plans-pulse(0.0 0.75 0.5) (-8 -8 0) (8 8 16)
+Benson Russell - 10-10-2001 - Plans to be picked up for the objectives
+*/

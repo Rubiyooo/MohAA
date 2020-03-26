@@ -1,0 +1,53 @@
+TIKI
+setup
+{
+	scale 0.52				// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/vehicles/ktigertank
+	skelmodel kingtank.skd
+	surface tank1 shader ktank
+	surface tank2 shader ktank
+	surface tank3 shader ktank
+	surface treadwheel shader ktreadwheel_norotate
+	surface twheel_in shader ktwheel_in_norotate
+	surface treadwheel_b shader ktreadwheel_norotate
+	surface back_wheel shader kback_wheel_norotate
+	surface frontwheel shader kfrontwheel_norotate
+	surface treads shader ktreads_norotate
+	surface treadrims shader ktreadrims
+	surface smallwheel shader ksmallwheel_norotate
+	surface innerwheel shader kinnerwheel_norotate
+	surface tankcull shader ktankcull
+}	
+
+init
+{
+	server
+     	{
+     		classname animate		
+
+		// Spawn and attach the parts
+//		attachmodel "vehicles/kingcannon.tik" turret0
+//		attachmodel "vehicles/kingsmgun.tik" turret1
+	}
+	client
+	{
+//		cache vehicles/kingcannon.tik
+//		cache vehicles/kingsmgun.tik
+	}
+}
+
+animations
+{
+	idle			kingtiger_level.skc
+	lean_back		kingtiger_lean_back.skc
+	lean_forward	kingtiger_lean_forward.skc
+	lean_left		kingtiger_lean_left.skc
+	lean_right		kingtiger_lean_right.skc
+	level			kingtiger_level.skc
+	low			kingtiger_low.skc
+	high			kingtiger_high.skc
+}
+
+/*QUAKED animate_vehicle_german_kingtigertank (0.0 .0 0.0) (-60 -40 0) (60 40 128)
+King tiger tank for scriptmodel use.
+*/

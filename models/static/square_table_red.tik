@@ -1,0 +1,28 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/furniture
+	skelmodel square_table_red.skd
+	surface square_table shader static_square_table_red
+}
+
+init
+{
+	server
+	{
+		classname animate
+		setsize "-4 -4 0" "4 4 4"
+//		seatoffset "-14 0 24"
+//		gravity 1.5
+//		vehiclespeed 800
+	}
+}
+
+animations
+{
+	idle     square_table_red.skc
+}
+
+/*QUAKED static_furniture_square-table-red (0.5 0.0 0.5) (-32 -32 0) (32 32 48)
+*/

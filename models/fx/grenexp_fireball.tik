@@ -1,0 +1,14 @@
+TIKI
+// Warning: SpriteSquare doesn't exist, I made it up.
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel SpriteSquare.skd
+	surface all shader VSSsourceTest
+}
+animations
+{
+	idle SpriteSquare.skc
+}
+

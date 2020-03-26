@@ -1,0 +1,65 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		//cache some stuff used in this effect
+		cache bhole_paper.spr // cache the bullet hole shader
+		
+//		cache bh_stone_piece.spr
+//		cache models/fx/bh_stone_puff.tik
+
+		// puffy puff
+//		sfx originspawn
+//		(
+//			model models/fx/bh_stone_puff.tik
+//			alpha 1.0
+//			count 1
+//			life 0.35
+//			scale 5
+//		)
+
+		// first bit of lingering smoke
+//		sfx originspawn
+//		(
+//			volumetric
+//			model bulletimpact	// sets the type of smoke
+//			life 10		// amount of smoke
+//			scale 1.5	// radius
+//			alpha 0.3	// density
+//			color 0.7 0.7 0.7	// RBG color of the smoke
+//			velocity 10	// base velocity away from the surface
+//			randvelaxis random 4 0 0	// velocity offset
+//			offsetalongaxis 4 crandom 4 crandom 4	// positional offset
+////			collision // turn on collision detection
+//		)
+//		
+//		// second bit of lingering smoke
+////		delayedsfx 0.15 originspawn
+////		(
+////			volumetric
+////			model bulletimpact	// sets the type of smoke
+////			life 10		// amount of smoke
+////			scale 1.0	// radius
+////			alpha 0.3	// density
+////			color 0.7 0.7 0.7	// RBG color of the smoke
+////			velocity 8	// base velocity away from the surface
+////			randvelaxis random 4 0 0	// velocity offset
+////			offsetalongaxis 4 crandom 2 crandom 2	// positional offset
+////			collision // turn on collision detection
+////		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

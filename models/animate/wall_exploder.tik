@@ -1,0 +1,125 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+ 
+init
+{
+	server  
+	{
+		classname Animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+
+		cache models/fx/crates/crate-jib-chunk.tik
+	//	cache bh_stone_piece.spr
+		cache fire_ring.spr
+		cache air_explosion.spr
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay .25 anim idle
+		}
+
+		client
+		{
+			enter sound wall_explode
+
+			//**************************************
+			enter originspawn
+			(
+				model models/fx/crates/crate-jib-chunk.tik
+				count 4
+				color 1.00 1.00 1.00
+				//collision
+				//bouncefactor 0.30
+				scale 0.20
+				life 1.50
+				scalerate 1.00
+				velocity 200.00
+				friction -20.00
+				scalemin 0.20
+				scalemax 1.00
+				fade
+				sphere
+				align
+				randomroll
+			)
+
+//			0 originspawn
+//			(
+//				count 
+//				model bh_stone_piece.spr
+//				color 1.00 1.00 1.00
+//				collision
+//				bouncefactor 0.30
+//				scale 0.20
+//				life 2.00
+//				velocity 500.00
+//				friction -10.00
+//				scalemin 0.20
+//				scalemax 0.80
+//				fade
+//				randomroll
+//			)
+
+			enter originspawn
+			(
+				model fire_ring.spr
+				count 3
+				color 1.00 1.00 1.00
+				scale 0.05
+				life 0.50
+				scalerate 2.00
+				velocity 200.00
+				scalemin 0.30
+				scalemax 0.60
+				sphere
+				align
+			)
+
+			enter originspawn
+			(
+				count 3
+				model air_explosion.spr
+				color 1.00 1.00 1.00
+				scale 0.1
+				life 1.00
+				scalerate 0.50
+				velocity 200.00
+				friction 0.80
+				scalemin 0.50
+				scalemax 3.50
+				sphere
+				align
+			)
+		}
+	}
+}
+
+//************************************
+//***        IMPORTANT
+//***     RENAME THE QUAKE-ED COMMENT
+//***     IN CONJUNCTION WITH THE
+//***  LD ENTITY MENU LAYOUT.DOC
+//***   UP IN SOURCE SAFE!!!!!!!!!!!!
+//************************************
+
+/*QUAKED animate_fx_explosion-wallexploder (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+description of effect to appear in entity dialog
+*/
+// ADAM NEEDS FOR END OF SCHMERTZEN WITH FIREBALLS - 10/1/2001

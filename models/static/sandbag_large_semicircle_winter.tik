@@ -1,0 +1,19 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/sandbags
+	skelmodel sandbag_large_semicircle.skd
+	surface sb_1 shader static_sb_1w
+	surface sb_2 shader static_sb_2w
+	surface sb_3 shader static_sb_3w
+	surface sb_4 shader static_sb_4w
+}
+
+animations
+{
+	idle     sandbag_large_semicircle.skc
+}
+
+/*QUAKED static_obstacle_sandbag-large-semicircle-winter (0.5 0.0 0.5) (-56 -96 0) (64 104 56)
+*/

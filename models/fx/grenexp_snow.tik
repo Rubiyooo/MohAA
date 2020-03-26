@@ -1,0 +1,59 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		cache bh_snow_puff.spr
+		cache oceanspray.spr
+
+		sfx originspawn
+		(
+			model bh_snow_puff.spr
+			count 15
+			color 1.00 1.00 1.00
+			spritegridlighting
+			scale 1.50
+			life 1.00
+			scalerate 3.00
+			velocity 45.00
+			accel 0.00 0.00 -600.00
+			offsetalongaxis 0 0 25
+			sphere
+		)
+
+		sfx originspawn
+		(
+			spawnrate 1.00
+			model oceanspray.spr
+			count 8
+			alpha 0.60
+			color 1.00 1.00 1.00
+			spritegridlighting
+			scale 0.40
+			life 0.40
+			scalerate 20.00
+			radius 70.00
+			velocity 400.00
+			randvel 0 crandom -90 0
+			accel 0.00 0.00 -700.00
+			angles 0 0 crandom -100
+			avelocity 0 0 crandom -180
+			fadedelay 0.00
+			sphere
+		)
+
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

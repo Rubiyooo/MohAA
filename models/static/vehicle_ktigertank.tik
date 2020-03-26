@@ -1,0 +1,21 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/vehicles/ktigertank
+	skelmodel ktigertank.skd
+	surface ktigertank4 shader static_ktigertank
+	surface ktigertank5 shader static_ktigertank
+	surface ktredz3 shader static_ktredz
+	surface ktredz2 shader static_ktredz
+	surface ktredz1 shader static_ktredz
+}
+
+animations
+{
+	idle     ktigertank.skc
+}
+
+/*QUAKED static_vehicle_german_tank-kingtiger (0.5 0.0 0.5) (-296 -112 0) (144 112 176)
+King Tiger Tank
+*/

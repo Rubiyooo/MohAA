@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/bshelf-tall-thin
+	skelmodel bshelf-tall-thin-damaged.skd
+	surface bshelf-tall-thin-damaged shader static_bshelf-tall-thin_d
+	surface bshelfdoor_d shader static_bshelfdoor_d
+	surface bshelfglass_d shader static_bshelfglass_d
+}
+
+animations
+{
+	idle     bshelf-tall-thin-damaged.skc
+}
+
+/*QUAKED static_furniture_bshelf-tall-thin-damaged (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

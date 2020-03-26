@@ -1,0 +1,59 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		alwaysdraw
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter firesmoke
+		(
+			volumetric
+			model steam
+			alpha 1
+			smokeparms  32 25 25
+			color 0.70 0.70 0.00
+			scale 3.00 // 10
+			life 10.00 // 20
+			spawnrate 80.00
+			velocity 0.00
+			// offset crandom 70.00 crandom 70.00 0.00
+			alwaysdraw
+  		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron firesmoke
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff firesmoke
+		}
+	}
+}
+
+/*QUAKED fx_smoke_planesmokeplume (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Smoke from plane flying to its doom.
+Does collide.
+*/

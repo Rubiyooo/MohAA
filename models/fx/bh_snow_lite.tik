@@ -1,0 +1,103 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		//cache some stuff used in this effect
+		cache bhole_snow.spr // cache the bullet hole shader
+		cache bh_snow_puff.spr
+
+		// fast, more solid chunks of snow
+		sfx originspawn
+		(
+			model bh_snow_puff.spr
+			spawnrange 3072
+			spritegridlighting
+			alpha 0.8
+			angles 0 0 random 360
+			offsetalongaxis random 6 crandom 2 crandom 2
+			count 2
+			velocity 80
+			randvelaxis random 100 crandom 32 crandom 32
+			accel 0 0 -800
+			life 0.5 0.6
+			fadedelay 0.3
+			scalemin 0.1
+			scalemax 0.15
+			scalerate 0.3
+		)
+
+		// fast, more solid chunks of snow, part 2
+		delayedsfx 0.05 originspawn
+		(
+			model bh_snow_puff.spr
+			spawnrange 3072
+			spritegridlighting
+			alpha 0.8
+			angles 0 0 random 360
+			offsetalongaxis random 6 crandom 2 crandom 2
+			count 2
+			velocity 70
+			randvelaxis random 100 crandom 32 crandom 32
+			accel 0 0 -800
+			life 0.5 0.6
+			fadedelay 0.3
+			scalemin 0.1
+			scalemax 0.15
+			scalerate 0.3
+		)
+		
+		// fast, large puffs of snow
+		sfx originspawn
+		(
+			model bh_snow_puff.spr
+			spawnrange 3072
+			spritegridlighting
+			alpha 0.5
+			angles 0 0 random 360
+			offset random 2 crandom 2 crandom 2
+			count 1
+			velocity 70
+			randvelaxis random 30 crandom 30 crandom 30
+			accel 0 0 -600
+			life 0.7 0.9
+			fadedelay 0.5
+			scalemin 0.2
+			scalemax 0.25
+			scalerate 2.0
+		)
+		
+		// fast, large puffs of snow
+		delayedsfx 0.1 originspawn
+		(
+			model bh_snow_puff.spr
+			spawnrange 3072
+			spritegridlighting
+			alpha 0.5
+			angles 0 0 random 360
+			offset random 2 crandom 2 crandom 2
+			count 1
+			velocity 60
+			randvelaxis random 30 crandom 30 crandom 30
+			accel 0 0 -600
+			life 0.7 0.9
+			fadedelay 0.5
+			scalemin 0.2
+			scalemax 0.25
+			scalerate 2.0
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

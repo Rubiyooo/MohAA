@@ -1,0 +1,110 @@
+TIKI
+setup
+{
+	scale 0.52					// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+
+	path models/human/german_kreigsmarine
+	skelmodel kreigsmarine.skd
+
+	surface pants shader kmarrine_pants
+	surface top shader kmarrine_shirt
+
+	$include models/human/heads/german_young_heads.tik
+
+	path models/human/hands
+	skelmodel hand.skd
+	surface hand shader handsnew
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+	path models/equipment/germangear
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** p-38 pistol
+	case weapon "walter p38"
+	{
+		skelmodel german_holster.skd
+		surface german_holster shader german_holster
+	}
+
+	//*** regular KAR 98
+	case weapon "mauser kar 98k"
+	{
+		skelmodel k98clips.skd
+		surface k98clips shader german_riflebelt
+	}
+	
+	//*** KAR 98 sniper
+	case weapon "mauser kar 98d sniper"
+	{
+		skelmodel k98clips.skd
+		surface k98clips shader german_riflebelt
+	}
+	
+	//*** mp44 / stg44 machinegun
+	case weapon "mp44"
+	{
+		skelmodel mp40clips.skd
+		surface mp40clips shader ammo_pouch_tan
+	}
+//*** end weapon equipment assignment
+//************************************
+
+	path models/equipment/germangear
+
+	//skelmodel helmet.skd
+	//surface helmet shader wehrmact_helmet
+
+	//skelmodel gascan.skd
+	//surface gascan shader german_gear
+
+	//skelmodel breadbag.skd
+	//surface breadbag shader german_gear
+
+	//skelmodel zeltbahn.skd
+	//surface zeltbahn shader german_gear
+
+	//skelmodel shovel.skd
+	//surface shovel shader german_gear
+
+	//skelmodel messtin.skd
+	//surface messtin shader german_gear
+
+	scale 0.52				// Set default scale to 16/30.5 since world is
+						// in 16 units per foot and model is in cm's
+	path models/human/protoanimations	// Set path to set animations from
+
+	radius 20				// Defines size of shadow
+}
+
+init
+{
+	server
+	{
+      	classname Actor
+		setsize "-16 -16 0" "16 16 92"
+		german
+		health 100
+		weapon "Mauser KAR 98K"
+
+		// Make him mumble but not breathe steam
+		exec global/breathe.scr 0 1
+	}
+}
+
+//
+// include the base animations definition
+//
+
+$include models/human/new_generic_human.tik
+$include models/human/animation/dialogue/generic_dialogue_german.tik
+//$include models/human/animation/helmet_flyoff/helmet_flyoff_german_wehrmact.tik
+
+/*QUAKED ai_german_kreigsmarine (1.0 0.5 0.0) (-16 -16 0) (16 16 92)
+*/

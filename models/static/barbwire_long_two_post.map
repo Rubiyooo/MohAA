@@ -1,0 +1,118 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 61 259 -2 ) ( -52 259 -2 ) ( -52 -242 -2 ) common/clip 0 0 0.00 1 1 196608 2193 0 
+( -46 -242 289 ) ( -46 259 289 ) ( 67 259 289 ) common/clip 0 0 0.00 1 1 196608 2193 0 
+( -53 -222 60 ) ( 60 -222 60 ) ( 60 -222 4 ) common/clip 0 3 0.00 1 1 196608 2193 0 
+( 35 -242 63 ) ( 35 259 63 ) ( 35 259 7 ) common/clip 0 3 0.00 1 1 196608 2193 0 
+( 60 232 61 ) ( -53 232 61 ) ( -53 232 5 ) common/clip 0 3 0.00 1 1 196608 2193 0 
+( -34 259 59 ) ( -34 -242 59 ) ( -34 -242 3 ) common/clip 0 3 0.00 1 1 196608 2193 0 
+}
+// brush 1
+{
+( -3 240.999985 138 ) ( 3.000061 240.999985 138 ) ( 4.000076 223.999985 -29 ) common/woodclip 12 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 3 240.999786 138 ) ( 3 247.000031 138 ) ( 4 230.000031 -29 ) common/woodclip -35 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 3.000061 247.000031 138 ) ( -3 247.000031 138 ) ( -2 230.000031 -29 ) common/woodclip 12 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -3 247.000031 138 ) ( -3 240.999786 138 ) ( -2 223.999512 -29 ) common/woodclip -35 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -3 236 -21 ) ( -3 219 -19 ) ( 4 227.500000 -20 ) common/woodclip 31 2 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -3.000282 234 118 ) ( -3.000282 255 116 ) ( 3.948479 244.500000 117 ) common/woodclip 31 2 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+}
+// brush 2
+{
+( -2.000008 -229.999969 132 ) ( 3.999588 -229.999969 132 ) ( 2.999565 -212.999969 -35 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 4.000008 -229.999695 132 ) ( 4.000008 -224.000031 132 ) ( 3.000008 -207.000031 -35 ) common/woodclip 52 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 4 -225 132 ) ( -2 -225 132 ) ( -3 -207 -35 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -2.000008 -224.000031 132 ) ( -2.000008 -229.999695 132 ) ( -3.000008 -212.999680 -35 ) common/woodclip 52 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -3.000008 -194 -18 ) ( -3.000008 -237 -23 ) ( 4.000076 -215.500000 -20.500000 ) common/woodclip 0 -52 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -2.912651 -237 116 ) ( -2.912651 -218 118 ) ( 4.000008 -227.500000 117 ) common/woodclip 0 -52 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+}
+// brush 3
+{
+( -31.819542 -224 104 ) ( -32.819649 -224 104 ) ( -11.999903 7 102 ) common/nodraw -48 -59 0.00 -0.125000 3.640625 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 11.000488 -222 1 ) ( 3.000031 -222 1 ) ( -38.999969 -222 104 ) common/nodraw -48 -13 0.00 -0.125000 2.656250 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 10.180647 -224 1 ) ( -31.819359 -224 104.000076 ) ( -10.999607 7 102.000076 ) common/bplaneclip -246 -57 0.00 -0.910156 0.664063 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -32.819435 -224 103.999893 ) ( 9.180513 -224 1 ) ( 30.000261 7 -1 ) common/nodraw -59 -13 0.00 -3.640625 2.656250 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 9.180340 -224 1.000004 ) ( 10.181141 -224 1.000004 ) ( 31.000874 7 -1 ) common/nodraw -48 -59 0.00 -0.125000 3.640625 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 23.000031 9 -1 ) ( 31.000885 9 -1 ) ( -10.999100 9 102 ) common/nodraw -48 -13 0.00 -0.125000 2.656250 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+}
+// brush 4
+{
+( 2.000174 -224 0.000011 ) ( 2.739527 -224 0.000011 ) ( -27.260475 7 -0.999992 ) common/nodraw -24 59 0.00 -0.124998 -3.609375 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 34.739841 -224 105.000008 ) ( 33.999928 -224 105.000008 ) ( 3.999912 7 104.000008 ) common/nodraw -24 59 0.00 -0.124998 -3.609375 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 33.999931 -222 105 ) ( 34.740379 -222 105 ) ( 2.740309 -222 0.000378 ) common/nodraw -24 10 0.00 -0.124998 -2.734375 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 2.739864 -224 -0.000023 ) ( 34.739967 -224 105.000015 ) ( 4.739957 7 104.000015 ) common/nodraw 9 0 0.00 1 1 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 4.739583 9 104.000008 ) ( 3.999919 9 104.000008 ) ( -27.999842 9 -0.999634 ) common/nodraw -24 10 0.00 -0.124998 -2.734375 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 33.999813 -224 105.000008 ) ( 2.000013 -224 -0.000145 ) ( -28.000004 7 -1.000145 ) common/bplaneclip -244 43 0.00 -0.902344 -0.683594 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+}
+// brush 5
+{
+( 9.000069 -220.000458 7 ) ( 25.000114 -220.000458 23 ) ( 26.000076 7.999481 19 ) common/bspindleclip -20 -22 90.00 0.990021 -0.599968 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 24 2 40 ) ( 24 2 18 ) ( 23 -214 21 ) common/bspindleclip 235 -39 -1.00 0.990011 0.799982 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 22.000076 -220.000443 44 ) ( 6.000092 -220.000473 60 ) ( 7.000061 7.999466 56 ) common/bspindleclip -20 231 -0.75 0.990106 0.599947 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 7.000092 -220.000473 58 ) ( -13.999886 -220.000443 58 ) ( -12.999924 7.999428 54 ) common/bspindleclip -20 129 90.00 0.989990 0.699905 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -14.999886 -220.000443 58 ) ( -30.999916 -220.000443 42 ) ( -29.999901 7.999489 38 ) common/bspindleclip -20 130 90.00 0.990000 0.600000 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -30 -214 41 ) ( -30 -214 22 ) ( -30 2 17 ) common/bspindleclip -19 34 -2.00 0.990014 -0.799976 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -28.999901 -220.000488 19 ) ( -13.999908 -220.000443 4 ) ( -12.999901 7.999451 0 ) common/bspindleclip -19 30 358.25 0.989984 -0.699944 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -15.999893 -220.000443 5 ) ( 6.000092 -220.000473 5 ) ( 7.000061 7.999466 1 ) common/bspindleclip -19 -23 90.00 0.990097 -0.700012 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -30 -215 22 ) ( -30 -215 41 ) ( -15 -215 58 ) common/nodraw -34 18 -180.00 0.999985 -1 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 24 2 18 ) ( 24 2 40 ) ( 9 2 54 ) common/nodraw 0 18 -180.00 1 -1 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+}
+// brush 6
+{
+( -10.999496 7 52.999943 ) ( -27.000061 7 69.000504 ) ( -28.000061 -221 65.000496 ) common/bspindleclip -20 233 90.00 0.990000 0.700000 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -26 -215 85 ) ( -26 -215 64 ) ( -25 1 67 ) common/bspindleclip -22 24 2.00 0.990000 0.800000 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -25 7 87.999405 ) ( -8.999420 7 104.000031 ) ( -9.999405 -221 100.000031 ) common/bspindleclip -21 58 1.00 0.990000 0.600000 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -7.999084 7 104 ) ( 13.000168 7 104 ) ( 12.000183 -221 100 ) common/bspindleclip -19 -128 270.00 -0.990000 0.700000 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 13 7 104.000015 ) ( 29 7 88.000076 ) ( 28 -221 84.000076 ) common/bspindleclip -20 -127 269.00 -0.990000 0.700000 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 29 -215 63 ) ( 29 -215 84 ) ( 29 1 88 ) common/bspindleclip -23 -30 182.00 -0.990000 0.800000 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 27 7 64.998985 ) ( 12.000977 7 49.999939 ) ( 11.000977 -221 45.999939 ) common/bspindleclip -22 -42 181.00 -0.990000 0.700000 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 14.000671 7 50.999939 ) ( -7.998520 7 50.999939 ) ( -8.998520 -221 46.999939 ) common/bspindleclip -21 234 90.00 0.990000 0.700000 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 90 2 81 ) ( 90 2 25 ) ( 98 2 25 ) common/nodraw 0 0 0.00 1 1 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 29 -215 84 ) ( 29 -215 63 ) ( 12 -215 47 ) common/nodraw 0 0 0.00 1 1 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+}
+// brush 7
+{
+( 27.479298 3 -1 ) ( 28.351217 3 -1 ) ( -1.648797 234 -1 ) common/nodraw -47 1 0.00 -0.124998 -3.609375 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -2.649397 3 104 ) ( -3.520439 3 104 ) ( -33.520435 234 104 ) common/nodraw -47 1 0.00 -0.124998 -3.609375 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 28.350723 3 -1 ) ( 27.479359 3 -1 ) ( -3.520380 3 104 ) common/nodraw -47 10 0.00 -0.124998 -2.734375 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 28.351185 3 -1 ) ( -2.648809 3 104 ) ( -32.648827 234 104 ) common/bplaneclip -1 44 0.00 0.902344 -0.683594 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -2.520639 232 -1 ) ( -1.648891 232 -1 ) ( -32.648506 232 104 ) common/nodraw -47 10 0.00 -0.124998 -2.734375 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -3.520444 3 104 ) ( 27.479305 3 -1 ) ( -2.520690 234 -1 ) common/nodraw -8 0 -180.00 1 -1 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+}
+// brush 8
+{
+( -8.999675 230 8 ) ( -24.999718 230 24 ) ( -25.999681 2.000015 20 ) common/bspindleclip -8 -22 -90.00 0.990000 -0.600000 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -21.999672 230 21 ) ( -21.999672 230 43 ) ( -22.999689 2.000038 39 ) common/bspindleclip -8 -38 -179.00 0.989981 -0.799998 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -19.999680 229.999969 45 ) ( -3.999699 230 61 ) ( -4.999668 2.000023 57 ) common/bspindleclip -8 230 -179.25 0.990121 -0.599954 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -6.999697 230 59 ) ( 14.000299 229.999969 59 ) ( 13.000312 2.000031 55 ) common/bspindleclip -10 129 -90.00 0.990036 0.699989 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 14.000299 229.999969 59 ) ( 30.000320 229.999969 43 ) ( 29.000319 2 39 ) common/bspindleclip -8 122 -91.00 0.989996 0.699974 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 31.000320 229.999969 43 ) ( 31.000320 229.999969 20 ) ( 30.000319 2 16 ) common/bspindleclip -7 34 -178.00 0.990021 0.799998 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 31.000298 230 20 ) ( 16.000320 229.999969 5 ) ( 15.000303 2.000031 1 ) common/bspindleclip -8 -226 -179.25 0.990075 0.699967 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 16.000290 229.999969 6 ) ( -5.999697 230 6 ) ( -6.999659 2.000023 2 ) common/bspindleclip -8 -23 -90.00 0.990074 -0.699982 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 94.000320 225.999969 38 ) ( 94.000320 225.999969 -18 ) ( 102.000305 226 -18 ) common/nodraw 30 19 0.00 0.999966 1 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -17.999680 9.000015 59 ) ( -25.999664 9.000053 59 ) ( -25.999664 9.000053 115 ) common/nodraw -1 19 0.00 1.000008 1 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+}
+// brush 9
+{
+( 11 4 53 ) ( 27 4 69 ) ( 28 232 65 ) common/bspindleclip -9 -23 -90.00 0.989990 0.700012 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 25 4 66 ) ( 25 4 88 ) ( 26 232 84 ) common/bspindleclip -10 22 179.00 0.989983 -0.799995 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 22 4 90 ) ( 6 4 106 ) ( 7 232 102 ) common/bspindleclip -8 -130 90.00 -0.990000 0.600000 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 8 4 104 ) ( -13 4 104 ) ( -12 232 100 ) common/bspindleclip -8 127 -90.00 0.989990 -0.699997 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -13 4 104 ) ( -29 4 88 ) ( -28 232 84 ) common/bspindleclip -9 126 -91.00 0.990019 -0.699997 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -29 4 88 ) ( -29 4 65 ) ( -28 232 61 ) common/bspindleclip -12 -32 178.00 0.990013 0.799998 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -27 4 65 ) ( -12 4 50 ) ( -11 232 46 ) common/bspindleclip -9 11 90.00 -0.989989 -0.699997 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -14 4 51 ) ( 8 4 51 ) ( 9 232 47 ) common/bspindleclip -9 -22 -90.00 0.990021 0.700012 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -92 9 83 ) ( -92 9 27 ) ( -100 9 27 ) common/nodraw 0 0 -180.00 1 -1 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -2 226 49 ) ( 6 226 49 ) ( 6 226 105 ) common/nodraw 0 0 -180.00 1 -1 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+}
+// brush 10
+{
+( 31.484039 232 102 ) ( 32.571609 232 102 ) ( 11.743301 1 102 ) common/nodraw -56 0 0.00 -0.125000 3.640625 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -30.256838 3 -1 ) ( -31.345015 3 -1 ) ( 10.654959 3 102 ) common/nodraw -56 -13 0.00 -0.125000 2.656250 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -10.516402 232 -1 ) ( 31.483572 232 102 ) ( 10.655262 1 102 ) common/bplaneclip -3 -57 0.00 0.910156 0.664063 991232 264352 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( 32.571526 232 102 ) ( -9.428495 232 -1 ) ( -30.256800 1 -1 ) common/nodraw 0 -13 0.00 -3.640625 2.656250 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -9.428412 232 -1 ) ( -10.516813 232 -1 ) ( -31.345135 1 -1 ) common/nodraw -56 0 0.00 -0.125000 3.640625 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+( -10.516565 232 -1 ) ( -9.428535 232 -1 ) ( 32.571487 232 102 ) common/nodraw -56 -13 0.00 -0.125000 2.656250 536870912 2224 0 -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm detail 
+}
+}

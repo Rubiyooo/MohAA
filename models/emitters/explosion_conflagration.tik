@@ -1,0 +1,91 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter fireball
+		(
+			spawnrate 7.00
+			model explosed2.spr
+			color 1.00 1.00 1.00
+			varycolor
+			scale 0.10
+			life 2.50
+			scalerate 2.50
+			radius 40.00
+			offsetalongaxis 0 0 -60
+			angles 0 0 range -120 60
+			avelocity 0 0 range 60 600
+			scalemin 0.60
+			scalemax 0.70
+			fade
+		)
+		originemitter midsmoke
+		(
+			spawnrate 3.00
+			model vsssource.spr
+			color 0.17 0.19 0.19
+			life 2.50
+			scalerate 7.00
+			radius 12.00
+			randvel range 20 -60 range 20 -60 range 20 -60
+			accel 0.00 0.00 300.00
+			friction 1.00
+			fade
+			circle
+		)
+		originemitter groundsmoke
+		(
+			spawnrate 3.00
+			model vsssource.spr
+			color 0.10 0.10 0.10
+			life 2.00
+			scalerate 4.00
+			accel 0.00 0.00 10.00
+			offset 0 crandom -30 0
+			offsetalongaxis 0 0 -60
+			fade
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron fireball
+			enter emitteron midsmoke
+			enter emitteron
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff fireball
+			enter emitteroff midsmoke
+			enter emitteroff groundsmoke
+		}
+	}
+}
+
+/*QUAKED fx_fire_conflagration (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Smoke and hellfire.
+Doesn't collide.
+*/

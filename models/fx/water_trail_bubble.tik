@@ -1,0 +1,41 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		//cache some stuff used in this effect
+		cache water_trail_bubble.spr
+
+		// a single lonely bubble...
+		sfx originspawn
+		(
+			model water_trail_bubble.spr
+			spritegridlighting
+			spawnrange 1536
+			wateronly
+			alpha 1.0
+			angles 0 0 random 360
+			sphere 2
+			count 1
+			accel 0 0 72
+//			life autocalc
+			life 5
+			scalemin 0.2
+			scalemax 0.5
+			swarm 10 8 4
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

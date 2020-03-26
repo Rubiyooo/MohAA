@@ -1,0 +1,54 @@
+TIKI
+setup
+{
+	scale 0.52				// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/vehicles/opeltruck
+	skelmodel opel.skd
+	surface opel1 shader opelgreen
+	surface opel2 shader opel_cullgreen
+	surface opel3 shader opelgreen
+	surface opel4 shader opelgreen
+	surface opel5 shader opelgreen
+	surface opelhub shader opelhubgreen_norotate
+	surface opeltread shader opeltread_norotate
+	surface opelwindows shader opelwindows
+	surface opellights shader opellights
+}
+
+init
+{
+	server
+      	{
+      		classname animate		
+		setsize "-50 -40 0" "50 40 60"
+	}
+}
+
+animations
+{
+	idle		opel.skc
+	{
+		server
+		{
+			entry surface opellights +nodraw
+		}
+	}
+	idlelights	opel.skc
+	{
+		server
+		{
+			entry surface opellights -nodraw
+		}
+	}
+	idlenolights	opel.skc
+	{
+		server
+		{
+			entry surface opellights +nodraw
+		}
+	}
+}
+
+/*QUAKED animate_vehicle_german-opeltruckgreen (0.0 0.0 0.0) (-65 -40 0) (65 40 120)
+Benson Russell - 10-9-2001 - for script model opel truck to ride in on in m4 levels
+*/

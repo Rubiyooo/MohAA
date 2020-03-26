@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/cello
+	skelmodel cello.skd
+	surface cello shader static_cello
+	surface cellostrings shader static_cellostrings
+}
+
+animations
+{
+	idle    cello.skc
+}
+
+/*QUAKED static_furniture_cello (0.5 0.0 0.5) (-4 -12 0) (4 12 72)
+*/

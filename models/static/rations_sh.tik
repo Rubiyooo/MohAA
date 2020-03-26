@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/rations_sh
+	skelmodel rations_sh.skd
+	surface rations_sh shader static_rations_sh
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle    rations_sh.skc
+}
+
+/*QUAKED static_item_rations-sh (0.5 0.0 0.5) (-0 -8 0) (16 8 8)
+*/

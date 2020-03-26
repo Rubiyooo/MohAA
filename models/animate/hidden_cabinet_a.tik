@@ -1,0 +1,28 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/hidden_cabinets
+	skelmodel cabinet_a.skd		//wardrobe.skd
+	surface wardrobe shader wardrobe_h
+}
+
+init
+{
+	server
+	{
+		classname animate
+		//setsize "-80 -34 0" "80 34 120"
+	}
+
+}
+
+animations
+{
+	idle     cabinet_a.skc
+	open	   cabinet_a_open.skc
+}
+
+/*QUAKED animate_furniture_hidden-wardrobe (0.5 0.0 0.5) (-16 -32 0) (16 32 120)
+Wardrobe
+*/

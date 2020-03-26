@@ -1,0 +1,139 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		//radiusdamage 300
+		//radius 512
+		//meansofdeath explosion
+		rendereffects +dontdraw
+		angles 270 0 0
+	}
+	client
+	{
+		cache textures/effects/bang.spr
+		cache bh_stone_piece.spr
+		cache vsssource.spr
+		cache explosed2.spr
+		cache explosed.spr
+	}	
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			//first damageagain
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+			//enter sound explode_tank
+			enter sound explode_bridge
+
+			enter originspawn
+			(
+				model textures/effects/bang.spr
+				offset 0 0 128
+				scale 4.0
+				life 0.95
+				fade
+			)
+
+			enter originspawn
+			(
+				count 10
+				model bh_stone_piece.spr
+				color 1.00 1.00 1.00
+				collision
+				bouncefactor 0.30
+				scale 4.20
+				life 2.00
+				velocity 500.00
+				friction -10.00
+				scalemin 0.20
+				scalemax 1.00
+				fade
+				randomroll
+			)
+
+			enter originspawn
+			(
+				model vsssource.spr
+				alpha 1.0
+				count 7
+				color .25 .25 .25
+				scale 4.00
+				life 2.50
+				scalerate 6.00
+				radius 10.00
+				velocity 70.00
+				radialvelocity 7.00 0.00 0.00
+				angles 0 0 range 70 -300
+				//avelocity 0 0 300
+				//scalemin 0.09
+				//scalemax 0.20
+				fade
+				inwardsphere
+
+			)
+			
+			// residual fireball
+			enter originspawn
+			(
+				model explosed2.spr
+				alpha 1
+				count 5
+				color 1.00 1.00 1.00
+				life 2.10
+				scalerate 4.00
+				radius 5.00
+				velocity 120.00
+				accel 0.00 0.00 30.00
+				scalemin 0.30
+				scalemax 0.70
+				fade
+				sphere
+			) 
+			enter originspawn
+			(
+				model explosed.spr
+				alpha 1
+				count 2
+				color 1.00 1.00 1.00
+				scale 0.10
+				life 2.10
+				scalerate 19.00
+				radius 10.00
+				velocity 70.00
+				radialvelocity 7.00 0.00 0.00
+				angles 0 0 range 70 -300
+				avelocity 0 0 300
+				scalemin 0.09
+				scalemax 0.20
+				fade
+				inwardsphere
+			)
+			
+
+		}
+	}
+}
+
+/*QUAKED animate_fx_explosion-bridge (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+explosion from a bridge blowing up
+*/

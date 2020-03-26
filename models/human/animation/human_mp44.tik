@@ -1,0 +1,588 @@
+animations // Now list all of the animations and any special commands for them
+{
+$path models/human/animation
+
+//----------
+//Shooting//
+//----------
+mp44_aim					weapon_mp44/mp44_aim.skc		
+mp44_aim_up					weapon_mp44/mp44_aim_up.skc	
+mp44_aim_down				weapon_mp44/mp44_aim_down.skc
+// mp44 fires 6 rounds per second.  These frame numbers make it fire 5 per second, 
+// assuming a 15 fps animation - close enough.
+// I commented out the frames that don't exist yet.  This animation needs to be made into 
+// a burst-fire animation like the MP40 one is.
+mp44_shoot01				weapon_mp44/mp44_shoot.skc	random
+{
+	server
+	{
+		0 fire
+		3 fire
+		6 fire
+	}
+}
+mp44_shoot02				weapon_mp44/mp44_shoot.skc	random
+{
+	server
+	{
+		0 fire
+		3 fire
+		6 fire
+		9 fire
+	}
+}
+mp44_shoot03				weapon_mp44/mp44_shoot.skc	random
+{
+	server
+	{
+		0 fire
+		3 fire
+		6 fire
+		9 fire
+		12 fire
+	}
+}
+mp44_shoot_up				weapon_mp44/mp44_shoot_up.skc
+mp44_shoot_down				weapon_mp44/mp44_shoot_down.skc
+mp44_shootauto				weapon_mp44/mp44_shoot.skc
+{
+	server
+	{
+		0 fire
+		3 fire
+		6 fire
+		9 fire
+		12 fire
+		14 fire
+	}
+}
+mp44_shootauto_up				weapon_mp44/mp44_shoot_up.skc
+mp44_shootauto_down			weapon_mp44/mp44_shoot_down.skc
+mp44_reload					weapon_mp44/mp44_reload.skc
+{
+	client
+	{
+		entry sound mp44_reload_npc
+	}
+}
+
+//---------
+// Curious
+//---------
+
+mp44_stand_curious01			weapon_rifle/curious/rifle_stand_curious.skc		weight 1
+mp44_stand_curious02			weapon_rifle/curious/rifle_stand_curious_twitch.skc	weight 1 dontrepeate	
+//mp44_stand_shock				weapon_rifle/curious/rifle_stand_shock.skc					//Uses Rifle Animation
+mp44_stand_shock01			weapon_rifle/curious/rifle_stand_shock01.skc		random
+mp44_stand_shock02			weapon_rifle/curious/rifle_stand_shock02.skc		random
+mp44_stand_shock03			weapon_rifle/curious/rifle_stand_shock03.skc		random
+mp44_stand_shock04			weapon_rifle/curious/rifle_stand_shock04.skc		weight 2
+mp44_stand_surprise			weapon_rifle/curious/rifle_stand_surprise.skc					//Uses Rifle Animation
+mp44_stand_identify			weapon_rifle/curious/rifle_stand_identify.skc					//Uses Rifle Animation
+mp44_stand_flinch				weapon_rifle/flinch.skc 
+
+mp44_walk_curious_back		walks_runs/curiousw_backwards.skc					autosteps_walk
+mp44_walk_curious_forward		weapon_mp44/walks_runs/mp44_walk_curious_forward.skc	autosteps_walk
+mp44_walk_curious_left			walks_runs/curiousw_left90.skc						autosteps_walk
+mp44_walk_curious_right			walks_runs/curiousw_right90.skc						autosteps_walk
+
+
+//----------------
+// Alert
+//----------------
+
+mp44_walk_alert_forward			weapon_rifle/walks_runs/rifle_walk_alert_forward.skc		autosteps_walk
+mp44_walk_alert_back		weapon_rifle/walks_runs/rifle_walk_alert_back.skc		autosteps_walk
+mp44_walk_alert_left			weapon_rifle/walks_runs/rifle_walk_alert_left.skc		autosteps_walk
+mp44_walk_alert_right			weapon_rifle/walks_runs/rifle_walk_alert_right.skc		autosteps_walk
+
+mp44_stand_alert01			weapon_rifle/alert/rifle_stand_alert_a(action).skc	random		//Uses Rifle Animation
+mp44_stand_alert02			weapon_rifle/alert/rifle_stand_alert_b(action).skc	random		//Uses Rifle Animation
+mp44_stand_alert_legs			alert/alert_legs_leftforward.skc							//Uses Rifle Animation
+
+mp44_stand_dodge_left			weapon_rifle/alert/rifle_stand_dodge_left.skc	autosteps_walk	//Uses Rifle Animation
+mp44_stand_dodge_right			weapon_rifle/alert/rifle_stand_dodge_right.skc	autosteps_walk	//Uses Rifle Animation
+
+mp44_standtocrouch_dive			alert/standtocrouch_dive.skc	autosteps_run
+mp44_standtocrouch_run			alert/standtocrouch_run.skc		autosteps_run
+
+
+//----------------
+//Walks and Runs//
+//----------------
+
+mp44_injurerun_forward			weapon_rifle/walks_runs/rifle_run_injured.skc			autosteps_run
+mp44_injurerun_right			weapon_rifle/walks_runs/rifle_run_injured.skc			autosteps_run	
+mp44_injurerun_left			weapon_rifle/walks_runs/rifle_run_injured.skc			autosteps_run	
+mp44_injurerun_back			weapon_rifle/walks_runs/rifle_run_injured.skc			autosteps_run		
+
+mp44_run_forward				weapon_rifle/walks_runs/rifle_jog.skc				autosteps_run	
+mp44_run_left				weapon_rifle/walks_runs/rifle_jog_left.skc			autosteps_run
+mp44_run_right				weapon_rifle/walks_runs/rifle_jog_right.skc			autosteps_run
+mp44_run_back				weapon_rifle/walks_runs/rifle_jog_back.skc			autosteps_run
+
+mp44_walk_patrol_forward		weapon_rifle/walks_runs/rifle_walk_patrol_forward.skc		autosteps_walk
+mp44_walk_patrol_back		weapon_rifle/walks_runs/rifle_walk_patrol_forward.skc		autosteps_walk	
+mp44_walk_patrol_right			weapon_rifle/walks_runs/rifle_walk_patrol_forward.skc		autosteps_walk	
+mp44_walk_patrol_left			weapon_rifle/walks_runs/rifle_walk_patrol_forward.skc		autosteps_walk		
+
+mp44_crouchrun_forward				weapon_rifle/walks_runs/rifle_crouchrun.skc				autosteps_run
+mp44_crouchrun_back				weapon_rifle/walks_runs/rifle_crouchrun.skc				autosteps_run
+mp44_crouchrun_right				weapon_rifle/walks_runs/rifle_crouchrun_right.skc				autosteps_run
+mp44_crouchrun_left				weapon_rifle/walks_runs/rifle_crouchrun_left.skc				autosteps_run
+
+$path models/human/animation
+
+mp44_walk_forward					walks_runs/rifle_walk_forward.skc		autosteps_walk		
+mp44_walk_back					walks_runs/rifle_walk_back.skc		autosteps_walk
+mp44_walk_left					walks_runs/rifle_walk_left.skc		autosteps_walk
+mp44_walk_right					walks_runs/rifle_walk_right.skc		autosteps_walk
+
+//----------------
+//HIT ANIMATIONS//
+//----------------
+
+//Stand//
+
+mp44_stand_hit_head			weapon_mp44/minor_pain/mp44_stand_hit_head.skc						autosteps_walk
+mp44_stand_hit_leg			weapon_mp44/minor_pain/mp44_stand_hit_leg.skc						autosteps_walk
+mp44_stand_hit_back			weapon_mp44/minor_pain/mp44_stand_hit_lowerback.skc					autosteps_walk
+mp44_stand_hit_lowertorso		weapon_mp44/minor_pain/mp44_stand_hit_lowertorso.skc			autosteps_walk
+mp44_stand_hit_rarm			weapon_mp44/minor_pain/mp44_stand_hit_rarm.skc						autosteps_walk
+mp44_stand_hit_Larm			weapon_mp44/minor_pain/mp44_stand_hit_head.skc						autosteps_walk
+mp44_stand_hit_uppertorso01		weapon_mp44/minor_pain/mp44_stand_hit_torso.skc			random	autosteps_walk
+mp44_stand_hit_uppertorso02		weapon_mp44/minor_pain/mp44_stand_hit_head.skc			random	autosteps_walk
+			
+//Crouch//
+
+mp44_stand_hit_head01			weapon_mp44/minor_pain/mp44_crouch_hit_front.skc		random		autosteps_walk
+mp44_stand_hit_head02			weapon_mp44/minor_pain/mp44_crouch_hit_torso.skc		random		autosteps_walk
+mp44_stand_hit_head03			weapon_mp44/minor_pain/mp44_crouch_hit_torso_flyback.skc	random	autosteps_walk
+mp44_stand_hit_uppertorso01		weapon_mp44/minor_pain/mp44_crouch_hit_front.skc		random		autosteps_walk
+mp44_stand_hit_uppertorso02		weapon_mp44/minor_pain/mp44_crouch_hit_torso_flyback.skc	random	autosteps_walk
+mp44_stand_hit_lowertorso01		weapon_mp44/minor_pain/mp44_crouch_hit_torso_flyback.skc	random	autosteps_walk
+mp44_stand_hit_lowertorso02		weapon_mp44/minor_pain/mp44_crouch_hit_front.skc		random		autosteps_walk
+mp44_stand_hit_larm			weapon_mp44/minor_pain/mp44_crouch_hit_front.skc						autosteps_walk
+mp44_stand_hit_rarm			weapon_mp44/minor_pain/mp44_crouch_hit_rarm.skc							autosteps_walk
+mp44_stand_hit_leg			weapon_mp44/minor_pain/mp44_crouch_hit_torso_flyback.skc				autosteps_walk
+
+//Prone//
+
+mp44_prone_hit_head			weapon_mp40/minor_pain/mp40_prone_hit_head.skc
+mp44_prone_hit_uppertorso		weapon_mp40/minor_pain/mp40_prone_hit_head.skc
+mp44_prone_hit_lowertorso		weapon_mp40/minor_pain/mp40_prone_hit_head.skc
+mp44_prone_hit_leg			weapon_mp40/minor_pain/mp40_prone_hit_leg.skc
+mp44_prone_hit_Larm			weapon_mp40/minor_pain/mp40_prone_hit_head.skc
+mp44_prone_hit_Rarm			weapon_mp40/minor_pain/mp40_prone_hit_head.skc
+
+//Floor//
+
+mp44_floor_hit				weapon_rifle/minor_pain/rifle_floor_hit_torso.skc
+
+
+//-----------------
+//PAIN ANIMATIONS//
+//-----------------
+
+mp44_pain_crawl				weapon_mp44/major_pain/mp44_pain_crawl.skc
+mp44_pain_kneestocrawl			weapon_mp44/major_pain/mp44_pain_kneestocrawl.skc
+mp44_pain_crawltodeath			weapon_mp40/major_pain/mp40_pain_crawldeath.skc
+mp44_pain_crawltofloor			weapon_mp44/major_pain/mp44_pain_crawltofloor.skc
+mp44_pain_floorcrawl			weapon_mp40/major_pain/mp40_pain_floorcrawl.skc
+mp44_pain_flooridle			weapon_mp40/major_pain/mp40_pain_flooridle.skc
+mp44_pain_floortodeath			weapon_mp44/major_pain/mp44_pain_floortodeath.skc
+{
+	client
+	{
+		4 bodyfall
+		6 bodyfall
+	}
+}
+mp44_pain_floortoknees			weapon_mp44/major_pain/mp44_pain_floortoknees.skc
+mp44_pain_kneesidle			weapon_mp44/major_pain/mp44_pain_kneesidle.skc
+mp44_pain_kneestodeath			weapon_mp44/major_pain/mp44_pain_kneestodeath.skc
+mp44_pain_kneestofloor			weapon_mp44/major_pain/mp44_pain_kneestofloor.skc
+mp44_pain_kneestostand			weapon_mp44/major_pain/mp44_pain_kneestostand.skc
+mp44_pain_kneestocrouch			weapon_mp40/major_pain/mp40_pain_kneestoknees.skc
+mp44_pain_standleft			weapon_mp44/major_pain/mp44_pain_standleft.skc
+mp44_pain_standright			weapon_mp44/major_pain/mp44_pain_standright.skc
+mp44_pain_standstraight			weapon_mp44/major_pain/mp44_pain_standstraight.skc
+mp44_pain_standtoknees			weapon_mp44/major_pain/mp44_pain_standtoknees.skc
+
+//-------
+//Crouch (Alert)
+//-------
+
+mp44_crouch_alert					weapon_rifle/crouch/rifle_crouch.skc
+
+//-------
+//Prone (Alert)
+//-------
+
+mp44_prone_pullout			weapon_rifle/prone/rifle_prone_pullout.skc					//Uses Rifle Animation
+mp44_prone_putaway			weapon_rifle/prone/rifle_prone_putaway.skc					//Uses Rifle Animation
+mp44_prone_reload			weapon_rifle/prone/rifle_prone_pullout.skc					//Uses TEMP Rifle Animation
+mp44_prone_roll_left			weapon_rifle/prone/rifle_prone_roll_left.skc					//Uses Rifle Animation
+mp44_prone_roll_right			weapon_rifle/prone/rifle_prone_roll_right.skc					//Uses Rifle Animation
+mp44_prone_shoot				weapon_mp44/prone/mp44_prone_shoot.skc
+{
+	server
+	{
+		1 fire
+		5 fire
+		9 fire 
+		13 fire
+		17 fire
+	}
+}
+mp44_prone_shoot_up			weapon_mp44/prone/mp44_prone_shoot_up.skc
+{
+	server
+	{
+		1 fire
+		5 fire
+		9 fire 
+		13 fire
+		17 fire
+	}
+}
+mp44_prone_shoot_down			weapon_mp44/prone/mp44_prone_shoot.skc
+{
+	server
+	{
+		1 fire
+		5 fire
+		9 fire 
+		13 fire
+		17 fire
+	}
+}
+mp44_prone_aim				weapon_rifle/prone/rifle_prone_idle.skc
+mp44_prone_aim_up			weapon_rifle/prone/rifle_prone_aim_up.skc
+mp44_prone_aim_down			weapon_rifle/prone/rifle_prone_idle.skc
+mp44_prone_turn_left			weapon_rifle/prone/rifle_prone_turn_left.skc					//Uses Rifle Animation
+mp44_prone_turn_right			weapon_rifle/prone/rifle_prone_turn_right.skc					//Uses Rifle Animation	
+mp44_prone_walk_forward			weapon_rifle/prone/rifle_prone_walk.skc						//Uses Rifle Animation
+mp44_prone_walk_back			weapon_rifle/prone/rifle_prone_walk_back.skc					//Uses Rifle Animation
+mp44_prone_walk_left			weapon_rifle/prone/rifle_prone_walk_left.skc					//Uses Rifle Animation
+mp44_prone_walk_right			weapon_rifle/prone/rifle_prone_walk_right.skc					//Uses Rifle Animation
+mp44_pronetocrouch			weapon_rifle/prone/rifle_prone_crouch.skc						//Uses Rifle Animation
+mp44_crouchtoprone			weapon_rifle/crouch/rifle_crouch_prone.skc					//Uses Rifle Animation
+mp44_prone_legs				weapon_rifle/prone/rifle_prone_legs.skc
+
+
+//-------
+//Idle/Bored
+//-------
+
+mp44_stand_bored_a01			idle/rifle_idle_normal01(loop).skc			weight 2			//Uses Rifle Animation
+mp44_stand_bored_a02			idle/rifle_idle_normal02(weight_shift).skc	weight 1 dontrepeate	//Uses Rifle Animation
+mp44_stand_bored_a_intro		idle/rifle_idle_normal01(loop).skc							//Uses Rifle Animation
+mp44_stand_bored_a_outtro		idle/rifle_idle_normal01(loop).skc							//Uses Rifle Animation
+
+mp44_stand_bored_b01			idle/rifle_idle_oshoulder01(loop).skc		weight 2			//Uses Rifle Animation
+mp44_stand_bored_b02			idle/rifle_idle_oshoulder02(weight_shift).skc	weight 1 dontrepeate	//Uses Rifle Animation
+mp44_stand_bored_b_intro		idle/rifle_idle_oshoulder_intro.skc							//Uses Rifle Animation
+mp44_stand_bored_b_outtro		idle/rifle_idle_oshoulder_outtro.skc						//Uses Rifle Animation
+
+mp44_stand_nervous_a01			weapon_rifle/idles/idle_nervous.skc			weight 2
+mp44_stand_nervous_a02			weapon_rifle/idles/idle_nervous02.skc		weight 1 dontrepeate
+mp44_stand_nervous_b			weapon_rifle/idles/idle_nervous03.skc		
+mp44_stand_nervous_c			weapon_rifle/idles/idle_nervous.skc
+		
+
+
+//--------
+// Fancy extra behaviors
+//--------
+
+mp44_diveongrenade			misc/takecover_slide_rifle.skc
+{
+	client
+	{
+		13 bodyfall
+	}
+}
+
+mp44_butt					weapon_rifle/misc/rifle_butt.skc
+
+
+//--------
+// Corner/Wall/Fixed Height Obstacle
+//--------
+
+mp44_wall_left_shoot			weapon_mp44/cornering/mp44_wall_left_shoot.skc
+{
+	server
+	{
+		entry	weaponcommand mainhand attachtohand mainhand
+		2 fire
+		4 fire
+		6 fire
+		8 fire
+		10 fire
+	}
+}
+mp44_wall_left_shoot_intro		weapon_mp44/cornering/mp44_wall_left_shoot_intro.skc
+{
+	server
+	{
+		entry	weaponcommand mainhand attachtohand mainhand
+	}
+}
+mp44_wall_left_shoot_outro		weapon_mp44/cornering/mp44_wall_left_shoot_outro.skc
+{
+	server
+	{
+		entry	weaponcommand mainhand attachtohand mainhand
+	}
+}
+
+mp44_wall_right_shoot			weapon_mp44/cornering/mp44_wall_right_shoot.skc
+{
+	server
+	{
+		entry	weaponcommand mainhand attachtohand offhand
+		2 fire
+		3 fire
+		5 fire
+		7 fire
+		9 fire
+	}
+}
+mp44_wall_right_shoot_intro		weapon_mp44/cornering/mp44_wall_right_shoot_intro.skc
+{
+	server
+	{
+		entry	weaponcommand mainhand attachtohand offhand
+	}
+}
+mp44_wall_right_shoot_outro		weapon_mp44/cornering/mp44_wall_right_shoot_outro.skc
+{
+	server
+	{
+		entry	weaponcommand mainhand attachtohand offhand
+	}
+}
+
+
+mp44_wall_bored				weapon_rifle/cornering/rifle_wall_bored.skc	
+{
+	server
+	{
+		// Make sure the gun is in the right hand
+		entry	weaponcommand mainhand attachtohand mainhand
+	}
+}
+
+mp44_wall_boredtoalert_left		weapon_rifle/cornering/rifle_wall_boredtoalert_left.skc
+mp44_wall_boredtoalert_right		weapon_rifle/cornering/rifle_wall_boredtoalert_right.skc
+{
+	server
+	{
+		// Change weapon to left hand - there is some swapping involved as he moves it around
+		7	weaponcommand mainhand attachtohand offhand
+		11	weaponcommand mainhand attachtohand mainhand
+		exit	weaponcommand mainhand attachtohand offhand
+	}
+}
+mp44_wall_alerttobored_left		weapon_rifle/cornering/rifle_wall_alerttobored_left.skc
+mp44_wall_alerttobored_right		weapon_rifle/cornering/rifle_wall_alerttobored_right.skc
+{
+	server
+	{
+		// Attach weapon to right hand again.
+		entry	weaponcommand mainhand attachtohand mainhand
+		10	weaponcommand mainhand attachtohand offhand
+		last	weaponcommand mainhand attachtohand mainhand
+	}
+}
+mp44_wall_death_left			weapon_rifle/cornering/rifle_wall_death_left.skc
+{
+	client
+	{
+		27 bodyfall
+	}
+}
+mp44_wall_death_right			weapon_rifle/cornering/rifle_wall_death_right.skc
+{
+	client
+	{
+		13 bodyfall
+		28 bodyfall
+	}
+}
+mp44_wall_peek_left			weapon_rifle/cornering/rifle_wall_peek_left.skc
+mp44_wall_peek_right			weapon_rifle/cornering/rifle_wall_peek_right.skc
+mp44_wall_alert_left			weapon_rifle/cornering/rifle_wall_alert_left.skc
+mp44_wall_alert_right			weapon_rifle/cornering/rifle_wall_alert_right.skc
+mp44_wall_shoot_left01			weapon_mp44/cornering/mp44_wall_shoot_left.skc			weight 1
+{
+	server
+	{
+		13 fire
+		15 fire
+		17 fire
+		19 fire
+		22 fire
+	}
+}
+mp44_wall_shoot_left02			weapon_mp44/cornering/mp44_wall_shoot_left.skc			weight 1
+{
+	server
+	{
+		13 fire
+		15 fire
+		17 fire
+		19 fire		
+	}
+}
+mp44_wall_shoot_right01			weapon_mp44/cornering/mp44_wall_shoot_right.skc			weight 1
+{
+	server
+	{
+		// Make sure the gun is in the correct hand
+		entry	weaponcommand mainhand attachtohand offhand
+		13 fire
+		15 fire
+		17 fire
+		19 fire
+		22 fire
+	}
+}
+mp44_wall_shoot_right02			weapon_mp44/cornering/mp44_wall_shoot_right.skc			weight 1
+{
+	server
+	{
+		// Make sure the gun is in the correct hand
+		entry	weaponcommand mainhand attachtohand offhand
+		13 fire
+		15 fire
+		17 fire
+		19 fire
+	}
+}
+mp44_wall_blindfire_left_intro		weapon_mp40/cornering/mp40_wall_blindfire_left_intro.skc
+{
+	server
+	{
+		// Make sure the gun is in the correct hand
+		entry	weaponcommand mainhand attachtohand mainhand
+	}
+}
+mp44_wall_blindfire_left			weapon_mp40/cornering/mp40_wall_blindfire_left.skc
+{
+	server
+	{
+		// Make sure the gun is in the correct hand
+		entry	weaponcommand mainhand attachtohand mainhand
+		1 fire
+		3 fire
+		5 fire
+		7 fire
+	}
+}
+mp44_wall_blindfire_left_outtro		weapon_mp40/cornering/mp40_wall_blindfire_left_outtro.skc
+{
+	server
+	{
+		// Make sure the gun is in the correct hand
+		entry	weaponcommand mainhand attachtohand mainhand
+		1 fire
+		3 fire
+	}
+}
+
+mp44_wall_blindfire_right_intro		weapon_mp40/cornering/mp40_wall_blindfire_right_intro.skc
+{
+	server
+	{
+		// Make sure the gun is in the correct hand
+		entry	weaponcommand mainhand attachtohand offhand
+	}
+}
+mp44_wall_blindfire_right			weapon_mp40/cornering/mp40_wall_blindfire_right.skc
+{
+	server
+	{
+		// Make sure the gun is in the correct hand
+		entry	weaponcommand mainhand attachtohand offhand
+		1 fire
+		3 fire
+		5 fire
+	}
+}
+mp44_wall_blindfire_right_outtro		weapon_mp40/cornering/mp40_wall_blindfire_right_outtro.skc
+{
+	server
+	{
+		// Make sure the gun is in the correct hand
+		entry	weaponcommand mainhand attachtohand offhand
+		1 fire
+		3 fire
+	}
+}
+mp44_wall_pain_left			weapon_mp40/cornering/mp40_wall_pain_left.skc
+mp44_wall_pain_right			weapon_rifle/cornering/rifle_wall_peek_pain_right.skc
+mp44_wall_shoot_pain_left		weapon_rifle/cornering/rifle_wall_shoot_pain_left.skc
+mp44_wall_shoot_pain_right		weapon_rifle/cornering/rifle_wall_shoot_pain_right.skc
+
+mp44_wall_grenade_left				cornering/corner_throwgrenade_left.skc
+mp44_wall_grenade_right			cornering/corner_throwgrenade_right.skc
+mp44_crate_grenade					cornering/corner_throwgrenade_right.skc
+
+mp44_crate_blindfire_intro			weapon_mp40/cornering/mp40_crate_blindfire_intro.skc
+{
+	server
+	{
+		10 fire
+		12 fire
+		14 fire
+	}
+}
+mp44_crate_blindfire			weapon_mp40/cornering/mp40_crate_blindfire.skc
+{
+	server
+	{
+		1 fire
+		3 fire
+		5 fire
+		7 fire
+		9 fire
+		11 fire
+		13 fire
+	}
+}
+mp44_crate_blindfire_outtro			weapon_mp40/cornering/mp40_crate_blindfire_outtro.skc
+
+mp44_crate_crouchtostand		weapon_rifle/cornering/rifle_crate_crouchtostand.skc
+mp44_crate_standtocrouch		weapon_rifle/cornering/rifle_crate_standtocrouch.skc
+mp44_crate_shoot01			weapon_bar/cornering/bar_crate_shoot.skc			weight 1
+{
+	server
+	{
+		0 fire
+		2 fire
+		4 fire
+		6 fire
+		8 fire
+		10 fire
+	}
+}
+mp44_crate_shoot02				weapon_bar/cornering/bar_crate_shoot.skc			weight 1
+{
+	server
+	{
+		0 fire
+		2 fire
+		4 fire
+		6 fire
+		8 fire
+	}
+}
+mp44_crate_aim					weapon_rifle/cornering/rifle_crate_aim.skc
+mp44_crate_pain					weapon_rifle/cornering/rifle_crate_pain.skc
+mp44_crate_alert					weapon_rifle/cornering/rifle_crate_alert.skc
+grenade_crate_throw				weapon_grenade/grenade_crate_throw.skc
+
+}

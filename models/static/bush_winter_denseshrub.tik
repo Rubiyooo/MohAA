@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	scale 1
+	path models/static/natural
+	skelmodel bush_winter_denseshrub.skd
+	surface wshrub shader static_wshrub
+}
+
+animations
+{
+	idle     bush_winter_denseshrub.skc
+}
+
+/*QUAKED static_natural_bush_winter-denseshrub (0.5 0.0 0.5) (-56 -56 0) (56 56 160)
+*/

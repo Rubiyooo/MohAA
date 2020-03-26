@@ -1,0 +1,102 @@
+TIKI
+setup
+{
+	scale 0.52					// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+
+	path models/human/german_elite_gestapo
+	skelmodel gestapo.skd
+
+	surface pants shader Officer2_pants
+	surface coat shader gestapocoat
+	surface coatcull shader cull_gestapocoat
+
+	$include models/human/heads/german_young_heads.tik
+
+	path models/human/hands
+	skelmodel hand.skd
+	surface hand shader L_gloves
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+	path models/equipment/germangear
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** p-38 pistol
+	case weapon "walter p38"
+	{
+		skelmodel german_holster.skd
+		surface german_holster shader german_holster
+	}
+
+	//*** regular KAR 98
+	case weapon "mauser kar 98k"
+	{
+		skelmodel k98clips.skd
+		surface k98clips shader german_riflebelt
+	}
+	
+	//*** KAR 98 sniper
+	case weapon "mauser kar 98d sniper"
+	{
+		skelmodel k98clips.skd
+		surface k98clips shader german_riflebelt
+	}
+	
+	//*** mp44 / stg44 machinegun
+	case weapon "mp44"
+	{
+		skelmodel mp40clips.skd
+		surface mp40clips shader ammo_pouch_tan
+	}
+//*** end weapon equipment assignment
+//************************************
+
+
+	path models/gear/g_headgear
+	skelmodel officercap.skd
+	surface officercap shader officer2_hat
+
+	
+
+	scale 0.52				// Set default scale to 16/30.5 since world is
+						// in 16 units per foot and model is in cm's
+	path models/human/protoanimations	// Set path to set animations from
+
+	radius 20				// Defines size of shadow
+}
+
+init
+{
+	server
+	{
+      	classname Actor
+		setsize "-16 -16 0" "16 16 92"
+		german
+		health 100
+		weapon "walter p38"
+
+		// Make him mumble but not breathe steam
+		exec global/breathe.scr 0 1
+
+		// Set up the helmet for popping off
+		// <surface to turn off> <model to spawn> <speed to throw it at> <damage multiplier for helmet shots>
+		sethelmet "models/gear/german_ssofficercap.tik" 200 4 "officercap" 
+	}
+}
+
+//
+// include the base animations definition
+//
+
+$include models/human/new_generic_human.tik
+$include models/human/animation/dialogue/generic_dialogue_german.tik
+//$include models/human/animation/helmet_flyoff/helmet_flyoff_german_ssofficer.tik
+
+/*QUAKED ai_german_elite_gestapo (1.0 0.5 0.0) (-16 -16 0) (16 16 92)
+*/

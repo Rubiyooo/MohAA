@@ -1,0 +1,88 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+ 
+init
+{
+	server  
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+		angles "270 0 0"
+	}
+	client
+	{
+		cache dustdrop.spr
+		cache vsssource.spr
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+			// first bit of lingering smoke
+			enter originspawn
+			(
+				//model mortar_dirthit.spr
+				model dustdrop.spr
+				count 10
+				life 10
+				scale 0.15
+				//velocity -100
+				scalerate 1.25
+				randvel 0 0 range -10 -150
+				//accel 0 0 -320
+				//offset 0 0 48
+				friction 0.2
+				fadedelay .8
+				fade
+				alpha 1
+				color 0.7 0.7 0.7
+				offsetalongaxis crandom 4 crandom 4 crandom 4
+				physicsrate every
+			)
+/*
+			enter originspawn
+			(
+				model vsssource.spr
+				count 12
+				friction 0.6
+				color .7 .7 .7
+				alpha 0.7
+				fadein 1.5
+				fadedelay 1.5
+				scale 0.15
+				circle
+				radius 3
+				radialvelocity 0 1 2
+				alpha 0.2
+				offsetalongaxis crandom 1 crandom 1 crandom 1
+				//scalemin 2
+				//scalemax 3
+				//scalerate .25
+				life 2 1
+				collision
+			)
+*/			
+		}
+	}
+}
+
+/*QUAKED animate_fx_dust-fallingfromceiling (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Benson Russell - 9-27-2001 - Dust falling from the ceiling
+*/

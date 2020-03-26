@@ -1,0 +1,7 @@
+	grenade_curious				curious_grenade.skc
+	grenade_curious_peer_down		curious_grenade_peer_down.skc
+	grenade_curious_peer_left		curious_grenade_peer_left.skc
+	grenade_curious_peer_right		curious_grenade_peer_right.skc
+	grenade_curious_peer_up			curious_grenade_peer_up.skc
+	grenade_curious_startled_left		curious_grenade_startled_left.skc
+	grenade_curious_startled_right		curious_grenade_startled_right.skc

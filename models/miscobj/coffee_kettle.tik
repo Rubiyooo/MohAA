@@ -1,0 +1,51 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/coffee_kettle
+	skelmodel coffee_kettle.skd
+	surface all shader kettle
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+
+	client
+	{
+		tagemitter tag_barrel firesmoke
+		(
+			spawnrate 4.00
+			model vsssource.spr
+			alpha 0.50
+			color 1.00 1.00 1.00
+			scale 0.02
+			life 2.00
+			scalerate 2.00
+			velocity 0.10
+			randvel range 0.2 -0.5 range 0.2 -0.5 range 0.2 -0.5
+			accel 1.00 1.00 5.00
+			scalemin 0.02
+			scalemax 0.05
+			fade
+		)
+	}
+}
+
+animations
+{
+	idle     coffee_kettle.skc
+	{
+		client
+		{
+			enter emitteron firesmoke
+		}
+	}
+
+}
+
+/*QUAKED interactobject_coffee_kettle (0.0 0.75 0.5) (-24 -8 0) (24 16 88)
+*/

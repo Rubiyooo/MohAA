@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/radio
+	skelmodel german_radio.skd
+	surface german_radio1 shader radio_military
+	surface german_radio2 shader radio_military
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     german_radio.skc
+}
+
+/*QUAKED static_equipment_radio-military (0.0 0.75 0.5) (-16 -16 0) (8 16 24)
+*/

@@ -1,0 +1,59 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+init
+{	
+	client
+	{
+		cache models/fx/bp_debris3g.tik
+		cache models/fx/bp_debris2g.tik
+	}
+}
+ 
+animations
+{
+	aaaa dummy2.skc // hack to allow the idle anim's entry commands to run
+	idle dummy2.skc
+	{
+		client
+		{
+			enter originspawn
+			(
+				model models/fx/bp_debris3g.tik
+				count 4
+				color 1.00 1.00 1.00
+				scale 0.50
+				life 1.00
+				velocity 550.00
+				accel 0.00 0.00 -375.00
+				friction 0.40
+				scalemin 0.30
+				scalemax 0.70
+				fade
+				sphere
+				randomroll
+			)
+
+			enter originspawn
+			(
+				model models/fx/bp_debris2g.tik
+				count 3
+				color 1.00 1.00 1.00
+				collision
+				bouncefactor 0.30
+				scale 0.70
+				life 1.50
+				velocity 700.00
+				accel 0.00 0.00 -400.00
+				angles crandom 50 crandom 30 crandom 40
+				avelocity crandom -120 crandom -40 range 120 -220
+				fade
+				sphere
+			)
+		}
+	}
+}

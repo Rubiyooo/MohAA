@@ -1,0 +1,223 @@
+animations
+{
+$path models/human/animation
+
+$mapspec m3l1a test/move_test_rifle test/move_test gallery
+{
+	// M3L1
+	//------
+
+	// Special deaths	
+	death_mortar01				scripted/higgins/higgens_flip.skc		random
+	death_mortar02				scripted/higgins/higgens_medium.skc		random
+	death_mortar03				scripted/higgins/higgens_twist.skc		random
+
+
+	// Running in the water doesn't happen any more - we alias the runs to walk animations.
+//	run_rifle_water			walks_runs/waterRUN001a.skc
+	run_rifle_water1			walks_runs/waterWALK001a.skc			random
+	run_rifle_water2			walks_runs/waterWALK001b.skc			random
+	run_rifle_water3			walks_runs/waterWALK001d.skc			random
+
+	walk_rifle_water1			walks_runs/waterWALK001a.skc			random
+	walk_rifle_water2			walks_runs/waterWALK001b.skc			random
+	walk_rifle_water3			walks_runs/waterWALK001d.skc			random
+	
+	thompson_waterwalk1		walks_runs/thompson_waterwalk1.skc
+	thompson_waterwalk2		walks_runs/thompson_waterwalk2.skc
+
+	thompson_beachrun1		walks_runs/thompson_beachrun1.skc
+	thompson_beachrun2		walks_runs/thompson_beachrun2.skc
+
+	
+	// These run_gundown_beach animations will also be chosen between
+	// randomly.  Could use weights instead of the word "random" also.
+	run_rifle_gundown_beach1	walks_runs/beachrun05.skc			random
+	run_rifle_gundown_beach2	walks_runs/beachrun02.skc			random
+	run_rifle_gundown_beach3	walks_runs/beachrun03.skc			random
+	//run_rifle_gundown_beach4	walks_runs/beachrun04.skc			random
+	run_rifle_gundown1		walks_runs/run_rifle_gundown.skc		random
+	run_rifle_gundown2		walks_runs/rifledown_jog01.skc		random
+//		As with all the animations here, this is temporary.  We need a nervous rifle walk.
+//		walk_rifle_gundown2		walks_runs/rifledown_walk02.skc	// 	(Ugly)
+//		walk_rifle_gundown4		walks_runs/rifledown_walk04.skc	// (Running)	
+	walk_rifle_gundown		walks_runs/rifle_walk_forward.skc
+
+
+	crouch_beach_idle01		idle/beach_idle03.skc				random
+	crouch_beach_idle02		idle/beach_idle04.skc				random
+	crouch_beach_idle03		idle/beach_idle05.skc				random
+	crouch_beach_idle04		idle/beach_idle06.skc				random
+	crouch_beach_idle05		idle/beach_idle07.skc				random
+	stand_water_idle01		idle/standidle01.skc				random
+	stand_water_idle02		idle/standidle02.skc				random
+	stand_water_idle03		idle/standidle03.skc				random
+	stand_beach_idle01		idle/standidle01.skc				random
+	stand_beach_idle02		idle/standidle02.skc				random
+	stand_beach_idle03		idle/standidle03.skc				random
+	stand_beach_idle04		idle/standidle04.skc				random
+	stand_beach_idle05		idle/standidle05.skc				random
+
+	shingle_idle01			idle/shingle_idle_01.skc			random
+	shingle_idle02			idle/shingle_idle_02.skc			random
+	shingle_idle03			idle/shingle_idle_03.skc			random
+	shingle_idle04			idle/shingle_idle_04.skc			random
+	shingle_idle05			idle/shingle_idle_05.skc			random
+	shingle_idle06			idle/shingle_idle_06.skc			random
+
+	shingle_coveridle_bang			idle/shingle_coveridle_bang.skc
+	shingle_coveridle_capt			idle/shingle_coveridle_capt.skc
+	shingle_stand_capt			idle/shingle_stand_capt.skc
+
+	shingle_idle_lookat			idle/shingle_idle_lookat.skc
+	shingle_idle_bang			idle/shingle_idle_bang.skc			
+
+	prone_beach_idle01		idle/beach_idle01.skc				random
+	prone_beach_idle02		idle/beach_idle02.skc				random
+
+
+	trench_idle_up			idle/trench_idle_up.skc		
+	trench_idle_down	idle/trench_idle_down.skc	
+
+	m3l1_pain				scripted/level_m3l1/m3l1_pain.skc
+	//hedgebomb//
+	explosives			scripted/level_m3l1/explosives.skc
+	{
+		server
+		{
+			0 surface hedgebomb +nodraw
+			8 surface hedgebomb -nodraw
+			18 surface hedgebomb +nodraw
+			100 surface hedgebomb -nodraw
+			108 surface hedgebomb +nodraw
+		}
+	}
+	medic01				scripted/level_m3l1/medic01.skc
+	medic02				scripted/level_m3l1/medic02.skc
+	patient01				scripted/level_m3l1/patient01.skc
+
+	walk_being_carried_forward	scripted/level_m3l1/carrywalkbeingcarried.skc
+	walk_carrying_forward		scripted/level_m3l1/carrywalkcarrying.skc
+	walk_being_carried_left		scripted/level_m3l1/carrywalkleftbeingcarried.skc
+	walk_carrying_left		scripted/level_m3l1/carrywalkleftcarrying.skc
+	walk_being_carried_right	scripted/level_m3l1/carrywalkrightbeingcarried.skc
+	walk_carrying_right		scripted/level_m3l1/carrywalkrightcarrying.skc
+	walk_being_carried_end		scripted/level_m3l1/carrywalkendbeingcarried.skc
+	walk_carrying_end			scripted/level_m3l1/carrywalkendcarrying.skc
+	walk_being_carried_start	scripted/level_m3l1/carrywalkstartbeingcarried.skc
+	walk_carrying_start		scripted/level_m3l1/carrywalkstartcarrying.skc
+
+	drag_beingdragged			scripted/level_m3l1/drag_beingdragged.skc
+	drag_beingdragged_left		scripted/level_m3l1/drag_beingdragged_left.skc
+	drag_beingdragged_right		scripted/level_m3l1/drag_beingdragged_right.skc
+	drag_beingdragged_start		scripted/level_m3l1/drag_beingdragged_start.skc
+	drag_dragging			scripted/level_m3l1/drag_dragging.skc
+	drag_dragging_left		scripted/level_m3l1/drag_dragging_left.skc
+	drag_dragging_right		scripted/level_m3l1/drag_dragging_right.skc
+	drag_dragging_start		scripted/level_m3l1/drag_dragging_start.skc
+
+	hedge_dodge01			scripted/level_m3l1/hedge_dodge01.skc
+	hedge_dodge02			scripted/level_m3l1/hedge_dodge02.skc
+	hedge_dodge03			scripted/level_m3l1/hedge_dodge03.skc
+	hedge_look01			scripted/level_m3l1/hedge_look01.skc
+	hedge_look02			scripted/level_m3l1/hedge_look02.skc
+	hedge_shake01			scripted/level_m3l1/hedge_shake01.skc
+	hedge_shake02			scripted/level_m3l1/hedge_shake02.skc
+	hedge_shake03			scripted/level_m3l1/hedge_shake03.skc
+
+	bunker_peek_slow			Scripted/level_m3l1/peek01.skc
+	bunker_peek_fast			Scripted/level_m3l1/peek02.skc
+
+	bangalore_rollover		Scripted/level_m3l1/bang_rollover.skc
+
+	radioman				scripted/level_m3l1/radioman.skc
+	rifle_looking			scripted/level_m3l1/rifle_looking.skc
+
+	mg42_aim				scripted/level_m3l1/mg42_aim_down30.skc
+
+
+	//higgins boat//
+
+	higgins_ride1			scripted/higgins/higginstest.skc
+	higgins_ride_crouch01		scripted/higgins/higginsDOWN01.skc
+	higgins_ride_crouch02		scripted/higgins/higginsDOWN02.skc
+	higgins_ride_crouch03		scripted/higgins/higginsDOWN03.skc
+	higgins_ride_crouch04		scripted/higgins/higginsDOWN04.skc
+	higgins_ride_crouch05		scripted/higgins/higginsDOWN06.skc
+	higgins_ride_crouch06		scripted/higgins/higginsDOWN06.skc
+	higgins_ride_stand01		scripted/higgins/higginssway01.skc
+	higgins_ride_stand02		scripted/higgins/higginssway02.skc
+	higgins_ride_stand03		scripted/higgins/higginssway03.skc
+	higgins_ride_stand04		scripted/higgins/higginssway04.skc
+	higgins_ride_stand05		scripted/higgins/higginssway06.skc
+	higgins_ride_stand06		scripted/higgins/higginssway06.skc
+	higgins_ride_look01		scripted/higgins/higginslook01.skc
+	higgins_ride_look02		scripted/higgins/higginslook02.skc
+	higgins_ride_look03		scripted/higgins/higginslook03.skc
+	higgins_ride_look04		scripted/higgins/higginslook04.skc
+	higgins_ride_look05		scripted/higgins/higginslook06.skc
+	higgins_ride_look06		scripted/higgins/higginslook06.skc
+	higgins_ride_puke02		scripted/higgins/higginspuke02.skc
+	higgins_ride_flinch01		scripted/higgins/higginsflinch01.skc
+	higgins_ride_flinch02		scripted/higgins/higginsflinch02.skc
+	higgins_ride_flinch03		scripted/higgins/higginsflinch03.skc
+	higgins_ride_flinch04		scripted/higgins/higginsflinch04.skc
+	higgins_ride_flinch05		scripted/higgins/higginsflinch06.skc
+	higgins_ride_flinch06		scripted/higgins/higginsflinch06.skc	
+	higgins_mortar_flip		scripted/higgins/higgens_flip.skc
+	higgins_mortar_medium		scripted/higgins/higgens_medium.skc
+	higgins_mortar_twist		scripted/higgins/higgens_twist.skc
+	
+
+	// ---Bangalore---
+	// Needs the character to have the bangalore models included in their mesh!
+
+	bangalore			scripted/level_m3l1/bangalore_assembly.skc
+	{
+		client
+		{
+			// Frames 20, 58, 128 and 160 at 30 fps.
+			7 sound Item_Bangaloredirt01 dialog 1.0 -1 0.9 0.2
+			19 sound Item_BangaloreAssemble_02 dialog 1.0 -1 0.9 0.2
+			43 sound Item_BangaloreAssemble_01 dialog 1.0 -1 0.9 0.2
+			53 sound Item_Bangaloredirt02 dialog 1.0 -1 0.9 0.2
+		}
+		server
+		{
+			0 surface bang12 +nodraw
+			61 surface bang12 -nodraw	// 182 at 30 fps
+			112 surface bang12 +nodraw	// 337 at 30 fps
+			0 surface bang11 -nodraw
+			6 surface bang11 +nodraw	// 18 at 30 fps
+			0 surface bang10 -nodraw
+			35 surface bang10 +nodraw	// 104 at 30 fps
+			0 surface bang09 -nodraw
+			13 surface bang09 +nodraw	// 38 at 30 fps
+			0 surface bang08 +nodraw
+			6 surface bang08 -nodraw	// 18 at 30 fps
+			20 surface bang08 +nodraw	// 60 at 30 fps
+			0 surface bang07 +nodraw
+			35 surface bang07 -nodraw	// 104 at 30 fps
+			43 surface bang07 +nodraw	// 129 at 30 fps
+			0 surface bang06 +nodraw
+			20 surface bang06 -nodraw	// 60 at 30 fps
+			27 surface bang06 +nodraw	// 81 at 30 fps
+			0 surface bang05 +nodraw
+			13 surface bang05 -nodraw	// 38 at 30 fps
+			20 surface bang05 +nodraw	// 60 at 30 fps
+			0 surface bang04 +nodraw
+			51 surface bang04 -nodraw	// 152 at 30 fps
+			53 surface bang04 +nodraw	// 160 at 30 fps
+			0 surface bang03 +nodraw
+			27 surface bang03 -nodraw	// 81 at 30 fps
+			43 surface bang03 +nodraw	// 129 at 30 fps
+			0 surface bang02 +nodraw
+			51 surface bang02 -nodraw	// 152 at 30 fps
+			61 surface bang02 +nodraw	// 182 at 30 fps
+			43 surface bang01 -nodraw	// 129 at 30 fps
+			51 surface bang01 +nodraw	// 153 at 30 fps
+		}
+	}
+
+}	// End mapspec
+}	// End animations

@@ -1,0 +1,19 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/fireplaceset
+	skelmodel fireplaceset.skd
+	surface cradle shader static_fireplacecradle
+	surface wood shader static_fireplacewood
+	surface poker shader static_poker
+	surface stand shader static_stand
+}
+
+animations
+{
+	idle     fireplaceset.skc
+}
+
+/*QUAKED static_furniture_fireplaceset (0.5 0.0 0.5) (-24 -32 0) (40 32 48)
+*/

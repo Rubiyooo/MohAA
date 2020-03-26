@@ -1,0 +1,8 @@
+	drag_beingdragged			drag_beingdragged.skc
+	drag_beingdragged_left		drag_beingdragged_left.skc
+	drag_beingdragged_right		drag_beingdragged_right.skc
+	drag_beingdragged_start		drag_beingdragged_start.skc
+	drag_dragging			drag_dragging.skc
+	drag_dragging_left		drag_dragging_left.skc
+	drag_dragging_right		drag_dragging_right.skc
+	drag_dragging_start		drag_dragging_start.skc

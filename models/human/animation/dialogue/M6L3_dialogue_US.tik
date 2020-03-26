@@ -1,0 +1,157 @@
+setup
+{
+	path models/human/animation/dialogue/M6L3/A
+}
+
+animations
+{
+//	$mapspec M6L3
+//	{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////     American animations    /////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+
+			////// inside the train ///////
+
+
+	dfr_M6L3_612h		actor_M6L3_612.skc
+	{
+		client			/// This train smells funny.
+		{
+			first sound dfr_M6L3_612h
+		}
+	}
+
+	dfr_M6L3_613h		actor_M6L3_613.skc
+	{
+		client			/// We're almost there. Get ready.
+		{
+			first sound dfr_M6L3_613h
+		}
+	}
+
+	dfr_M6L3_614a_1		actor_M6L3_614.skc
+	{
+		client			/// Alright Powell, we're going to move the train to the prison section...
+		{
+			first sound dfr_M6L3_614a_1
+		}
+	}
+
+	dfr_M6L3_615h		actor_M6L3_615.skc
+	{
+		client			/// Stand back. I'm going to blow the door!
+		{
+			first sound dfr_M6L3_615h_1
+		}
+	}
+
+	dfr_M6L3_616h		actor_M6L3_616.skc
+	{
+		client			/// Hey this is where Patterson said they were making mustard gas....
+		{
+			first sound dfr_M6L3_616h_1
+		}
+	}
+
+	dfr_M6L3_617h		actor_M6L3_617.skc
+	{
+		client			/// You got a gas mask yet?
+		{
+			first sound dfr_M6L3_617h_1
+		}
+	}
+
+	dfr_M6L3_618h		actor_M6L3_618.skc
+	{
+		client			/// Did you put that gas mask on yet?
+		{
+			first sound dfr_M6L3_618h_1
+		}
+	}
+
+	dfr_M6L3_619h		actor_M6L3_619.skc
+	{
+		client			/// Okay here goes!
+		{
+			first sound dfr_M6L3_619h_1
+		}
+	}
+
+			////// escape to the train ///////
+
+
+	dfr_M6L3_620a		actor_M6L3_620.skc
+	{
+		client			/// Come on Powell. Get in the train. We're out of here!
+		{
+			first sound dfr_M6L3_620a_1
+		}
+	}
+
+
+	dfr_M6L3_621a		actor_M6L3_621.skc
+	{
+		client			/// Would you look at that.
+		{
+			10 sound dfr_M6L3_621a_1
+		}
+	}
+
+
+	dfr_M6L3_add04		actor_M6L3_add04.skc
+	{
+		client			/// 
+
+		{
+			first sound dfr_M6L3_add04
+		}
+	}
+
+	dfr_M6L3_add05		actor_M6L3_add05.skc
+	{
+		client			/// 
+
+		{
+			first sound dfr_M6L3_add05
+		}
+	}
+
+	dfr_M6L3_add06		actor_M6L3_add06.skc
+	{
+		client			/// 
+
+		{
+			first sound dfr_M6L3_add06
+		}
+	}
+
+	dfr_M6L3_add07		actor_M6L3_add07.skc
+	{
+		client			/// 
+
+		{
+			first sound dfr_M6L3_add07
+		}
+	}
+
+	dfr_M6L3_add08		actor_M6L3_add08.skc
+	{
+		client			/// Okay sir, we've rigged the door to blow. Its all yours now!
+
+		{
+			first sound dfr_M6L3_add08
+		}
+	}
+
+
+
+
+		////////////////////////////////
+
+
+//	}//end mapspec M6L3
+}

@@ -1,0 +1,30 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 17 -63 -8 ) ( 65 -15 -8 ) ( 54 49 -7 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( 60 -33 27 ) ( 15 -29 91 ) ( 14 14 84 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( 65 -15 -8 ) ( 17 -63 -8 ) ( 15 -29 91 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( 59 -35 28 ) ( 52 30 28 ) ( 56 30 -8 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( 14 11 89 ) ( 14 63 -3 ) ( 54 49 -7 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( 14 63 -3 ) ( 14 11 89 ) ( 15 -42 92 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+}
+// brush 1
+{
+( -51 4 -8 ) ( -46 -48 -8 ) ( 15 -61 -8 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( -25 -12 74 ) ( -25 4 85 ) ( 15 4 111 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( 19 -62 -8 ) ( -48 -46 -8 ) ( 0 -12 97 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( 15 -45 111 ) ( 15 4 111 ) ( 15 4 -8 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( -45 4 -8 ) ( 15 4 -8 ) ( 15 4 111 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( -46 -48 -8 ) ( -51 4 -8 ) ( -25 4 85 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+}
+// brush 2
+{
+( -39 52 -8 ) ( -39 4 -8 ) ( 14 3 -8 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( 15 4 111 ) ( -30 4 76 ) ( -30 20 69 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( -51 4 -8 ) ( -25 3 77 ) ( 15 3 111 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( 15 15 104 ) ( 14 61 -8 ) ( 14 3 -8 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( -24 19 69 ) ( -33 49 -8 ) ( 14 61 -8 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+( -25 3 77 ) ( -51 4 -8 ) ( -33 49 -8 ) common/stoneclip 0 0 0.00 1 1 262144 160 0 +surfaceparm playerclip +surfaceparm detail 
+}
+}

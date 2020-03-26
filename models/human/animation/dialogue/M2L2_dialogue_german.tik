@@ -1,0 +1,303 @@
+setup
+{
+	path models/human/animation/dialogue/M2L2/G
+}
+
+animations
+{
+//	$mapspec M2L2
+//	{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////   animations    ////////////////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+
+	marine_bored		rifle_idle_normal01(loop).skc			
+		
+
+			////// guards ///////
+
+
+	den_M2L2_205q		actor_m2l2_205.skc
+	{
+		client			/// how do you like norway
+		{
+			first sound den_M2L2_205q
+		}
+	}
+
+	den_m2l2_206r		actor_m2l2_206.skc
+	{
+		client			/// its ok
+		{
+			first sound den_m2l2_206r
+		}
+	}
+
+	den_m2l2_207q		actor_m2l2_207.skc
+	{
+		client			/// you don't hate it
+		{
+			first sound den_m2l2_207q
+		}
+	}
+
+	den_m2l2_208r		actor_m2l2_208.skc
+	{
+		client			/// no not really
+		{
+			first sound den_m2l2_208r
+		}
+	}
+
+	den_m2l2_209q		actor_m2l2_209.skc
+	{
+		client			/// you will
+		{
+			first sound den_m2l2_209q
+		}
+	}
+
+	den_m2l2_210r		actor_m2l2_210.skc
+	{
+		client			/// if you say so
+		{
+			37 sound den_m2l2_210r
+		}
+	}
+
+			////// girls ///////
+
+	den_m2l2_211h		actor_m2l2_211.skc
+	{
+		client			///
+		{
+			first sound den_m2l2_211h
+		}
+	}
+
+	den_m2l2_212p		actor_m2l2_212.skc
+	{
+		client			///
+		{
+			first sound den_m2l2_212p
+		}
+	}
+
+	den_m2l2_213h		actor_m2l2_213.skc
+	{
+		client			///
+		{
+			first sound den_m2l2_213h
+		}
+	}
+
+	den_m2l2_214p		actor_m2l2_214.skc
+	{
+		client			///
+		{
+			first sound den_m2l2_214p
+		}
+	}
+
+	den_m2l2_215h		actor_m2l2_215.skc
+	{
+		client			///
+		{
+			first sound den_m2l2_215h
+		}
+	}
+
+	den_m2l2_216p		actor_m2l2_216.skc
+	{
+		client			///
+		{
+			first sound den_m2l2_216p
+		}
+	}
+
+	den_m2l2_217h		actor_m2l2_217.skc
+	{
+		client			///
+		{
+			first sound den_m2l2_217h
+		}
+	}
+
+	den_m2l2_218p		actor_m2l2_218.skc
+	{
+		client			///
+		{
+			first sound den_m2l2_218p
+		}
+	}
+
+	den_m2l2_219h		actor_m2l2_219.skc
+	{
+		client			///
+		{
+			first sound den_m2l2_219h
+		}
+	}
+
+	den_m2l2_220p		actor_m2l2_220.skc
+	{
+		client			///
+		{
+			first sound den_m2l2_220p
+		}
+	}
+
+			////// uboat ///////
+
+
+	den_m2l2_221f		actor_m2l2_221.skc
+	{
+		client			/// 
+		{
+			first sound den_m2l2_221f
+		}
+	}
+
+	den_m2l2_212b		actor_m2l2_222.skc
+	{
+		client			/// 
+		{
+			first sound den_m2l2_212b
+		}
+	}
+
+	den_m2l2_223f		actor_m2l2_223.skc
+	{
+		client			/// 
+		{
+			first sound den_m2l2_223f
+		}
+	}
+
+	den_m2l2_224b		actor_m2l2_224.skc
+	{
+		client			/// 
+		{
+			first sound den_m2l2_224b
+		}
+	}
+
+	den_m2l2_225f		actor_m2l2_225.skc
+	{
+		client			/// 
+		{
+			first sound den_m2l2_225f
+		}
+	}
+
+	den_m2l2_226b		actor_m2l2_226.skc
+	{
+		client			/// 
+		{
+			first sound den_m2l2_226b
+		}
+	}
+
+
+
+
+			////// SCIENTISTS ///////
+
+
+	den_m2l2_227f		actor_m2l2_227.skc
+	{
+		client			/// can I help you
+		{
+			first sound den_m2l2_227f
+		}
+	}
+
+	den_m2l2_228f		actor_m2l2_228.skc
+	{
+		client			/// what are you looking for
+		{
+			first sound den_m2l2_228f
+		}
+	}
+
+	den_m2l2_229f		actor_m2l2_229.skc
+	{
+		client			/// is something wrong
+		{
+			first sound den_m2l2_229f
+		}
+	}
+
+	den_m2l2_230f		actor_m2l2_230.skc
+	{
+		client			/// are you interested in the prototype
+		{
+			first sound den_m2l2_230f
+		}
+	}
+
+	den_m2l2_231f		actor_m2l2_231.skc
+	{
+		client			/// would you like me to leave you alone
+		{
+			first sound den_m2l2_231f
+		}
+	}
+
+	den_m2l2_232f		actor_m2l2_232.skc
+	{
+		client			/// he has a gun
+		{
+			first sound den_m2l2_232f
+		}
+	}
+
+	den_m2l2_233f		actor_m2l2_233.skc
+	{
+		client			/// hes a spy
+		{
+			first sound den_m2l2_233f
+		}
+	}
+
+	den_m2l2_234h		actor_m2l2_234.skc
+	{
+		client			/// stop him
+		{
+			4 sound den_m2l2_234h
+		}
+	}
+
+
+	den_m2l2_235q		actor_m2l2_235.skc
+	{
+		client			/// the prototype
+		{
+			first sound den_m2l2_235q
+		}
+	}
+
+
+	den_m2l2_236b		actor_m2l2_236.skc
+	{
+		client			/// no
+		{
+			6 sound den_m2l2_236b
+		}
+	}
+
+
+
+
+			////////////////// idles ///////////////////
+
+
+	den_m2l2_idle		actor_M6L1_SNT1.skc		// scientist idle
+
+
+
+//	}//end mapspec M2L2
+}

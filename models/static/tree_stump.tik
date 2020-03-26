@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	scale 0.9
+	path models/static/natural
+	skelmodel tree_stump.skb
+	surface stump shader static_stump
+}
+
+animations
+{
+	idle     tree_stump.skc
+}
+
+/*QUAKED static_natural_tree_stump (0.5 0.0 0.5) (-32 -32 0) (32 32 128)
+*/

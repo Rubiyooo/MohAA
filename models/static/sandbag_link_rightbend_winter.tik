@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/sandbags
+	skelmodel sandbag_link_rightbend.skd
+	surface sb_4 shader static_sb_4w
+}
+
+animations
+{
+	idle     sandbag_link_rightbend.skc
+}
+
+/*QUAKED static_obstacle_sandbag-link-rightbend-winter (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

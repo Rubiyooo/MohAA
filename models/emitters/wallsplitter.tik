@@ -1,0 +1,129 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server  
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache models/fx/concrete1.tik
+		cache models/fx/blockcrete.tik
+		cache vsssource2.spr
+		cache models/fx/shard_piece.tik
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 0.1 anim idle
+		}
+		client
+		{
+			enter originspawn
+			(
+				spawnrate 2.00
+				model models/fx/concrete1.tik
+				color 1.00 1.00 1.00
+				scale 0.10
+				life 2.00
+				scalerate 0.30
+				radius 10.00
+				velocity 200.00
+				randvelaxis 0 crandom -20 0
+				accel 0.00 0.00 -300.00
+				friction -1.00
+				angles range -400 200 crandom -300 crandom -200
+				avelocity crandom -50 range -80 40 crandom -50
+				scalemin 0.10
+				scalemax 0.80
+				fade
+				sphere
+				align
+			)
+
+			enter originspawn
+			(
+				spawnrate 2.00
+				model models/fx/blockcrete.tik
+				color 1.00 1.00 1.00
+				collision
+				bouncefactor 0.20
+				scale 0.20
+				life 2.00
+				scalerate 0.30
+				cone 300.00 20.00
+				velocity 400.00
+				radialvelocity 100.00 0.00 0.00
+				accel 0.00 0.00 -400.00
+				angles crandom -200 crandom -50 crandom -300
+				avelocity crandom -20 crandom 30 range 30 -90
+				scalemin 0.20
+				scalemax 0.60
+				fade
+				circle
+			)
+
+			enter originspawn
+			(
+				spawnrate 1.00
+				model vsssource2.spr
+				count 21
+				alpha 0.40
+				color 0.50 0.50 0.50
+				life 3.00
+				scalerate 3.00
+				radius 9.00
+				velocity 1000.00
+				accel 0.00 0.00 300.00
+				scalemin 1.00
+				scalemax 3.00
+				fade
+				circle
+				randomroll
+			)
+
+			enter originspawn
+			(
+				spawnrate 32.00
+				model models/fx/shard_piece.tik
+				count 10
+				alpha 0.80
+				color 1.00 1.00 1.00
+				scale 0.20
+				life 1.00
+				radius 10.00
+				velocity 500.00
+				accel 0.00 0.00 -300.00
+				friction -1.00
+				scalemin 0.20
+				scalemax 0.40
+				sphere
+				randomroll
+			)
+		}
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy3.skc 
+}
+
+//QUAKED fx_debris_wallsplitter(0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+//duh roof duh roof duh roof iz on fyYarrr

@@ -1,0 +1,105 @@
+TIKI
+setup
+{
+	scale 0.52					// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+
+	path models/human/german_hund_hundpatrol
+	skelmodel hund.skd
+
+	surface coat shader hundpatrol_coat
+	surface cullcoat shader cull_hundpatrol_coat
+	surface pants shader hundpants
+
+	$include models/human/heads/german_young_heads.tik
+
+	path models/human/hands
+	skelmodel hand.skd
+	surface hand shader handsnew
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+	path models/equipment/germangear
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** p-38 pistol
+	case weapon "walter p38"
+	{
+		skelmodel german_holster.skd
+		surface german_holster shader german_holster
+
+		path models/gear/g_headgear
+		skelmodel germanhelmet.skd
+		surface outside shader wehrmact_helmet
+		surface inside shader german-helmet_inside
+	}
+
+	//*** regular KAR 98
+	case weapon "Mauser KAR 98K"
+	{
+		path models/gear/g_headgear
+		skelmodel germanhelmet.skd
+		surface outside shader wehrmact_helmet
+		surface inside shader german-helmet_inside
+
+		path models/gear/heer
+		skelmodel karclips.skd
+		surface karclips shader german_riflebelt
+	}
+
+	//*** MP40 submachinegun
+	case weapon "mp40"
+	{
+		skelmodel mp40clips.skd
+		surface mp40clips shader ammo_pouch_tan
+
+		path models/gear/g_headgear
+		skelmodel germanhelmet.skd
+		surface outside shader wehrmact_helmet
+		surface inside shader german-helmet_inside
+	}
+//*** end weapon equipment assignment
+//************************************
+
+	scale 0.52				// Set default scale to 16/30.5 since world is
+						// in 16 units per foot and model is in cm's
+	path models/human/protoanimations	// Set path to set animations from
+
+	radius 20				// Defines size of shadow
+}
+
+init
+{
+	server
+	{
+      	classname Actor
+		setsize "-16 -16 0" "16 16 92"
+		german
+		health 100
+		weapon "Mauser KAR 98K"
+
+		// Make him mumble but not breathe steam
+		exec global/breathe.scr 0 1
+
+		// Set up the helmet for popping off
+		// <surface to turn off> <model to spawn> <speed to throw it at> <damage multiplier for helmet shots>
+		sethelmet "models/gear/german_helmet.tik" 150 0.1 "outside" "inside" 
+	}
+}
+
+//
+// include the base animations definition
+//
+
+$include models/human/new_generic_human.tik
+$include models/human/animation/dialogue/generic_dialogue_german.tik
+//$include models/human/animation/helmet_flyoff/helmet_flyoff_german_wehrmact.tik
+
+
+/*QUAKED ai_german_hund_hundpatrol (1.0 0.5 0.0) (-16 -16 0) (16 16 92)
+*/

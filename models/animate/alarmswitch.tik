@@ -1,0 +1,29 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/animate/alarm
+	skelmodel alarm_idleoff.skd
+	surface all shader alarmswitch
+}
+
+init
+{
+	server
+	{
+		classname animate
+	}
+}
+
+animations
+{
+	idle     alarm_idleoff.skc
+	idleoff  alarm_idleoff.skc
+	idleon	 alarm_idleoff.skc
+	turnon	 alarm_turnon.skc
+	turnoff	 alarm_turnoff.skc
+}
+
+/*QUAKED animate_equipment_alarmswitch (0.5 0.0 0.5) (0 0 0) (0 0 0)
+Benson Russell 10-1-2001 - alarmswitch for levels with alarm systems
+*/

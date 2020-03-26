@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52
+	path models/items/officer_uniform
+	skelmodel officer_uniform.skd
+	surface tunic shader officer_uniform_pulsating
+}
+
+init
+{
+	server
+	{
+		classname animate
+	}
+}
+
+animations
+{
+	idle     officer_uniform.skc
+}
+
+/*QUAKED animate_item_disguise-uniform-pulsating(0.0 0.75 0.5) (-8 -8 0) (8 8 16)
+Benson Russell 10-2-2001 - uniform to pick up for disguise missions
+*/

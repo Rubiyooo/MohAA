@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/clocks
+	skelmodel subclock.skd
+	surface subclock shader static_brassclock
+	surface subface shader static_subclock
+}
+
+animations
+{
+	idle     subclock.skc
+}
+
+/*QUAKED static_uboat_subclock (0 0 0) (-8 -8 0) (8 8 16)
+*/

@@ -1,0 +1,133 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	server
+	{
+	}
+	client
+	{
+		//cache some stuff used in this effect
+		cache bh_ocean_plume.spr
+		cache bh_water_ring.spr
+		cache models/fx/water_splash_drop.tik
+
+		// main plume
+		sfx originspawn
+		(
+			model bh_ocean_plume.spr
+			spritegridlighting
+			alpha 1.0
+			angles 0 0 0
+			offsetalongaxis 0 0 0
+			offset 0 0 16
+			count 1
+			life 0.5
+			scale 0.25
+			fade
+			fadedelay 0.2
+		)
+
+		// spray
+		delayedsfx 0.05 originspawn
+		(
+			model models/fx/water_splash_drop.tik
+			spritegridlighting
+			spawnrange 512
+			angles 270 0 0
+			alpha 0.5
+			offsetalongaxis random 16 crandom 1 crandom 1
+			offset 0 0 8
+			count 8
+			alignstretch 0.5
+			velocity 100
+			randvelaxis random 100 crandom 15 crandom 15
+			accel 0 0 -900
+			life 0.5 0.25
+			scalemin 1.2
+			scalemax 2.0
+			scalerate -1.0
+			fadein 0.2
+			fade
+			fadedelay 0.6
+		)
+
+		// spray
+		delayedsfx 0.1 originspawn
+		(
+			model models/fx/water_splash_drop.tik
+			spritegridlighting
+			spawnrange 512
+			angles 270 0 0
+			alpha 0.5
+			offsetalongaxis random 6 crandom 1 crandom 1
+			offset 0 0 16
+			count 4
+			alignstretch 0.5
+			velocity 30
+			randvelaxis random 30 crandom 40 crandom 40
+			accel 0 0 -700
+			life 0.3 0.2
+			scalemin 1.5
+			scalemax 2.5
+			scalerate -1.0
+			fadein 0.2
+			fade
+			fadedelay 0.5
+		)
+
+		// add water ripple
+		sfx originspawn
+		(
+			model bh_water_ring.spr
+			spritegridlighting
+			angles 90 0 0
+			alpha 1.0
+			count 1
+			life 0.8 0.1
+			scale 0.15
+			scalerate 2.0
+			fadedelay 0.1
+		)
+
+		// add water ripple
+		delayedsfx 0.15 originspawn
+		(
+			model bh_water_ring.spr
+			spritegridlighting
+			angles 90 0 0
+			alpha 0.9
+			count 1
+			life 0.85 0.1
+			scale 0.12
+			scalerate 1.8
+			fadedelay 0.1
+		)
+
+		// add water ripple
+		delayedsfx 0.3 originspawn
+		(
+			model bh_water_ring.spr
+			spritegridlighting
+			angles 90 0 0
+			alpha 0.8
+			count 1
+			life 0.9 0.1
+			scale 0.09
+			scalerate 1.6
+			fadedelay 0.1
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

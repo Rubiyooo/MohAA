@@ -1,0 +1,62 @@
+TIKI
+setup
+{
+	scale 1
+	path models/fx/fire
+	skelmodel fire.skd
+	surface front shader fire_front
+	surface middle shader fire_middle
+	surface back shader fire_back
+}
+
+init
+{
+	server
+	{
+			classname effectentity
+	}
+
+	client
+	{
+		originemitter firesmoke
+		(
+			model vsssource.spr
+			count 1
+			alpha 0.95
+			color 0.01 0.01 0.01
+			scale 2.00
+			life 7.00
+			spawnrate 3.00
+			scalerate 0.60
+			randvel 0 0 90
+			accel 0.00 16.00 0.00
+			offset 0 0 135
+			offsetalongaxis crandom 16 crandom 16 random 16
+			fade
+			collision
+		)
+	}
+}
+
+animations
+{
+	idle fire.skc
+	start fire.skc
+	{
+		client
+	        {
+			enter emitteron firesmoke
+	        }
+	}
+	stop fire.skc
+	{
+		client
+	        {
+	    		enter emitteroff firesmoke
+		}
+	}
+}
+
+/*QUAKED fx_fire (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+standard
+*/

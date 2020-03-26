@@ -1,0 +1,122 @@
+TIKI
+setup
+{
+	scale 1.00
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+ 
+init
+{
+	server  
+	{
+		classname animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache gren_explosion.spr
+		cache air_explosion.spr
+	
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 0.1 anim idle
+		}
+
+		client
+		{
+			enter sound explode_hallway
+
+			enter originspawn
+			(
+				spawnrate 1.50
+				model gren_explosion.spr
+				count 4
+				color 4.50 0.20 0.00
+				//collision
+				//bouncefactor 1.00
+				scale 0.50
+				life 3.00
+				scalerate 2.00
+				velocity 250.00
+				scalemax 1.00
+				fade
+				inwardsphere
+				align
+			)
+
+			enter commanddelay 1.000 originspawn
+			(
+				spawnrate 1.00
+				model gren_explosion.spr
+				count 2
+				alpha 0.50
+				color 3.00 2.00 1.00
+				//collision
+				//bouncefactor 0.30
+				scale 2.00
+				life 4.00
+				scalerate 0.80
+				velocity 220.00
+				scalemax 1.50
+				fade
+			)
+
+			enter originspawn
+			(
+				spawnrate 1.00
+				model air_explosion.spr
+				color 1.00 1.00 1.00
+				//collision
+				//bouncefactor 0.30
+				scale 0.50
+				life 3.00
+				scalerate 1.00
+				velocity 250.00
+				scalemax 1.50
+				fade
+				align
+			)
+
+			enter commanddelay 1.000 originspawn
+			(
+				spawnrate 1.00
+				model gren_explosion.spr
+				count 2
+				alpha 0.50
+				color 4.00 2.00 2.00
+				//collision
+				//bouncefactor 0.30
+				scale 0.50
+				life 3.00
+				scalerate 1.00
+				velocity 200.00
+				scalemax 1.00
+				fade
+				align
+			)
+		}
+	}
+}
+
+//************************************
+//***        IMPORTANT
+//***     RENAME THE QUAKE-ED COMMENT
+//***     IN CONJUNCTION WITH THE
+//***  LD ENTITY MENU LAYOUT.DOC
+//***   UP IN SOURCE SAFE!!!!!!!!!!!!
+//************************************
+
+/*QUAKED animate_fx_explosion-hallfire (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+close quarters fireball in true Die Hard fashion
+*/

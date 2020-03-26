@@ -1,0 +1,16 @@
+TIKI
+setup // Tells model how to be created
+{
+	scale 0.52					// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/equipment/germangear		// Set path relative to game directory
+	skelmodel static_germanhelmet.skd		// Set base model for skeletal animation
+	surface helmet shader static_wehrmact_helmet
+}
+
+animations // Now list all of the animations and any special commands for them
+{
+	idle		static_germanhelmet.skc
+}
+
+/*QUAKED static_equipment_german-helmet-wehrmact (0.5 0.0 0.5) (-8 -8 0) (8 8 16)
+*/

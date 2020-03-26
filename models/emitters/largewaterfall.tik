@@ -1,0 +1,58 @@
+TIKI
+setup
+{
+	scale 8.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter waterfall
+		(
+			spawnrate 50.00
+			model water_g.spr
+			spritegridlighting
+			alpha 0.60
+			color 1.00 1.00 1.00
+			scale 8.00
+			life 2.50
+			velocity 50.00
+			randvel crandom -7 crandom -8 crandom -6
+			accel 11.00 -10.00 -332.00
+			fade
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron waterfall
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff waterfall
+		}
+	}
+}
+
+/*QUAKED fx_water_largefalls (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+water fall...like duh...
+Doesn't collide.
+*/

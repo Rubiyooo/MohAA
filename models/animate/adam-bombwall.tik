@@ -1,0 +1,101 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache vsssource.spr
+		cache stonechip.spr
+		cache debris
+	
+ 	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+			enter sound debris_explode
+
+			// outward explosion cloud
+			enter originspawn
+			(
+				model vsssource.spr
+				count 12
+				life 1.5
+				alpha .8
+				scalemin 1.5
+				scalemax 2.5
+				scalerate 1
+				offset crandom 32 random 16 crandom 32
+				randvel 0 range 160 512 0
+				radialvelocity 3 0 0
+				friction .7
+				accel 0 0 -200
+				fadein 0.05
+				fade
+				color .6 .6 .6
+				varycolor
+			)
+
+			// downward explosion cloud
+			enter originspawn
+			(
+				volumetric
+				model debris
+				life 2
+				scalemin 15
+				scalemax 20
+				offset crandom 128 random 32 crandom 128
+				randvel crandom 48 random 64 random 48
+				color .6 .6 .6
+				collision
+			)
+
+			// central explosion pieces
+			enter originspawn
+			(
+				model stonechip.spr
+				spritegridlighting
+				alpha 0.75
+				angles 0 0 random 360
+				avelocity 0 0 range 360 360
+				offset crandom 128 random 32 crandom 128
+				radialvelocity 0 128 256
+				randvel 0 range 0 256 0
+				count 16
+				accel 0 0 -600
+				life 1.5
+				scalemin 1
+				scalemax 2.5
+				fadedelay 1.5
+			)
+		}
+	}
+}
+
+/*QUAKED animate_fx_explosion-adambomb (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+explosion from a bomb hitting a wall
+Adam Bellefeuil - 9-26-2001 - Explosions needed for end of Schmertzen
+*/

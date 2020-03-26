@@ -1,0 +1,88 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname Animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache oceanspray.spr
+
+		// add water spray
+		originemitter water_spray_clouds
+		(
+			startoff
+			model oceanspray.spr
+			offsetalongaxis crandom 32 0 crandom 32
+			randvelaxis crandom 30 crandom 30 256
+			spritegridlighting
+			avelocity 60 60 60
+			angles 0 0 random 360
+			accel 0 -300 -450
+			alpha 1.0
+			count 1
+			life 1.5
+			scale 2
+			scalerate .25
+			fadein .5
+			fade
+			fadedelay .75
+			spawnrate 5
+		)
+
+//		originemitter water_spray_drops
+//		(
+//			model models/fx/water_splash_drop.tik
+//			offsetalongaxis 0 crandom 64 crandom 32
+//			randvelaxis random 50 crandom 30 400
+//			spritegridlighting
+//			alignstretch 0.125
+////			avelocity 30 30 30
+////			randomroll
+////			angles random 360 random 360 random 360
+//			accel 300 0 -900
+//			alpha 1.0
+//			count 1
+//			life 1.5 0.5
+//			scale 2
+////			scalerate .1
+//			fade
+//			fadedelay 1
+//			spawnrate 20
+//		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron water_spray_clouds
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff water_spray_clouds
+		}
+	}
+}
+
+/*QUAKED fx_water_spray (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Spray for the front of a higgens boat
+*/

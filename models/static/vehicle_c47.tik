@@ -1,0 +1,19 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/vehicles/c47
+	skelmodel c47.skd
+	surface c473 shader static_c47
+	surface c472 shader static_c47
+	surface c471 shader static_c47
+}
+
+animations
+{
+	idle     c47.skc
+}
+
+/*QUAKED static_vehicle_allied_airplane-c47 (0.5 0.0 0.5) (-696 -776 0) (344 776 272)
+C47 Skytrain
+*/

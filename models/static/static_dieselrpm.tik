@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel tiefenmesser.skd
+	surface casing shader static_blackgauge
+	surface face shader static_dieselrpm
+	surface glass shader static_dieselglass
+}
+
+animations
+{
+	idle     tiefenmesser.skc
+}
+
+/*QUAKED static_uboat_dieselrpm-gauge (0 0 0) (-8 -8 0) (8 8 16)
+*/

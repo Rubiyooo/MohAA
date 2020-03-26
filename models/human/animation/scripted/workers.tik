@@ -1,0 +1,88 @@
+
+animations
+{
+	$path models/human/animation
+
+
+
+	//Sledgehammer  animation 
+
+	sledgehammer_init		scripted/sledgehammer/sledgehammer_init.skc
+	{				
+		server
+		{
+			0 attachmodel models/miscobj/sledgehammer.tik tag_weapon_right
+		}	
+ 	}
+
+	sledge_hammer_action	scripted/sledgehammer/sledgehammer_hammer.skc
+	{
+		client
+		{
+			18 sound sledgehammer		//this plays the sledgehammer animation on impact
+
+		}
+	}
+	sledge_hammer_idle	scripted/sledgehammer/sledgehammer_idle.skc
+	sledge_hammer_stop	scripted/sledgehammer/sledgehammer_init.skc
+ 	{				
+		server
+		{
+			last removeattachedmodel tag_weapon_right
+		}	
+	}
+
+	watching01				scripted/sledgehammer/watching_idle.skc					weight 10			 //idles and watches
+	watching02				scripted/sledgehammer/watching_point.skc					weight  3 dontrepeate //points
+	
+	//-----------------
+	//WRENCH ANIMATIONS
+	//-----------------
+	working_wrench_pullout		scripted/sledgehammer/pullout_wrench-hammer.skc
+	{				
+		server
+		{
+			2 attachmodel models/miscobj/wrench.tik tag_weapon_right
+		}	
+	}
+	working_wrenching_getdown	scripted/sledgehammer/working_hammering_getdown.skc
+	working_wrenching01		scripted/sledgehammer/working_wrenching.skc 		weight  10 
+	working_wrenching02	    	scripted/sledgehammer/working_wrenching_pain.skc    	weight  1  dontrepeate //ouch!!!
+	working_wrenching_getup		scripted/sledgehammer/working_hammering_getup.skc
+	working_wrenching_putaway	scripted/sledgehammer/pullout_wrench-hammer.skc
+	{				
+		server
+		{
+			2 removeattachedmodel tag_weapon_right
+		}	
+	}
+	
+	//-------------------
+	//HAMMER ANIMATIONS
+	//-------------------
+	working_hammering_pullout		scripted/sledgehammer/pullout_wrench-hammer.skc
+	{				
+		server
+		{
+			2 attachmodel models/miscobj/hammer.tik tag_weapon_right
+
+		}	
+	}
+	working_hammering_getdown	scripted/sledgehammer/working_hammering_getdown.skc
+	working_hammering_intro		scripted/sledgehammer/working_hammering_intro.skc
+	working_hammering01    		scripted/sledgehammer/working_hammering.skc 		weight  10
+	working_hammering02		scripted/sledgehammer/working_hammering_outro.skc 	weight  1 
+	working_hammering_getup		scripted/sledgehammer/working_hammering_getup.skc
+	working_hammering_putaway	scripted/sledgehammer/pullout_wrench-hammer.skc
+	{				
+		server
+		{
+			2 removeattachedmodel tag_weapon_right
+		}	
+	}
+	specialmove01			scripted/sledgehammer/working_move01.skc		random
+	specialmove02			scripted/sledgehammer/working_move02.skc		random
+	specialmove03			scripted/sledgehammer/working_move03.skc		random
+
+}
+

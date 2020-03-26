@@ -1,0 +1,42 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter firesmoke
+		(
+			volumetric
+			model "fire"
+			color 0.35 0.35 0.35
+			alpha 0.1
+			scale 6.00
+			life 15.00
+			spawnrate 0.6
+			offset crandom 2.00 crandom 2.00 crandom 2.00
+			randvel crandom 2 crandom 2 0
+		)
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+}
+
+/*QUAKED fx_smoke_smokestack1 (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Smoke from a smoke stack. 
+Doesn't collide, so don't obstruct it.
+*/

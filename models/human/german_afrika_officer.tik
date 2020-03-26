@@ -1,0 +1,110 @@
+TIKI
+setup
+{
+	path models/human/german_wehrmact_officer	// Set path to set skelmodel from
+	skelmodel german_officer.skd			// Set body model
+
+	surface tunic shader DAK_officer_tunic
+	surface pants shader DAK_officer_pants
+	surface tunic_c shader DAK_officer_tunic_c
+
+	
+//	path models/human/heads			// Set new path for head model
+//	skelmodel head8.skd		// Set head model
+//	surface head shader hopper
+	$include models/human/heads/german_old_heads.tik
+
+	path models/human/hands			
+	skelmodel hand.skd		
+	surface hand shader handsnew
+
+
+	path models/equipment/germangear
+
+	skelmodel officer_hat.skd
+	surface officer_hat shader dak_officer_hat
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+	path models/equipment/germangear
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** p-38 pistol
+	case weapon  "Walter P38"
+	{
+		path models/gear/g_headgear
+
+		skelmodel officercap.skd
+		surface officercap shader dak_officer_hat
+		
+
+		path models/gear/officer
+		
+		skelmodel holster.skd
+		surface holster shader german_holster
+	}
+
+	//*** MP40 submachinegun
+	case weapon "MP 40"
+	{
+		path models/gear/g_headgear
+
+		skelmodel officercap.skd
+		surface officercap shader dak_officer_hat
+
+		
+		path models/gear/officer
+		
+		skelmodel holster.skd
+		surface holster shader german_holster
+
+		skelmodel mp40clips.skd
+		surface mp40clips shader ammo_pouch_tan
+	}
+
+//*** end weapon equipment assignment
+//************************************
+
+
+	scale 0.52				// Set default scale to 16/30.5 since world is 
+						// in 16 units per foot and model is in cm's
+	path models/human/protoanimations	// Set path to set animations from
+
+	radius 20				// Defines size of shadow
+}
+
+init
+{
+	server
+	{
+      	classname Actor
+		setsize "-16 -16 0" "16 16 92"
+		german
+		health 100
+		weapon "Walter P38"
+
+		// Make him mumble but not breathe steam
+		exec global/breathe.scr 0 1
+
+		// Set up the helmet for popping off
+		// <surface to turn off> <model to spawn> <speed to throw it at> <damage multiplier for helmet shots>
+		sethelmet "models/gear/german_dakofficercap.tik" 200 4 "officer_hat" 
+	}
+}
+
+//
+// include the base animations definition
+//
+
+$include models/human/animation/dialogue/generic_dialogue_german.tik
+$include models/human/new_generic_human.tik
+//$include models/human/animation/helmet_flyoff/helmet_flyoff_german_dakofficer.tik
+
+/*QUAKED ai_german_afrikacorps_officer (1.0 0.5 0.0) (-16 -16 0) (16 16 92)
+*/

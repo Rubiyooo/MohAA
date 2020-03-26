@@ -1,0 +1,125 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+ 
+init
+{
+	server  
+	{
+		classname Animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+
+		cache models/fx/crates/crate-jib-chunk.tik
+		cache bh_stone_piece.spr
+		cache fire_ring.spr
+		cache air_explosion.spr
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+			//*****************
+			//sound played here
+			//*****************
+			//enter sound
+
+			//**************************************
+			0 originspawn
+			(
+				model models/fx/crates/crate-jib-chunk.tik
+				count 6
+				color 1.00 1.00 1.00
+				collision
+				bouncefactor 0.30
+				scale 0.20
+				life 2.00
+				scalerate 1.00
+				velocity 400.00
+				friction -20.00
+				scalemin 0.20
+				scalemax 1.00
+				fade
+				sphere
+				align
+				randomroll
+			)
+
+			0 originspawn
+			(
+				count 4
+				model bh_stone_piece.spr
+				color 1.00 1.00 1.00
+				collision
+				bouncefactor 0.30
+				scale 0.20
+				life 2.00
+				velocity 500.00
+				friction -10.00
+				scalemin 0.20
+				scalemax 1.00
+				fade
+				randomroll
+			)
+
+			0 originspawn
+			(
+				model fire_ring.spr
+				color 1.00 1.00 1.00
+				scale 0.20
+				life 1.00
+				scalerate 55.00
+				velocity 200.00
+				scalemin 0.20
+				scalemax 0.50
+				sphere
+			)
+
+			0 originspawn
+			(
+				model air_explosion.spr
+				count 2
+				color 1.00 1.00 1.00
+				scale 0.50
+				life 1.00
+				scalerate 2.00
+				velocity 100.00
+				friction 1.00
+				scalemin 0.50
+				scalemax 2.00
+				sphere
+				align
+			)
+		}
+	}
+}
+
+//************************************
+//***        IMPORTANT
+//***     RENAME THE QUAKE-ED COMMENT
+//***     IN CONJUNCTION WITH THE
+//***  LD ENTITY MENU LAYOUT.DOC
+//***   UP IN SOURCE SAFE!!!!!!!!!!!!
+//************************************
+
+/*QUAKED fx_explosion_wallexploder (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+description of effect to appear in entity dialog
+*/

@@ -1,0 +1,148 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname Animate
+		notsolid
+		rendereffects +dontdraw
+		angles 270 0 0
+	}
+	client
+	{
+		cache textures/effects/bang.spr
+//		cache textures/effects/woodsplinters.spr
+		cache textures/sprites/metalshard_heavy.spr
+		cache textures/sprites/metalshard_med.spr
+		cache models/emitters/higgins_mushroom.tik
+
+		originemitter smoke
+		(
+			startoff
+			volumetric
+			model greasefire
+			count 1
+			alpha 0.40
+			color 0.25 0.25 0.25
+			scale 6
+			life 20
+			spawnrate 5
+			smokeparms 0 1.5 1.2
+			offset crandom 64 crandom 32 random -16
+			randvel crandom 12 crandom 12 random 16
+		)
+ 	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+			enter sound explode_tank
+
+			enter originspawn
+			(
+				model textures/effects/bang.spr
+				offset 0 0 256
+				scale 2
+				life 0.95
+			)
+
+			enter emitteron smoke
+			enter commanddelay 60 emitteroff smoke
+
+			enter commanddelay .3 originspawn
+			(
+				volumetric
+				model greasefire
+				count 45
+				alpha 0.4
+				color 0.25 0.25 0.25
+				scale 6
+				life 20
+				spawnrate 5
+				smokeparms 0 1.5 1.2
+				offset crandom 64 crandom 32 random 192
+				randvel crandom 12 crandom 12 random 16
+			)
+
+			enter commanddelay .3 originspawn
+			(
+				volumetric
+				model greasefire
+				count 10
+				alpha 0.4
+				color 0.25 0.25 0.25
+				scale 6
+				life 20
+				spawnrate 5
+				smokeparms 0 1.5 1.2
+				offset crandom 32 crandom 16 range 192 64
+				randvel crandom 12 crandom 12 random 16
+			)
+
+			// metal chunks
+			enter originspawn
+			(
+				model textures/sprites/metalshard_heavy.spr
+				count 15
+				offset crandom 64 crandom 64 random 64
+				angles random 360 random 360 0
+				avelocity crandom 180 crandom 180 0
+				randvel 0 0 range 400 200
+				radialvelocity 0 128 256
+				accel 0 0 -800
+				life 2.5
+				scalemin .5
+				scalemax 1
+			)
+
+			// slightly delayed, metal chunks
+			enter commanddelay 0.1 originspawn
+			(
+				model textures/sprites/metalshard_med.spr
+				count 15
+				offset crandom 64 crandom 64 random 64
+				angles random 360 random 360 0
+				avelocity crandom 180 crandom 180 0
+				randvel 0 0 range 400 200
+				radialvelocity 0 256 384
+				accel 0 0 -800
+				life 2.5
+				scalemin .5
+				scalemax 1
+			)
+
+			// mushroom cloud
+			enter originspawn
+			(
+				model models/emitters/higgins_mushroom.tik
+				offset 0 0 256
+				randvel 0 0 64
+				friction 0.3
+				life 5
+				anim idle
+			)
+		}
+	}
+}
+
+/*QUAKED animate_fx_explosion-tank (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Nate 5/Oct/2001 15:08 explosion from a tank blowing up
+*/

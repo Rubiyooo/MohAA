@@ -1,0 +1,32 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 0.52
+	path models/statweapons/30cal
+	skelmodel 30cal.skb
+	surface 30cal shader 30cal
+}
+
+init
+{
+	server
+      {
+      	classname animate
+      	setsize "-4 -4 0" "4 4 4"
+//     	seatoffset "-14 0 24"
+//      	gravity 1.5
+//      	vehiclespeed 800
+	}
+}
+
+
+animations
+{
+	idle     30cal.skc
+}
+
+/*QUAKED posed_allied_weapon_30cal (0.5 .25 0.25) (-8 -8 0) (8 8 16)
+non-working 30cal. machinegun
+*/

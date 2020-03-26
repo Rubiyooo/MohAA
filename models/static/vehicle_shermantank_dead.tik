@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52				// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/vehicles/shermantank
+	skelmodel sherman_dead.skd
+	surface shermandead1 shader static_shermantank_dead
+	surface shermandead3 shader static_shermantank_dead
+	surface shermandead4 shader static_shermantank_dead
+	surface shermantredz shader shermantredz
+	surface shermandead5 shader static_shermantank_dead
+	surface shermandead6 shader static_shermantank_dead
+	surface shermandead7 shader static_shermantank_dead
+}
+
+
+animations
+{
+	idle     sherman_dead.skc
+}
+
+/*QUAKED static_vehicle_allied_tank-sherman-destroyed (0.5 .25 0.25) (-32 -32 0) (32 32 128)
+static Sherman Tank destroyed - fixed by z
+*/

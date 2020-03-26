@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.75			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel barometer.skd
+	surface barometer shader static_barometer
+	surface glass shader static_baroglass
+}
+
+animations
+{
+	idle     barometer.skc
+}
+
+/*QUAKED static_uboat_bridge-barometer (0 0 0) (0 0 0) (0 0 0)
+*/

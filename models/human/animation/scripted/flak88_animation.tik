@@ -1,0 +1,22 @@
+animations 
+{
+	$path models/human/animation
+
+	//----------
+	//flak88 animations
+	//----------
+
+	// Used in m1l2 
+
+	88officer_fire			scripted/flak88/offic_fire.skc
+	88operator_idle			scripted/flak88/oper_idle_onwheel.skc
+	88operator_takecover	scripted/flak88/oper_takecover.skc
+	88operator_turnleft		scripted/flak88/oper_turnleft.skc
+	88operator_turnright	scripted/flak88/oper_turnright.skc
+	88operator_turnright	scripted/flak88/oper_turnright.skc
+	88officer_idle			scripted/flak88/offic_idle.skc
+	88officer_coverears		scripted/flak88/offic_coverears.skc
+	88operator_twitch		scripted/flak88/oper_idle.skc
+}
+
+

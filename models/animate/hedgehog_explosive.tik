@@ -1,0 +1,41 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	//scale 1.33			// Convert from inches to game units
+	path models/miscobj/hedgehog_explosive
+	skelmodel hedgehog_explosive.skd
+	surface hedgehog shader hedgehog
+	surface hedgebomb1 shader hedgebomb
+	surface hedgebomb2 shader hedgebomb
+}
+
+init
+{
+	server
+	{
+		classname animate
+		surface hedgebomb1	+nodraw
+		surface hedgebomb2	+nodraw
+	}
+}
+
+animations
+{
+	idle      hedgehog_explosive_idle.skc
+	plant	  hedgehog_explosive_anim.skc
+
+	{
+		server
+		{
+			0 surface hedgebomb1	+nodraw
+			0 surface hedgebomb2	+nodraw
+			12 surface hedgebomb1	-nodraw
+			73 surface hedgebomb2	-nodraw
+		}
+	}
+}
+
+/*QUAKED animate_obstacle_hedgehog-explosive (0.0 0.75 0.5) (-64 -56 0) (56 56 96)
+Benson Russell - 9-27-2001 - used for the engineer planting explosives sequences
+*/

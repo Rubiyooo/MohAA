@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/cablespools
+	skelmodel spoolfull.skd
+	surface material1 shader static_cablespool
+	surface material2 shader static_cable
+}
+
+animations
+{
+	idle     spoolfull.skc
+}
+
+/*QUAKED static_equipment_cablespool-full (0.5 0 0.5) (-8 -16 -16) (8 16 16)
+*/

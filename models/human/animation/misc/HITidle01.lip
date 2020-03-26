@@ -1,0 +1,402 @@
+<Num channels> 40
+<Num samples> 9
+<Channel> BROW_frown
+0
+50
+81
+89
+80
+60
+37
+15
+1
+<Channel> BROW_lift
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> BROW_R_lift
+20
+20
+20
+20
+20
+20
+20
+20
+20
+<Channel> BROW_worry
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> EYE_blink
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> EYES_down
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> EYES_Excited
+60
+42
+27
+15
+6
+0
+0
+0
+2
+<Channel> EYES_L_squint
+9
+10
+11
+11
+12
+12
+12
+12
+11
+<Channel> EYES_left
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> EYES_narrow
+0
+50
+100
+100
+100
+100
+100
+100
+100
+<Channel> EYES_right
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> EYES_smile
+0
+12
+21
+26
+28
+27
+26
+25
+24
+<Channel> EYES_up
+0
+7
+14
+21
+26
+29
+31
+30
+27
+<Channel> JAW_open-closed
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> JAW_open-open
+0
+0
+1
+2
+3
+3
+4
+4
+4
+<Channel> LIPS_compressed
+62
+61
+61
+62
+62
+62
+62
+62
+62
+<Channel> MOUTH_grimace
+10
+19
+28
+36
+44
+51
+58
+65
+73
+<Channel> MOUTH_L_smile_closed
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> MOUTH_L_smile_open
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> MOUTH_L_snarl_closed
+12
+12
+26
+33
+34
+31
+25
+19
+14
+<Channel> MOUTH_L_snarl_open
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> MOUTH_smile_closed
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> MOUTH_smile_open
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> MOUTH_Snarl_closed
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> MOUTH_Snarl_open
+40
+44
+49
+54
+58
+61
+64
+66
+68
+<Channel> VISEME_Bump
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Cage
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Church
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Earth
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Eat
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Fave
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_If
+0
+42
+85
+32
+28
+23
+19
+16
+15
+<Channel> VISEME_New
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Oat
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Ox
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Roar
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Size
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Though
+0
+0
+10
+40
+21
+1
+0
+0
+0
+<Channel> VISEME_Told
+0
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Wet
+0
+0
+0
+0
+0
+0
+0
+0
+0

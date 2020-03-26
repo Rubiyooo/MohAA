@@ -1,0 +1,49 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	server
+	{
+	}
+	client
+	{
+		cache bh_dirt_piece.spr
+
+		// chunky chunks of chunky stuff
+		sfx originspawn
+		(
+			model bh_dirt_piece.spr
+			color .5 .4 .15
+			spawnrange 1536
+			spritegridlighting
+			alpha 0.75
+			angles 0 0 random 360
+			avelocity 0 0 crandom 180
+			offsetalongaxis random 4 crandom 3 crandom 3
+			count 10
+			velocity 50
+			randvelaxis random 125 crandom 24 crandom 24
+			accel 0 0 -800
+			life 0.6 0.7
+			scalemin 0.2
+			scalemax 0.4
+			fadedelay 0.5
+//			collision
+//			dietouch
+//			bouncefactor 0.1
+//			bouncesound snd_bh_debris_dirt
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

@@ -1,0 +1,61 @@
+setup
+{
+	path models/human/animation/dialogue/M1L3/A
+}
+
+animations
+{
+//	$mapspec M1L3
+//	{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////   animations    ////////////////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+
+			////// TALKING IN JEEP ///////
+
+
+	dfr_M1L3_154m_1		actor_M1L3_154.skc
+	{
+		client		/// Lets split up. I'll draw their reinforcements away.
+		{
+			first sound dfr_M1L3_154m_2
+		}
+	}
+
+	dfr_M1L3_155m_1		actor_M1L3_155.skc
+	{
+		client		/// Go through that bunker to the light house.
+		{
+			first sound dfr_M1L3_155m_1
+		}
+	}
+
+	dfr_M1L3_156m_1		actor_M1L3_156.skc
+	{
+		client		/// I'll meet up with you there.
+		{
+			first sound dfr_M1L3_156m_1
+		}
+	}
+
+
+			////// SHOUTING FROM JEEP ///////
+
+
+
+	dfr_M1L3_157m_2		actor_M1L3_157.skc
+	{
+		client		/// Hurry Powell. Get in the back of the Jeep.
+		{
+			first sound dfr_M1L3_157m_2
+		}
+	}
+
+			////////////////////////////////
+
+
+//	}//end mapspec M1L3
+}

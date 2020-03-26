@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel subvalve-big.skd
+	surface subvalve shader static_subvalve-red-black
+}
+
+init
+{
+	server
+	{
+		classname animate
+	}
+}
+
+animations
+{
+	idle     subvalve-big.skc
+}
+
+/*QUAKED animate_equipment_subvalve-big-red (0 0 0) (-16 -16 0) (24 24 40)
+Ned 8/Oct/2001 12:25 gas line valve 
+*/

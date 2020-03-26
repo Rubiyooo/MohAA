@@ -1,0 +1,30 @@
+TIKI
+setup
+{
+	path models/equipment/germangear/helmets
+
+	skelmodel ghelmetflyoff.skd
+	surface helmet shader wehrmact_helmet
+
+	scale 0.52				// Set default scale to 16/30.5 since world is 
+						// in 16 units per foot and model is in cm's
+	radius 5				// Defines size of shadow
+	//origin 0 0 -50	// This command is broken so I had to make a seperate model.
+}
+
+init
+{
+	server
+	{
+      	classname Animate
+		setsize "-8 -8 -8" "8 8 8"
+	}
+}
+
+//
+// include the base animations definition
+//
+animations
+{
+	idle	ghelmetflyoff.skc
+}

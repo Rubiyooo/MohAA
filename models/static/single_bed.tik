@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/furniture
+	skelmodel single_bed.skd
+	surface single_bed shader static_single_bed
+}
+
+animations
+{
+	idle     single_bed.skc
+}
+
+/*QUAKED static_furniture_singlebed (0.5 0.0 0.5) (-64 -32 0) (72 32 64)
+*/

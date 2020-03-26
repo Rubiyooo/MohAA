@@ -1,0 +1,22 @@
+
+animations
+{
+	$path models/human/animation
+
+
+
+	//PICK LOCK
+
+	picklock_intro		scripted/level_m1l1/picklock_intro.skc
+	picklock_loop		scripted/level_m1l1/picklock_loop.skc
+	{
+		client			///go go get the trock moving
+		{
+			0 sound lock_pick
+		}
+	} 
+	picklock_end		scripted/level_m1l1/picklock_outro.skc
+
+
+}
+

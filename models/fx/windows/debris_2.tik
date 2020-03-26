@@ -1,0 +1,39 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		sound snd_glass_shatter
+
+		originspawn
+		(
+			spawnrate 1.00
+			model glass_small.spr
+			count 31
+			color 1.00 1.00 1.00
+			collision
+			bouncefactor 0.30
+			scale 0.08
+			life 1.00
+			velocity 330.00
+			accel 0.00 0.00 -500.00
+			scalemin 0.08
+			scalemax 0.40
+			fade
+			sphere
+			randomroll
+		)
+	}
+}
+
+animations
+{
+	idle dummy2.skc
+}

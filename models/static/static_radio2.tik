@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel radio2.skd
+	surface material1 shader static_radio2
+}
+
+animations
+{
+	idle     radio2.skc
+}
+
+/*QUAKED static_uboat_radio2 (0 0 0) (0 0 0) (0 0 0)
+*/

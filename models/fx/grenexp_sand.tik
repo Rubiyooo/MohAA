@@ -1,0 +1,89 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		// dusty sprites
+
+		sfx originspawn
+		(
+			count 8
+			model vsssource.spr
+			spritegridlighting
+			circle
+			radius 16
+			offset 0 0 16
+			radialvelocity 0 64 128
+			clampvel -999 999 -999 999 0 0
+			angles crandom 45 crandom 45 crandom 180
+			avelocity 0 0 crandom 90
+			life 1 .5
+			fade
+			scalemin .75
+			scalemax 1
+			scalerate .5
+			alpha 0.25
+			color .44 .4 .36
+			collision
+			bouncefactor .2
+		)
+
+		sfx originspawn
+		(
+			count 16
+			model vsssource.spr
+			circle
+			radius 32
+			offset 0 0 16
+			radialvelocity 0 64 128
+			clampvel -999 999 -999 999 0 0
+			angles crandom 45 crandom 45 crandom 180
+			avelocity 0 0 crandom 90
+			life 1 .5
+			scalemin 1.25
+			scalemax 1.75
+			scalerate 1
+			fade
+			alpha 0.5
+			color .44 .4 .36
+			spritegridlighting
+			collision
+			bouncefactor .2
+		)
+
+//		sfx originspawn
+//		(
+//			model bh_dirt_piece.spr
+//			spawnrange 1536
+//			spritegridlighting
+//			alpha 0.75
+//			angles 0 0 random 360
+//			avelocity 0 0 range 360 360
+//			circle
+//			radius 32
+//			offset 0 0 range 16 16
+//			radialvelocity 0 384 640
+//			count 32
+//			accel 0 0 -600
+//			life 1.6 0.7
+//			scalemin .25
+//			scalemax 1.5
+//			fadedelay 1.5
+//			collision
+//			bouncefactor .5
+//		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

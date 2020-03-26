@@ -1,0 +1,27 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	//scale 1.33			// Convert from inches to game units
+	path models/miscobj/barbwire
+	skelmodel barbwire_long.skd
+	surface bplane shader bplane
+	surface bspindle shader bspindle
+}
+
+init
+{
+	server
+	{
+		classname animate
+	}
+}
+
+animations
+{
+	idle     barbwire_long.skc
+}
+
+/*QUAKED animate_obstacle_barbwire-long (0.0 0.75 0.5) (0 0 0) (0 0 0)
+Benson Russell - 9-27-2001 - barbwire that blows up in bangalore shingle sequence
+*/

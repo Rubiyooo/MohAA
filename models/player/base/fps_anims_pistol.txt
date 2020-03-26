@@ -1,0 +1,110 @@
+animations
+{
+	$path models/human/animation
+
+	//========================
+	// Colt Anims
+	//========================
+	colt45_idle	 			viewmodel/pistol/coltpose.skc					crossblend 0.3
+	colt45_fire				viewmodel/pistol/fire_colt.skc					crossblend 0.05	
+	colt45_fire_secondary1	viewmodel/pistol/pistolwhip1.skc	random
+	{
+		client
+		{
+			entry sound pistol_whip // the swish sound. 
+		}
+	}
+
+	colt45_fire_secondary2	viewmodel/pistol/pistolwhip2.skc	random
+	{
+		client
+		{
+			entry sound pistol_whip // the swish sound. 
+		}
+	}
+	colt45_reload			viewmodel/pistol/reload_colt.skc				crossblend 0.3
+	colt45_pullout			viewmodel/pistol/pullout_colt.skc
+	{
+		client
+		{
+			enter sound snd_pistol_pullout
+		}
+	}
+	colt45_putaway			viewmodel/pistol/putaway_colt.skc
+	{
+		client
+		{
+			enter sound snd_pistol_putaway
+		}
+	}
+	
+	//========================
+	// P38 Anims
+	//========================
+	p38_idle	 			viewmodel/pistol/coltpose.skc					crossblend 0.3
+	p38_fire				viewmodel/pistol/fire_colt.skc					crossblend 0.05	
+	p38_fire_secondary1		viewmodel/pistol/pistolwhip1.skc	random
+	{
+		client
+		{
+			entry sound pistol_whip // the swish sound. 
+		}
+	}
+	p38_fire_secondary2		viewmodel/pistol/pistolwhip2.skc	random
+	{
+		client
+		{
+			entry sound pistol_whip // the swish sound. 
+		}
+	}
+	p38_reload			viewmodel/pistol/reload_p38.skc						crossblend 0.3
+	p38_pullout			viewmodel/pistol/pullout_colt.skc
+	{
+		client
+		{
+			enter sound snd_pistol_pullout
+		}
+	}
+	p38_putaway			viewmodel/pistol/putaway_colt.skc
+	{
+		client
+		{
+			enter sound snd_pistol_putaway
+		}
+	}
+	
+	//========================
+	// Hi-Standard Anims
+	//========================
+	histandard_idle	 			viewmodel/pistol/coltpose.skc				crossblend 0.3
+	histandard_fire				viewmodel/pistol/fire_hp.skc				crossblend 0.05	
+	histandard_fire_secondary1	viewmodel/pistol/pistolwhip1.skc	random
+	{
+		client
+		{
+			entry sound pistol_whip // the swish sound. 
+		}
+	}
+	histandard_fire_secondary2	viewmodel/pistol/pistolwhip2.skc	random
+	{
+		client
+		{
+			entry sound pistol_whip // the swish sound. 
+		}
+	}
+	histandard_reload			viewmodel/pistol/reload_hp.skc				crossblend 0.3
+	histandard_pullout			viewmodel/pistol/pullout_colt.skc
+	{
+		client
+		{
+			enter sound snd_pistol_pullout
+		}
+	}
+	histandard_putaway			viewmodel/pistol/putaway_colt.skc
+	{
+		client
+		{
+			enter sound snd_pistol_putaway
+		}
+	}
+}

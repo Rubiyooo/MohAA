@@ -1,0 +1,87 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter pipe
+		(
+			spawnrate 3.00
+			model models/fx/heavy_pipe.tik
+			count 2
+			color 1.00 1.00 1.00
+			collision
+			bouncefactor 0.30
+			scale 0.02
+			life 3.00
+			velocity 500.00
+			randvelaxis range 20 -50 crandom -40 range 10 -30
+			accel 0.00 0.00 -200.00
+			offset crandom -10 crandom -10 crandom -10
+			angles range 300 -150 range 300 -200 range 500 -100
+			avelocity range 600 -120 range 300 -300 range 200 -200
+			scalemin 0.02
+			scalemax 0.09
+			fade
+			randomroll
+		)
+		originemitter ibeam
+		(
+			spawnrate 2.00
+			model models/fx/ibeam_piece.tik
+			count 15
+			color 1.00 1.00 1.00
+			collision
+			bouncefactor 0.30
+			scale 0.40
+			life 3.00
+			velocity 600.00
+			accel 0.00 0.00 -500.00
+			offsetalongaxis range 20 -80 range 20 -60 range 20 -50
+			angles crandom -32 crandom -32 crandom -32
+			avelocity range 20 400 range 230 1800 range 303 1000
+			scalemin 0.10
+			scalemax 0.40
+			alignstretch 0.02
+			randomroll
+		)
+            
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron ibeam
+			enter emitteron pipe
+			
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff ibeam
+			enter emitteroff pipe
+		  }
+	}
+}
+
+/*QUAKED fx_exploder_metaljibs1 (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+*/

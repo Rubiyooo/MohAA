@@ -1,0 +1,28 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 0.52
+	path models/miscobj/radio
+	skelmodel radio_civilian.skd
+	surface radio_civilian shader radio_civilian
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+
+animations
+{
+	idle     radio_civilian.skc
+}
+
+/*QUAKED static_decor_radio-civilian (0.5 .25 0.25) (-16 -16 0) (16 16 32)
+civilian desk-top radio
+*/

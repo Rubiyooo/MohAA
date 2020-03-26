@@ -1,0 +1,66 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -6 14 5 ) ( -25 14 5 ) ( -25 -13 5 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -24 -13 6 ) ( -24 14 6 ) ( -5 14 6 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -25 -13 41 ) ( -6 -13 41 ) ( -6 -13 5 ) common/woodclip 0 -2 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 25 -14 41 ) ( 25 13 41 ) ( 25 13 5 ) common/woodclip 0 -2 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -6 13 41 ) ( -25 13 41 ) ( -25 13 5 ) common/woodclip 0 -2 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -25 14 41 ) ( -25 -13 41 ) ( -25 -13 5 ) common/woodclip 0 -2 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+}
+// brush 1
+{
+( 23 10 7 ) ( 23 12 7 ) ( 22 12 7 ) common/woodclip -45 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 21 9 43 ) ( 21 13 43 ) ( 24 13 43 ) common/woodclip -45 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 24 10 7 ) ( 21 10 7 ) ( 21 9 43 ) common/woodclip -45 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 23 12 7 ) ( 23 10 7 ) ( 24 9 43 ) common/woodclip 0 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 21 12 7 ) ( 24 12 7 ) ( 24 13 43 ) common/woodclip -45 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 22 10 7 ) ( 22 12 7 ) ( 21 13 43 ) common/woodclip 0 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+}
+// brush 2
+{
+( 23 -12 7 ) ( 23 -10 7 ) ( 22 -10 7 ) common/woodclip -45 -22 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 21 -13 43 ) ( 21 -9 43 ) ( 24 -9 43 ) common/woodclip -45 -22 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 24 -12 7 ) ( 21 -12 7 ) ( 21 -13 43 ) common/woodclip -45 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 23 -10 7 ) ( 23 -12 7 ) ( 24 -13 43 ) common/woodclip 22 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 21 -10 7 ) ( 24 -10 7 ) ( 24 -9 43 ) common/woodclip -45 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 22 -12 7 ) ( 22 -10 7 ) ( 21 -9 43 ) common/woodclip 22 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+}
+// brush 3
+{
+( -22 -12 7 ) ( -22 -10 7 ) ( -23 -10 7 ) common/woodclip 0 -22 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -24 -13 43 ) ( -24 -9 43 ) ( -21 -9 43 ) common/woodclip 0 -22 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -21 -12 7 ) ( -24 -12 7 ) ( -24 -13 43 ) common/woodclip 0 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -22 -10 7 ) ( -22 -12 7 ) ( -21 -13 43 ) common/woodclip 22 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -24 -10 7 ) ( -21 -10 7 ) ( -21 -9 43 ) common/woodclip 0 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -23 -12 7 ) ( -23 -10 7 ) ( -24 -9 43 ) common/woodclip 22 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+}
+// brush 4
+{
+( -22 10 7 ) ( -22 12 7 ) ( -23 12 7 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -24 9 43 ) ( -24 13 43 ) ( -21 13 43 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -21 10 7 ) ( -24 10 7 ) ( -24 9 43 ) common/woodclip 0 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -22 12 7 ) ( -22 10 7 ) ( -21 9 43 ) common/woodclip 0 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -24 12 7 ) ( -21 12 7 ) ( -21 13 43 ) common/woodclip 0 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -23 10 7 ) ( -23 12 7 ) ( -24 13 43 ) common/woodclip 0 -6 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+}
+// brush 5
+{
+( -6 32 43 ) ( -26 32 43 ) ( -26 -32 43 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -26 -32 49 ) ( -26 32 49 ) ( -6 32 49 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -26 -16 49 ) ( -6 -16 49 ) ( -6 -16 43 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 26 -32 49 ) ( 26 32 49 ) ( 26 32 43 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -6 16 49 ) ( -26 16 49 ) ( -26 16 43 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -26 32 49 ) ( -26 -32 49 ) ( -26 -32 43 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+}
+// brush 6
+{
+( 32 -29 49 ) ( -32 -29 49 ) ( -32 -32 49 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -32 -32 50 ) ( -32 -29 50 ) ( 32 -29 50 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -32 -32 50 ) ( 32 -32 50 ) ( 32 -32 49 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 32 -32 50 ) ( 32 -29 50 ) ( 32 -29 49 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 32 32 49 ) ( -32 32 49 ) ( -32 32 48 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( -32 -29 50 ) ( -32 -32 50 ) ( -32 -32 49 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+}
+}

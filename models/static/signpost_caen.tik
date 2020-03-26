@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/signpost
+	skelmodel signpost_cean.skd
+	surface signpost shader static_signpost_CEAN
+}
+
+animations
+{
+	idle     signpost_cean.skc
+}
+
+/*QUAKED static_signpost_caen (0.5 0.0 0.5) (-16 -24 0) (16 16 120)
+*/

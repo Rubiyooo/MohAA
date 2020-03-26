@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.85			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel 6lamp.skd
+	surface material1 shader static_6lamp
+}
+
+animations
+{
+	idle     6lamp.skc
+}
+
+/*QUAKED static_uboat_6lamp-panel (-8 -8 -8) (0 -8 0) (8 8 8)
+*/

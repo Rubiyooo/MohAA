@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/furniture/chairs
+	skelmodel grillchair.skd
+	surface grillchair shader grillchair
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     grillchair.skc
+}
+
+/*QUAKED static_furniture_grillchair (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

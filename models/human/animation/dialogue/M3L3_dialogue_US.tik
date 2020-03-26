@@ -1,0 +1,232 @@
+setup
+{
+	path models/human/animation/dialogue/M3L3/A
+}
+
+animations
+{
+//	$mapspec M3L3
+//	{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////    animations    ///////////////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+	dfr_M3L3_idle			actor_M3L3_idle.skc
+
+			////// Airstrike Responses ///////
+
+	dfr_M3L3_350j_2			actor_M3L3_350.skc
+	{
+		client			/// Beautiful, that’s the way to win a war.
+		{
+			first sound dfr_M3L3_350j_2
+		}
+	}
+
+	dfr_M3L3_351j_2			actor_M3L3_351.skc
+	{
+		client			/// Another 88 Powell. Call in the fly boys.
+		{
+			first sound dfr_M3L3_351j_2
+		}
+	}
+
+
+			////// 101st airborn ///////
+
+
+	dfr_M3L3_353j			actor_M3L3_353.skc
+	{
+		client			/// You fellows seen any unusual looking German rocket launchers around here?
+		{
+			first sound dfr_M3L3_353j
+		}
+	}
+
+	dfr_M3L3_354c			actor_M3L3_354.skc
+	{
+		client			/// Yes Captain we have. Just down the road a bit in fact.
+		{
+			first sound dfr_M3L3_354c
+		}
+	}
+
+	dfr_M3L3_355j			actor_M3L3_355.skc
+	{
+		client			/// What's your name Soldier?
+		{
+			first sound dfr_M3L3_355j
+		}
+	}
+
+
+	dfr_M3L3_356c			actor_M3L3_356.skc
+	{
+		client			/// Sergeant Harrison, Pathfinders, 101st.
+		{
+			first sound dfr_M3L3_356c
+		}
+	}
+
+	dfr_M3L3_357j			actor_M3L3_357.skc
+	{
+		client			/// Good to meet you Sergeant Harrison, I'm Ramsey, 2nd Rangers.
+		{
+			first sound dfr_M3L3_357j
+		}
+	}
+
+	dfr_M3L3_358j			actor_M3L3_358.skc
+	{
+		client			/// This is Powell.
+		{
+			first sound dfr_M3L3_358j
+		}
+	}
+
+	dfr_M3L3_359c			actor_M3L3_359.skc
+	{
+		client			/// Captain...Lieutenant.
+		{
+			first sound dfr_M3L3_359c
+		}
+	}
+
+	dfr_M3L3_360j			actor_M3L3_360.skc
+	{
+		client			/// So what did these weapons look like?
+		{
+			first sound dfr_M3L3_360j
+		}
+	}
+
+	dfr_M3L3_361c			actor_M3L3_361.skc
+	{
+		client			/// Well sir we didn't exactly see them real close up. But we heard them from a long ways off. I've never heard anything like it.
+		{
+			first sound dfr_M3L3_361c
+		}
+	}
+
+	dfr_M3L3_362c			actor_M3L3_362.skc
+	{
+		client			/// I guess I could take you there if you want.
+		{
+			10 sound dfr_M3L3_362c
+		}
+	}
+
+	dfr_M3L3_363j			actor_M3L3_363.skc
+	{
+		client			/// That would be great. Get your squad together and lead the way.
+		{
+			first sound dfr_M3L3_363j
+		}
+	}
+
+	dfr_M3L3_364c			actor_M3L3_364.skc
+	{
+		client			/// Yes sir.
+		{
+			10 sound dfr_M3L3_364c
+		}
+	}
+
+			////// new ///////
+
+	dfr_m3l3_321j_1			actor_M3L3_321.skc
+	{
+		client			/// Powell, you take point, lets get out of here.
+		{
+			first sound dfr_m3l3_321j_1
+		}
+	}
+
+
+	dfr_target_023j_3			actor_M3L3_23.skc
+	{
+		client			/// take out that halftrack
+		{
+			first sound dfr_target_023j_3
+		}
+	}
+
+
+	dfr_directive_142j_1			actor_M3L3_142.skc
+	{
+		client			/// use panzerschreck
+		{
+			first sound dfr_directive_142j_1
+		}
+	}
+
+	dfr_follow_02h_1			actor_M3L3_2.skc
+	{
+		client			/// ill cover you
+		{
+			first sound dfr_follow_02h_1
+		}
+	}
+
+	dfr_before_043c_3			actor_M3L3_43.skc
+	{
+		client			/// take point
+		{
+			first sound dfr_before_043c_3
+		}
+	}
+
+	dfr_M3L3_add01 			actor_M3L3_add01.skc
+	{
+		client			/// take point
+		{
+			first sound dfr_M3L3_add01 
+		}
+	}
+
+	dfr_M3L3_add02 			actor_M3L3_add02.skc
+	{
+		client			/// take point
+		{
+			first sound dfr_M3L3_add02 
+		}
+	}
+
+	dfr_M3L3_add03 			actor_M3L3_add03.skc
+	{
+		client			/// take point
+		{
+			first sound dfr_M3L3_add03 
+		}
+	}
+
+			////// 101st airborn ///////
+
+
+	dfr_M3L3_365j			actor_M3L3_365.skc
+	{
+		client			/// Squad listen up!
+		{
+			first sound dfr_M3L3_365j
+		}
+	}
+
+	dfr_M3L3_366j			actor_M3L3_366.skc
+	{
+		client			/// We have to take out those artillery rockets.
+		{
+			first sound dfr_M3L3_366j
+		}
+	}
+
+
+		////////////////////////////////
+
+
+		////////////////////////////////
+
+
+//	}//end mapspec M3L3
+}

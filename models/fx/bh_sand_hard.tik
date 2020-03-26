@@ -1,0 +1,63 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	server
+	{
+	}
+	client
+	{
+		//cache some stuff used in this effect
+		cache bhole_sand.spr // cache the bullet hole shader
+		cache bh_sand.spr
+
+		// initial impact sprite
+		sfx originspawn
+		(
+			model bh_sand.spr		// 64x64
+			spritegridlighting
+			alpha 1.0
+			angles 0 0 0
+			offsetalongaxis 0 0 0
+			offset 0 0 16			// z offset is image heigt * scale / 2
+			count 1
+			life 0.25
+			scale 0.5
+			scalerate 16
+			randvel 0 0 256			// z vel is image height * scale * scalerate / 2
+			fade
+			physicsrate every		// simple velocity physics are cheap
+		)
+
+		// drifting smoke
+		sfx originspawn
+		(
+			volumetric
+			model bulletdirtimpact	// sets the type of smoke
+			life 16		// amount of smoke
+			count 15
+			smokeparms 0 2.5 2.5
+			scale 2.5	// radius
+			alpha 0.5	// density
+//			color 0.75 0.6 0.4	// RBG color of the smoke
+			color 0.75 0.7 0.6	// RBG color of the smoke
+			velocity 8	// base velocity away from the surface
+			randvelaxis random 16 crandom 24 crandom 24
+//			offsetalongaxis random 40 crandom 2 crandom 2	// positional offset
+			cone 36 20			// height radius
+//			collision // turn on collision detection
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

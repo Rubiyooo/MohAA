@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/winecasks
+	skelmodel winecasks.skd
+	surface winecasks shader static_winecasks
+}
+
+animations
+{
+	idle     winecasks.skc
+}
+
+/*QUAKED static_furniture_winecasks (0.5 0.0 0.5) (-28 -44 0) (28 40 88)
+Wardrobe
+*/

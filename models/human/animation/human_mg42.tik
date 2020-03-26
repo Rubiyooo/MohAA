@@ -1,0 +1,39 @@
+animations // Now list all of the animations and any special commands for them
+{
+$path models/human/animation
+
+MG42_crouch_idle01		weapon_mg42/MG42_crouch_idle_a(loop).skc		weight 5
+MG42_crouch_idle02		weapon_mg42/MG42_crouch_idle_b(twitch).skc	weight 1 dontrepeate
+MG42_crouch_shoot			weapon_mg42/MG42_crouch_shooting.skc
+MG42_crouch_pain			weapon_pistol/minor_pain/pistol_crouch_hit_front.skc
+MG42_crouch_reload		weapon_mg42/MG42_crouch_reload.skc
+MG42_crouch_left			weapon_mg42/MG42_crouch_left.skc
+MG42_crouch_right			weapon_mg42/MG42_crouch_right.skc
+
+MG42_stand_idle01			weapon_mg42/MG42_stand_idle_a(loop).skc		weight 5
+MG42_stand_idle02			weapon_mg42/MG42_stand_idle_b(twitch).skc		weight 1 dontrepeate
+MG42_stand_shoot		weapon_mg42/MG42_stand_firing02.skc
+MG42_stand_pain			weapon_mg42/MG42_stand_pain_a(general).skc
+MG42_stand_reload			weapon_mg42/MG42_stand_reload.skc
+MG42_stand_left1			weapon_mg42/MG42_stand_left1.skc
+MG42_stand_left2			weapon_mg42/MG42_stand_left2.skc
+MG42_stand_right1			weapon_mg42/MG42_stand_right1.skc
+MG42_stand_right2			weapon_mg42/MG42_stand_right2.skc
+
+MG42_high_idle			weapon_mg42/MG42_high_idle.skc
+MG42_high_shoot			weapon_mg42/MG42_high_firing.skc		
+
+MG42_spotter_crouch_left 	weapon_mg42/MG42_spotter_crouch_left.skc 
+MG42_spotter_crouch_right	weapon_mg42/MG42_spotter_crouch_right.skc
+MG42_spotter_stand_right	weapon_mg42/MG42_spotter_stand_right.skc
+MG42_spotter_stand_left		weapon_mg42/MG42_spotter_stand_left.skc
+
+MG42_stand_bored_a_intro		idle/unarmed_idle_moretough_intro.skc
+MG42_stand_bored_a01			idle/unarmed_idle_moretough01(loop).skc	weight 2
+MG42_stand_bored_a02			idle/unarmed_idle_moretough02(twitch).skc	weight 1 dontrepeate
+MG42_stand_bored_a_outtro		idle/unarmed_idle_moretough_outtro.skc
+MG42_stand_bored_b_intro		idle/unarmed_idle_lesstough_intro.skc
+MG42_stand_bored_b			idle/unarmed_idle_lesstough.skc
+MG42_stand_bored_b_outtro		idle/unarmed_idle_lesstough_outtro.skc
+
+}

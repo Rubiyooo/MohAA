@@ -1,0 +1,41 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/welder_torch
+	skelmodel welder_tank.skd
+	surface material1 shader tanks
+	surface material2 shader tanktop
+	surface material3 shader wheel
+	surface material4 shader welder
+	surface material5 shader redhose
+	surface material6 shader greenhose
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+
+animations
+{
+	idle			welder_tank.skc
+	tank_test		welder_tank.skc
+	tank_init		tank_idle.skc
+	tank_start		tank_start.skc
+	tank_action		tank_action.skc
+	tank_end		tank_end.skc
+	tank_idle		tank_idle.skc
+	tank_stop		tank_end.skc
+	tank_drop		tank_drop.skc
+	tank_death		tank_death.skc
+
+
+}
+
+/*QUAKED static_equipment_welding-tank (0.0 0.75 0.5) (-36 -4 0) (8 4 56)
+*/

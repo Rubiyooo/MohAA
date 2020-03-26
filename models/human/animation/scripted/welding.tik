@@ -1,0 +1,87 @@
+
+animations
+{
+	$path models/human/animation
+
+//	init
+//	{
+//		server
+//		{
+//			surface material10 +nodraw
+//		}
+//
+//	}
+
+
+	//Welding animation 
+
+	welding_init		scripted/welding/welding_idle.skc
+	{				
+		server
+		{
+			0 attachmodel models/miscobj/welding_torch.tik tag_weapon_left
+			0 attachmodel models/miscobj/welding_mask.tik tag_weapon_right
+			0 attachmodel models/miscobj/welding_tank.tik ORIGIN
+			1 attachedmodelanim ORIGIN tank_action
+		}	
+ 	}
+
+	welding_start			scripted/welding/welding_start.skc
+	{
+		server
+		{
+			0 attachedmodelanim tag_weapon_left idleon
+			0 attachedmodelanim ORIGIN tank_start
+		}
+	}
+	welding_action			scripted/welding/welding.skc
+	{
+		server
+		{
+			0 attachedmodelanim ORIGIN tank_action
+		}
+	}
+	
+
+	welding_end			scripted/welding/welding_end.skc
+	{
+		server
+		{
+			last attachedmodelanim tag_weapon_left idleoff
+			0 attachedmodelanim ORIGIN tank_end
+		}
+	}
+	welding_idle			scripted/welding/welding_idle.skc
+	{
+		server
+		{
+			0 attachedmodelanim ORIGIN tank_idle
+		}
+	}
+	
+	welding_stop		scripted/welding/welding_end.skc
+ 	{				
+		server
+		{
+//			0 attachedmodelanim ORIGIN tank_death
+			0 removeattachedmodel ORIGIN
+			1 surface material10 -nodraw
+			last removeattachedmodel tag_weapon_left
+			last removeattachedmodel tag_weapon_right
+		}	
+	}
+	welding_death		scripted/welding/welding_death.skc
+ 	{				
+		server
+		{
+//			0 attachedmodelanim ORIGIN tank_death
+			1 surface material10 -nodraw
+			0 removeattachedmodel ORIGIN
+			last removeattachedmodel tag_weapon_left
+			last removeattachedmodel tag_weapon_right
+
+		}	
+	}
+
+}
+

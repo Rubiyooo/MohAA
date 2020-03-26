@@ -1,0 +1,17 @@
+grenade_crouch_prone			grenade_crouch_prone.skc
+	grenade_prone_attack_left		grenade_prone_attack_left.skc
+	grenade_prone_attack_right		grenade_prone_attack_right.skc
+	grenade_prone_attack_straight		grenade_prone_attack_straight.skc
+	grenade_prone_walk_back			grenade_prone_walk_back.skc
+	grenade_prone_roll_left			grenade_prone_roll_left.skc
+	grenade_prone_roll_right		grenade_prone_roll_right.skc
+	grenade_prone_turn_left			grenade_prone_turn_left.skc
+	grenade_prone_turn_right		grenade_prone_turn_right.skc
+	grenade_prone_takeout			grenade_prone_takeout.skc
+	grenade_prone_putaway			grenade_prone_putaway.skc
+	grenade_prone_throw_straight		grenade_prone_throw_straight.skc
+	grenade_prone_throw_left		grenade_prone_throw_left.skc
+	grenade_prone_throw_right		grenade_prone_throw_right.skc
+	grenade_prone_walk			grenade_prone_walk.skc
+	grenade_prone_walk_right		grenade_prone_walk_right.skc
+	grenade_prone_walk_left			grenade_prone_walk_left.skc		

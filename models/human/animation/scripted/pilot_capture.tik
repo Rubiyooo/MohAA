@@ -1,0 +1,65 @@
+animations 
+{
+	$path models/human/animation
+
+	//----------
+	//interrogation animations
+	//----------
+
+
+
+
+
+//  Order of Animation:
+//  1.	plane_german1_idle1  and   plane_german2_idle1
+//  2.	actor_m4l1_400///German1
+//  3.	plane_german2_getup  
+//  4.	actor_m4l1_401///German2
+//  5.	plane_german1_idle2
+//  6.	plane_german2_idle1
+//  7.	actor_m4l1_402///German1
+//  8.	plane_german1_idle2
+
+
+	// Used in m1l2 
+
+	actor_m4l1_400			scripted/piperplane/german_1_dial_1.skc
+	{
+		client
+		{
+			first sound den_M4L1_400p	 	// a survivor
+		}
+	}
+	
+	actor_m4l1_402			scripted/piperplane/german_1_dial_2.skc
+	{
+		client
+		{
+			first sound den_M4L1_402a	  	// a spy, kill him
+		}
+	}
+
+	actor_m4l1_401			scripted/piperplane/german_2_dial_1.skc	
+	{
+		client
+		{
+			first sound den_M4L1_401r	  	// the american pilot
+		}
+	}
+
+	
+
+	plane_german1_idle1			scripted/piperplane/german_1_idle_1.skc
+	plane_german1_idle2			scripted/piperplane/german_1_idle_2.skc	
+	plane_german2_getup			scripted/piperplane/german_2_getup.skc
+	plane_german2_idle1			scripted/piperplane/german_2_idle_1.skc	
+
+
+	pilot_walk					scripted/piperplane/pilot_walk.skc	
+	pilot_idle					scripted/piperplane/pilot_idle.skc
+	pilot_falldown				scripted/piperplane/pilot_falldown.skc
+	pilot_ground_idle				scripted/piperplane/pilot_ground_idle.skc
+
+	plane_german_kick				scripted/piperplane/german_kick.skc
+			
+}

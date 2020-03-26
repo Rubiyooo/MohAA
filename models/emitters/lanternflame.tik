@@ -1,0 +1,73 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+//		light 1 1 1 256
+	}
+	client
+	{
+		originemitter flame1
+		(
+			spawnrate 100.00
+			model models/fx/bh_metal_fastpiece.tik
+			color 1.00 1.00 1.00
+			scale 0.20
+			life 0.10
+			scalerate 10.00
+			offset crandom -0.3 range 0.1 -0.1 crandom -0.5
+			offsetalongaxis range 0.2 -0.2 0.3 range 0.2 -0.2
+			angles 90 -90 crandom -20
+			scalemin 0.20
+			scalemax 0.30
+			fade
+		)
+		originemitter flame2
+		(
+			spawnrate 22.00
+			model corona_reg.spr
+			color 1.00 1.00 1.00
+			scale 0.01
+			life 0.20
+			scalerate 0.50
+			accel 0.00 0.00 -0.05
+			offset 0 range 0.1 -0.5 range 0.1 -0.5
+		)
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron flame1
+			enter emitteron flame2
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff flame1
+			enter emitteroff flame2
+
+		}
+	}
+}
+
+/*QUAKED fx_lamp_flame (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+for a lantern upon a table...
+*/

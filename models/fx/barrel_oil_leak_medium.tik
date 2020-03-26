@@ -1,0 +1,62 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		//cache some stuff used in this effect
+		cache models/fx/barrel_oil_long.tik
+		cache barrel_oil_drop.spr
+		
+		sfx originspawn
+		(
+			model models/fx/barrel_oil_long.tik
+			align
+			alpha 1.0
+			count 2
+			life 0.4
+            fadedelay 0.3
+            scalemin 2.5
+            scalemax 2.75
+            scalerate 1.5
+            offset 0 0 1
+			offsetalongaxis crandom 1 0 0
+			velocity 48
+			randvelaxis random 24 crandom 12 crandom 12
+			accel 0 0 -800
+
+			physicsrate every
+		)
+		
+		sfx originspawn
+		(
+			model barrel_oil_drop.spr
+			alpha 1.0
+			count 2
+			life 0.4
+            fadedelay 0.3
+            scalemin .125
+            scalemax .15
+            scalerate 1.5
+            offset 0 0 1
+			offsetalongaxis crandom 1 0 0
+			velocity 48
+			randvelaxis random 24 crandom 12 crandom 12
+			accel 0 0 -800
+
+			physicsrate every
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc
+}

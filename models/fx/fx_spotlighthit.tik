@@ -1,0 +1,88 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+ 
+init
+{
+	server  
+	{
+	//	hide
+	//	ghost
+		classname    Explosion
+		radiusdamage 60
+		meansofdeath explosion
+		life         0
+	//	svflags +sendonce
+		classname Animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache models/fx/bh_metal_fastpiece.tik
+		cache corona_util.spr
+	}
+}
+
+animations
+{
+	idle dummy2.skc
+	start dummy2.skc
+	{
+		server    
+		{ 
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+		//	entry sound grenade_explode
+
+			enter originspawn
+			(
+				count 1.00
+				model corona_util.spr
+				color 1.00 1.00 1.00
+				varycolor
+				life 0.10
+				scalerate 11.00
+				fade
+			)
+
+			enter commanddelay 0.100 originspawn
+			(
+				model models/fx/bh_metal_fastpiece.tik
+				count 25
+				color 1.00 1.00 1.00
+				scale 0.20
+				life 5.00
+				scalerate 3.00
+				velocity 500.00
+				randvelaxis crandom -3 crandom -30 crandom -20
+				accel 0.00 20.00 -500.00
+				friction 1.00
+				fade
+				sphere
+				alignstretch 0.20
+			)
+
+			enter originspawn
+			(
+				model models/fx/bh_metal_fastpiece.tik
+				count 50
+				color 1.00 1.00 1.00
+				life 0.90
+				cone 1.00 1.00
+				velocity 500.00
+				radialvelocity 1.00 11.00 50.00
+				sphere
+				alignstretch 0.02
+			)
+
+		}
+	}
+}

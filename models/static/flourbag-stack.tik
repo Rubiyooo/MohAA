@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/flourbags
+	skelmodel flourbag-stack.skd
+	surface flourbag-stack shader static_flourbag
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle    flourbag-stack.skc
+}
+
+/*QUAKED static_item_flourbag-stack (0.5 0.0 0.5) (-8 -8 0) (8 8 16)
+*/

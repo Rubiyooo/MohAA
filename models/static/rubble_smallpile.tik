@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	//scale 1.33			// Convert from inches to game units
+	path models/static/rubble
+	skelmodel rubble_smallpile.skb
+	surface srubble1 shader static_srubble1
+	surface bricks shader static_bricks
+}
+
+animations
+{
+	idle     rubble_smallpile.skc
+}
+
+/*QUAKED static_obstacle_rubble-smallpile (0.5 0.0 0.5) (-32 -32 0) (32 32 128)
+*/

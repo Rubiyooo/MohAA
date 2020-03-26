@@ -1,0 +1,61 @@
+animations
+{
+	$path models/human/animation
+
+	//========================
+	// Frag Grenade Anims
+	//========================
+	fraggrenade_idle	 	viewmodel/grenade/idle_grenade.skc			crossblend 0.3
+	fraggrenade_charge		viewmodel/grenade/vm_grenadeload.skc		crossblend 0.15
+	fraggrenade_fire		viewmodel/grenade/vm_grenaderelease.skc		crossblend 0.05
+	fraggrenade_reload		viewmodel/grenade/grenade_pullout.skc
+	{
+		client
+		{
+			2 sound snd_grenade_pullout
+		}
+	}
+	fraggrenade_pullout		viewmodel/grenade/grenade_pullout.skc	
+	{
+		client
+		{
+			enter sound snd_grenade_pullout
+		}
+	}
+	fraggrenade_putaway		viewmodel/grenade/grenade_putaway.skc
+	{
+		client
+		{
+			enter sound snd_grenade_putaway
+		}
+	}
+
+	//========================
+	// Stielhandgranate Anims
+	//========================
+	stielhandgranate_idle	 	viewmodel/steilhandgranate/idle_grenade.skc			crossblend 0.3
+	stielhandgranate_charge		viewmodel/steilhandgranate/vm_grenadeload.skc		crossblend 0.15
+//	stielhandgranate_fire		viewmodel/steilhandgranate/vm_grenaderelease.skc	crossblend 0.05
+	stielhandgranate_fire		viewmodel/grenade/vm_grenaderelease.skc				crossblend 0.05
+	stielhandgranate_reload		viewmodel/steilhandgranate/grenade_pullout.skc
+	{
+		client
+		{
+			2 sound snd_grenade_pullout
+		}
+	}
+	stielhandgranate_pullout	viewmodel/steilhandgranate/grenade_pullout.skc		
+	{
+		client
+		{
+			enter sound snd_grenade_pullout
+		}
+	}
+	stielhandgranate_putaway	viewmodel/steilhandgranate/grenade_putaway.skc
+	{
+		client
+		{
+			enter sound snd_grenade_putaway
+		}
+	}
+}

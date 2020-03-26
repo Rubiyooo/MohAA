@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 1
+	path models/fx/fire
+	skelmodel fire.skd
+	surface front shader fire_front
+	surface middle shader fire_middle
+	surface back shader fire_back
+}
+
+init
+{
+}
+
+animations
+{
+	idle     fire.skc
+}
+
+/*QUAKED static_fx_fire(0.5 .25 0.25) (-8 -8 0) (8 8 16)
+standard
+*/

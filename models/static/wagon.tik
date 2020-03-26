@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/wagon
+	skelmodel wagon.skd
+	surface wagon1 shader static_wagon
+	surface wagon2 shader static_wagon
+}
+
+animations
+{
+	idle     wagon.skc
+}
+
+/*QUAKED static_farm_wagon (0.5 0.0 0.5) (-56 -152 0) (56 104 88)
+Wooden Farm Wagon
+*/

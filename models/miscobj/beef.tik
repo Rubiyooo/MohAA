@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/beef
+	skelmodel beef.skb
+	surface beef shader beef
+}
+
+init
+{
+	server
+	{
+		classname object
+//		setsize "-12 -12 0" "12 12 80"
+	}
+}
+
+animations
+{
+	idle     beef.skc
+}
+
+/*QUAKED static_food_frozensidebeef (0.0 0.75 0.5) (-24 -8 0) (24 16 88)
+*/

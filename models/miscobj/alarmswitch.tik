@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/alarmswitch
+	skelmodel alarmswitch.skd
+	surface alarmswitch shader alarmswitch
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     alarmswitch.skc
+}
+
+/*QUAKED static_equipment_alarmswitch (0.5 0.0 0.5) (0 0 0) (0 0 0)
+alarmswitch
+*/

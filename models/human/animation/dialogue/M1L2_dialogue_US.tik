@@ -1,0 +1,365 @@
+setup
+{
+	path models/human/animation/dialogue/M1L2/A
+}
+
+animations
+{
+//	$mapspec M1L2
+//	{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////   animations    ////////////////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+
+	dfr_M1L2_thankyou		actor_M1L2_thank.skc
+	{
+		client			///
+		{
+			first sound dfr_M1L2_thankyou
+		}
+	}
+
+
+			////// re writes ///////
+
+	dfr_M1L2_add01		actor_M1L2_add01.skc
+	{
+		client			/// stick close to me at all times...
+		{
+			first sound dfr_M1L2_add01
+		}
+	}
+
+	dfr_M1L2_add02		actor_M1L2_add02.skc
+	{
+		client			/// Lieutenant, It sounds like they've got more Allied....
+		{
+			first sound dfr_M1L2_add02
+		}
+	}
+
+	dfr_M1L2_add03		actor_M1L2_add03.skc
+	{
+		client			/// Normally, it's a good idea to ...
+		{
+			first sound dfr_M1L2_add03
+		}
+	}
+
+	dfr_M1L2_add04		actor_M1L2_add04.skc
+	{
+		client			/// Well that certainly got their ...
+		{
+			first sound dfr_M1L2_add04
+		}
+	}
+
+	dfr_M1L2_add05		actor_M1L2_add05.skc
+	{
+		client			/// Wait until he's isolated from ...
+		{
+			first sound dfr_M1L2_add05
+		}
+	}
+
+	dfr_M1L2_add06		actor_M1L2_add06.skc
+	{
+		client			/// Get the explosives...
+		{
+			first sound dfr_M1L2_add06
+		}
+	}
+
+	dfr_M1L2_add07		actor_M1L2_add07.skc
+	{
+		client			/// Let's go...
+		{
+			first sound dfr_M1L2_add07
+		}
+	}
+
+	dfr_M1L2_add08		actor_M1L2_add08.skc
+	{
+		client			/// Take Cover!
+		{
+			first sound dfr_M1L2_add08
+		}
+	}
+
+	dfr_M1L2_111m_1		actor_M1L2_111.skc
+	{
+		client			/// Finally, a friendly face.
+		{
+			9 sound dfr_M1L2_111m_1
+		}
+	}
+
+	dfr_M1L2_112m_2		actor_M1L2_112.skc
+	{
+		client			/// Let's get going Lieutenant.
+		{
+			first sound dfr_M1L2_112m_2
+		}
+	}
+
+	dfr_M1L2_113m_1		actor_M1L2_113.skc
+	{
+		client			/// The documents and .....
+		{
+			first sound dfr_M1L2_113m_1
+		}
+	}
+
+	dfr_M1L2_114m_1		actor_M1L2_114.skc
+	{
+		client			/// We've got to recover them ....
+		{
+			first sound dfr_M1L2_114m_1
+		}
+	}
+
+	dfr_M1L2_115m_1		actor_M1L2_115.skc
+	{
+		client			/// They're probably being held....
+		{
+			first sound dfr_M1L2_115m_1
+		}
+	}
+
+///cut
+//	dfr_M1L2_116m_1		actor_M1L2_116.skc
+//	{
+//		client			/// We'll have to sneak in there and get them back.
+//		{
+//			first sound dfr_M1L2_116m_1
+//		}
+//	}
+
+			////// ridge ///////
+
+
+///cut
+	dfr_M1L2_117m_1		actor_M1L2_117.skc
+	{
+		client			/// Creep up there and take them out. I'll cover you.
+		{
+			03 sound dfr_M1L2_117m_1
+		}
+	}
+
+			////// spotlights ///////
+
+
+	dfr_M1L2_118m_1		actor_M1L2_118.skc
+	{
+		client			/// Stay right behind me ...
+		{
+			first sound dfr_M1L2_118m_1
+		}
+	}
+
+///cut
+	dfr_M1L2_119m_1		actor_M1L2_119.skc
+	{
+		client			/// Stay here and watch what I do.
+		{
+			first sound dfr_M1L2_119m_1
+		}
+	}
+
+///cut
+	dfr_M1L2_120m_1		actor_M1L2_120.skc
+	{
+
+		client			///  Cross over once I give you the signal.
+		{
+			first sound dfr_M1L2_120m_1
+		}
+	}
+
+	dfr_M1L2_121m_2		actor_M1L2_121.skc
+	{
+
+		client			///  Find cover, quickly!
+		{
+			first sound dfr_M1L2_121m_2
+		}
+	}
+
+
+	dfr_M1L2_122m_1		actor_M1L2_122.skc
+	{
+		server
+		{
+		 	0	attachmodel models/weapons/silencedpistol.tik tag_weapon_left
+		}
+		client			/// Here, use this pistol. It has a silencer.
+		{
+			first sound dfr_M1L2_122m_1
+		}
+	}
+
+	dfr_M1L2_123m_1		actor_M1L2_123.skc
+	{
+		client			/// This is a good spot to use....
+		{
+			first sound dfr_M1L2_123m_1
+		}
+	}
+
+	dfr_M1L2_124m_1		actor_M1L2_124.skc
+	{
+		client			///  Use the scope...
+		{
+			first sound dfr_M1L2_124m_1
+		}
+	}
+
+	dfr_M1L2_125m_3		actor_M1L2_125.skc
+	{
+		client			/// You've got to neutralize ....
+
+		{
+			first sound dfr_M1L2_125m_3
+		}
+	}
+
+///cut
+	dfr_M1L2_126m_1		actor_M1L2_126.skc
+	{
+		client			///  Wait here-
+		{
+			first sound dfr_M1L2_126m_1
+		}
+	}
+
+///cut
+	dfr_M1L2_127m_1		actor_M1L2_127.skc
+	{
+		client			/// Wait for him to turn the other way.
+		{
+			first sound dfr_M1L2_127m_1
+		}
+	}
+
+///cut
+	dfr_M1L2_128m_1		actor_M1L2_128.skc
+	{
+		client			///  Okay. Go, go.
+		{
+			first sound dfr_M1L2_128m_1
+		}
+	}
+
+///cut
+	dfr_M1L2_129m_1		actor_M1L2_129.skc
+	{
+		client			/// A silent way to take out a guard is to hit him with the butt of your pistol.
+		{
+			first sound dfr_M1L2_129m_1
+		}
+	}
+
+///cut
+	dfr_M1L2_130m_1		actor_M1L2_130.skc
+	{
+		client			/// Knock him out with the butt of your pistol.
+		{
+			first sound dfr_M1L2_130m_1
+		}
+	}
+
+///cut
+	dfr_M1L2_131m_1		actor_M1L2_131.skc
+	{
+		client			/// Pistol whip him.
+		{
+			3 sound dfr_M1L2_131m_1
+		}
+	}
+
+
+			////// finding papers ///////
+
+
+	dfr_M1L2_132m_2		actor_M1L2_132.skc
+	{
+		client			/// Okay, here are the .....
+		{
+			first sound dfr_M1L2_132m_2
+		}
+	}
+
+	dfr_M1L2_133m_1		actor_M1L2_133.skc
+	{
+		client			/// Now let's get those .....
+		{
+			first sound dfr_M1L2_133m_1
+		}
+	}
+
+	dfr_M1L2_134m_4		actor_M1L2_134.skc
+	{
+		client			/// Here they are.....
+		{
+			first sound dfr_M1L2_134m_4
+		}
+	}
+
+	dfr_M1L2_135m_2 	actor_M1L2_135.skc
+	{
+		client			/// Place an explosive on that .....
+		{
+			first sound dfr_M1L2_135m_2
+		}
+	}
+
+	dfr_M1L2_138m_2  	actor_M1L2_138.skc
+	{
+		client			/// Take Cover!"
+		{
+			first sound dfr_M1L2_138m_2
+		}
+	}
+
+	dfr_M1L2_142m_2		actor_M1L2_142.skc
+	{
+		client			/// The Afrika Corps Motor ....
+		{
+			first sound dfr_M1L2_142m_2
+		}
+	}
+
+	dfr_M1L2_143m_2		actor_M1L2_143.skc
+	{
+		client			/// In the meantime, I'll secure ....
+		{
+			first sound dfr_M1L2_143m_2
+		}
+	}
+
+	dfr_M1L2_144m_2		actor_M1L2_144.skc
+	{
+		client			/// Good luck Lieutenant.  I'll ....
+		{
+			first sound dfr_M1L2_144m_2
+		}
+	}
+
+			////// jeep arrives ///////
+
+///cut
+	dfr_M1L2_145m_1		actor_M1L2_145.skc
+	{
+		client			/// Hurry, get in. We've got go.
+		{
+			first sound dfr_M1L2_145m_1
+		}
+	}
+
+
+//	}//end mapspec M1L2
+}

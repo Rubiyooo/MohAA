@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/lights/hang3lamp
+	skelmodel hang3lamp.skd
+	surface hang3lamp shader static_hang3lamp
+}
+
+animations
+{
+	idle    hang3lamp.skc
+}
+
+/*QUAKED static_lamp_hang3lamp (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

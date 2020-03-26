@@ -1,0 +1,586 @@
+//-----------------------------------------------------------------------------
+//
+//  global/localization.txt
+//
+// Copyright (C) 2000 by 2015, Inc.
+// All rights reserved.
+//
+// This source may not be distributed and/or modified without
+// expressly written permission by 2015, Inc.
+//
+//-----------------------------------------------------------------------------
+// Last Updated: November 13, 2001
+// -------------------------------
+//
+// - May 10, 2001 -------------------------------------------------------------
+//	ZeLeX - Created
+//
+//-----------------------------------------------------------------------------
+//
+// Localization File:
+//
+// Sample Formatting:
+// ------------------
+// { "Reference Name" "Localization Name" }
+// In English the Reference Name and Localization Name should be the same. If you wish to add a new Reference Name the code must be adjusted for the new data
+//
+//
+
+{ "" "" }
+{ "That team is full" "That team is full" }
+{ "Game Auto Saved" "Game Auto Saved" }
+{ "Rounds" "Rounds" }
+{ "Pistol" "Pistol" }
+{ "Got" "Got" }
+{ "Rifle" "Rifle" }
+{ "Smg" "Smg" }
+{ "Mg" "Mg" }
+{ "Heavy" "Heavy" }
+{ "Grenade" "Grenade" }
+{ "Equipment Destroyed" "Equipment Destroyed" }
+{ "An objective has been added!" "An objective has been added!" }
+{ "An objective has been completed!" "An objective has been completed!" }
+{ "Health" "Health" }
+{ "Recovered" "Recovered" }
+{ "Document taken." "Document taken." }
+{ "in the head" "in the head" }
+{ "in the helmet" "in the helmet" }
+{ "in the neck" "in the neck" }
+{ "in the upper torso" "in the upper torso" }
+{ "in the middle torso" "in the middle torso" }
+{ "in the lower torso" "in the lower torso" }
+{ "in the pelvis" "in the pelvis" }
+{ "in the upper right arm" "in the upper right arm" }
+{ "in the upper left arm" "in the upper left arm" }
+{ "in the upper right leg" "in the upper right leg" }
+{ "in the upper left leg" "in the upper left leg" }
+{ "in the lower right arm" "in the lower right arm" }
+{ "in the lower left arm" "in the lower left arm" }
+{ "in the lower right leg" "in the lower right leg" }
+{ "in the lower left leg" "in the lower left leg" }
+{ "in the right hand" "in the right hand" }
+{ "in the left hand" "in the left hand" }
+{ "in the right foot" "in the right foot" }
+{ "in the left foot" "in the left foot" }
+{ "You need the" "You need the" }
+{ "You will be kicked for inactivity in" "You will be kicked for inactivity in" }
+{ "You will be moved to spectator for inactivity in" "You will be moved to spectator for inactivity in" }
+{ "seconds" "seconds" }
+{ "Press fire to join the battle!" "Press fire to join the battle!" }
+{ "You are not on a team" "You are not on a team" }
+{ "You are already on a team" "You are already on a team" }
+{ "Will switch to Axis model & weapons next time you respawn" "Will switch to Axis model & weapons next time you respawn" }
+{ "Will switch to new weapon next time you respawn" "Will switch to new weapon next time you respawn" }
+{ "has joined the Allies" "has joined the Allies" }
+{ "has joined the Axis" "has joined the Axis" }
+{ "Can not change teams again for another" "Can not change teams again for another" }
+{ "Voting not allowed here." "Voting not allowed here." }
+{ "A vote is already in progress" "A vote is already in progress" }
+{ "You have called the maximum number of votes" "You have called the maximum number of votes" }
+{ "Invalid vote string." "Invalid vote string." }
+{ "Vote commands are:" "Vote commands are:" }
+{ "called a vote" "called a vote" }
+{ "No vote in progress." "No vote in progress." }
+{ "Vote already cast." "Vote already cast." }
+{ "Usage" "Usage" }
+{ "Vote cast." "Vote cast." }
+{ "Command" "Command" }
+{ "not available from console" "not available from console" }
+{ "You must run the server with '+set cheats 1' to enable this command." "You must run the server with '+set cheats 1' to enable this command." }
+{ "Bad filter address" "Bad filter address" }
+{ "IP filter list is full" "IP filter list is full" }
+{ "Removed" "Removed" }
+{ "Didn't find" "Didn't find" }
+{ "Filter list" "Filter list" }
+{ "Writing" "Writing" }
+{ "Couldn't open" "Couldn't open" }
+{ "Unknown server command" "Unknown server command" }
+{ "Wrote" "Wrote" }
+{ "You have not completed your objectives." "You have not completed your objectives." }
+{ "That's not a research document." "That's not a research document." }
+{ "You have not completed all your Objectives yet." "You have not completed all your Objectives yet." }
+{ "You have not completed all of your Objectives." "You have not completed all of your Objectives." }
+{ "You have acquired the spy camera!" "You have acquired the spy camera!" }
+{ "You have acquired the binoculars!" "You have acquired the binoculars!" }
+{ "You have acquired the bangalores!" "You have acquired the bangalores!" }
+{ "You have acquired the battery!" "You have acquired the battery!" }
+{ "You have acquired the manifest!" "You have acquired the manifest!" }
+{ "You have acquired the Naxos radar blueprints!" "You have acquired the Naxos radar blueprints!" }
+{ "You have acquired the Naxos radar research notes!" "You have acquired the Naxos radar research notes!" }
+{ "You have acquired the Naxos uboat blueprints!" "You have acquired the Naxos uboat blueprints!" }
+{ "You have acquired the Naxos uboat research notes!" "You have acquired the Naxos uboat research notes!" }
+{ "You have acquired explosives!" "You have acquired explosives!" }
+{ "You have acquired the gasmask!" "You have acquired the gasmask!" }
+{ "You have acquired level 1 papers!" "You have acquired level 1 papers!" }
+{ "You have acquired level 2 papers!" "You have acquired level 2 papers!" }
+{ "You have acquired the wirecutters!" "You have acquired the wirecutters!" }
+{ "You have acquired the radio!" "You have acquired the radio!" }
+{ "The King Tiger has been lost, you have failed." "The King Tiger has been lost, you have failed." }
+{ "The King Tiger Tank has been lost, you have failed." "The King Tiger Tank has been lost, you have failed." }
+{ "You hit" "You hit" }
+{ "You have not completed all of your objectives yet." "You have not completed all of your objectives yet." }
+{ "Shotgun" "Shotgun" }
+{ "The Allies have breached the perimeter!" "The Allies have breached the perimeter!" }
+{ "The Bomb has been planted!" "The Bomb has been planted!" }
+{ "Picked Up " "Picked Up " }
+{ "MP44" "MP44" }
+{ "StG 44" "StG 44" }
+{ "BAR" "BAR" }
+{ "Bazooka" "Bazooka" }
+{ "Colt 45" "Colt 45" }
+{ "Mauser KAR 98K" "Mauser KAR 98K" }
+{ "KAR98 - Sniper" "KAR98 - Sniper" }
+{ "M1 Garand" "M1 Garand" }
+{ "Frag Grenade" "Frag Grenade" }
+{ "MP40" "MP40" }
+{ "Walther P38" "Walther P38" }
+{ "Panzerschreck" "Panzerschreck" }
+{ "Shotgun" "Shotgun" }
+{ "Hi-Standard Silenced" "Hi-Standard Silenced" }
+{ "Springfield '03 Sniper" "Springfield '03 Sniper" }
+{ "Stielhandgranate" "Stielhandgranate" }
+{ "Thompson" "Thompson" }
+{ "45 seconds to escape" "45 seconds to escape" }
+{ "This door is locked." "This door is locked." }
+{ "15 seconds to clear the room" "15 seconds to clear the room" }
+{ "You have not completed the objective." "You have not completed the objective." }
+{ "Enigma machine" "Enigma machine" }
+{ "8!" "8!" }
+{ "9!" "9!" }
+{ "You got the Panzerschreck." "You got the Panzerschreck." }
+{ "Binoculars" "Binoculars" }
+{ "Mission Failed: Not enough Rangers survived!" "Mission Failed: Not enough Rangers survived!" }
+{ "You have acquired a German officers uniform!" "You have acquired a German officers uniform!" }
+{ "ALARM OFF" "ALARM OFF" }
+{ "Papers" "Papers" }
+{ "Grenades" "Grenades" }
+{ "Enigma machine stolen" "Enigma machine stolen" }
+{ "You have no explosives." "You have no explosives." }
+{ "You have acquired radio detonated explosives!" "You have acquired radio detonated explosives!" }
+{ "Hold use key to activate/deactivate bomb" "Hold use key to activate/deactivate bomb" }
+{ "Manifest stolen" "Manifest stolen" }
+{ "Can't duck under water" "Can't duck under water" }
+{ "You got the KAR98D Sniper Rifle." "You got the KAR98D Sniper Rifle." }
+{ "Press Forward to move out of the truck" "Press Forward to move out of the truck" }
+{ "Press TAB to view your current objectives" "Press TAB to view your current objectives" }
+{ "Use your compass to guide you to your next objective." "Use your compass to guide you to your next objective." }
+{ "Press USE to grab items off tables" "Press USE to grab items off tables" }
+{ "Press USE to use mounted weapons" "Press USE to use mounted weapons" }
+{ "Press USE to open doors. If you can not open the door, you will be able to hear the handle rattle." "Press USE to open doors. If you can not open the door, you will be able to hear the handle rattle." }
+{ "Follow me" "Follow me" }
+{ "You have recieved 30 health" "You have recieved 30 health" }
+{ "You lost too many of your tank crew" "You lost too many of your tank crew" }
+{ "Mission Objectives:" "Mission Objectives:" }
+{ "The Bridge was Destroyed. You failed the mission." "The Bridge was Destroyed. You failed the mission." }
+{ "CHECKPOINT: Game AutoSaved" "CHECKPOINT: Game AutoSaved" }
+{ "Game Saved" "Game Saved" }
+{ "Game AutoSaved" "Game AutoSaved" }
+{ "Game Loaded" "Game Loaded" }
+{ "You have recieved health" "You have recieved health" }
+{ "Lt. Joe Baylor has been killed in action." "Lt. Joe Baylor has been killed in action." }
+{ "NOT ALL OBJECTIVES HAVE BEEN COMPLETED!" "NOT ALL OBJECTIVES HAVE BEEN COMPLETED!" }
+{ "To call in air support switch to the binoculars. Then look at the target and press your Fire key." "To call in air support switch to the binoculars. Then look at the target and press your Fire key." }
+{ "Once you find a radio you will be able to call in air support." "Once you find a radio you will be able to call in air support." }
+{ "You have recieved health from a medic" "You have recieved health from a medic" }
+{ " seconds to escape" " seconds to escape" }
+{ " seconds to get to train" " seconds to get to train" }
+
+// Death messages (generally fragments of complete sentences not including the player names)
+{ "took himself out of commision" "took himself out of commision" }
+{ "was burned to a crisp" "was burned to a crisp" }
+{ "cratered" "cratered" }
+{ "tripped on his own grenade" "tripped on his own grenade" }
+{ "played catch with himself" "played catch with himself" }
+{ "blew himself up" "blew himself up" }
+{ "rocketed himself" "rocketed himself" }
+{ "shot himself in the" "shot himself in the" }
+{ "shot himself in the" "shot himself in the" }
+{ "died" "died" }
+{ "was crushes by" "was crushes by" }
+{ "was telefragged by" "was telefragged by" }
+{ "was burned up by" "was burned up by" }
+{ "was burned up by" "was burned up by" }
+{ "was pushed over the edge by" "was pushed over the edge by" }
+{ "is picking" "is picking" }
+{ "'s shrapnel out of his teeth" "'s shrapnel out of his teeth" }
+{ "tripped on" "tripped on" }
+{ "'s grenade" "'s grenade" }
+{ "was blown away by" "was blown away by" }
+{ "took" "took" }
+{ "'s rocket in the face" "'s rocket in the face" }
+{ "'s rocket right in the kisser" "'s rocket right in the kisser" }
+{ "was knocked out by" "was knocked out by" }
+{ "was shot by" "was shot by" }
+{ "was gunned down by" "was gunned down by" }
+{ "was sniped by" "was sniped by" }
+{ "was rifled by" "was rifled by" }
+{ "was perforated by" "was perforated by" }
+{ "'s SMG" "'s SMG" }
+{ "was machine-gunned by" "was machine-gunned by" }
+{ "was run over by" "was run over by" }
+{ "was burned up by" "was burned up by" }
+{ "was burned up by" "was burned up by" }
+{ "was impaled by" "was impaled by" }
+{ "was clubbed by" "was clubbed by" }
+{ "was bashed by" "was bashed by" }
+{ "was pumped full of buckshot by" "was pumped full of buckshot by" }
+{ "was hunted down by" "was hunted down by" }
+{ "was killed by" "was killed by" }
+{ "caught some shrapnel" "caught some shrapnel" }
+{ "blew up" "blew up" }
+{ "caught a rocket" "caught a rocket" }
+{ "was shot in the" "was shot in the" }
+{ "was shot" "was shot" }
+{ "died" "died" }
+{ "You killed yourself" "You killed yourself" }
+{ "You killed" "You killed" }
+
+//M3L3
+
+{ "You have the Panzerschreck." "You have the Panzerschreck." }
+{ "TIGER TANK: " "TIGER TANK: " }
+{ " percent" " percent" }
+{ "HINT: Switch to your Panzerschreck (rocket launcher) to destroy the halftrack." "HINT: Switch to your Panzerschreck (rocket launcher) to destroy the halftrack." }
+{ "HINT: Switch to your Panzerschreck (rocket launcher) to destroy the tank." "HINT: Switch to your Panzerschreck (rocket launcher) to destroy the tank." }
+{ "HINT: It will take several hits to destroy a tank." "HINT: It will take several hits to destroy a tank." }	
+{ "Sergeant Harrison has been killed in action." "Sergeant Harrison has been killed in action." }
+{ "Private Tomlin has been killed in action." "Private Tomlin has been killed in action." }
+{ "Captain Ramsey has been killed in action." "Captain Ramsey has been killed in action." }
+{ "Tiger Tank destroyed." "Tiger Tank destroyed." }
+
+//M6L3a
+
+{ "Ranger Casualties: " "Ranger Casualties: " }
+{ " of " " of " }
+{ "HINT: Use the wheel to open the doors." "HINT: Use the wheel to open the doors." }
+{ "HINT: Use the plunger to blow the door open." "HINT: Use the plunger to blow the door open." }
+
+{ "Move the tank with your Forward and Backward keys." "Move the tank with your Forward and Backward keys." }
+{ "Use your Strafe keys to turn." "Use your Strafe keys to turn." }
+{ "Turn the turret with the Mouse." "Turn the turret with the Mouse." }
+{ "Hold your Jump key to align the base with the turret." "Hold your Jump key to align the base with the turret." }
+{ "Align the balls to reach your current objective" "Align the balls to reach your current objective" }
+{ "Use the mouse or keyboard to look up and around at the towers" "Use the mouse or keyboard to look up and around at the towers" }
+{ "Find a way through the gate" "Find a way through the gate" }
+
+
+{ "Hello Mike Powell. Welcome to training." "Hello Mike Powell. Welcome to training." }
+{ "Follow the arrow on your compass to reach your current objective." "Follow the arrow on your compass to reach your current objective." }
+{ "As you get closer, the balls will contract." "As you get closer, the balls will contract." }
+{ "Press " "Press " }
+{ " to move forward." " to move forward." }
+{ "Use your mouse or " "Use your mouse or " }
+{ " and " " and " }
+{ " to turn left and right." " to turn left and right." }
+{ "Use the mouse or keyboard to look up and around at the towers." "Use the mouse or keyboard to look up and around at the towers." }
+{ "Press your jump key ( " "Press your jump key ( " }
+{ " ) and movement keys to surpass these crates." " ) and movement keys to surpass these crates." }
+{ "Press your duck key ( " "Press your duck key ( " }
+{ " ) and movement keys to pass under the barbwire." " ) and movement keys to pass under the barbwire." }
+{ "Use the movement keys and look up to climb the ladder. You may also press your use button. " "Use the movement keys and look up to climb the ladder. You may also press your use button. " }
+{ "Press your use key ( " "Press your use key ( " }
+{ " ) to open these doors." " ) to open these doors." }
+{ "Some doors might not open. These doors will make a different sound." "Some doors might not open. These doors will make a different sound." }
+{ "When you get close to health and ammunition you will use them automatically." "When you get close to health and ammunition you will use them automatically." }
+{ "You may have to press your use key ( " "You may have to press your use key ( " }
+{ " ) to activate items that are farther away." " ) to activate items that are farther away." }
+{ "Approach the explosives and press your use key ( " "Approach the explosives and press your use key ( " }
+{ " ) to pick them up." " ) to pick them up." }
+
+{ " and " " and " }
+{ "Find the red ghost image of the bomb and press your use key ( " "Find the red ghost image of the bomb and press your use key ( " }
+{ " ) on it to plant explosives on the tank." " ) on it to plant explosives on the tank." }
+{ " ) to control the targets on the firing range." " ) to control the targets on the firing range." }
+{ "Continue on to the exit when you are done." "Continue on to the exit when you are done." }
+{ "Explore the firing range." "Explore the firing range." }
+{ "Press the USE key ( " "Press the USE key ( " }
+{ " ) to activate targets." " ) to activate targets." }
+{ "Touch or press the USE key ( " "Touch or press the USE key ( " }
+{ " ) to get weapons and ammo to use on the firing range" " ) to get weapons and ammo to use on the firing range" }
+{ "Continue on to the exit." "Continue on to the exit." }
+{ "Take control of the MG42 by approaching it and pressing USE" "Take control of the MG42 by approaching it and pressing USE" }
+{ "Officers uniform removed" "Officers uniform removed" }
+{ "Locate the missing Bazooka team" "Locate the missing Bazooka team" }
+{ "The OSS Agent was killed. You failed the mission" "The OSS Agent was killed. You failed the mission" }
+{ "30 seconds to escape to elevator" "30 seconds to escape to elevator" }
+{ "You must first open the valves" "You must first open the valves" }
+{ "5 seconds to clear the room" "5 seconds to clear the room" }
+{ "You have received health from a medic." "You have received health from a medic." }
+{ "You did not complete all the objectives." "You did not complete all the objectives." }
+{ "A Bomb has been planted!" "A Bomb has been planted!" }
+{ "A Bomb has been defused!" "A Bomb has been defused!" }
+{ "You have acquired the gas mask!" "You have acquired the gas mask!" }
+{ "The King Tiger has been lost, you have failed" "The King Tiger has been lost, you have failed" }
+{ "The King Tiger was destroyed. You failed the mission" "The King Tiger was destroyed. You failed the mission" }
+{ "If your weapon is not holstered" "If your weapon is not holstered" }
+{ "your cover will be blown." "your cover will be blown." }
+{ "Be prepared to show your papers when asked." "Be prepared to show your papers when asked." }
+{ "Press the ( " "Press the ( " }
+{ " ) key to holster your weapon." " ) key to holster your weapon." }
+{ " ) key to show your papers." " ) key to show your papers." }
+{ "Once you destroy the anti-aircraft gun, you will be able to call in air support." "Once you destroy the anti-aircraft gun, you will be able to call in air support." }
+
+{ "Press the FORWARD key  ( " "Press the FORWARD key  ( " }
+{ " ) to move out of the truck" " ) to move out of the truck" }
+{ "Press the OBJECTIVE key  ( " "Press the OBJECTIVE key  ( " }
+{ " ) to see your objectives" " ) to see your objectives" }
+{ "Find your way to the mounted machine gun and press the USE key  ( " "Find your way to the mounted machine gun and press the USE key  ( " }
+{ " ) to take control" " ) to take control" }
+{ "Press the USE key  ( " "Press the USE key  ( " }
+{ " ) to use mounted weapons" " ) to use mounted weapons" }
+
+{ "has entered the battle" "has entered the battle" }
+{ "has joined the Allies" "has joined the Allies" }
+{ "has left the battle" "has left the battle" }
+
+{ "not available from console" "not available from console" }
+{ "Command" "Command" }
+{ "Use beach obstacles as cover from enemy machine gun fire." "Use beach obstacles as cover from enemy machine gun fire." }
+{ " ) to grab items off tables" " ) to grab items off tables" }
+{ "You have acquired the King Tiger field manual!" "You have acquired the King Tiger field manual!" }
+{ "You have acquired the German battle plans!" "You have acquired the German battle plans!" }
+{ "The SAS Agent was killed. You failed the mission." "The SAS Agent was killed. You failed the mission." }
+{ "Allies win!" "Allies win!" }
+{ "Axis win!" "Axis win!" }
+{ "It's a draw!" "It's a draw!" }
+{ "A bomb is still set!" "A bomb is still set!" }
+{ "Allies have destroyed the Southern Cannon!" "Allies have destroyed the Southern Cannon!" }
+{ "Allies have destroyed the Northern Cannon!" "Allies have destroyed the Northern Cannon!" }
+{ "Use your MOUSE and the movement keys to look at the towers." "Use your MOUSE and the movement keys to look at the towers." }
+{ " ) to open doors." " ) to open doors." }
+{ "Touch the health and ammo to pick it up." "Touch the health and ammo to pick it up." }
+{ " ) to activate items that are far away." " ) to activate items that are far away." }
+{ " ) to get the explosives." " ) to get the explosives." }
+{ " ) to get weapons and ammo." " ) to get weapons and ammo." }
+{ "Use your MOUSE or " "Use your MOUSE or " }
+{ "Good work Powell, get ready for your first mission" "Good work Powell, get ready for your first mission" }
+{ "Press your JUMP key ( " "Press your JUMP key ( " }
+{ "Press your DUCK key ( " "Press your DUCK key ( " }
+{ "Use the movement keys and look up to climb the ladder. You may also press your USE key." "Use the movement keys and look up to climb the ladder. You may also press your USE key." }
+{ "Press your USE key ( " "Press your USE key ( " }
+{ "Find the red ghost image of the bomb and press the USE key ( " "Find the red ghost image of the bomb and press the USE key ( " }
+{ " ) to plant explosives on the tank." " ) to plant explosives on the tank." }
+{ "75 seconds to escape the sub" "75 seconds to escape the sub" }
+{ "Use your MOUSE to turn and aim." "Use your MOUSE to turn and aim." }
+{ "Your hard drive is full, unable to save game." "Your hard drive is full, unable to save game." }
+{ "Your hard drive is full. Unable to save game." "Your hard drive is full, unable to save game." }
+{ "Error" "Error" }
+{ "You have the KAR98 Sniper Rifle." "You have the KAR98 Sniper Rifle." }
+{ "Pick up the explosives and plant them on the tank before opening this door." "Pick up the explosives and plant them on the tank before opening this door." }
+{ "Make sure you pick up some health and ammo before progressing." "Make sure you pick up some health and ammo before progressing." }
+{ "Try several doors before you progress in your training." "Try several doors before you progress in your training." }
+{ "30 seconds to escape to elevator." "30 seconds to escape to elevator." }
+{ "You must first open the valves." "You must first open the valves." }
+{ "Will switch to Allies model & weapons next time you respawn" "Will switch to Allies model & weapons next time you respawn" }
+{ "Press USE to open doors. If you cannot open the door, you will be able to hear the handle rattle." "Press USE to open doors. If you cannot open the door, you will be able to hear the handle rattle." }
+{ "You have not completed all your objectives yet." "You have not completed all your objectives yet." }
+{ "You must gather the entire tank crew before you can leave" "You must gather the entire tank crew before you can leave" }
+
+{ " to switch to the sniper rifle." " to switch to the sniper rifle." }
+{ " to use the scope on the sniper rifle." " to use the scope on the sniper rifle." }
+{ "You can only climb one side of a ladder." "You can only climb one side of a ladder." }
+{ "Approach this ladder from the west to climb it." "Approach this ladder from the west to climb it." }
+{ "Look up and press your forward key ( " "Look up and press your forward key ( " }
+{ " ) to climb a ladder." " ) to climb a ladder." }
+
+{ "You have not completed your objectives." "You have not completed your objectives." }
+{ "Follow the arrow on your compass to reach your objectives." "Follow the arrow on your compass to reach your objectives." }
+{ "Press ( " "Press ( " }
+{ " ) to see your objectives." " ) to see your objectives." }
+
+{ "Once you find a radio you will be able to call in air support." "Once you find a radio you will be able to call in air support." }
+
+
+
+
+//----------------NOV 25 -Zied-training
+{ "Lieutenant Powell, it's time to commence field training." "Lieutenant Powell, it's time to commence field training." }
+{ "Pay attention and you might even stand a chance on the battlefield." "Pay attention and you might even stand a chance on the battlefield." }
+{ "First I want you to use your mouse to look at each of the four guard towers." "First I want you to use your mouse to look at each of the four guard towers." }
+{ "Good. Press now press your FORWARDS key ( " "Good. Press now press your FORWARDS key ( " }
+{ " ) to move in the direction you are facing." " ) to move in the direction you are facing." }
+{ "Press your BACKWARDS key ( " "Press your BACKWARDS key ( " }
+{ " ) to move back." " ) to move back." }
+{ "Press STRAFE LEFT ( " "Press STRAFE LEFT ( " }
+{ " ) to move left and STRAFE RIGHT ( " " ) to move left and STRAFE RIGHT ( " }
+{ " ) to move right." " ) to move right." }
+{ "Using these four keys together with the mouse is critical to your success against the enemy." "Using these four keys together with the mouse is critical to your success against the enemy." }
+{ "Press your OBJECTIVES key ( " "Press your OBJECTIVES key ( " }
+{ " ) to see your list of current objectives." " ) to see your list of current objectives." }
+{ "When you complete an objective it is checked off on this list." "When you complete an objective it is checked off on this list." }
+{ "Your current objective is highlighted in yellow." "Your current objective is highlighted in yellow." }
+{ "The arrow points to your current objective." "The arrow points to your current objective." }
+{ "As you near your objective, the ball bearings on the compass will get closer together." "As you near your objective, the ball bearings on the compass will get closer together." }
+{ "Now notice that the arrow on your compass is pointing at one of the towers." "Now notice that the arrow on your compass is pointing at one of the towers." }
+{ "Approach the tower indicated by the arrow." "Approach the tower indicated by the arrow." }
+{ "Good. Now press your OBJECTIVES key ( " "Good. Now press your OBJECTIVES key ( " }
+{ " ) again." " ) again." }
+{ "You have a new objective. Complete this objective." "You have a new objective. Complete this objective." }
+{ "Press the JUMP ( " "Press the JUMP ( " }
+{ " ) and FORWARD ( " " ) and FORWARD ( " }
+{ " ) keys to jump up this pile of crates." " ) keys to jump up this pile of crates." }
+{ "Press the DUCK key ( " "Press the DUCK key ( " }
+{ " ) and then move FORWARD ( " " ) and then move FORWARD ( " }
+{ " ) to pass under the barbed wire." " ) to pass under the barbed wire." }
+{ " ) again to stand up." " ) again to stand up." }
+{ "Press the FORWARD key ( " "Press the FORWARD key ( " }
+{ " ) and look up and you will climb up the ladder." " ) and look up and you will climb up the ladder." }
+{ " ) to grab a ladder from above or below." " ) to grab a ladder from above or below." }
+{ "Look down and Press the FORWARD key ( " "Look down and Press the FORWARD key ( " }
+{ " ) and you will descend the ladder." " ) and you will descend the ladder." }
+{ "Approach the explosives and press the USE key ( " "Approach the explosives and press the USE key ( " }
+{ "Notice that an image of the explosives has appeared in the upper right corner of your hud." "Notice that an image of the explosives has appeared in the upper right corner of your hud." }
+{ "This is how you know what items you have in your inventory." "This is how you know what items you have in your inventory." }
+{ "The other image is of the radio which I am using to communicate with you." "The other image is of the radio which I am using to communicate with you." }
+{ "A red transparent image of the explosives has appeared on the tank." "A red transparent image of the explosives has appeared on the tank." }
+{ " ) while near the image to plant explosives on the tank." " ) while near the image to plant explosives on the tank." }
+{ "Keep in mind that items you need to USE ( " "Keep in mind that items you need to USE ( " }
+{ " ) or destroy to complete your mission will also pulse red." " ) or destroy to complete your mission will also pulse red." }
+{ "Move away from the tank to avoid being injured." "Move away from the tank to avoid being injured." }
+{ "Some doors might be locked. The sound will clue you in." "Some doors might be locked. The sound will clue you in." }
+{ "You will automatically pick up first-aid supplies when your health is below 100%." "You will automatically pick up first-aid supplies when your health is below 100%." }
+{ "Same for ammunition and weapons--but remember that each weapon has a maximum amount of ammo you can carry." "Same for ammunition and weapons--but remember that each weapon has a maximum amount of ammo you can carry." }
+{ "Sometimes items are too far to be automatically picked up. Press the USE key ( " "Sometimes items are too far to be automatically picked up. Press the USE key ( " }
+{ " ) to grab these items." " ) to grab these items." }
+{ "Select the Colt 45 by pressing the PISTOL key. ( " "Select the Colt 45 by pressing the PISTOL key. ( " }
+{ " )" " )" }
+{ "To neutralize an enemy without drawing undue attention, press the SECONDARY ATTACK key ( " "To neutralize an enemy without drawing undue attention, press the SECONDARY ATTACK key ( " }
+{ " ) to activate the pistol whip." " ) to activate the pistol whip." }
+{ "Press the PRIMARY ATTACK key ( " "Press the PRIMARY ATTACK key ( " }
+{ " ) to fire any of your weapons." " ) to fire any of your weapons." }
+{ "Note that you are more accurate with all weapons when firing in short bursts and while not moving." "Note that you are more accurate with all weapons when firing in short bursts and while not moving." }
+{ "Shoot the target a couple of times with the pistol." "Shoot the target a couple of times with the pistol." }
+{ "Switch to the Thompson by pressing the SMG key. ( " "Switch to the Thompson by pressing the SMG key. ( " }
+{ "You may reload any of your weapons at any time by pressing the RELOAD key. ( " "You may reload any of your weapons at any time by pressing the RELOAD key. ( " }
+{ "You should always reload all of your weapons before going into combat." "You should always reload all of your weapons before going into combat." }
+{ "Shoot the target twenty times with the Thompson." "Shoot the target twenty times with the Thompson." }
+{ "Switch to the Springfield '03 Sniper Rifle by pressing the RIFLE key. ( " "Switch to the Springfield '03 Sniper Rifle by pressing the RIFLE key. ( " }
+{ "Press the SECONDARY ATTACK key ( " "Press the SECONDARY ATTACK key ( " }
+{ " ) to toggle the sniper scope on and off." " ) to toggle the sniper scope on and off." }
+{ "Use the scope and hit the farthest target on the red dot three times." "Use the scope and hit the farthest target on the red dot three times." }
+{ "Select the Frag Grenades by pressing the GRENADE key. ( " "Select the Frag Grenades by pressing the GRENADE key. ( " }
+{ "The PRIMARY ATTACK ( " "The PRIMARY ATTACK ( " }
+{ " ) for the grenades is a long throw." " ) for the grenades is a long throw." }
+{ "Use the SECONDARY ATTACK ( " "Use the SECONDARY ATTACK ( " }
+{ " ) for shorter tosses." " ) for shorter tosses." }
+{ "How long you hold the SECONDARY ATTACK key ( " "How long you hold the SECONDARY ATTACK key ( " }
+{ " ) down affects how far you throw." " ) down affects how far you throw." }
+{ "Use bank shots with the grenades to clear rooms where the enemy might be hiding." "Use bank shots with the grenades to clear rooms where the enemy might be hiding." }
+{ "Throw a grenade into each of the concrete boxes." "Throw a grenade into each of the concrete boxes." }
+{ "Approach the tower indicated by the arrow." "Approach the tower indicated by the arrow." }
+{ "Approach the MG42 stationary machine gun and press the USE key ( " "Approach the MG42 stationary machine gun and press the USE key ( " }
+{ " ) to activate it." " ) to activate it." }
+{ "Destroy the target with the machine gun." "Destroy the target with the machine gun." }
+{ " ) on the red door at the end of the range to exit the firing range." " ) on the red door at the end of the range to exit the firing range." }
+{ "This training should help you keep your head under fire." "This training should help you keep your head under fire." }
+{ "You're dismissed, Lieutenant Powell. Good luck." "You're dismissed, Lieutenant Powell. Good luck." }
+{ " ) on the red door at the end of the range to exit the firing range whenever you are ready.." " ) on the red door at the end of the range to exit the firing range whenever you are ready.." }
+//----------------NOV 25 -Zied-end training
+
+{ "Your cover has been blown." "Your cover has been blown." }
+{ " ) to walk. Walk when you want to sneak up on enemies." " ) to walk. Walk when you want to sneak up on enemies." }
+{ "You need a new set of papers to procede past this point." "You need a new set of papers to procede past this point." }
+{ " ) to move out of the truck." " ) to move out of the truck." }
+{ " ) to grab items off tables." " ) to grab items off tables." }
+{ "Climb the stairs and find the MG42 mounted machine gun." "Climb the stairs and find the MG42 mounted machine gun." }
+{ " ) to use mounted weapons." " ) to use mounted weapons." }
+
+//----------------NOV 27 Zied -m5l2a
+{ "Move the tank with your Forward key ( " "Move the tank with your Forward key ( " }
+{ " ) and Backward key. ( " " ) and Backward key. ( " }
+{ " ) to turn left and STRAFE RIGHT ( " " ) to turn left and STRAFE RIGHT ( " }
+{ " ) to turn right." " ) to turn right." }
+{ "Hold your Jump key ( " "Hold your Jump key ( " }
+{ " ) to align the base with the turret." " ) to align the base with the turret." }
+//----------------NOV 27 Zied -m5l2a -end
+
+//----------------NOV 27 Zied -m3l2
+{ "To call in air support switch to the binoculars. ( " "To call in air support switch to the binoculars. ( " }
+{ " ) Then look at the target and press your Fire key. ( " " ) Then look at the target and press your Fire key. ( " }
+{ "Private Durden has been killed in action." "Private Durden has been killed in action." }
+{ "Private Cobb has been killed in action." "Private Cobb has been killed in action." }
+//----------------NOV 27 Zied -m3l2-end
+
+{ "You have acquired the StG44 blueprints!" "You have acquired the StG44 blueprints!" }
+{ "Sometimes an objective may be located directly above or below where the compass appears to indicate." "Sometimes an objective may be located directly above or below where the compass appears to indicate." }
+{ "You need a new set of papers to procede pass this point." "You need a new set of papers to procede pass this point." }
+{ "You have not completed all of the objectives." "You have not completed all of the objectives." }
+{ "Holster your weapon by pressing the [" "Holster your weapon by pressing the [" }
+{ "] key to avoid losing your cover" "] key to avoid losing your cover" }
+{ "Scour the area for the missing Bazooka team" "Scour the area for the missing Bazooka team" }
+{ "The Bazooka team is missing, they must be found" "The Bazooka team is missing, they must be found" }
+{ "Find the Bazooka team, spare no expense!" "Find the Bazooka team, spare no expense!" }
+{ "You must find them, before it's too late!" "You must find them, before it's too late!" }
+{ "You know, Bazooka team. Probably carrying a long, tubular looking thing." "You know, Bazooka team. Probably carrying a long, tubular looking thing." }
+{ "Why are you banging away at this gate when you have yet to FIND THE BAZOOKA TEAM?!" "Why are you banging away at this gate when you have yet to FIND THE BAZOOKA TEAM?!" }
+{ "STOP POKING ME" "STOP POKING ME" }
+{ "By accidentally destroying The Bridge, you have failed the mission" "By accidentally destroying The Bridge, you have failed the mission" }
+{ "Once you find a radio, you will be able to call in air support." "Once you find a radio, you will be able to call in air support." }
+//----------------NOV 27 Zied -m3l2-end
+{ "Captain Richards has been killed in action." "Captain Richards has been killed in action." }
+{ "Private Wilson has been killed in action." "Private Wilson has been killed in action." }
+{ "Private Thomas has been killed in action." "Private Thomas has been killed in action." }
+{ "Private Allen has been killed in action." "Private Allen has been killed in action." }
+{ "Private Jury has been killed in action." "Private Jury has been killed in action." }
+{ "Major Grillo has been killed in action." "Major Grillo has been killed in action." }
+{ "T/4 Medic Glenn has been killed in action." "T/4 Medic Glenn has been killed in action." }
+{ "Sergeant Hammon has been killed in action." "Sergeant Hammon has been killed in action." }
+{ "T/2 Engineer Campbell has been killed in action." "T/2 Engineer Campbell has been killed in action." }
+{ "Approach alarms and press the USE key ( " "Approach alarms and press the USE key ( " }
+{ " ) to toggle them off or on." " ) to toggle them off or on." }
+
+//----------------NOV 28 Zied -TRAINING
+{ "Use your mouse to look at each of the four guard towers." "Use your mouse to look at each of the four guard towers." }
+{ " to move forwards." " to move forwards." }
+{ " to move backwards." " to move backwards." }
+{ " to move left and " " to move left and " }
+{ " to move right." " to move right." }
+{ " to see your list of objectives." " to see your list of objectives." }
+{ " to see your new objective." " to see your new objective." }
+{ " to jump." " to jump." }
+{ " to duck." " to duck." }
+{ " to stand up." " to stand up." }
+{ "  and look up to climb up the ladder." "  and look up to climb up the ladder." }
+{ " to get the explosives." " to get the explosives." }
+{ " to plant the bomb on the tank." " to plant the bomb on the tank." }
+{ " to open doors." " to open doors." }
+{ " to switch to a pistol." " to switch to a pistol." }
+{ " to pistol whip." " to pistol whip." }
+{ " to fire." " to fire." }
+{ "Shoot the target three times." "Shoot the target three times." }
+{ " to switch to a submachine gun." " to switch to a submachine gun." }
+{ " to reload." " to reload." }
+{ "Shoot the target twenty times." "Shoot the target twenty times." }
+{ " to switch to a rifle." " to switch to a rifle." }
+{ " to use the scope." " to use the scope." }
+{ "Hit the farthest bulls eye three times." "Hit the farthest bulls eye three times." }
+{ " to select a grenade." " to select a grenade." }
+{ " for a long throw." " for a long throw." }
+{ " for a short throw." " for a short throw." }
+{ " to use the machine gun." " to use the machine gun." }
+{ "Destroy the target." "Destroy the target." }
+{ " on the red door to exit the firing range." " on the red door to exit the firing range." }
+{ " and look up to climb up the ladder." " and look up to climb up the ladder." }
+{ " to grab a ladder." " to grab a ladder." }
+{ "Look down and press " "Look down and press " }
+{ " to descend the ladder." " to descend the ladder." }
+
+{ "Pick up the pistol (press " "Pick up the pistol (press " }
+{ "Go to the next room and pick up the Thompson (press " "Go to the next room and pick up the Thompson (press " }
+{ " )." " )." }
+{ "Go to the next room and pick up the sniper rifle (press " "Go to the next room and pick up the sniper rifle (press " }
+{ "Go to the next room and pick up some grenades (press " "Go to the next room and pick up some grenades (press " }
+{ "Go to the next room and use the machine gun (press " "Go to the next room and use the machine gun (press " }
+
+//----------------NOV 28 Zied -TRAINING
+
+{ "Use beach obstacles as cover from enemy machinegun fire." "Use beach obstacles as cover from enemy machinegun fire." }
+{ "You lost too many of your tank crew." "You lost too many of your tank crew." }
+{ "Allies have destroyed the Western Cannon!" "Allies have destroyed the Western Cannon!" }
+{ "Allies have destroyed the Eastern Cannon!" "Allies have destroyed the Eastern Cannon!" }
+
+// jbw
+{ "You have not completed the objective." "You have not completed the objective." }
+
+{ "The bridge was destroyed. You failed the mission." "The bridge was destroyed. You failed the mission." }
+

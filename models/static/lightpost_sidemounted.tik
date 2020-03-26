@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/lamp
+	skelmodel light1.skd
+	surface hanger shader static_hanger
+	surface lantern shader static_lantern
+	surface h_cross shader static_h_cross
+}
+
+animations
+{
+	idle     light1.skc
+}
+
+/*QUAKED static_lamp_lightpost-sidemounted (0.5 0.0 0.5) (-8 -24 0) (8 16 40)
+*/

@@ -1,0 +1,65 @@
+setup
+{
+	path models/human/animation/dialogue/M6L3/G
+}
+
+animations
+{
+//	$mapspec M6L3
+//	{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////     German animations    /////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+
+			////// german scientists in chemical warfare lab  ///////
+
+
+	den_M6L3_634b		actor_M6L3_634.skc
+	{
+		client			/// Stop shooting!
+		{
+			first sound den_M6L3_634b
+		}
+	}
+
+	den_M6L3_635q		actor_M6L3_635.skc
+	{
+		client			/// No shooting!
+		{
+			first sound den_M6L3_635q
+		}
+	}
+
+	den_M6L3_636h		actor_M6L3_636.skc
+	{
+		client			/// Stop you'll release the gas!
+		{
+			first sound den_M6L3_636h
+		}
+	}
+
+
+	den_M6L3_637f		actor_M6L3_637.skc
+	{
+		client			/// You fools! Look the gas!
+		{
+			first sound den_M6L3_637f
+		}
+	}
+
+	den_M6L3_638r		actor_M6L3_638.skc
+	{
+		client			/// Get away from the vapors!
+		{
+			first sound den_M6L3_638r
+		}
+	}
+
+		////////////////////////////////
+
+
+//	}//end mapspec M6L3
+}

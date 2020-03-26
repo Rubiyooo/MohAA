@@ -1,0 +1,24 @@
+TIKI
+setup // Tells model how to be created
+{
+	scale 0.52				// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	lod_bias -0.4
+	path models/equipment/germangear		// Set path relative to game directory
+	skelmodel helmet.skd			// Set base model for skeletal animation
+	surface helmet shader wehrmact_helmet
+}
+
+init // initialization section is run when model is created.
+{
+	server
+	{
+	}
+	client
+	{
+	}
+} // End of initialization section
+
+animations // Now list all of the animations and any special commands for them
+{
+	idle		helmet.skc
+}

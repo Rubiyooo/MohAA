@@ -1,0 +1,57 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+init
+{
+	server
+	{
+		classname effectentity
+	}
+
+	client
+	{
+		originemitter fireball_matrix
+		(
+			spawnrate 4.00
+			model fireball_pj.spr
+			alpha 0.90
+			color 3.00 2.00 1.00
+			scale 2.00
+			life 1.06
+			scalerate 0.80
+			velocity 320.00
+			angles range -80 60 range 40 -40 range 30 -40
+			avelocity range 40 -30 range 30 -30 crandom 30
+			scalemin 1.00
+			scalemax 3.00
+			fade
+		)
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron fireball_matrix
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff fireball_matrix
+		}
+	}
+}
+
+/*QUAKED fx_fireball_matrix (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+standard
+*/

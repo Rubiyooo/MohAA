@@ -1,0 +1,30 @@
+animations 
+{
+	$path models/human/animation
+
+	//----------
+	// leaning against wall animations
+	//----------
+
+	// Leg poses
+	lean_chair_legs		scripted/lean/lean_chair_legs.skc
+	lean_sitwall_legs		scripted/lean/lean_sitwall_legs.skc
+	lean_standwall_legs	scripted/lean/lean_standwall_legs.skc
+
+	// Getting up
+	getup_chairtostand	scripted/lean/getup_chairtostand.skc
+	getup_sitwalltostand	scripted/lean/getup_sitwalltostand.skc
+	getup_standwalltostand	scripted/lean/getup_standwalltostand.skc
+
+	// Relaxing (upper body animations)
+	relax01			scripted/lean/relax01(loop).skc	weight 2
+	relax02			scripted/lean/relax02(twitch).skc	weight 1
+	relaxtosleep		scripted/lean/relaxtosleep.skc
+
+	// Sleeping (upper body animations)
+	sleep01			scripted/lean/sleep01(loop).skc	weight 2
+	sleep02			scripted/lean/sleep02(twitch).skc	weight 1 dontrepeate
+	sleeptorelax		scripted/lean/sleeptorelax.skc
+
+	sleeptorelax_surprise	scripted/lean/sleeptorelax_surprise.skc
+}

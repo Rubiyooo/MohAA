@@ -1,0 +1,17 @@
+animations 
+{
+	$path models/human/animation
+
+	//----------
+	//interrogation animations
+	//----------
+
+	// Used in m1l2 
+	prisoner_2			scripted/prisoners/prisoners_2.skc
+	guard_1			scripted/prisoners/guard_1.skc
+	guard_2			scripted/prisoners/guard_2.skc
+	prisoner_walk					scripted/piperplane/pilot_walk.skc	
+	prisoner_idle					scripted/piperplane/pilot_idle.skc
+	prisoner_1		scripted/prisoners/prisoners_1.skc
+
+}

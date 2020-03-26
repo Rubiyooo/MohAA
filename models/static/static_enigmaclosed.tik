@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel enigmaclosed.skd
+	surface material2 shader static_enigma
+	surface material1 shader static_enigma
+	
+}
+
+animations
+{
+	idle     enigmaclosed.skc
+}
+
+/*QUAKED static_uboat_enigmaclosed (0 0 0) (-56 -24 0) (56 24 8)
+*/

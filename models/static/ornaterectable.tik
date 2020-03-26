@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/ornaterectable
+	skelmodel ornaterectable.skd
+	surface ornaterectable shader static_ornaterectable
+}
+
+
+animations
+{
+	idle     ornaterectable.skc
+}
+
+/*QUAKED static_furniture_ornaterectable (0.0 0.75 0.5) (-16 -16 0) (16 16 64)
+*/

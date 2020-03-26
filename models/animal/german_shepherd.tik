@@ -1,0 +1,316 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 0.75
+	path models/animal/dog/
+	skelmodel german_shepherd.skd
+	surface german_shepherd2 shader german_shepherd
+	surface german_shepherd1 shader german_shepherd
+
+	path models/human/animation/dog_animation/
+	radius 20				// defines size of shadow
+
+	ischaracter
+}
+
+init
+{
+	server
+	{
+		classname Actor
+		setsize "-16 -16 0" "16 16 48"
+		german
+		health 100
+		type_idle dog_idle
+		type_attack dog_attack
+	}
+}
+
+animations
+{
+	idle					dog_stand_idle.skc
+	{
+		client
+		{
+			1	sound	dog_pant
+			32	sound	dog_collar
+		}
+	}
+
+	death					dog_death.skc
+	{
+		client
+		{
+			0	sound	dog_death
+			5	bodyfall
+		}
+	}
+
+	dog_bark				dog_bark.skc
+	{
+		client
+		{
+			1	sound	dog_bark
+		}
+	}
+
+	dog_bite_face			dog_bite_face.skc
+	{
+		client
+		{
+			2	sound	dog_collar
+			4	sound	dog_bite
+			8	sound	dog_fs
+			9	sound	dog_fs
+		}
+	}
+
+	dog_bite_leg			dog_bite_leg.skc
+	{
+		client
+		{
+			0	sound	dog_bite
+		}
+	}
+
+	dog_death				dog_death.skc
+	{
+		client
+		{
+			0	sound	dog_death
+			2	bodyfall
+		}
+	}
+
+	dog_death2				dog_death2.skc
+	{
+		client
+		{
+			0	sound	dog_death
+			4	bodyfall
+		}
+	}
+
+	dog_death_run			dog_death_run.skc
+	{
+		client
+		{
+			0	sound	dog_death
+			4	bodyfall
+		}
+	}
+
+	dog_discipline			dog_discipline.skc
+	{
+		client
+		{
+			1	sound	dog_collar
+			22	sound	dog_pain
+			32	sound	dog_pain
+			41	sound	dog_collar
+		}
+	}
+
+	dog_land				dog_land.skc
+
+	dog_leap				dog_leap.skc
+	{
+		client
+		{
+			0	sound	dog_fs
+			2	sound	dog_collar
+			7	sound	dog_fs
+			9	sound	dog_fs
+		}
+	}
+
+	dog_pain_back			dog_pain_back.skc
+	{
+		client
+		{
+			0	sound	dog_pain
+		}
+	}
+
+	dog_pain_front			dog_pain_front.skc
+	{
+		client
+		{
+			0	sound	dog_pain
+		}
+	}
+
+	dog_pain_head			dog_pain_head.skc
+	{
+		client
+		{
+			0	sound	dog_pain
+		}
+	}
+
+	dog_rest				dog_rest.skc
+	{
+		client
+		{
+			0	sound	dog_sniff
+			4	sound	dog_collar
+			5	sound	dog_sniff
+			11	sound	dog_collar
+			11	sound	dog_sniff
+			14	sound	dog_sniff
+			18	sound	dog_sniff
+		}
+	}
+
+	dog_run					dog_run.skc
+	{
+		client
+		{
+			0	sound	dog_fs
+			2	sound	dog_fs
+			7	sound	dog_fs
+			8	sound	dog_fs
+		}
+	}
+
+	dog_sniff				dog_sniff.skc
+	{
+		client
+		{
+			0	sound	dog_sniff
+			1	sound	dog_fs
+			5	sound	dog_fs
+			7	sound	dog_fs
+			11	sound	dog_fs
+		}
+	}
+
+	dog_sniff_turn_left		dog_sniff_turn_left.skc
+	{
+		client
+		{
+			0	sound	dog_sniff
+			0	sound	dog_fs
+			3	sound	dog_fs
+			6	sound	dog_fs
+		}
+	}
+
+	dog_sniff_turn_right	dog_sniff_turn_right.skc
+	{
+		client
+		{
+			0	sound	dog_sniff
+			1	sound	dog_fs
+			3	sound	dog_fs
+			6	sound	dog_fs
+		}
+	}
+
+	dog_stand_curious		dog_stand_curious.skc
+	{
+		client
+		{
+			1	sound	dog_collar
+			9	sound	dog_sniff
+			17	sound	dog_growl
+			25	sound	dog_sniff
+		}
+	}
+
+	dog_stand_idle			dog_stand_idle.skc
+	{
+		client
+		{
+			1	sound	dog_pant
+			32	sound	dog_collar
+		}
+	}
+
+	dog_stand_turn_left		dog_stand_turn_left.skc
+	{
+		client
+		{
+			3	sound	dog_fs
+			4	sound	dog_fs
+			6	sound	dog_fs
+			8	sound	dog_fs
+		}
+	}
+
+	dog_stand_turn_right	dog_stand_turn_right.skc
+	{
+		client
+		{
+			3	sound	dog_fs
+			4	sound	dog_fs
+			6	sound	dog_fs
+			8	sound	dog_fs
+		}
+	}
+
+	dog_standup				dog_standup.skc
+	{
+		client
+		{
+			0	sound	dog_sniff
+			5	sound	dog_fs
+		}
+	}
+
+	dog_leash_stop			dog_leash_stop.skc
+	{
+		client
+		{
+			0	sound	dog_fs
+			1	sound	dog_collar
+			1	sound	dog_fs
+			3	sound	dog_fs
+			8	sound	dog_fs
+			8	sound	dog_collar
+		}
+	}
+
+	dog_turn_left			dog_walk_turn_left.skc
+	{
+		client
+		{
+			0	sound	dog_fs
+			2	sound	dog_fs
+			4	sound	dog_fs
+			7	sound	dog_fs
+		}
+	}
+
+	dog_turn_right			dog_walk_turn_right.skc
+	{
+		client
+		{
+			0	sound	dog_fs
+			1	sound	dog_fs
+			3	sound	dog_fs
+			5	sound	dog_fs
+			7	sound	dog_fs
+		}
+	}
+
+	dog_walk_leash			dog_walk_leash.skc
+
+	dog_walk_bored			dog_walk_bored.skc
+	{
+		client
+		{
+			0	sound	dog_pant
+			0	sound	dog_fs
+			7	sound	dog_fs
+			8	sound	dog_fs
+			15	sound	dog_fs
+		}
+	}
+}
+
+/*QUAKED ai_german_hund_dog-real (1.0 0.5 0.0) (-12 -12 0) (12 12 80)
+fart or die
+*/

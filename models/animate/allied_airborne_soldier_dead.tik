@@ -1,0 +1,52 @@
+TIKI
+setup
+{
+	scale 0.52
+	path models/human/allied_airborne	// Set path to set skelmodel from
+	skelmodel airborne.skd		// Set body model
+
+	surface shirt shader airborne_top
+	surface pants shader airborne_pants
+	surface sleeve shader airborne_top_cull
+
+	path models/human/heads			// Set new path for head model
+	skelmodel head2.skd		// Set head model
+	surface head shader srg_dirty
+
+	path models/human/hands			
+	skelmodel hand.skd		
+	surface hand shader handsnew
+
+	path models/equipment/USGear/airborne
+	skelmodel airborne_gear.skd
+	surface gear shader airborne_gear
+
+
+//	path models/equipment/USGear/helmets
+//	skelmodel us_helmet.skd
+//	surface us_helmet shader blank_web
+
+
+	scale 0.52				// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+
+	radius 20				// defines size of shadow
+
+	path models/human/animation
+}
+
+init
+{
+	server
+	{
+      	classname Object
+		setsize "-16 -16 0" "16 16 8"
+	}
+}
+
+animations
+{
+	idle		deaths/pose_a(leftside).skc
+}
+
+/*QUAKED animate_deadbodies_dead-airborne-soldier1 (1.0 0.5 0.0) (-16 -16 0) (16 16 96)
+*/

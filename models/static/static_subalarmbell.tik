@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels/
+	skelmodel subalarmbell.skd
+	surface subalarmbell shader static_alarmbell
+}
+
+animations
+{
+	idle     subalarmbell.skc
+}
+
+/*QUAKED static_uboat_subalarmbell (0 0 0) (-16 -16 0) (24 24 40)
+*/

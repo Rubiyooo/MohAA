@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52
+	path models/miscobj/clipboard_pencil
+	skelmodel clipboard.skd
+	surface all shader clipboard_pulse
+}
+
+init
+{
+	server
+	{
+		classname animate
+	}
+}
+
+animations
+{
+	idle     clipboard.skc
+}
+
+/*QUAKED animate_item_clipboard-pulse(0.0 0.75 0.5) (-8 -8 0) (8 8 16)
+Benson Russell - 10-8-2001 - clipboard manifest for objectives to retrieve
+*/

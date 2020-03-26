@@ -1,0 +1,27 @@
+TIKI
+setup
+{
+	scale 0.52
+	path models/miscobj/clipboard_pencil
+	skelmodel attached_clipboard.skd
+	surface all shader clipboard
+}
+
+init
+{
+	server
+	{
+		classname interactobject
+		setsize "-4 -4 0" "4 4 8"
+		killedeffect "" // tiki to spawn when it's destroyed
+		hiteffect "" // tiki to spawn when it's hit
+	}
+}
+
+animations
+{
+	idle     attached_clipboard.skc
+}
+
+/*QUAKED interactobject_items_clipboard(0.0 0.75 0.5) (-8 -8 0) (8 8 16)
+*/

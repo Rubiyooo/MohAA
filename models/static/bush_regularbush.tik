@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/natural
+	skelmodel bush_regularbush.skd
+	surface bush3_3 shader static_bush3_3
+	surface bush3_2 shader static_bush3_2
+	surface bush3_1 shader static_bush3_1
+}
+
+animations
+{
+	idle     bush_regularbush.skc
+}
+
+/*QUAKED static_natural_bush_regularbush (0.5 0.0 0.5) (-16 -40 0) (32 48 40)
+*/

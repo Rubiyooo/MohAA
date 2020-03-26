@@ -1,0 +1,287 @@
+animations // Now list all of the animations and any special commands for them
+{
+$path models/human/animation
+
+	//===========================
+	//	INTRO TRUCK SEQUENCE
+	//===========================
+
+	//----------
+	//truck idles (looping)
+	//----------
+
+
+
+	truck_idle_captain		scripted/level_m1l1/truck_idle_captain.skc
+	truck_idle_earl			scripted/level_m1l1/truck_idle_earl.skc
+	truck_idle_guy01		scripted/level_m1l1/truck_idle_guy01.skc
+	truck_idle_guy02		scripted/level_m1l1/truck_idle_guy02.skc
+	{
+		server
+		{
+			// Change weapon to left hand - there is some swapping involved as he moves it around
+			first	weaponcommand mainhand attachtohand offhand
+		}
+	}
+	truck_idle_guy03		scripted/level_m1l1/truck_idle_guy03.skc
+	truck_idle2_guy03		scripted/level_m1l1/truck_idle2_guy03.skc
+
+
+	//----------
+	//truck twitches // these twitches add variation to the idles //
+	//----------
+
+	truck_twitch_captain		scripted/level_m1l1/truck_twitch_captain.skc
+	truck_twitch2_captain		scripted/level_m1l1/truck_twitch_captain2.skc
+	truck_twitch_earl		scripted/level_m1l1/truck_twitch_earl.skc
+	truck_twitch_guy01		scripted/level_m1l1/truck_twitch_guy01.skc
+	truck_twitch2_guy01		scripted/level_m1l1/truck_twitch2_guy01.skc
+	truck_twitch_guy02		scripted/level_m1l1/truck_twitch_guy02.skc
+	{
+		server
+		{
+			// Change weapon to left hand - there is some swapping involved as he moves it around
+			first	weaponcommand mainhand attachtohand offhand
+		}
+	}
+
+	truck_twitch2_guy02		scripted/level_m1l1/truck_twitch2_guy02.skc
+	{
+		client
+			{
+				first sound drink
+			}	
+		server
+		{
+			// Change weapon to left hand - there is some swapping involved as he moves it around
+			first	weaponcommand mainhand attachtohand offhand
+			//canteen
+		 	3	attachmodel models/miscobj/canteen.tik tag_weapon_right
+			16	removeattachedmodel tag_weapon_right
+		}
+	}
+
+	truck_twitch_guy03		scripted/level_m1l1/truck_twitch_guy03.skc
+	truck_twitch2_guy03		scripted/level_m1l1/truck_twitch2_guy03.skc
+
+
+	//----------
+	//truck idles (watch)
+	//----------
+
+
+
+	truck_watch_captain		scripted/level_m1l1/truck_watch_captain.skc
+	truck_watch_guy01		scripted/level_m1l1/truck_watch_guy01.skc
+	{
+		client			///taking too long
+		{
+			85 sound dfr_M1L1_add12
+		}
+	} 
+	truck_watch_guy02		scripted/level_m1l1/truck_watch_guy02.skc
+	{
+		server
+		{
+			// Change weapon to left hand - there is some swapping involved as he moves it around
+			first	weaponcommand mainhand attachtohand offhand
+			//canteen
+			first	removeattachedmodel tag_weapon_right
+		}
+	}
+	truck_watch_guy03		scripted/level_m1l1/truck_watch_guy03.skc
+	{
+		client			
+		{
+			70 sound dfr_M1L1_add11
+			180 sound dfr_M1L1_add13
+		}
+	} 
+
+
+	//----------
+	//truck SHOT/
+	//----------
+
+	truck_shot_captain		scripted/level_m1l1/truck_shot_captain.skc  
+
+	{
+		client			///go go get the trock moving
+		{
+			8 sound dfr_M1L1_add04
+		}
+	} 
+
+	truck_shot_guy01		scripted/level_m1l1/truck_shot_guy01.skc
+ 	{
+
+		server
+		{
+			// Change weapon to left hand - there is some swapping involved as he moves it around
+			first	weaponcommand mainhand attachtohand offhand
+			4	weaponcommand mainhand attachtohand mainhand
+			64	weaponcommand mainhand attachtohand offhand
+
+			30 fire
+			35 fire
+			41 fire
+			49 fire
+			62 fire
+			72 fire
+		
+
+
+
+		}
+
+	}
+	truck_shot_guy02		scripted/level_m1l1/truck_shot_guy02.skc
+	{	
+		server
+		{
+			// Change weapon to left hand - there is some swapping involved as he moves it around
+			first	weaponcommand mainhand attachtohand offhand
+
+		}
+	}
+
+	truck_shot_guy03		scripted/level_m1l1/truck_shot_guy03.skc
+	{
+		server
+		{
+			33 fire
+			38 fire
+			100 fire
+		
+		}
+	}
+
+	//----------
+	//truck ROCKS/
+	//----------
+
+	truck_rock_captain		scripted/level_m1l1/truck_rock_captain.skc
+
+	{
+		client			///uh oh change of plans
+		{
+			13 sound dfr_M1L1_add03
+		}
+	}
+	
+
+	truck_rock_guy01		scripted/level_m1l1/truck_rock_guy01.skc
+  	{
+
+		server
+		{
+			// Change weapon to left hand - there is some swapping involved as he moves it around
+			first	weaponcommand mainhand attachtohand offhand
+
+		}
+
+	}
+
+	truck_rock_guy02		scripted/level_m1l1/truck_rock_guy02.skc
+	{	
+		server
+		{
+			// Change weapon to left hand - there is some swapping involved as he moves it around
+			first	weaponcommand mainhand attachtohand offhand
+
+		}
+	}
+
+	truck_rock_guy03		scripted/level_m1l1/truck_rock_guy03.skc
+
+
+	//----------
+	//truck outs/
+	//----------
+
+
+	truck_out_captain		scripted/level_m1l1/truck_out_captain.skc
+	{
+		client
+		{
+			77 sound snd_bodyfall_stone3
+		}	
+	}
+
+	truck_out_guy01		scripted/level_m1l1/truck_out_guy01.skc
+  	{
+		client
+		{
+			60 sound snd_bodyfall_stone4
+		}	
+		server
+		{
+			// Change weapon to left hand - there is some swapping involved as he moves it around
+			first	weaponcommand mainhand attachtohand offhand
+			9	weaponcommand mainhand attachtohand mainhand
+			
+		}
+
+	}
+
+	truck_out_guy02		scripted/level_m1l1/truck_out_guy02.skc
+	{	
+		client
+		{
+			63 sound snd_bodyfall_stone3
+		}	
+		server
+		{
+			// Change weapon to left hand - there is some swapping involved as he moves it around
+			first	weaponcommand mainhand attachtohand offhand
+			46	weaponcommand mainhand attachtohand mainhand
+		}
+	}
+
+	truck_out_guy03		scripted/level_m1l1/truck_out_guy03.skc
+	{
+		client
+		{
+			56 sound snd_bodyfall_stone3
+		}	
+		server
+		{
+			10 fire
+		
+		}
+	}
+
+
+
+	//----------
+	//briefing and responses //
+	//----------
+
+
+		/// the mysterious guy (earl) has already jumped out ///
+
+		/// the captains dialogue (the briefing) is in dialogue/M1L1_dialogue_US.tik ///
+		
+		/// the other guys look at the captain and react to what he is saying.
+		/// start the captains briefing and their react animations at the same time.
+
+
+	truck_react_guy01		scripted/level_m1l1/truck_react_guy01.skc
+
+	truck_react_guy02		scripted/level_m1l1/truck_react_guy02.skc
+	{
+
+		server
+		{
+			// Change weapon to left hand - there is some swapping involved as he moves it around
+			first	weaponcommand mainhand attachtohand offhand
+			//canteen
+			first	removeattachedmodel tag_weapon_right
+		}
+	}
+
+	truck_react_guy03		scripted/level_m1l1/truck_react_guy03.skc
+
+
+}
+

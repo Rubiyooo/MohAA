@@ -1,0 +1,87 @@
+TIKI
+setup
+{
+	scale 0.5
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache oceanspray.spr
+		originemitter name1
+		(
+			spawnrate 5.00
+			model oceanspray.spr
+			alpha 0.30
+			color 0.70 0.80 1.00
+			collision
+			bouncefactor 0.30
+			life 3.00
+			scalerate 10.00
+			velocity 60.00
+			accel 0.00 0.00 -60.00
+			friction 7.00
+			offsetalongaxis 90 range 130 -400 0
+			angles 90 0 range 140 -230
+			avelocity 0 0 range 50 -80
+			scalemin 0.50
+			scalemax 1.00
+			fade
+			sphere
+		)
+
+		originemitter name2
+		(
+			spawnrate 4.00
+			model oceanspray.spr
+			alpha 0.30
+			color 0.90 0.90 1.00
+			collision
+			bouncefactor 0.30
+			life 3.00
+			scalerate 5.00
+			velocity -20.00
+			friction 2.80
+			offset crandom -30 crandom -30 range 30 -70
+			offsetalongaxis crandom 130 crandom -20 crandom 80
+			angles 90 0 range 78 -18
+			avelocity crandom -50 0 random -33
+			fade
+			sphere
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron name1
+			enter emitteron name2
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff name1
+			enter emitteroff name2
+		}
+	}
+}
+
+/*QUAKED fx_snow_drifting (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+standard
+*/

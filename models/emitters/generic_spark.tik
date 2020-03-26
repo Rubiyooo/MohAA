@@ -1,0 +1,70 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter quickspark1
+		(
+				spawnrate 1.00
+				model models/fx/bh_metal_fastpiece.tik
+				count 16
+				color 1.00 1.00 1.00
+				collision
+				bouncefactor 0.30
+				scale 0.50
+				life 1.00
+				velocity 300.00
+				accel 0.00 0.00 -500.00
+				friction 2.00
+				fade
+				sphere
+				alignstretch 0.30
+		)
+           originemitter flash
+		(
+				spawnrate 1.00
+				model corona_util.spr
+				color 1.00 1.00 1.00
+				scale 0.30
+				life 0.02
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron quickspark1
+                  enter emitteron flash
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff quickspark1
+                  enter emitteroff flash
+		}
+	}
+}
+
+/*QUAKED fx_electric_sparks (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+local electrical discharge
+*/

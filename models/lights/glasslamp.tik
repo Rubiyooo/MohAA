@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/lights/glasslamp
+	skelmodel glasslamp.skd
+	surface glasslamp shader static_glasslamp
+}
+
+animations
+{
+	idle    glasslamp.skc
+}
+
+/*QUAKED static_lamp_glasslamp (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

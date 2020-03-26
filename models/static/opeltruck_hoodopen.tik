@@ -1,0 +1,33 @@
+TIKI
+setup
+{
+	scale 0.52				// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/vehicles/opeltruck
+	skelmodel opel_hoodopen.skd
+	surface opel1 shader static_opel
+	surface opel2 shader static_opel_cull
+	surface opel3 shader static_opel
+	surface opel4 shader static_opel
+	surface opelwindows shader static_opelwindows
+	surface opelhub shader static_opelhub
+	surface opeltread shader static_opeltread
+	surface engine shader static_opelengine		
+}
+
+init
+{
+	server
+     	{
+      		classname animate
+		setsize "-50 -40 0" "50 40 60"
+	}
+}
+
+animations
+{
+	idle     opel_hoodopen.skc
+}
+
+/*QUAKED static_vehicle_german_opeltruck-hoodopen (0.5 0.0 0.5) (-65 -40 0) (65 40 120)
+Opel Truck with hood open for guys to work on it.  This is not a drivable vehicle.
+*/

@@ -1,0 +1,155 @@
+TIKI
+setup
+{
+	scale 0.52					// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+
+	path models/human/german_wehrmact_soldier
+	skelmodel heerprivate.skd
+
+	surface wehrmact_pants shader wehrmact_pants
+	surface wehrmact_tunic shader wehrmact_tunic
+	surface wehrmact_tunic_c shader wehrmact_tunic_c
+	
+	
+//	path models/human/heads
+//	skelmodel head4.skd
+//	surface head shader roml
+	$include models/human/heads/german_old_heads.tik
+
+	path models/human/hands			
+	skelmodel hand.skd		
+	surface hand shader handsnew
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** p-38 pistol
+	case weapon "Walter P38"
+	{
+		path models/gear/g_headgear
+
+		skelmodel creasecap.skd
+		surface creasecap shader hundhat
+		
+
+		path models/gear/heer
+		
+		skelmodel loadout.skd
+		surface loadout shader german_gear
+
+		skelmodel holster.skd
+		surface holster shader german_holster
+
+	}
+
+	//*** regular KAR 98
+	case weapon "Mauser KAR 98K"
+	{
+		path models/gear/g_headgear
+
+		skelmodel creasecap.skd
+		surface creasecap shader hundhat
+
+		path models/gear/heer
+		
+		skelmodel loadout.skd
+		surface loadout shader german_gear
+
+		skelmodel karclips.skd
+		surface karclips shader german_riflebelt
+
+	}
+	
+	//*** MP40 submachinegun
+	case weapon "MP40"
+	{
+		path models/gear/g_headgear
+
+		skelmodel creasecap.skd
+		surface creasecap shader hundhat
+
+		path models/gear/heer
+		
+		skelmodel loadout.skd
+		surface loadout shader german_gear
+
+		skelmodel mp40clip.skd
+		surface mp40clip shader ammo_pouch
+
+	}
+	
+	//*** mp44 / stg44 machinegun
+	case weapon "StG44"
+	{
+		path models/gear/g_headgear
+
+		skelmodel creasecap.skd
+		surface creasecap shader hundhat
+
+		path models/gear/heer
+		
+		skelmodel loadout.skd
+		surface loadout shader german_gear
+
+		skelmodel hmp44clips.skd
+		surface hmp44clips shader mp44ammopouch
+
+
+
+		
+
+	}
+//*** end weapon equipment assignment
+//************************************
+
+	
+
+	
+
+
+	scale 0.52				// Set default scale to 16/30.5 since world is 
+						// in 16 units per foot and model is in cm's
+	path models/human/protoanimations	// Set path to set animations from
+
+	radius 20				// Defines size of shadow
+}
+
+init
+{
+	server
+	{
+     		classname Actor
+		setsize "-16 -16 0" "16 16 92"
+		german
+		health 100
+		weapon "MP40"
+
+		// Make him mumble but not breathe steam
+		exec global/breathe.scr 0 1
+
+		// Set up the helmet for popping off
+		// <surface to turn off> <model to spawn> <speed to throw it at> <damage multiplier for helmet shots>
+		sethelmet "models/gear/german_ncocap.tik" 200 4 "creasecap" 
+	}
+}
+
+//
+// include the base animations definition
+//
+
+$include models/human/new_generic_human.tik
+$include models/human/animation/dialogue/generic_dialogue_german.tik
+//$include models/human/animation/helmet_flyoff/helmet_flyoff_german_nco.tik
+
+
+
+/*QUAKED ai_german_wehrmact_nco (1.0 0.5 0.0) (-16 -16 0) (16 16 92)
+*/

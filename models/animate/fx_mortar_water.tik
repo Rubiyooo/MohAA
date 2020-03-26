@@ -1,0 +1,93 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+
+		cache spritely_water.spr
+		cache waterplume.spr
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+			enter sound arty_exp_water
+
+			enter originspawn
+			(
+				count 1
+				model spritely_water.spr
+				offset 0 0 32			// image is 256 tall
+				life .5
+				scale .125			// z offset is image heigt * scale / 2
+				scalerate 16
+				randvel 0 0 512			// z vel is image height * scale * scalerate / 2
+				fadedelay .25
+				physicsrate every		// simple velocity physics are cheap
+			)
+
+			enter originspawn
+			(
+				count 50
+				model waterplume.spr
+				offset crandom 60 crandom 60 0
+				angles 0 0 crandom 360
+				velocity 150
+				randvel crandom 40 crandom 40 random 800
+				clampvel -40 40 -40 40 -250 99999
+				avelocity 0 0 crandom 90
+				accel 0 0 -800
+				life 3 .5
+				scale 0.5
+				scalerate 1
+				fadedelay 1
+			)
+
+			enter originspawn
+			(
+				count 30
+				model waterplume.spr
+				offset crandom 20 crandom 20 0
+				offsetalongaxis random 100 0 0
+				angles 0 0 crandom 360
+				velocity 500
+				randvel crandom 50 crandom 50 random 1200
+				clampvel -60 60 -60 60 -350 99999
+				avelocity 0 0 crandom 90
+				accel 0 0 -1200
+				life 1.5 .4
+				scale 0.5
+				scalerate 0.5
+				fadedelay 1.2
+			)
+		}
+	}
+}
+
+/*QUAKED animate_fx_mortar-water (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Benson Russell - 9-27-2001 - mortar impact effect for water
+*/

@@ -1,0 +1,103 @@
+TIKI
+setup
+{
+	scale 0.52
+	path models/human/allied_pilot
+	skelmodel allied_pilot.skd
+
+
+	surface pants shader pilot_pants
+	surface coat shader pilot_top
+	surface cullpants shader cull_pilot_pants
+
+	path models/human/heads			// Set new path for head model
+	skelmodel head1.skd			// Set head model
+	surface head shader us_j
+
+
+	path models/human/hands
+	skelmodel hand.skd
+	surface hand shader handsnew
+
+
+	path models/equipment/USGear/helmets
+
+	//skelmodel us_helmet.skd
+	//surface us_helmet shader us-helmet_ltnt
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+	path models/equipment/usgear
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** colt 45 pistol
+	case weapon "colt 45"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** m1 garand rifle
+	case weapon "m1 garand"
+	{
+		//skelmodel k98clips.skd
+		//surface k98clips shader german_riflebelt
+	}
+	
+	//*** thompson
+	case weapon "thompson"
+	{
+		//skelmodel k98clips.skd
+		//surface k98clips shader german_riflebelt
+	}
+
+	//*** bar machinegune
+	case weapon "bar"
+	{
+		//skelmodel mp40clips.skd
+		//surface mp40clips shader ammo_pouch_tan
+	}
+	
+	//*** shotgun
+	case weapon "shotgun"
+	{
+		//skelmodel mp40clips.skd
+		//surface mp40clips shader ammo_pouch_tan
+	}
+//*** end weapon equipment assignment
+//************************************
+	
+
+
+	scale 0.52				// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/human/protoanimations	// Set path to set animations from
+
+	radius 20				// defines size of shadow
+}
+
+init
+{
+	server
+	{
+      	classname Actor
+   	   	american
+		setsize "-16 -16 0" "16 16 92"
+		health 100
+		weapon "M1 Garand"
+	}
+}
+
+//
+// include the base animations definition
+//
+$include models/human/new_generic_human.tik
+$include models/human/animation/dialogue/generic_dialogue_US.tik
+
+/*QUAKED ai_allied_pilot (1.0 0.5 0.0) (-16 -16 0) (16 16 96)
+*/

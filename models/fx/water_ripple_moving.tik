@@ -1,0 +1,42 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	server
+	{
+	}
+	client
+	{
+		//cache some stuff used in this effect
+		cache water_ring_moving.spr
+
+		// add water ripple
+		sfx originspawn
+		(
+			model water_ring_moving.spr
+			spritegridlighting
+//			angles 90 0 0 // the angles are set when then effect is made
+			alpha 0.3
+			offset 0 0 0.125
+			count 1
+			life 1.2 0.1
+			scale 0.6
+			scalerate 1.25
+			fadein 0.1
+			fadedelay 0.4
+			randvelaxis 0 0 8
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc
+}

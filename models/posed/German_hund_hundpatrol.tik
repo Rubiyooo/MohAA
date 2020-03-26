@@ -1,0 +1,37 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 0.52
+	path models/human/German_hund_hundpatrol
+	skelmodel German_hund_hundpatrol.skb
+	surface pants shader hundpants
+      surface hundpatrol2 shader hundpatrol_coat
+	surface hundpatrol3 shader hundpatrol_coat
+	surface head shader bignose
+	surface belt shader riflebelt
+	surface hat shader hundhat
+	surface hands shader hand
+
+	radius 20				// defines size of shadow
+
+}
+
+init
+{
+	server
+	{
+		classname Animate
+		setsize "-16 -16 0" "16 16 92"
+	}
+}
+
+animations
+{
+	idle     German_hund_hundpatrol.skc
+}
+
+/*QUAKED posed_german_hund_hundpatrol(0.5 .25 0.25) (-16 -16 0) (16 16 92)
+badass
+*/

@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52
+	path models/items/tigerfibel
+	skelmodel tigerfibel.skd
+	surface material1 shader pulsating_tigerfibel
+}
+
+init
+{
+	server
+	{
+		classname animate
+	}
+}
+
+animations
+{
+	idle     tigerfibel.skc
+}
+
+/*QUAKED animate_item_pulse-tigerfibel(0.0 0.75 0.5) (-8 -8 0) (8 8 16)
+Benson Russell - 10-10-2001 - tiger II plans to pick up for an objective
+*/

@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/crates
+	skelmodel exp_crate1a.skd
+	surface explode1 shader static_exp_crate1a
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     exp_crate1a.skc
+}
+
+/*QUAKED static_item_exp_crate1a (0.5 0.0 0.5) (-8 -16 0) (16 24 24)
+*/

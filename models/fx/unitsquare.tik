@@ -1,0 +1,31 @@
+TIKI
+// A 1-unit square centered around the origin.  Designed for use with an autosprite 
+// shader for light glow effects.
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world 
+					// is in 16 units per foot and model is in cm's
+	path models/fx/unitsquare
+	skelmodel unitsquare.skd
+	surface all shader blank
+	
+}
+
+init
+{
+	server
+      {
+      	classname animate
+      	setsize "-1 -0.5 -0.5" "0 0.5 0.5"
+	}
+}
+
+
+animations
+{
+	idle     unitsquare.skc
+}
+
+/*QUAKED fx_unitsquare (0.5 .25 0.25) (-1 -1 -1) (1 1 1)
+standard
+*/

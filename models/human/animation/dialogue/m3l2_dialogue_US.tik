@@ -1,0 +1,343 @@
+setup
+{
+	path models/human/animation/dialogue/M3L2/A
+}
+
+animations
+{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////    animations    ///////////////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+	dfr_M3L3_350j_2			actor_M3L3_350.skc
+	{
+		client			/// Beautiful, that’s the way to win a war.
+		{
+			first sound dfr_M3L3_350j_2
+		}
+	}
+
+	dfr_M3L2_add01	actor_M3L2_add01.skc
+	{
+		client		/// lets check out that house
+		{
+			first sound dfr_M3L2_add01
+		}
+	}
+
+	dfr_M3L2_add02	actor_attack_10j_1.skc
+	{
+		client		/// MOVE IN
+		{
+			first sound dfr_M3L2_add02
+		}
+	}
+
+	dfr_M3L2_add01	actor_M3L2_add01.skc
+	{
+		client		/// lets check out that house
+		{
+			first sound dfr_M3L2_add01
+		}
+	}
+
+	dfr_scripted_M5L3_07f	actor_M3L2_07.skc
+	{
+		client		/// THUNDER!
+		{
+			first sound dfr_scripted_M5L3_07f1
+		}
+	}
+
+	dfr_scripted_M5L3_08c	actor_M5L3_08.skc
+	{
+		client		/// FLASH!
+		{
+			first sound dfr_scripted_M5L3_08c
+		}
+	}
+
+
+	////////////////// Field in French countryside ////////////////////
+
+
+	dfr_M3L3_303j	actor_M3L2_303.skc
+	{
+		client		/// looks like well have to continue on foot
+		{
+			first sound dfr_M3L3_303j
+		}
+	}
+
+	dfr_M3L3_307f	actor_M3L2_307.skc
+	{
+		client		/// American! Hold your fire!
+		{
+			first sound dfr_M3L3_307f
+		}
+	}
+
+	dfr_M3L3_308f	actor_M3L2_308.skc
+	{
+		client		/// Boy I'm glad to see you.
+		{
+			first sound dfr_M3L3_308f
+		}
+	}
+
+	dfr_M3L3_309f	actor_M3L2_309.skc
+	{
+		client		/// WE LANDED WAY OFF TARGET
+		{
+			first sound dfr_M3L3_309f
+		}
+	}
+
+	dfr_before_102j_1	actor_before_102j_1.skc
+	{
+		client		/// the enemy is close....
+		{
+			first sound dfr_before_102j_1
+		}
+	}
+
+	dfr_M3L3_310jnew	actor_M3L2_310.skc
+	{
+		client		/// Hey, all right, some airborne boys. You two soldiers come with me.
+		{
+			first sound dfr_M3L3_310jnew
+		}
+	}
+
+	dfr_M3L3_311j	actor_M3L2_311.skc
+	{
+		client		/// Powell, stay here and watch the back.
+		{
+			first sound dfr_M3L3_311j
+		}
+	}
+
+	////////////////// The jeeps have been destoryed. ////////////////////
+
+	dfr_M3L3_319j	actor_M3L2_319.skc
+	{
+		client		/// Well, so much for our transport.
+		{
+			first sound dfr_M3L3_319j
+		}
+	}
+
+	dfr_M3L3_320j_2	actor_M3L2_320.skc
+	{
+		client		/// Come on Powell, we're moving out.
+		{
+			first sound dfr_M3L3_320j_2
+		}
+	}
+
+	////////////////// Need radio for airstrike. ////////////////////
+
+	dfr_M3L3_330j	actor_M3L2_330.skc
+	{
+		client		/// That 88 has this road locked down!
+		{
+			first sound dfr_M3L3_330j
+		}
+	}
+
+	dfr_M3L3_331j	actor_M3L2_331.skc
+	{
+		client		/// We could call in some air support if we had a radio. We have to find another way around.
+		{
+			first sound dfr_M3L3_331j
+		}
+	}
+
+	dfr_M3L3_332i	actor_M3L2_332.skc
+	{
+		client		/// Private Cobb, 3rd of the five-oh-sixth, sir.
+		{
+			first sound dfr_M3L3_332i
+		}
+	}
+
+	dfr_M3L3_333j	actor_M3L2_333.skc
+	{
+		client		/// Private Cobb do you have a radio?
+		{
+			3 sound dfr_M3L3_333j
+		}
+	}
+
+	dfr_M3L3_334i	actor_M3L2_334.skc
+	{
+		client		/// Our squad’s radioman was killed in the clearing to the southeast of this house. But there’s a sniper in the silo out there. We can't get anywhere near it, sir.
+		{
+			first sound dfr_M3L3_334i
+		}
+	}
+
+	dfr_M3L3_335i	actor_M3L2_335.skc
+	{
+		client		/// This should stop the sniper from seeing in here.
+		{
+			first sound dfr_M3L3_335i
+		}
+	}
+
+	dfr_M3L3_336j_1.new		actor_M3L2_336.skc
+	{
+		client		/// Powell, you’re the only sniper here. Head for the farm house and flank that sniper. Take him out and get back with the radio. Cobb and I will cover the reverse approach on the road
+		{
+			first sound dfr_M3L3_336j_1.new
+		}
+	}
+
+
+	////////////////// generic ////////////////////
+
+	dfr_before_117j_1	actor_before_117j_1.skc
+	{
+		client		/// this doesn't look good.
+		{
+			first sound dfr_before_117j_1
+		}
+	}
+
+	dfr_attack_10j_1	actor_attack_10j_1.skc
+	{
+		client		/// move in.
+		{
+			first sound dfr_attack_10j_1
+		}
+	}
+
+	dfr_impressed_17j_1	actor_impressed_17j_1.skc
+	{
+		client		/// this doesn't look good.
+		{
+			first sound dfr_impressed_17j_1
+		}
+	}
+
+	dfr_over_23j_1		actor_over_23j_1.skc
+	{
+		client		/// move in.
+		{
+			first sound dfr_over_23j_1
+		}
+	}
+
+	dfr_over_10j_1new		actor_over_10j_1.skc
+	{
+		client		/// everyone check your ammo.
+		{
+			first sound dfr_over_10j_1
+		}
+	}
+
+	dfr_before_041j_1	actor_before_41j_1.skc
+	{
+		client		/// take point.
+		{
+			first sound dfr_before_041j_1
+		}
+	}
+
+	dfr_target_046j_2	actor_target_046j_2.skc
+	{
+		client		/// emplacement.
+		{
+			first sound dfr_target_046j_2
+		}
+	}
+
+	dfr_follow_04j_2	actor_follow_04j_2.skc
+	{
+		client		/// youre on point.
+		{
+			first sound dfr_follow_04j_21
+		}
+	}
+
+	dfr_follow_04j_yell	actor_follow_04j_2.skc
+	{
+		client		/// youre on point.
+		{
+			first sound dfr_follow_04j_yell
+		}
+	}
+
+	dfr_follow_01j_1	actor_follow_01j_1.skc
+	{
+		client		/// well cover you.
+		{
+			first sound dfr_follow_01j_1
+		}
+	}
+
+	dfr_follow_02j_1	actor_follow_02j_1.skc
+	{
+		client		/// we'll cover you.
+		{
+			first sound dfr_follow_02j_1
+		}
+	}
+
+	dfr_target_003j_2	actor_target_003j_2.skc
+	{
+		client		/// I'll cover you.
+		{
+			first sound dfr_target_003j_2
+		}
+	}
+
+	dfr_before_039j_2	actor_before_039j_2.skc
+	{
+		client		/// take point.
+		{
+			first sound dfr_before_039j_2
+		}
+	}
+
+	dfr_directive_001j_2	actor_directive_001j_2.skc	
+	{
+		client		/// stay there.
+		{
+			first sound dfr_directive_001j_2
+		}
+	}
+
+
+	dfr_directive_150j_1	actor_directive_150j_1.skc	
+	{
+		client		/// use a grenade.
+		{
+			first sound dfr_directive_150j_1
+		}
+	}
+
+
+	dfr_cover_01j_Find	actor_cover_01j_1.skc	
+	{
+		client		/// find cover.
+		{
+			12 sound dfr_cover_01j_Find
+		}
+	}
+
+
+	dfr_M3L3_318j_2		actor_M3L3_318j_2.skc	
+	{
+		client		/// okay I think thats the last of them.
+		{
+			first sound dfr_M3L3_318j_2
+		}
+	}
+
+
+
+
+}

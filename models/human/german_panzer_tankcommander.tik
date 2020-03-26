@@ -1,0 +1,91 @@
+TIKI
+setup
+{
+	path models/human/german_panzer_tankcommander	// Set path to set skelmodel from
+	skelmodel panzer_tankcommander.skd		// Set body model
+
+	surface coat1 shader tc_coat
+	surface pants shader obershutze_pants
+	surface coat2 shader tc_coat_c
+	
+
+//	path models/human/heads			// Set new path for head model
+//	skelmodel head7.skd			// Set head model
+//	surface head shader old_dog
+	$include models/human/heads/german_old_heads.tik
+
+	path models/human/hands			
+	skelmodel hand.skd		
+	surface hand shader l_gloves
+
+	path models/gear/g_headgear
+
+	skelmodel officercap.skd
+	surface officercap shader tc_hat
+
+	
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+	path models/equipment/germangear
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** p-38 pistol
+	case weapon "walter p38"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** mp40 submachinegun
+	case weapon "mp40"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+//*** end weapon equipment assignment
+//************************************
+
+
+	scale 0.52				// Set default scale to 16/30.5 since world is 
+						// in 16 units per foot and model is in cm's
+	path models/human/protoanimations	// Set path to set animations from
+
+	radius 20				// Defines size of shadow
+}
+
+init
+{
+	server
+	{
+      	classname Actor
+		setsize "-16 -16 0" "16 16 92"
+		german
+		health 100
+		weapon "Walter P38"
+
+		// Make him mumble but not breathe steam
+		exec global/breathe.scr 0 1
+
+		// Set up the helmet for popping off
+		// <surface to turn off> <model to spawn> <speed to throw it at> <damage multiplier for helmet shots>
+		sethelmet "models/gear/german_tankcommander.tik" 200 4 "hat" 
+	}
+}
+
+//
+// include the base animations definition
+//
+
+$include models/human/animation/dialogue/generic_dialogue_german.tik
+$include models/human/new_generic_human.tik
+//$include models/human/animation/helmet_flyoff/helmet_flyoff_german_tankcommander.tik
+
+/*QUAKED ai_german_panzer_tankcommander (1.0 0.5 0.0) (-16 -16 0) (16 16 92)
+*/

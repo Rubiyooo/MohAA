@@ -1,0 +1,7 @@
+	runfire_back			walks_runs/runfire_back.skc
+	runfire_back_left			walks_runs/runfire_backleft.skc
+	runfire_back_right		walks_runs/runfire_backright.skc
+	runfire_forward			walks_runs/runfire_forward.skc
+	runfire_still			walks_runs/runfire_inplace.skc
+	runfire_left			walks_runs/runfire_left.skc
+	runfire_right			walks_runs/runfire_right.skc

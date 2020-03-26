@@ -1,0 +1,8 @@
+	ladder_up_getoff				ladderup_getoff.skc
+	ladder_up_geton				ladderup_geton.skc
+	ladder_up_lefthand			ladderup_lefthand.skc
+	ladder_up_righthand			ladderup_righthand.skc
+	ladder_down_getoff			ladderdown_getoff.skc
+	ladder_down_geton				ladderdown_geton.skc
+	ladder_down_lefthand			ladderdown_lefthand.skc
+	ladder_down_righthand			ladderdown_righthand.skc

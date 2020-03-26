@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/hidden_cabinets
+	skelmodel cabinet_b.skd		//cabinet_dark.skd
+	surface cabinet_dark shader cabinet_dark_h
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+
+}
+animations
+{
+	idle     cabinet_b.skc
+	open	   cabinet_b_open.skc
+}
+
+/*QUAKED static_furniture_hidden-cabinet-dark (0.5 0.0 0.5) (-16 -40 0) (24 40 104)
+*/

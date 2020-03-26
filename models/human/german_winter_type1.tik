@@ -1,0 +1,176 @@
+TIKI
+setup
+{
+	scale 0.52					// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+
+	path models/human/german_winter_type1
+	skelmodel wintersoldier1.skd
+
+	surface top shader wintertop1
+	surface cullskirt shader cull_winterpants1
+	surface skirt shader winterpants1
+	
+
+
+	$include models/human/heads/german_winter_heads.tik
+
+	path models/human/hands
+	skelmodel hand.skd
+	surface hand shader knitgloves1
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+	path models/equipment/germangear
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** p-38 pistol
+	case weapon "walter p38"
+	{
+		path models/gear/g_headgear
+
+		skelmodel coveredhelmet.skd
+		surface outside shader winterhelmet1
+		surface inside shader german-helmet_inside
+
+
+
+		path models/gear/winter
+
+		
+		skelmodel winterloadout.skd
+		surface winterloadout shader german_gear
+
+	}
+
+	//*** regular KAR 98
+	case weapon "mauser kar 98k"
+	{
+		path models/gear/g_headgear
+
+		skelmodel coveredhelmet.skd
+		surface outside shader winterhelmet1
+		surface inside shader german-helmet_inside
+
+
+
+		path models/gear/winter
+
+		skelmodel winterk98clips.skd
+		surface winterk98clips shader german_riflebelt
+
+		skelmodel winterloadout.skd
+		surface winterloadout shader german_gear
+	}
+	
+	//*** KAR 98 sniper
+	case weapon "mauser kar 98d sniper"
+	{
+		path models/gear/g_headgear
+
+		skelmodel coveredhelmet.skd
+		surface outside shader winterhelmet1
+		surface inside shader german-helmet_inside
+
+
+
+		path models/gear/winter
+
+		skelmodel winterk98clips.skd
+		surface winterk98clips shader german_riflebelt
+
+		skelmodel winterloadout.skd
+		surface winterloadout shader german_gear
+	}
+
+//*** MP40 submachinegun
+	case weapon "MP40"
+	{
+		path models/gear/g_headgear
+
+		skelmodel coveredhelmet.skd
+		surface outside shader winterhelmet1
+		surface inside shader german-helmet_inside
+
+		path models/gear/winter
+
+		skelmodel winterloadout.skd
+		surface winterloadout shader german_gear
+
+
+		skelmodel wintermp40clips.skd
+		surface wintermp40clips shader ammo_pouch
+
+	}
+
+	
+	//*** mp44 / stg44 machinegun
+	case weapon "mp44"
+	{
+		path models/gear/g_headgear
+
+		skelmodel coveredhelmet.skd
+		surface outside shader winterhelmet1
+		surface inside shader german-helmet_inside
+
+
+
+		path models/gear/winter
+
+		
+		skelmodel winterloadout.skd
+		surface winterloadout shader german_gear
+
+		skelmodel wintermp44clips.skd
+		surface wintermp44clips shader mp44ammopouch
+
+	}
+
+//*** end weapon equipment assignment
+//************************************
+
+
+	
+
+	
+
+	scale 0.52				// Set default scale to 16/30.5 since world is
+						// in 16 units per foot and model is in cm's
+	path models/human/protoanimations	// Set path to set animations from
+
+	radius 20				// Defines size of shadow
+}
+
+init
+{
+	server
+	{
+      	classname Actor
+		setsize "-16 -16 0" "16 16 92"
+		german
+		health 100
+		weapon "Mauser KAR 98K"
+
+		// Make him breathe and mumble
+		exec global/breathe.scr 1 1
+
+		// Set up the helmet for popping off
+		// <surface to turn off> <model to spawn> <speed to throw it at> <damage multiplier for helmet shots>
+		sethelmet "models/gear/german_winterhelmet.tik" 150 0.1 "outside" "inside" 
+	}
+}
+
+//
+// include the base animations definition
+//
+
+$include models/human/new_generic_human.tik
+$include models/human/animation/dialogue/generic_dialogue_german.tik
+
+/*QUAKED ai_german_winter_type1 (1.0 0.5 0.0) (-16 -16 0) (16 16 92)
+*/

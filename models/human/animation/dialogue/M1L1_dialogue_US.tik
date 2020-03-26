@@ -1,0 +1,203 @@
+setup
+{
+	path models/human/animation/dialogue/M1L1/A
+}
+
+animations
+{	
+//	$mapspec M1L1
+//	{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////    new animations    ///////////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+
+			////// BRIEFING IN TRUCK ///////
+
+
+	FULLBODY_m1l1_101		ACTOR_m1l1_101.skc
+	{
+		client			/// Okay squad listen up. This is a rescue mission, so watch your fire and don't give your position away.
+		{
+			first sound dfr_M1L1_101j
+		}
+	}
+
+	
+	dfr_M1L1_add02		ACTOR_m1l1_add02.skc
+	{
+
+		server
+		{
+			// Change weapon to left hand - there is some swapping involved as he moves it around
+			12	weaponcommand mainhand attachtohand offhand
+			61	weaponcommand mainhand attachtohand mainhand
+		}
+
+		client			/// Everyone keep quiet.  This had better work.
+		{
+			first sound dfr_M1L1_add02
+		}
+	}
+
+	dfr_M1L1_add05		ACTOR_m1l1_add05.skc
+	{
+		client			/// Powell, check the door
+		{
+			first sound dfr_M1L1_add05
+		}
+	}
+
+	dfr_M1L1_add06		ACTOR_m1l1_add06.skc
+	{
+		client			/// What was that? I think I heard something
+		{
+			first sound dfr_M1L1_add06
+		}
+	}
+
+	dfr_M1L1_add07		ACTOR_m1l1_add07.skc
+	{
+		client			/// Ambush!
+		{
+			first sound dfr_M1L1_add07
+		}
+	}
+
+	dfr_M1L1_add08		ACTOR_m1l1_add08.skc
+	{
+		client			/// Make a run for it Powell, I'll cover you
+		{
+			first sound dfr_M1L1_add08
+		}
+	}
+
+	dfr_M1L1_add09		ACTOR_m1l1_add09.skc
+	{
+		client			/// Get going
+		{
+			8 sound dfr_M1L1_add09
+		}
+	}
+
+	dfr_M1L1_add10		ACTOR_m1l1_add10.skc
+	{
+		client			/// I got you covered.  Move!
+		{
+			first sound dfr_M1L1_add10
+		}
+	}
+
+	dfr_M1L1_add11		ACTOR_m1l1_add11.skc
+	{
+		client			/// He's taking too long.
+		{
+			first sound dfr_M1L1_add11
+		}
+	}
+
+	dfr_M1L1_add12		ACTOR_m1l1_add12.skc
+	{
+		client			/// He's buying it, just hold on.
+		{
+			first sound dfr_M1L1_add12
+		}
+	}
+
+	dfr_M1L1_add13		ACTOR_m1l1_add13.skc
+	{
+		client			/// He's not taking them Captain
+		{
+			first sound dfr_M1L1_add13
+		}
+	}
+
+	dfr_M1L1_add14		ACTOR_m1l1_add14.skc
+	{
+		client			/// Come on.
+		{
+			first sound dfr_M1L1_add14
+		}
+	}
+
+
+			////// TRAINING ///////
+
+
+
+	dfr_M1L1_100j_5		actor_M1L1_100.skc
+	{
+		client			/// Don't walk. Run.
+		{
+			first sound dfr_M1L1_100j_5
+		}
+	}
+
+	dfr_M1L1_102j		actor_M1L1_102.skc
+	{
+		client			/// Powell you're on point.
+		{
+			first sound dfr_M1L1_102j
+		}
+	}
+	///old one
+
+	dfr_M1L1_102		actor_M1L1_102.skc
+	{
+		client			/// Powell you're on point.
+		{
+			first sound dfr_M1L1_102j
+		}
+	}
+
+	dfr_M1L1_103j		actor_M1L1_103.skc
+	{
+		client			/// Powell. Take out that sentry.
+		{
+			first sound dfr_M1L1_103j
+		}
+	}
+
+	dfr_M1L1_104k_1		actor_M1L1_104.skc
+	{
+		client			/// Come on, come on...
+		{
+			first sound dfr_M1L1_104k_1
+		}
+	}
+
+	dfr_M1L1_105j_1		actor_M1L1_105.skc
+	{
+		client			/// Good. Cooper you take point now. Powell, watch our backs.
+		{
+			first sound dfr_M1L1_105j_1
+		}
+	}
+
+
+	dfr_M1L1_106k_1		actor_M1L1_106.skc
+	{
+		client			/// Its an ambush!
+		{
+			first sound dfr_M1L1_106k_1
+		}
+	}
+
+	dfr_M1L1_107j		actor_M1L1_107.skc
+	{
+		client			/// Powell man that machine gun!
+		{
+			first sound dfr_M1L1_107j
+		}
+	}
+
+			////// GO FISH CARD GAME ///////
+	       ////// SEE TABLE.TIK IN THE SCRIPTED SECTION ///////
+
+			////////////////////////////////
+
+
+//	}//end mapspec M1L1
+}

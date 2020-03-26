@@ -1,0 +1,93 @@
+TIKI
+setup
+{
+	scale 0.52
+	path models/human/german_wehrmact_officer	// Set path to set skelmodel from
+	skelmodel german_officer.skd			// Set body model
+
+	surface tunic shader officer_tunic
+	surface pants shader officer_pants
+	surface tunic_c shader officer_tunic_c
+
+	path models/human/heads			// Set new path for head model
+	skelmodel head2.skd			// Set head model
+	surface head shader jeff
+	//$include models/human/heads/us_young_heads.tik
+
+	path models/human/hands
+	skelmodel hand.skd
+	surface hand shader handsnew
+
+	
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+	path models/equipment/germangear
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** p-38 pistol
+	case weapon  "Walter P38"
+	{
+		
+		
+		
+
+		path models/gear/officer
+		
+		skelmodel holster.skd
+		surface holster shader german_holster
+	}
+
+	//*** MP40 submachinegun
+	case weapon "MP 40"
+	{
+		
+		
+		path models/gear/officer
+		
+		skelmodel holster.skd
+		surface holster shader german_holster
+
+		skelmodel mp40clips.skd
+		surface mp40clips shader ammo_pouch
+	}
+//*** end weapon equipment assignment
+//************************************
+
+
+	scale 0.52				// Set default scale to 16/30.5 since world is
+						// in 16 units per foot and model is in cm's
+	path models/human/protoanimations	// Set path to set animations from
+
+	radius 20				// Defines size of shadow
+}
+
+init
+{
+	server
+	{
+      	classname Actor
+		setsize "-16 -16 0" "16 16 92"
+		american
+		health 100
+		weapon "Walter P38"
+	}
+}
+
+//
+// include the base animations definition
+//
+
+$include models/human/animation/dialogue/generic_dialogue_US.tik
+$include models/human/new_generic_human.tik
+
+
+
+/*QUAKED ai_allied_oss-man_disguised (1.0 0.5 0.0) (-16 -16 0) (16 16 96)
+*/

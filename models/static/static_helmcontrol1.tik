@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel helmcontrol1.skd
+	surface material2 shader static_helmcontrol
+	surface material1 shader static_valve_black3
+	
+}
+
+animations
+{
+	idle     helmcontrol1.skc
+}
+
+/*QUAKED static_uboat_helmcontrol1 (0 0 0) (0 0 0) (0 0 0)
+*/

@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/furniture
+	skelmodel cabinet_dark.skd
+	surface cabinet_dark shader static_cabinet_dark
+}
+
+animations
+{
+	idle     cabinet_dark.skc
+}
+
+/*QUAKED static_furniture_cabinet-dark (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

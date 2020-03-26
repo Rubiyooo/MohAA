@@ -1,0 +1,35 @@
+// German Wehrmact Helmet Flyoff
+animations
+{
+	$path models/human/animation
+
+	pain_helmet		dialogue/Generic/G/den_death_27.skc
+	{
+		server
+		{
+			first surface outside +nodraw
+			first surface inside +nodraw
+		}
+		client
+		{
+			entry tagspawn "Bip01 Head"
+			(
+				spawnrange 2048					// Visibility distance for created object
+				count 1						// How many to create
+				model models/gear/german_winterhelmet.tik
+				scale 1.0
+				velocity 180					// Velocity in x-axis of spawn bone
+				randvel range 15 30 crandom 15 range 2 10	// x, y, z random
+				friction 1 // 1 kills 2/3 vel per sec
+				emitterangles 0 0 0				// Aligns object to emitter
+				avelocity -200  -500 0				// Angular velocity, p, y, r
+				accel 0 0 -800					// Acceleration, x, y, z
+				life 5.0					// How long it lasts before removal
+				//fadedelay 1.7					// How long to wait before beginning to fade
+				collision					// Turns collision on
+				bouncefactor 0.1				// How high to bounce.  Also turns collision on.
+				//bouncesoundonce snd_rifle_shell
+			)
+		}
+	}
+}

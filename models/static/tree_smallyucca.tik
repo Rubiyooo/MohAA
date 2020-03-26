@@ -1,0 +1,21 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/natural
+	skelmodel tree_smallyucca.skb
+	surface smallyuccatrunk shader static_smallyuccatrunk
+	surface smallyuccafill shader static_smallyuccafill
+	surface smallyuccacross shader static_smallyuccacross
+	surface smallyuccasprite shader static_smallyuccasprite
+
+	lod_scale 100 // to prevent the continous LOD system from messing with this model
+}
+
+animations
+{
+	idle     tree_smallyucca.skc
+}
+
+/*QUAKED static_natural_tree_smallyucca (0.5 0.0 0.5) (-32 -32 0) (32 32 128)
+*/

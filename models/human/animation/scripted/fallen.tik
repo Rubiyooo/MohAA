@@ -1,0 +1,15 @@
+animations 
+{
+	$path models/human/animation
+
+	//----------
+	// Fallen Animations
+	//----------
+
+
+	fallen01				scripted/fallen/fallen1.skc		random		
+	fallen02				scripted/fallen/fallen2.skc		random
+	fallen03				scripted/fallen/fallen3.skc		random	
+
+}
+

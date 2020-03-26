@@ -1,0 +1,206 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+ 
+init
+{
+	server  
+	{
+		classname Animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+
+		//**********************
+		// cached data goes here
+		//**********************
+
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+			//*****************
+			//sound played here
+			//*****************
+			//enter sound
+
+			0 originspawn
+			(
+				spawnrate 1.00
+				model vsssource.spr
+				alpha 0.63
+				color 0.90 0.90 0.90
+				life 1.00
+				scalerate 11.00
+				randvel crandom 8 crandom 8 range 44 16
+				accel 3.00 0.00 -8.00
+				offset crandom 16 crandom 16 range 16 16
+				scalemin 1.00
+				scalemax 1.50
+				fade
+				fadein 0.000000
+				sphere
+			)
+
+			0 originspawn
+			(
+				spawnrate 7.00
+				model vsssource.spr
+				alpha 0.40
+				color 0.90 0.90 0.90
+				life 0.50
+				scalerate 0.20
+				randvel crandom 8 crandom 8 range 40 16
+				accel 3.00 0.00 -8.00
+				offset crandom 16 crandom 16 range 16 16
+				scalemin 1.25
+				scalemax 1.75
+				fade
+				fadein 0.000000
+				sphere
+			)
+
+			0 originspawn
+			(
+				spawnrate 5.00
+				model vsssource.spr
+				alpha 0.20
+				color 0.90 0.90 0.90
+				life 2.00
+				scalerate 0.20
+				randvel crandom 8 crandom 8 range 32 16
+				accel 3.00 0.00 -8.00
+				offset crandom 16 crandom 16 range 16 16
+				scalemin 1.50
+				scalemax 2.00
+				fade
+				fadein 0.000000
+				sphere
+			)
+
+			0 originspawn
+			(
+				spawnrate 1.00
+				model mortar_dirthit.spr
+				color 1.00 1.00 1.00
+				scale 0.06
+				life 1.80
+				scalerate 30.00
+				accel 0.00 0.00 -320.00
+				fade
+			)
+
+			0 originspawn
+			(
+				spawnrate 1.00
+				model grndblst1.spr
+				color 1.00 0.90 0.70
+				scale 0.38
+				life 0.13
+				scalerate 64.00
+				fade
+			)
+	            0 originspawn
+			(
+				spawnrate 1.00
+				model vsssource.spr
+				count 47
+				alpha 0.50
+				color 0.32 0.28 0.24
+				scale 1.50
+				life 2.50
+				scalerate 1.00
+				randvel crandom 48 crandom 48 range 48 512
+				accel 0.00 0.00 -800.00
+				offset crandom 16 crandom 16 range 32 32
+				fadedelay 0.00
+				sphere
+			)
+
+			0 originspawn
+			(
+				spawnrate 1.00
+				model vsssource.spr
+				alpha 0.50
+				color 0.32 0.28 0.24
+				scale 1.50
+				life 2.50
+				scalerate 1.00
+				accel 0.00 0.00 -800.00
+				fadedelay 0.00
+				sphere
+			)
+
+			0 originspawn
+			(
+				spawnrange 536
+				spawnrate 1.00
+				model bh_dirt_piece.spr
+				count 32
+				color 1.00 1.00 1.00
+				spritegridlighting
+				life 2.60
+				scalerate 0.50
+				radius 32.00
+				radialvelocity 0.00 512.00 768.00
+				accel 0.00 0.00 -600.00
+				offset 0 range 16 16 0
+				angles 0 random 360 0
+				avelocity 0 range 360 360 0
+				scalemin 0.25
+				scalemax 1.50
+				fadedelay 0.00
+				sphere
+				randomroll
+			)
+
+			0 originspawn
+			(
+				spawnrate 1.00
+				model models/emitters/explosion_mine_shockwave.tik
+				color 1.00 1.00 1.00
+				life 0.10
+			)
+
+			0 originspawn
+			(
+				spawnrate 1.00
+				model none
+				color 1.00 1.00 1.00
+				life 1.00
+			)
+
+
+		}
+	}
+}
+
+//************************************
+//***        IMPORTANT
+//***     RENAME THE QUAKE-ED COMMENT
+//***     IN CONJUNCTION WITH THE
+//***  LD ENTITY MENU LAYOUT.DOC
+//***   UP IN SOURCE SAFE!!!!!!!!!!!!
+//************************************
+
+/*QUAKED fx_exploder_building (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+description of effect to appear in entity dialog
+*/

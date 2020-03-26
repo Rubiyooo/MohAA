@@ -1,0 +1,13 @@
+TIKI
+setup
+{
+	scale .52
+	path models/fx/muzflash
+	skelmodel thompsonsmg_sideflash.skd
+	surface material1 shader thompsonsmg_sideflash
+}
+
+animations
+{
+	idle thompsonsmg_sideflash.skc
+}

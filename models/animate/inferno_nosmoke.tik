@@ -1,0 +1,69 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+
+		originemitter fire
+		(
+			spawnrate 4.00
+			model sharpflame.spr
+			alpha 0.5
+			color 1.00 1.00 1.00
+			life 2.25
+			scalerate 3.00
+			cone 20.00 10.00
+			velocity 30.00
+			radialvelocity 3.00 10.00 15.00
+			randvel crandom -5 crandom -5 crandom -5
+			accel 0.00 0.00 150.00
+			friction 2.00
+			offsetalongaxis crandom -10 crandom -10 0
+			angles range 40 -90 range 40 -900 range 40 -90
+			avelocity crandom -90 crandom -90 crandom -90
+			scalemin 0.50
+			scalemax 1.0
+			fadedelay 0.00
+			randomroll
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron fire
+			enter loopsound fire_med
+		}
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff fire
+		}
+	}
+}
+
+/*QUAKED animate_fx_explosion-inferno-nosmoke(0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+a decent fire.
+Doesn't collide.
+Adam Bellefeuil - 9-26-2001 - Explosions needed for end of Schmertzen
+*/

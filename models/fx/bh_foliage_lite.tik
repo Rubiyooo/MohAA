@@ -1,0 +1,62 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		//cache some stuff used in this effect
+		cache models/fx/bh_foliage_leaf.tik
+//		cache models/fx/bh_wood_piece.tik
+
+		// falling leafs
+		sfx originspawn
+		(
+			model models/fx/bh_foliage_leaf.tik
+			alpha 1.0
+			count 2
+			life 4.0 5.0
+			fadedelay 3.0
+			scalemin 0.7
+			scalemax 1.2
+			angles random 360 random 360 0
+			avelocity crandom 200 crandom 200 crandom 200
+			wind
+			velocity 30
+			randvelaxis random 30 crandom 50 crandom 50
+			accel 0 0 -60
+			offsetalongaxis 2 crandom 1 crandom 1	// positional offset
+//			collision
+//			bouncefactor 0.1
+//			dietouch
+		)
+
+		// a few wood chips for additional effect
+//		sfx originspawn
+//		(
+//			model models/fx/bh_wood_piece.tik
+//			alpha 1.0
+//			count 2
+//			angles random 360 random 360 0
+//			avelocity crandom 180 crandom 180 0
+//			velocity 40
+//			randvelaxis random 100 crandom 60 crandom 60
+//			accel 0 0 -800
+//			life 0.4 0.5
+//			scalemin 0.6
+//			scalemax 0.8
+//			fadedelay 0.2
+//		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc
+}

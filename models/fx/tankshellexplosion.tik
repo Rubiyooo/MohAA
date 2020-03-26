@@ -1,0 +1,38 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+ 
+init
+{
+	server  
+	{
+		classname Explosion
+//		ghost
+//		svflags +sendonce
+		rendereffects +dontdraw
+		notsolid
+		radiusdamage 250
+		radius 350
+		meansofdeath explosion
+		life 0.1
+	}
+}
+
+animations
+{
+	idle dummy2.skc
+	{
+		server    
+		{
+			// make the explosion effect
+//			entry explosioneffect bazooka
+			first explosioneffect bazooka
+
+//			last stopanimating
+		}
+	}
+}

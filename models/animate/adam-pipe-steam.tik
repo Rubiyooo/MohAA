@@ -1,0 +1,60 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache vsssource.spr			
+
+		originemitter steam
+		(
+			spawnrate 5.00
+			model vsssource.spr
+			alpha 0.80
+			color 0.90 0.85 0.70
+			scale 0.25
+			life 1.00
+			scalerate 8.00
+			velocity 60.00
+			randvelaxis range 10 -10 range 10 -10 range 10 -10
+			accel 0.00 0.00 90.00
+			fade
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron steam
+			enter loopsound steamloop
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff steam
+		}
+	}
+}
+
+/*QUAKED animate_fx_adam-pipe-steam(0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Senn's Sexy Pipe Steam
+*/

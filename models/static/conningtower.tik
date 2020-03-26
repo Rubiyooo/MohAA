@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/uboot
+	skelmodel conningtower.skd
+	surface material25 shader static_miscpieces
+	surface material22 shader static_hulltop1j
+	surface material7 shader static_hulltop1h
+	surface material23 shader static_contowerlamp
+	surface material21 shader static_hulltop1i
+	surface material24 shader static_contowerwood
+	surface material6 shader static_subrailing
+	surface material1 shader static_wooddeck
+	surface material31 shader static_subhatch
+}
+
+animations
+{
+	idle     conningtower.skc
+}
+
+/*QUAKED static_submodels_conningtower (0.5 .25 0.25) (-2150 -212 0) (2150 212 750)
+*/

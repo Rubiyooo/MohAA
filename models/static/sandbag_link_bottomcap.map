@@ -1,0 +1,15 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -13 26 47 ) ( -13 26 0 ) ( 9.500000 26 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( 9.500000 26 47.000008 ) ( 9.500000 26 0 ) ( 9.500000 3 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( -13 26 47 ) ( 9.500000 26 47 ) ( 9.500000 3 40.500000 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( -13 26 0 ) ( -13 26 47.000008 ) ( -13 3 40.500008 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( 6 -20.500000 17 ) ( -13 3 40.500000 ) ( 9.500000 3 40.500000 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( 6 -20.500000 0 ) ( 9.500000 3 0 ) ( -13 3 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( 6 -20.500000 17 ) ( 9.500000 3 40.500000 ) ( 9.500000 3 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( 6 -20.500000 0 ) ( -9 -20.500000 0 ) ( -9 -20.500000 17 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( -13 3 0 ) ( -13 3 40.500000 ) ( -9 -20.500000 17 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+}
+}

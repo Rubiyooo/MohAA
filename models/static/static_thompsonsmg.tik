@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/weapons/thompsonsmg
+	skelmodel static_thompsonsmg.skd
+	surface thompsonsmg1 shader static_thompsonsmg
+	surface thompsonsmg2 shader static_thompsonsmg
+}
+
+animations
+{
+	idle	static_thompsonsmg.skc
+}
+
+/*QUAKED static_weapon_allied_thompson (0.5 0.0 0.5) (-8 -8 -8) (8 8 8)
+Allied submachinegun - Thompson
+*/

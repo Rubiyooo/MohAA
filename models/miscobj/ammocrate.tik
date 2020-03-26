@@ -1,0 +1,29 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	scale .5			// Convert from inches to game units
+	path models/miscobj/crate
+	skelmodel ammocrate1.skb
+	surface material1 shader ammocrate1
+	surface material2 shader ammocrate1rope
+}
+
+init
+{
+	server
+	{
+		classname interactobject
+		setsize "-4 -4 0" "4 4 8"
+		killedeffect "" // tiki to spawn when it's destroyed
+		hiteffect "" // tiki to spawn when it's hit
+	}
+}
+
+animations
+{
+	idle ammocrate1.skc
+}
+
+/*QUAKED interactobject_crate_ammocrate (0.0 0.75 0.5) (-24 0 0) (24 0 16)
+*/

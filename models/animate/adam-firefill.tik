@@ -1,0 +1,65 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache senn_fire2.spr
+
+		originemitter fire
+		(
+			spawnrate 2.00
+			model senn_fire1.spr
+			color 1.00 1.00 1.00
+			varycolor
+			life 2.00
+			scalerate 0.50
+			velocity 50.00
+			randvelaxis range -20 20 range -20 20 range -20 20
+			accel 0.00 0.00 50.00
+			friction 0.25
+			offset range 10 -10 range 10 -10 range 10 -10
+			angles range 10 -10 range 10 -10 range 10 -10
+			avelocity range 10 -10 range 10 -10 range 10 -10
+			fadedelay 0.00
+			randomroll
+		)
+
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron fire
+			enter loopsound fire_med
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff fire
+		}
+	}
+}
+
+/*QUAKED animate_fx_adam-firefill(0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Senn's Sexy Big Fire
+*/

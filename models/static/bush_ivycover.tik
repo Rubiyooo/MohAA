@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/natural
+	skelmodel bush_ivycover.skd
+	surface bush1 shader static_bush1a_1
+     	radius 20			// defines size of shadow
+}
+
+animations
+{
+	idle     bush_ivycover.skc
+}
+
+/*QUAKED static_natural_bush_ivycover (0.5 0.0 0.5) (-8 -24 0) (24 24 8)
+*/

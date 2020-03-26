@@ -1,0 +1,173 @@
+animations // Now list all of the animations and any special commands for them
+{
+$path models/human/animation
+
+// IT'S CALLED BAZOOKA, NOT PANZERSCHREK!  PANZERSCHREK IS TOO EASY TO MISSPELL!
+
+//----------
+// Shooting
+//----------
+
+// Bazooka aim and shoot animaitons work for either standing or crouching, but 
+// the script will preferably use the special kneeling animation.
+bazooka_aim				weapon_bazooka/bazooka_aim.skc
+bazooka_aim_up			weapon_bazooka/bazooka_aim_up60.skc
+bazooka_aim_down			weapon_bazooka/bazooka_aim_down60.skc
+
+bazooka_shoot			weapon_bazooka/bazooka_shoot.skc
+{
+	server
+	{
+		first fire
+	}
+}
+bazooka_shoot_up			weapon_bazooka/bazooka_shoot_up60.skc
+bazooka_shoot_down		weapon_bazooka/bazooka_shoot_down60.skc
+bazooka_reload			weapon_bazooka/bazooka_reload.skc
+panzerschreck_reload		weapon_bazooka/panzerschreck_reload.skc
+
+
+//---------
+// Curious
+//---------
+
+// Bazooka guys don't go curious - they run away and then go alert...?
+bazooka_stand_shock				weapon_rifle/curious/rifle_stand_shock01.skc		
+bazooka_stand_identify			weapon_rifle/curious/rifle_stand_identify.skc
+bazooka_stand_flinch			weapon_rifle/flinch.skc 		
+
+//----------------
+// Alert
+//----------------
+
+bazooka_walk_alert_forward		weapon_bazooka/walks_runs/bazooka_walk_alert_b.skc	autosteps_walk
+bazooka_walk_alert_back			walks_runs/alertw_backward.skc					autosteps_walk
+bazooka_walk_alert_left			walks_runs/alertw_left.skc						autosteps_walk
+bazooka_walk_alert_right		walks_runs/alertw_right.skc						autosteps_walk
+
+bazooka_stand_alert				weapon_bazooka/alert/bazooka_stand_alert(action).skc
+bazooka_stand_alert_legs		alert/alert_legs_leftforward.skc
+
+// TODO: Replace this with an animation which is more feasible for someone 
+// holding a bazooka (wait to see if it looks bad first).
+bazooka_standtocrouch_dive		alert/standtocrouch_dive.skc	autosteps_run
+bazooka_standtocrouch_run		alert/standtocrouch_run.skc		autosteps_run
+
+
+//----------------
+// Walks and Runs
+//----------------
+
+bazooka_injurerun_forward		weapon_rifle/walks_runs/rifle_run_injured.skc			autosteps_run
+bazooka_injurerun_back			weapon_rifle/walks_runs/rifle_run_injured.skc			autosteps_run
+bazooka_injurerun_right			weapon_rifle/walks_runs/rifle_run_injured.skc			autosteps_run
+bazooka_injurerun_left			weapon_rifle/walks_runs/rifle_run_injured.skc			autosteps_run
+
+bazooka_run_forward				weapon_bazooka/walks_runs/bazooka_run.skc		autosteps_run
+bazooka_run_left				weapon_rifle/walks_runs/rifle_jog_left.skc		autosteps_run	// Rifle animation 
+bazooka_run_right				weapon_rifle/walks_runs/rifle_jog_right.skc		autosteps_run	// Rifle animation 
+bazooka_run_back				weapon_rifle/walks_runs/rifle_jog_back.skc		autosteps_run	// Rifle animation 
+
+bazooka_walk_patrol_forward	weapon_bazooka/walks_runs/bazooka_walk_patrol.skc		autosteps_walk
+bazooka_walk_patrol_back	weapon_bazooka/walks_runs/bazooka_walk_patrol.skc		autosteps_walk
+bazooka_walk_patrol_right	weapon_bazooka/walks_runs/bazooka_walk_patrol.skc		autosteps_walk
+bazooka_walk_patrol_left	weapon_bazooka/walks_runs/bazooka_walk_patrol.skc		autosteps_walk
+
+bazooka_crouchrun_forward			weapon_rifle/walks_runs/rifle_crouchrun.skc				autosteps_run
+bazooka_crouchrun_back				weapon_rifle/walks_runs/rifle_crouchrun.skc				autosteps_run
+bazooka_crouchrun_right				weapon_rifle/walks_runs/rifle_crouchrun.skc				autosteps_run
+bazooka_crouchrun_left				weapon_rifle/walks_runs/rifle_crouchrun.skc				autosteps_run
+
+$path models/human/animation
+
+bazooka_walk_back					walks_runs/rifle_walk_back.skc		autosteps_walk	
+bazooka_walk_left					walks_runs/rifle_walk_left.skc		autosteps_walk	
+bazooka_walk_right					walks_runs/rifle_walk_right.skc		autosteps_walk	
+bazooka_walk_forward				walks_runs/rifle_walk_forward.skc		autosteps_walk	
+
+//----------------
+// HIT ANIMATIONS
+//----------------
+
+//Stand// TEMPORARY!  Uses rifle animations
+bazooka_hit_stand_head			weapon_rifle/minor_pain/rifle_stand_hit_head.skc		autosteps_walk
+bazooka_hit_stand_torso_sm		weapon_rifle/minor_pain/rifle_stand_hit_lower_back.skc	autosteps_walk
+bazooka_hit_stand_torso_med		weapon_rifle/minor_pain/rifle_stand_hit_torso.skc		autosteps_walk
+bazooka_hit_stand_larm_sm		weapon_rifle/minor_pain/rifle_stand_hit_lower_back.skc	autosteps_walk
+bazooka_hit_stand_larm_med		weapon_rifle/minor_pain/rifle_stand_hit_torso.skc		autosteps_walk
+bazooka_hit_stand_rarm_sm		weapon_rifle/minor_pain/rifle_stand_hit_Rshoulder.skc	autosteps_walk
+bazooka_hit_stand_rarm_med		weapon_rifle/minor_pain/rifle_stand_hit_Rshoulder.skc	autosteps_walk
+//bazooka_hit_stand_rarm_med	weapon_rifle/major_pain/riflep_stand_rarm.skc			autosteps_walk
+bazooka_hit_stand_leg			weapon_rifle/minor_pain/rifle_stand_hit_leg.skc			autosteps_walk
+
+
+//Crouch //
+bazooka_crouch_hit_head			weapon_bazooka/minor_pain/bazooka_crouch_hit_head.skc	autosteps_walk
+bazooka_crouch_hit_uppertorso		weapon_bazooka/minor_pain/bazooka_crouch_pain.skc	autosteps_walk
+bazooka_crouch_hit_lowertorso		weapon_bazooka/minor_pain/bazooka_crouch_pain.skc	autosteps_walk
+bazooka_crouch_hit_back			weapon_bazooka/minor_pain/bazooka_crouch_pain.skc		autosteps_walk
+bazooka_crouch_hit_leg			weapon_bazooka/minor_pain/bazooka_crouch_pain.skc		autosteps_walk
+bazooka_crouch_hit_Larm			weapon_bazooka/minor_pain/bazooka_crouch_pain.skc		autosteps_walk
+bazooka_crouch_hit_Rarm			weapon_bazooka/minor_pain/bazooka_crouch_pain.skc		autosteps_walk
+
+
+//Gun Down// TEMPORARY!  Uses rifle animations
+bazooka_hit_gundown_stand_head  	weapon_rifle/minor_pain/rifle_stand_hit_gundown_head.skc	autosteps_walk
+bazooka_hit_gundown_stand_leg		weapon_rifle/minor_pain/rifle_stand_hit_gundown_leg.skc		autosteps_walk
+bazooka_hit_gundown_stand_rarm	weapon_rifle/minor_pain/rifle_stand_hit_gundown_Rshoulder.skc	autosteps_walk
+bazooka_hit_gundown_stand_larm	weapon_rifle/minor_pain/rifle_stand_hit_gundown_Rshoulder.skc	autosteps_walk
+bazooka_hit_gundown_stand_torso	weapon_rifle/minor_pain/rifle_stand_hit_gundown_torso.skc		autosteps_walk
+
+//Running// TEMPORARY!  Uses rifle animation
+bazooka_stagger_run			weapon_rifle/major_pain/rifle_stagger_run.skc	autosteps_run
+
+
+//-----------------
+// PAIN ANIMATIONS
+//-----------------
+// (Pain animations are extended pain - writhing around, so to speak)
+// Bazooka people don't do extended pains.
+
+
+//-------
+//Prone (Alert)
+//-------
+// No prone behaviour for bazookas at this stage, despite the fact that real 
+// people often fired bazookas this way.  Bazookas are not common enough to
+// justify the extra work.
+
+
+//--------
+//Crouch (Alert)
+//--------
+
+// This is the firing stance for the bazooka!
+bazooka_crouch_alert		weapon_bazooka/alert/bazooka_kneel_legs.skc
+
+
+//-------
+//Idle/Bored
+//-------
+
+
+bazooka_stand_bored_a_intro		weapon_bazooka/bazooka_bored.skc		
+bazooka_stand_bored_a01			weapon_bazooka/bazooka_bored.skc	random
+bazooka_stand_bored_a02			weapon_bazooka/bazooka_bored.skc	random
+bazooka_stand_bored_a_outtro		weapon_bazooka/bazooka_bored.skc	
+bazooka_stand_bored_b_intro		weapon_bazooka/bazooka_bored.skc					
+bazooka_stand_bored_b01			weapon_bazooka/bazooka_bored.skc	random		
+bazooka_stand_bored_b02			weapon_bazooka/bazooka_bored.skc	random
+bazooka_stand_bored_b_outtro		weapon_bazooka/bazooka_bored.skc
+				
+
+bazooka_stand_nervous_a			misc/nervousb.skc							
+bazooka_stand_nervous_b			misc/nervousb.skc						
+bazooka_stand_nervous_c			idle/thompson_idle_stand2.skc							
+
+
+//--------
+// Fancy extra behaviors
+//--------
+
+bazooka_diveongrenade		misc/takecover_slide_rifle.skc
+}

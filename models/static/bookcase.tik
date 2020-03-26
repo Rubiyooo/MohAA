@@ -1,0 +1,28 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/furniture
+	skelmodel bookcase.skd
+	surface bookcase shader static_bookcase
+}
+
+init
+{
+	server
+	{
+		classname animate
+		setsize "-4 -4 0" "4 4 4"
+//		seatoffset "-14 0 24"
+//		gravity 1.5
+//		vehiclespeed 800
+	}
+}
+
+animations
+{
+	idle     bookcase.skc
+}
+
+/*QUAKED static_furniture_bookcase (0.5 0.0 0.5) (-16 -24 0) (16 24 104)
+*/

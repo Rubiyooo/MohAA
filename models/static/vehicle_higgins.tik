@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 1.33
+   	path models/vehicles/higgins
+	skelmodel higgins.skb
+   	surface all shader static_higgins
+}
+
+animations
+{
+   	idle higgins.skc
+}
+
+/*QUAKED static_vehicle_allied_higgins-boat (0.5 0.0 0.5) (-40 -20 0) (40 20 50)
+static: higgins boat
+*/

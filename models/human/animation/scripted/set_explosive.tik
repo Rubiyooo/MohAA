@@ -1,0 +1,28 @@
+animations
+{
+	$path models/human/animation
+
+	// Level script must cache the following model:
+	//	client
+	//	{
+	//		cache models/miscobj/detpack.tik 
+	//
+	//	}
+
+
+	//----------
+	//Explosive animations
+	//----------
+
+	// Used in m1l2 m3l1 m6l3 m5l1a 
+
+
+	set_detpack		scripted/set_explosive/set_detpack.skc		
+	{
+		server
+			{
+				4 attachmodel models/miscobj/detpack.tik tag_weapon_left
+				14 removeattachedmodel tag_weapon_left
+			}
+	}
+}

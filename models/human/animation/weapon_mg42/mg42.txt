@@ -1,0 +1,19 @@
+	//MG42//
+
+	MG42_crouch_left			weapon_mg42/MG42_crouch_left.skc
+	MG42_crouch_reload			weapon_mg42/MG42_crouch_reload.skc
+	MG42_crouch_right			weapon_mg42/MG42_crouch_right.skc
+	MG42_crouch_shooting			weapon_mg42/MG42_crouch_shooting.skc
+	MG42_spotter_crouch_left 		weapon_mg42/MG42_spotter_crouch_left.skc 
+	MG42_spotter_crouch_right		weapon_mg42/mg42_spotter_crouch_right.skc
+	MG42_spotter_stand_right		weapon_mg42/MG42_spotter_stand_right.skc
+	MG42_spotter_stand_left			weapon_mg42/MG42_spotter_stand_left.skc
+	mg42_stand_firing			weapon_mg42/mg42_stand_firing.skc
+	mg42_stand_left1			weapon_mg42/mg42_stand_left1.skc
+	mg42_stand_left2			weapon_mg42/mg42_stand_left2.skc
+	mg42_stand_reload			weapon_mg42/mg42_stand_reload.skc
+	mg42_stand_right1			weapon_mg42/mg42_stand_right1.skc
+	mg42_stand_right2			weapon_mg42/mg42_stand_right2.skc	
+
+
+

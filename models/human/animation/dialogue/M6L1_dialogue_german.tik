@@ -1,0 +1,290 @@
+setup
+{
+	path models/human/animation/dialogue/M6L1/G
+}
+
+animations
+{	
+//	$mapspec M6L1
+//	{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////     German animations    /////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+			////////////////////////////////////////////
+			//////  Scientist talks to soldier   ///////
+
+			////////////////////////////////////////////
+
+
+
+
+			////////////////// idles ///////////////////
+
+
+	den_m6l1_SNT1			actor_M6L1_SNT1.skc		// scientist idle
+	den_m6l1_SLD1			actor_M6L1_SLD1.skc		// soldier idle (neutral)
+	den_m6l1_SLD2			actor_M6L1_SLD2.skc		// soldier idle (upset)
+	den_m6l1_SLD3			actor_M6L1_SLD3.skc		// soldier idle (pissed)
+
+
+			//////////////// dialogue ///////////////////
+
+
+
+	den_m6l1_600f			actor_M6L1_600.skc
+	{
+		client			/// Is that the new shipment?
+		{
+			first sound den_m6l1_600f
+		}
+	}
+
+	den_m6l1_601q			actor_M6L1_601.skc
+	{
+		client			/// Yes sir.
+		{
+			6 sound den_m6l1_601q
+		}
+	}
+
+	den_m6l1_602f			actor_M6L1_602.skc
+	{
+		client			/// Okay take it to Joosh, Joseph is gone this week.
+		{
+			first sound den_m6l1_602f
+		}
+	}
+
+	den_m6l1_603f			actor_M6L1_603.skc
+	{
+		client			/// Did you get the extra stuff I asked for?
+		{
+			18 sound den_m6l1_603q
+		}
+	}
+
+	den_m6l1_604q			actor_M6L1_604.skc
+	{
+		client			/// What extra stuff?
+		{
+			30 sound den_m6l1_604f
+		}
+	}
+
+	den_m6l1_605f			actor_M6L1_605.skc
+	{
+		client			/// You know, the extra stuff.
+		{
+			first sound den_m6l1_605q
+		}
+	}
+
+	den_m6l1_606q			actor_M6L1_606.skc
+	{
+		client			/// Oh. I forgot. 
+		{
+			first sound den_m6l1_606f
+		}
+	}
+
+	den_m6l1_607f			actor_M6L1_607.skc
+	{
+		client			/// You forgot? I gave you fifty marks for that stuff!
+		{
+			first sound den_m6l1_607q
+		}
+	}
+
+
+	den_m6l1_608q			actor_M6L1_608.skc
+	{
+		client			/// Yeah I forgot and spent your fifty marks already. I need another fifty.
+		{
+			first sound den_m6l1_608f
+		}
+	}
+
+	den_m6l1_609f			actor_M6L1_609.skc
+	{
+		client			/// What! You little thief. You spent my fifty marks. 
+		{
+			first sound den_m6l1_609q
+		}
+	}
+
+	den_m6l1_610q			actor_M6L1_610.skc
+	{
+		client			/// Yeah I spent it. I'll get you that stuff this time.
+		{
+			first sound den_m6l1_610f
+		}
+	}
+
+	den_m6l1_611f			actor_M6L1_611.skc
+	{
+		client			/// I don’t have fifty more marks to give you.
+		{
+			first sound den_m6l1_611q
+		}
+	}
+
+	den_m6l1_612q			actor_M6L1_612.skc
+	{
+		client			/// Oh well, whenever you get it. No hurry.
+		{
+			first sound den_m6l1_612f
+		}
+	}
+
+	den_m6l1_613f			actor_M6L1_613.skc
+	{
+	
+		client			/// Get out of my face you criminal.
+		{
+			first sound den_m6l1_613q
+		}
+	}
+			///////////////////////////////////////////////////////
+			//////  Conversation of two guards on patrol   ///////
+
+			//////////////////////////////////////////////////////
+
+
+	den_m6l1_614r			actor_M6L1_614.skc
+	{
+		client			/// You've been very quiet tonight.
+		{
+			first sound den_m6l1_614r
+		}
+	}
+
+	den_m6l1_615b			actor_M6L1_615.skc
+	{
+		client			/// I've been thinking.
+		{
+			3 sound den_m6l1_615b
+		}
+	}
+
+	den_m6l1_616r			actor_M6L1_616.skc
+	{
+		client			/// About what?
+		{
+			8 sound den_m6l1_616r
+		}
+	}
+
+	den_m6l1_617b			actor_M6L1_617.skc
+	{
+		client			/// Oh you wouldn't understand.
+		{
+			first sound den_m6l1_617b
+		}
+	}
+	
+	den_m6l1_618r			actor_M6L1_618.skc
+	{
+		client			/// Try me. 
+		{
+			first sound den_m6l1_618r
+		}
+	}
+
+	den_m6l1_619b			actor_M6L1_619.skc
+	{
+		client			/// Well have you ever wondered? Oh nevermind its stupid.
+		{
+			first sound den_m6l1_619b
+		}
+	}
+
+	den_m6l1_620r			actor_M6L1_620.skc
+	{
+		client			/// What is it. Now I really want to know.
+		{
+			first sound den_m6l1_620r
+		}
+	}
+
+	den_m6l1_621b			actor_M6L1_621.skc
+	{
+		client			/// Well I was just imagining, what if none of this was real? What if we don't really exist?
+		{
+			first sound den_m6l1_621b
+		}
+	}
+
+	den_m6l1_622r			actor_M6L1_622.skc
+	{
+		client			/// What like someone is just imagining this whole thing?
+		{
+			first sound den_m6l1_622r
+		}
+	}
+
+	den_m6l1_623b			actor_M6L1_623.skc
+	{
+		client			/// Yeah or what if we are just characters in a book or something?
+		{
+			first sound den_m6l1_623b
+		}
+	}
+
+	den_m6l1_624r			actor_M6L1_624.skc
+	{
+		client			/// Well I don’t know about you. But I'm real. I have no doubt about that.
+		{
+			first sound den_m6l1_624r
+		}
+	}
+
+	den_m6l1_625b			actor_M6L1_625.skc
+	{
+		client			/// How can you be so sure?
+		{
+			first sound den_m6l1_625b
+		}
+	}
+
+	den_m6l1_626r			actor_M6L1_626.skc
+	{
+		client			/// Well if I didn't really exist, why would I be having this silly conversation with you?
+		{
+			first sound den_m6l1_626r
+		}
+	}
+
+	den_m6l1_627b			actor_M6L1_627.skc
+	{
+		client			/// That's a good point.
+		{
+			first sound den_m6l1_627b
+		}
+	}
+
+	den_m6l1_628r			actor_M6L1_628.skc
+	{
+		client			/// Yes. So don't worry about it.
+		{
+			first sound den_m6l1_628r
+		}
+	}
+
+	den_m6l1_629b			actor_M6L1_629.skc
+	{
+		client			/// Yeah I see your point.
+		{
+			first sound den_m6l1_629b
+		}
+	}
+
+
+
+	////////////////////////////////
+
+
+//	}//end mapspec M6L1
+}

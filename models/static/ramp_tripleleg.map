@@ -1,0 +1,48 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -239 0 -4 ) ( -239 -14 -4 ) ( 153 -14 132 ) common/clip -40 -16 0.00 1 1 196608 2193 0 +surfaceparm detail 
+( -240 -25 146 ) ( -240 1 146 ) ( -181 1 146 ) common/clip -40 -16 0.00 1 1 196608 2193 0 +surfaceparm detail 
+( -239 -14 130 ) ( -180 -14 130 ) ( -180 -14 -5 ) common/clip -40 -16 0.00 1 1 196608 2193 0 +surfaceparm detail 
+( 153 0 132 ) ( 153 -14 132 ) ( 153 -14 146 ) common/clip -40 -16 0.00 1 1 196608 2193 0 +surfaceparm detail 
+( -181 0 130 ) ( -240 0 130 ) ( -240 0 -5 ) common/clip -40 -16 0.00 1 1 196608 2193 0 +surfaceparm detail 
+( -191 -14 -4 ) ( -191 0 -4 ) ( -191 0 146 ) common/clip -40 -16 0.00 1 1 196608 2193 0 +surfaceparm detail 
+}
+// brush 1
+{
+( 105.500000 -2.500000 126.500000 ) ( 93.500000 -2.500000 126.500000 ) ( 116 -41 -8 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 105.500046 -15.499875 126.500000 ) ( 105.500046 -3.499986 126.500000 ) ( 128.174377 -41.118969 -8 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 93.500015 -15.499784 126.500000 ) ( 105.500168 -15.499784 126.500000 ) ( 128.174301 -53.118557 -8 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 93.500015 -3.499986 126.500000 ) ( 93.500015 -15.499875 126.500000 ) ( 116.174347 -53.118649 -8 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 93.500000 -53.118649 126.500000 ) ( 100 -1.068604 128.750000 ) ( 106.500000 -53.118649 131 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 145.500000 -44.500000 1 ) ( 114 -35 -7.500000 ) ( 114.500000 -55 -1.500000 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+}
+// brush 2
+{
+( 94.500000 -10.500000 126.500000 ) ( 94.500000 -0.500000 126.500000 ) ( 104.500000 -0.500000 126.500000 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 104.500000 -10.500000 126.500000 ) ( 126.500000 26 -4 ) ( 116.500000 26 -4 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 104.500000 -0.500000 126.500000 ) ( 126.500000 36 -4 ) ( 126.500000 26 -4 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 94.500000 -0.500000 126.500000 ) ( 116.500000 36 -4 ) ( 126.500000 36 -4 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 94.500000 -10.500000 126.500000 ) ( 116.500000 26 -4 ) ( 116.500000 36 -4 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 127.174545 24 -4 ) ( 127.174545 39.500000 0 ) ( 104 32 -5.500000 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+}
+// brush 3
+{
+( 89.000015 -12.000004 126.500000 ) ( 98.999931 -12.000004 126.500000 ) ( 101.000031 -14.000004 -7 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 98.999992 -12.500181 126.500000 ) ( 98.999992 -1.500000 126.500000 ) ( 100.999992 -3.500000 -7 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 98.999931 -1.999999 126.500000 ) ( 89.000015 -1.999999 126.500000 ) ( 91.000015 -3.999999 -7 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 89.000015 -1.500000 126.500000 ) ( 89.000015 -12.500181 126.500000 ) ( 91.000015 -14.499918 -7 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 87.500000 -15.000004 120 ) ( 88.750000 -1.999999 120 ) ( 90 -15.000004 120 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 98.250000 -1.097377 -6.500000 ) ( 98 -14.000005 -6.500000 ) ( 98.500000 -14.000005 -6.500000 ) common/woodclip 4 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+}
+// brush 4
+{
+( 214 -12 153.000061 ) ( 214 0 153.000061 ) ( -250 0 -6.999947 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 -surfaceparm solid -surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 208 0 166.000076 ) ( 208 -12 166.000076 ) ( -256 -12 6.000076 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 -surfaceparm solid -surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 216 -14 152.000137 ) ( -248 -14 -7.999855 ) ( -256 -14 8.000137 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 -surfaceparm solid -surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -248 -0.500000 -8.999855 ) ( 216 -0.500000 151.000137 ) ( 208 -0.500000 167.000137 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 -surfaceparm solid -surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 140.500000 -14 168 ) ( 149 -0.500000 143.500000 ) ( 157.500000 -14 119 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 -surfaceparm solid -surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -236 -0.500000 5.500000 ) ( -240 -14 17.500000 ) ( -232 -14 -6.500000 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 -surfaceparm solid -surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+}

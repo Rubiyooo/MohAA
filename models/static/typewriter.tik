@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/typewriter
+	skelmodel typewriter.skd
+	surface typewriter shader static_typewriter
+	surface keys shader static_keys
+}
+
+animations
+{
+	idle     typewriter.skc
+}
+
+/*QUAKED static_furniture_typewriter (0.5 0.0 0.5) (0 0 0) (0 0 0)
+Wardrobe
+*/

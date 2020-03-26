@@ -1,0 +1,112 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+	
+		cache models/fx/crates/crate-jib-chunk.tik
+		cache models/fx/crates/crate-jib-plank.tik
+		cache models/fx/crates/crate-jib-smallchunk.tik
+		cache models/fx/crates/crate-jib-smallplank.tik
+		cache models/fx/crates/crate-jib-splinter.tik
+	
+		sound snd_crate_woodsm
+
+		originspawn
+		(
+			model models/fx/crates/crate-jib-chunk.tik
+			count 6
+			offset crandom 32 crandom 32 crandom 32
+			radialvelocity 2 0 64
+			randvel 0 0 32
+			accel 0 0 -800
+			friction 0.25
+			angles crandom 90 crandom 180 crandom 180
+			avelocity 0 0 crandom 360
+			life 8 2
+			fadedelay 7
+			collision
+			bouncefactor 0.2
+		)
+
+		originspawn
+		(
+			model models/fx/crates/crate-jib-plank.tik
+			count 6
+			offset crandom 32 crandom 32 crandom 32
+			radialvelocity 2 0 64
+			randvel 0 0 32
+			accel 0 0 -800
+			friction 0.25
+			angles crandom 90 crandom 180 crandom 180
+			avelocity 0 0 crandom 360
+			life 8 2
+			fadedelay 7
+			collision
+			bouncefactor 0.2
+		)
+
+		originspawn
+		(
+			model models/fx/crates/crate-jib-smallchunk.tik
+			count 6
+			offset crandom 32 crandom 32 crandom 32
+			radialvelocity 2 0 64
+			randvel 0 0 32
+			accel 0 0 -800
+			friction 0.25
+			angles crandom 90 crandom 180 crandom 180
+			avelocity 0 0 crandom 360
+			life 8 2
+			fadedelay 7
+			collision
+			bouncefactor 0.2
+		)
+
+		originspawn
+		(
+			model models/fx/crates/crate-jib-smallplank.tik
+			count 6
+			offset crandom 32 crandom 32 crandom 32
+			radialvelocity 2 0 64
+			randvel 0 0 32
+			accel 0 0 -800
+			friction 0.25
+			angles crandom 90 crandom 180 crandom 180
+			avelocity 0 0 crandom 360
+			life 8 2
+			fadedelay 7
+			collision
+			bouncefactor 0.2
+		)
+
+		originspawn
+		(
+			model models/fx/crates/crate-jib-splinter.tik
+			count 6
+			offset crandom 32 crandom 32 crandom 32
+			radialvelocity 2 0 64
+			randvel 0 0 32
+			accel 0 0 -800
+			friction 0.25
+			angles crandom 90 crandom 180 crandom 180
+			avelocity 0 0 crandom 360
+			life 8 2
+			fadedelay 7
+			collision
+			bouncefactor 0.2
+		)
+	}
+}
+
+animations
+{
+	idle dummy2.skc
+}

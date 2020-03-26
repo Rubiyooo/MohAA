@@ -1,0 +1,18 @@
+animations
+{
+	$path models/human/animation
+
+	//----------
+	//One guy helping another over a 10 foot (160-unit) wall, for m1l1
+	//----------
+
+	wallclimb_guy1_intro		scripted/wallclimb/wallclimb_guy1_intro.skc
+	wallclimb_guy1_waitloop		scripted/wallclimb/wallclimb_guy1_waitloop.skc
+	wallclimb_guy1_main		scripted/wallclimb/wallclimb_guy1_main.skc
+	wallclimb_guy2_main		scripted/wallclimb/wallclimb_guy2_main.skc
+	wallscale				scripted/wallclimb/wallscale.skc
+
+	jumpgate				scripted/wallclimb/jumpgate.skc
+
+}
+

@@ -1,0 +1,13 @@
+animations 
+{
+	$path models/human/animation
+
+	//----------
+	//tank exit animations
+	//----------
+
+
+	vent_enter	scripted/vent/enter_vent.skc
+
+
+}

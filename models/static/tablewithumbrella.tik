@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/tablewithumbrella
+	skelmodel tablewithumbrella.skd
+	surface tablewithumbrella_1 shader static_tablewithumbrella_1
+	surface tablewithumbrella_2 shader static_tablewithumbrella_2
+}
+
+
+animations
+{
+	idle     tablewithumbrella.skc
+}
+
+/*QUAKED static_tablewithumbrella (0.0 0.75 0.5) (-16 -16 0) (16 16 64)
+*/

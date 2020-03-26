@@ -1,0 +1,112 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+ 
+init
+{
+	server  
+	{
+		classname effectentity
+		notsolid
+	}
+	client
+	{
+		cache vsssource.spr
+		cache bh_dirt_piece.spr
+	}
+}
+
+animations
+{
+	idle dummy2.skc
+	{
+		server
+		{
+		}
+
+		client
+		{
+			enter originspawn
+			(
+				count 10
+				model vsssource.spr
+				color .32 .28 .24
+				alpha .5
+				offset crandom 8 crandom 8 range 16 48
+				angles crandomr 45 crandom 45 crandom 360
+				randvel crandom 75 crandom 75 range 100 200
+				clampvel -75 75 -75 75 -200 99999
+				avelocity 0 0 crandom 90
+				accel 0 0 -400
+				life 2 .2
+				scalemin 2
+				scalemax 3
+				scalerate 1.2
+				fadedelay 1
+			)
+
+			enter originspawn
+			(
+				count 15
+				model vsssource.spr
+				color .32 .28 .24
+				alpha .5
+				offset crandom 8 crandom 8 range 48 48
+				angles crandom 45 crandom 45 crandom 180
+				randvel crandom 50 crandom 50 range 200 250
+				clampvel -50 50 -50 50 -300 99999
+				avelocity 0 0 crandom 180
+				accel 0 0 -400
+				life 2 .5
+				scalemin 2
+				scalemax 3
+				scalerate .2
+				fadedelay 1
+			)
+
+			enter originspawn
+			(
+				count 15
+				model vsssource.spr
+				color .32 .28 .24
+				alpha .5
+				offset crandom 8 crandom 8 range 80 48
+				angles crandom 45 crandom 45 crandom 180
+				randvel crandom 50 crandom 50 range 300 300
+				clampvel -50 50 -50 50 -300 99999
+				avelocity 0 0 crandom 180
+				accel 0 0 -400
+				life 2 1
+				scalemin 2
+				scalemax 3
+				scalerate .2
+				fadedelay 1
+			)
+
+			// central explosion pieces
+			enter originspawn
+			(
+				model bh_dirt_piece.spr
+				spawnrange 1536
+				spritegridlighting
+				alpha 0.75
+				angles 0 0 random 360
+				avelocity 0 0 range 360 360
+				circle
+				radius 32
+				offset 0 0 range 16 16
+				radialvelocity 0 512 768
+				count 32
+				accel 0 0 -600
+				life 1.6 0.7
+				scalemin .25
+				scalemax 1.5
+				fadedelay 1.5
+			)
+		}
+	}
+}

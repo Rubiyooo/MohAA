@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/playing_cards
+	skelmodel cardhand01.skd
+	surface cardhand01 shader cardhand01
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     cardhand01.skc
+}
+
+/*QUAKED static_items_cardhand01 (0.0 0.75 0.5) (-24 -8 0) (24 16 88)
+*/

@@ -1,0 +1,73 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		cache models/fx/wood_flap.tik
+		cache models/fx/woodbeams.tik
+		cache models/fx/bh_wood_piece.tik
+
+		sfx originspawn
+		(
+			model models/fx/wood_flap.tik
+			count 2
+			color 1.00 1.00 1.00
+			life 1.10
+			velocity 550.00
+			accel 0.00 0.00 -50.00
+			angles crandom -90 0 crandom -180
+			avelocity crandom -50 0 crandom -300
+			scalemin 0.10
+			scalemax 0.30
+			fade
+			sphere
+		)
+
+		sfx originspawn
+		(
+			model models/fx/woodbeams.tik
+			count 2
+			color 1.00 1.00 1.00
+			collision
+			bouncefactor 0.30
+			life 1.20
+			velocity 700.00
+			accel 0.00 0.00 -100.00
+			angles crandom -120 0 crandom -90
+			avelocity crandom -90 0 range 430 -550
+			scalemin 0.50
+			scalemax 1.00
+			fade
+			sphere
+		)
+
+		sfx originspawn
+		(
+			model models/fx/bh_wood_piece.tik
+			alpha 1.0
+			count 7
+			angles random 360 random 360 0
+			avelocity crandom 180 crandom 180 0
+			velocity 75
+			randvelaxis random 125 crandom 60 crandom 60
+			accel 0 0 -800
+			life 0.6 0.7
+			scalemin 0.6
+			scalemax 1.4
+			fadedelay 0.5
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

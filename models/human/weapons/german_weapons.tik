@@ -1,0 +1,19 @@
+path models/equipment/germangear
+
+case weapon "Mauser KAR 98K"
+{
+	skelmodel k98clips.skd
+	surface k98clips shader german_riflebelt
+}
+
+case weapon "MP40"
+{
+	skelmodel mp40clips.skd
+	surface mp40clips shader ammo_pouch_tan
+}
+
+case weapon "Walter P38"
+{
+	skelmodel german_holster.skd
+	surface german_holster shader german_holster
+}

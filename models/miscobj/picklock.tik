@@ -1,0 +1,31 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	//scale 1.33			// Convert from inches to game units
+	path models/miscobj/picklock
+	skelmodel lock.skd
+	surface material1 shader picklock
+	surface material2 shader picklock
+	surface material3 shader picklock
+	surface material4 shader picklock
+	surface material5 shader picklock
+	surface material6 shader picklock
+
+}
+
+init
+{
+	server
+	{
+		classname animate
+	}
+}
+
+animations
+{
+	idle     lock.skc
+}
+
+/*QUAKED static_equipment_picklock (0.0 0.75 0.5) (-8 -16 0) (8 16 40)
+*/

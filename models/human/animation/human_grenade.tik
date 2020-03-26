@@ -1,0 +1,241 @@
+animations // Now list all of the animations and any special commands for them
+{
+	$path models/human/animation
+//--------
+//Shooting
+//--------
+
+
+//shoot_grenade_crouch			weapon_grenade/fire_grenade_crouch.skc
+//{
+//	server
+//	{
+//		first fire
+//	}
+//}
+//shoot_grenade_stand			weapon_grenade/fire_grenade_stand.skc		
+//{
+//	server
+//	{
+//		first fire
+//	}
+//}
+
+grenade_pullout				weapon_grenade/grenade_throw_intro.skc
+{
+	server
+	{
+		3	weaponcommand mainhand attachtohand offhand
+	}
+}
+grenade_weapon_rearm			weapon_grenade/grenade_throw_outtro.skc
+{
+	server
+	{
+		4	weaponcommand mainhand attachtohand mainhand
+	}
+}
+grenade_throw				weapon_grenade/grenade_throw_overhand.skc
+{
+	server
+	{
+		6	fire_grenade
+	}
+}
+grenade_toss				weapon_grenade/grenade_throw_underhand.skc
+{
+	server
+	{
+		7	fire_grenade
+	}
+}
+
+//grenade_throw_down		weapon_grenade/grenade_throw_down.skc
+//grenade_throw_up			weapon_grenade/grenade_throw_up.skc
+//grenade_toss_down				weapon_grenade/grenade_throw_down.skc
+//grenade_toss_up				weapon_grenade/grenade_throw_up.skc
+//grenade_aim_action			weapon_grenade/grenade_aim_action.skc	// Not used?
+
+jog_grenade					weapon_grenade/walks_runs/jog_grenade.skc			autosteps_run
+walk_crouch_grenade			weapon_grenade/walks_runs/walk_crouch_grenade.skc	autosteps_walk
+walk_grenade				weapon_grenade/walks_runs/walk_grenade.skc			autosteps_walk
+jog_back_grenade				weapon_grenade/walks_runs/jog_back_grenade.skc	autosteps_run
+run_grenade_action			weapon_grenade/walks_runs/run_grenade_action.skc	autosteps_run
+
+//--------
+//Curious//
+//--------
+
+//grenade_stand_curious01			weapon_pistol/curious/pistol_stand_curious(basic_loop).skc	weight 1
+//grenade_stand_curious02			weapon_pistol/curious/pistol_stand_curious(twitch).skc	weight 1 dontrepeate
+//grenade_stand_surprise			weapon_pistol/curious/pistol_stand_surprise.skc
+//grenade_stand_shock			weapon_grenade/curious/grenade_stand_shock.skc				
+//grenade_stand_identify			weapon_rifle/curious/rifle_stand_identify.skc				
+
+//grenade_walk_curious_backward	weapon_pistol/curious/pistol_walk_curious_backward.skc		autosteps_walk
+//grenade_walk_curious_forward		weapon_pistol/curious/pistol_walk_curious_forward.skc	autosteps_walk
+//grenade_walk_curious_left		walks_runs/curiousw_left90.skc								autosteps_walk
+//grenade_walk_curious_right		walks_runs/curiousw_right90.skc							autosteps_walk
+
+//----------------
+// Alert
+//---------------- Uses rifle animations temporarily
+
+//grenade_walk_alert_forward		weapon_pistol/walks_runs/pistol_walk_alert_forward.skc	autosteps_walk
+
+//grenade_stand_alert01			weapon_pistol/alert/pistol_stand_alert_a(action).skc	random	
+//grenade_stand_alert02			weapon_pistol/alert/pistol_stand_alert_b(action).skc	random	
+//grenade_stand_alert_legs		alert/alert_legs_rightforward.skc							
+
+//grenade_stand_dodge_left		weapon_grenade/alert/grenade_stand_dodge_left.skc	autosteps_walk
+//grenade_stand_dodge_right		weapon_grenade/alert/grenade_stand_dodge_right.skc	autosteps_walk
+
+//grenade_standtocrouch_dive		alert/standtocrouch_dive.skc	autosteps_run
+
+
+//----------------
+//Walks and Runs//
+//----------------
+
+grenade_walk_patrol_forward		weapon_pistol/walks_runs/pistol_walk_patrol_forward.skc	autosteps_walk
+grenade_walk					weapon_pistol/walks_runs/walk_pistol.skc				autosteps_walk
+grenade_walk_back				weapon_pistol/walks_runs/walk_back_pistol.skc			autosteps_walk
+grenade_jog_forward			weapon_pistol/walks_runs/jog_pistol.skc						autosteps_run
+grenade_jog_back				weapon_pistol/walks_runs/jog_back_pistol.skc			autosteps_run
+
+// Old animations/animation names	
+walk_pistol					weapon_pistol/walks_runs/walk_pistol.skc			autosteps_walk
+jog_back_pistol				weapon_pistol/walks_runs/jog_back_pistol.skc		autosteps_run
+jog_pistol					weapon_pistol/walks_runs/jog_pistol.skc				autosteps_run
+walk_back_pistol				weapon_pistol/walks_runs/walk_back_pistol.skc	autosteps_walk
+
+//----------------
+//HIT ANIMATIONS//
+//----------------
+
+//Stand//
+
+grenade_stand_hit_head			weapon_grenade/minor_pain/grenade_stand_hit_head.skc			autosteps_walk
+grenade_stand_hit_uppertorso01	weapon_grenade/minor_pain/grenade_stand_hit_head.skc	random	autosteps_walk
+grenade_stand_hit_uppertorso02	weapon_grenade/minor_pain/grenade_stand_hit_torso.skc	random	autosteps_walk
+grenade_stand_hit_lowertorso		weapon_grenade/minor_pain/grenade_stand_hit_lowertorso.skc	autosteps_walk
+grenade_stand_hit_leg			weapon_grenade/minor_pain/grenade_stand_hit_leg.skc				autosteps_walk
+grenade_stand_hit_Larm			weapon_grenade/minor_pain/grenade_stand_hit_head.skc			autosteps_walk
+grenade_stand_hit_Rarm			weapon_grenade/minor_pain/grenade_stand_hit_rarm.skc			autosteps_walk
+
+grenade_stand_hit_lowerback_back	weapon_grenade/minor_pain/grenade_stand_hit_lowerback.skc	autosteps_walk
+
+//Crouch//
+
+grenade_crouch_hit_head			weapon_pistol/minor_pain/pistol_crouch_hit_head.skc						autosteps_walk
+grenade_crouch_hit_uppertorso01	weapon_pistol/minor_pain/pistol_crouch_hit_torso.skc			random	autosteps_walk
+grenade_crouch_hit_uppertorso02	weapon_pistol/minor_pain/pistol_crouch_hit_front.skc			random	autosteps_walk
+grenade_crouch_hit_lowertorso		weapon_pistol/minor_pain/pistol_crouch_hit_front_flyback.skc		autosteps_walk
+grenade_crouch_hit_leg			weapon_pistol/minor_pain/pistol_crouch_hit_front_flyback.skc			autosteps_walk
+grenade_crouch_hit_Larm			weapon_pistol/minor_pain/pistol_crouch_hit_front_flyback.skc			autosteps_walk
+grenade_crouch_hit_Rarm			weapon_pistol/minor_pain/pistol_crouch_hit_front.skc					autosteps_walk
+
+//Prone//
+
+grenade_prone_hit_head			weapon_pistol/minor_pain/pistol_prone_hit_head.skc		autosteps_walk
+grenade_prone_hit_uppertorso		weapon_pistol/minor_pain/pistol_prone_hit_head.skc	autosteps_walk
+grenade_prone_hit_lowertorso		weapon_pistol/minor_pain/pistol_prone_hit_head.skc	autosteps_walk
+grenade_prone_hit_leg			weapon_pistol/minor_pain/pistol_prone_hit_leg.skc		autosteps_walk
+grenade_prone_hit_Larm			weapon_pistol/minor_pain/pistol_prone_hit_head.skc		autosteps_walk
+grenade_prone_hit_Rarm			weapon_pistol/minor_pain/pistol_prone_hit_head.skc		autosteps_walk
+
+//Floor//
+
+grenade_floor_hit				weapon_grenade/minor_pain/grenade_floor_hit_torso.skc	autosteps_walk
+
+//-----------------
+//PAIN ANIMATIONS//
+//-----------------
+
+grenade_pain_flooridle			weapon_grenade/major_pain/grenade_pain_flooridle.skc		autosteps_walk
+grenade_pain_crawl			weapon_grenade/major_pain/grenade_pain_crawl.skc				autosteps_walk
+grenade_pain_floortodeath		weapon_grenade/major_pain/grenade_pain_floortodeath.skc		autosteps_walk
+grenade_pain_floortoknees		weapon_grenade/major_pain/grenade_pain_floortoknees.skc		autosteps_walk
+grenade_pain_crawltodeath		weapon_grenade/major_pain/grenade_pain_crawltodeath.skc		autosteps_walk
+grenade_pain_crawltofloor		weapon_grenade/major_pain/grenade_pain_crawltofloor.skc		autosteps_walk
+grenade_pain_standtoknees		weapon_grenade/major_pain/grenade_pain_standtoknees.skc		autosteps_walk
+grenade_pain_kneesidle			weapon_grenade/major_pain/grenade_pain_kneesidle.skc		autosteps_walk
+grenade_pain_kneestocrawl		weapon_grenade/major_pain/grenade_pain_kneestocrawl.skc		autosteps_walk
+grenade_pain_kneestodeath		weapon_grenade/major_pain/grenade_pain_kneestodeath.skc		autosteps_walk
+grenade_pain_kneestofloor		weapon_grenade/major_pain/grenade_pain_kneestofloor.skc		autosteps_walk
+grenade_pain_kneestostand		weapon_grenade/major_pain/grenade_pain_kneestostand.skc		autosteps_walk
+grenade_pain_standleft			weapon_grenade/major_pain/grenade_pain_standleft.skc		autosteps_walk
+grenade_pain_standright			weapon_grenade/major_pain/grenade_pain_standright.skc		autosteps_walk
+grenade_pain_standstraight		weapon_grenade/major_pain/grenade_pain_standstraight.skc	autosteps_walk
+
+//-------
+// Prone (Alert)
+//-------
+
+//grenade_prone_attack_left		weapon_grenade/prone/grenade_prone_attack_left.skc
+//grenade_prone_attack_right		weapon_grenade/prone/grenade_prone_attack_right.skc
+//grenade_prone_attack_straight		weapon_grenade/prone/grenade_prone_attack_straight.skc
+//grenade_prone_walk_back			weapon_grenade/prone/grenade_prone_walk_back.skc
+//grenade_prone_roll_left			weapon_grenade/prone/grenade_prone_roll_left.skc
+//grenade_prone_roll_right		weapon_grenade/prone/grenade_prone_roll_right.skc
+//grenade_prone_turn_left			weapon_grenade/prone/grenade_prone_turn_left.skc
+//grenade_prone_turn_right		weapon_grenade/prone/grenade_prone_turn_right.skc
+//grenade_prone_pullout			weapon_grenade/prone/grenade_prone_takeout.skc
+//grenade_prone_putaway			weapon_grenade/prone/grenade_prone_putaway.skc
+//grenade_prone_throw_straight		weapon_grenade/prone/grenade_prone_throw_straight.skc
+//grenade_prone_throw_left		weapon_grenade/prone/grenade_prone_throw_left.skc
+//grenade_prone_throw_right		weapon_grenade/prone/grenade_prone_throw_right.skc
+//grenade_prone_walk			weapon_grenade/prone/grenade_prone_walk_forward.skc
+//grenade_prone_walk_right		weapon_grenade/prone/grenade_prone_walk_right.skc
+//grenade_prone_walk_left			weapon_grenade/prone/grenade_prone_walk_left.skc
+
+//---------
+//Crouch (Alert)
+//---------
+
+grenade_crouch_prone			weapon_grenade/prone/grenade_crouchtoprone.skc
+grenade_crouch_walk				weapon_grenade/crouch/grenade_crouch_walk.skc		autosteps_walk
+grenade_crouch_walk_back		weapon_grenade/crouch/grenade_crouch_walk_back.skc	autosteps_walk
+grenade_crouch_walk_left		weapon_grenade/crouch/grenade_crouch_walk_left.skc	autosteps_walk
+grenade_crouch_walk_right		weapon_grenade/crouch/grenade_crouch_walk_right.skc	autosteps_walk
+grenade_crouch_alert			weapon_rifle/crouch/rifle_crouch.skc	// PLACEHOLDER!
+
+
+//-------
+//Other//
+//-------
+
+//charge_grenade_crouch		weapon_grenade/charge_grenade_crouch.skc	// not used
+//charge_grenade_stand		weapon_grenade/charge_grenade_stand.skc	// not used
+idle_crouch_grenade		weapon_grenade/idles/idle_crouch_grenade.skc		
+idle_grenade			weapon_grenade/idles/idle_grenade.skc		
+lower_grenade_crouch		weapon_grenade/lower_grenade_crouch.skc	
+lower_grenade_stand		weapon_grenade/lower_grenade_stand.skc		
+raise_grenade_crouch		weapon_grenade/raise_grenade_crouch.skc	
+raise_grenade_stand		weapon_grenade/raise_grenade_stand.skc		
+
+//-------
+//Idle/Bored
+//-------
+
+//grenade_stand_bored_a_intro		idle/rifle_idle_normal01(loop).skc			
+//grenade_stand_bored_a01			idle/rifle_idle_normal01(loop).skc			weight 2			
+//grenade_stand_bored_a02			idle/rifle_idle_normal02(weight_shift).skc	weight 1 dontrepeate	
+//grenade_stand_bored_a_outtro		idle/rifle_idle_normal02(weight_shift).skc	
+//grenade_stand_bored_b_intro		idle/rifle_idle_oshoulder_intro.skc							
+//grenade_stand_bored_b01			idle/rifle_idle_oshoulder01(loop).skc		weight 2			
+//grenade_stand_bored_b02			idle/rifle_idle_oshoulder02(weight_shift).skc	weight 1 dontrepeate	
+//grenade_stand_bored_b_outtro		idle/rifle_idle_oshoulder_outtro.skc						
+
+//grenade_stand_nervous_a			idle/thompson_idle_stand1.skc							
+//grenade_stand_nervous_b			idle/thompson_idle_stand2.skc							
+//grenade_stand_nervous_c			idle/thompson_idle_stand3.skc							
+//grenade_stand_tired				idle/tired_grenade.skc
+
+
+//--------
+// Fancy extra behaviors
+//--------
+
+grenade_diveongrenade		misc/takecover_slide_rifle.skc
+}

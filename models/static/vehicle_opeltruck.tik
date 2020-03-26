@@ -1,0 +1,26 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+
+	path models/vehicles/opeltruck
+	skelmodel opelstatic.skd
+//old	surface all shader static_opel
+
+	surface opel1 shader static_opel
+	surface opel2 shader static_opel_cull
+	surface opel3 shader static_opel
+	surface opel4 shader static_opel
+	surface opel5 shader static_opel
+	surface opelhub shader static_opelhub
+	surface opeltread shader static_opeltread
+	surface opelwindows shader static_opelwindows
+}
+
+animations
+{
+	idle		     opelstatic.skc
+}
+
+/*QUAKED static_vehicle_german_opeltruck (0.5 0.0 0.5) (-65 -40 0) (65 40 120)
+*/

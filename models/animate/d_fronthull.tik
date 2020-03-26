@@ -1,0 +1,35 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/uboot
+	skelmodel d_front.skd
+	surface material26 shader hulltop1d
+	surface material19 shader hulltop1e
+	surface material2 shader hulltop1a
+	surface material14 shader metaldeck_plating
+	surface material5 shader periscopes
+	surface material25 shader miscpieces
+	surface material10 shader deckcannon
+	surface material6 shader subrailing
+	surface material11 shader blackhull1
+	surface material1 shader wooddeck
+	surface material3 shader hulltop1c
+}
+init
+{
+	server
+	{
+		classname animate
+	}
+}
+
+
+animations
+{
+	idle     d_front.skc
+}
+
+/*QUAKED animate_equipment_uboat-destroyedfront (0.5 .25 0.25) (-2150 -212 0) (2150 212 750)
+nate - 31/Oct/2001 11:01 exploding uboat!!
+*/

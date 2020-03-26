@@ -1,0 +1,19 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/vehicles/fockwulf
+	skelmodel fockwulf.skd
+	surface fockwulf3 shader static_fockwulf
+	surface fockwindow shader static_fockwindow
+	surface fockwulf1 shader static_fockwulf
+}
+
+animations
+{
+	idle     fockwulf.skc
+}
+
+/*QUAKED static_vehicle_german_airplane-fockwulf (0.5 0.0 0.5) (-64 -48 0) (64 48 128)
+Fockwulf Airplane
+*/

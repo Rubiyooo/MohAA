@@ -1,0 +1,298 @@
+setup
+{
+	path models/human/animation/dialogue/M5L3/A
+}
+
+animations
+{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////    original animations    //////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+	streamed_dfr_scripted_M5L3_01c	actor_M5L3_01.skc
+	{
+		client		/// We're pinned down here! Help us out!
+		{
+			first sound streamed_dfr_scripted_M5L3_01c
+		}
+	}
+
+	dfr_scripted_M5L3_02g	actor_M5L3_02.skc
+	{
+		client		/// The sniper's up there!
+		{
+			first sound dfr_scripted_M5L3_02g
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_03c	actor_M5L3_03.skc
+	{
+		client		/// Thanks. We'll stick with you until we find the rest of our squad.
+		{
+			first sound streamed_dfr_scripted_M5L3_03c
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_04g	actor_M5L3_04.skc
+	{
+		client		/// Their snipers are tearing us to pieces out here.
+		{
+			first sound streamed_dfr_scripted_M5L3_04g
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_05f	actor_M5L3_05.skc
+	{
+		client		/// Stay back-- there's a sniper up there!
+		{
+			first sound streamed_dfr_scripted_M5L3_05f
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_06h	actor_M5L3_06.skc
+	{
+		client		/// Stay put! There's a sniper up there!
+		{
+			first sound streamed_dfr_scripted_M5L3_06h
+		}
+	}
+
+
+	dfr_scripted_M5L3_07f	actor_M5L3_07.skc
+	{
+		client		/// THUNDER!
+		{
+			first sound dfr_scripted_M5L3_07f
+		}
+	}
+
+	dfr_scripted_M5L3_08c	actor_M5L3_08.skc
+	{
+		client		/// FLASH!
+		{
+			first sound dfr_scripted_M5L3_08c
+		}
+	}
+
+	dfr_scripted_M5L3_09f	actor_M5L3_09.skc
+	{
+		client		/// Hey Hill, look it's Parish.
+		{
+			first sound dfr_scripted_M5L3_09f
+		}
+	}
+
+	dfr_scripted_M5L3_10c	actor_M5L3_10.skc
+	{
+		client		/// I figured you guys were dead.
+		{
+			first sound dfr_scripted_M5L3_10c
+		}
+	}
+
+	dfr_scripted_M5L3_11h	actor_M5L3_11.skc
+	{
+		client		/// Not yet.
+		{
+			first sound dfr_scripted_M5L3_11h
+		}
+	}
+
+	dfr_scripted_M5L3_12c	actor_M5L3_12.skc
+	{
+		client		/// This is Lieutenant Powell.
+		{
+			first sound dfr_scripted_M5L3_12c
+		}
+	}
+
+	dfr_scripted_M5L3_13f	actor_M5L3_13.skc
+	{
+		client		/// Lieutenant.
+		{
+			first sound dfr_scripted_M5L3_13f
+		}
+	}
+
+	dfr_scripted_M5L3_14c	actor_M5L3_14.skc
+	{
+		client		/// This doesn't look good.
+		{
+			first sound dfr_scripted_M5L3_14c
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_15f	actor_M5L3_15.skc
+	{
+		client		/// There's a sniper around here. I can feel it.
+		{
+			first sound streamed_dfr_scripted_M5L3_15f
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_16c	actor_M5L3_16.skc
+	{
+		client		/// That’s a death trap. If you want to try and find another way around, we'll cover you.
+		{
+			first sound streamed_dfr_scripted_M5L3_16c
+		}
+	}
+
+	dfr_scripted_M5L3_17g	actor_M5L3_17.skc
+	{
+		client		/// Something's coming.
+		{
+			first sound dfr_scripted_M5L3_17g
+		}
+	}
+
+	dfr_scripted_M5L3_18f	actor_M5L3_18.skc
+	{
+		client		/// It's a tank!
+		{
+			first sound dfr_scripted_M5L3_18f
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_21c	actor_M5L3_21.skc
+	{
+		client		/// There's City Hall, boys. Lets do this.
+		{
+			first sound streamed_dfr_scripted_M5L3_21c
+		}
+	}
+
+	//////////////////new sequences ////////////////////
+
+
+	dfr_M5L3_536c	actor_M5L3_536.skc
+	{
+		client		/// Thanks. We got cut off from the rest of our squad. They're up ahead somewhere.
+		{
+			first sound dfr_M5L3_536c
+		}
+	}
+
+
+	dfr_M5L3_537c	actor_M5L3_537c1.skc
+		{
+			client		/// About an hour ago a regiment of Germans pushed us...
+			{
+				first sound dfr_M5L3_537c1
+			}
+		}
+
+	dfr_M5L3_537c1	actor_M5L3_537c1.skc
+		{
+			client		/// About an hour ago a regiment of Germans pushed us...
+			{
+				first sound dfr_M5L3_537c1
+			}
+		}
+
+	dfr_M5L3_537c2	actor_M5L3_537c2.skc
+		{
+			client		/// About an hour ago a regiment of Germans pushed us...
+			{
+				first sound dfr_M5L3_537c2
+			}
+		}
+
+
+	dfr_M5L3_538c_1	actor_M5L3_538.skc
+	{
+		client		/// Maybe you could find a way to flank that sniper, sir.
+		{
+			first sound dfr_M5L3_538c_1
+		}
+	}
+
+	dfr_M5L3_547c	actor_M5L3_547.skc
+	{
+		client		/// Damn.
+		{
+			first sound dfr_M5L3_547c
+		}
+	}
+
+	dfr_M5L3_548	actor_M5L3_548.skc
+	{
+		client		/// Have you seen any more guys from our squad? We're scattered all over the place.
+		{
+			first sound dfr_M5L3_548c
+		}
+	}
+
+	dfr_M5L3_548C	actor_M5L3_548.skc
+	{
+		client		/// Have you seen any more guys from our squad? We're scattered all over the place.
+		{
+			first sound dfr_M5L3_548c
+		}
+	}
+
+	dfr_M5L3_550		actor_M5L3_550.skc
+	{
+		client		/// ITS TOOTH AND NAIL
+		{
+			first sound dfr_M5L3_550k_1
+		}
+	}
+	//////////////////tank sequence ////////////////////
+
+	dfr_m5l1_add01	actor_M5L3_590.skc
+	{
+		client		/// Come with me sir, the rest of the tank crew is holed up back here
+		{
+			first sound dfr_m5l1_add01
+		}
+	}
+
+	dfr_m5l1_500	actor_M5L3_500.skc
+	{
+		client		/// There he is.
+		{
+			first sound dfr_M5L1_500h
+		}
+	}
+
+	dfr_M5L1_500h	actor_M5L3_500.skc
+	{
+		client		/// There he is.
+		{
+			first sound dfr_M5L1_500h
+		}
+	}
+
+	dfr_M5L1_501h	actor_M5L3_501.skc
+	{
+		client		/// We're all ready to go sir.
+		{
+			3 sound dfr_M5L1_501h
+		}
+	}
+
+	dfr_M5L1_502e_2	actor_M5L3_502.skc
+	{
+		client		/// Alright, lets take this tank and go.
+		{
+			first sound dfr_M5L1_502e_2
+		}
+	}
+
+	dfr_M5L1_503h	actor_M5L3_503.skc
+	{
+		client		/// Come on Powell, get in the tank.
+		{
+			first sound dfr_M5L1_503h
+		}
+	}
+
+
+}

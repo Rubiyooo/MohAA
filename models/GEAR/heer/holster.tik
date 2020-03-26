@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/gear/heer
+		
+		skelmodel holster.skd
+		surface holster shader german_holster
+
+
+}
+
+animations
+{
+	idle     holster.skc
+}

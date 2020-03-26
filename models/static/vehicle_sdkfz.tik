@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	scale 1.33			// Convert from inches to game units
+	path models/vehicles/sdkfz
+	skelmodel sdkfz.skb
+	surface sdkfz_TREDZ shader static_sdkfz_TREDZ
+     	surface sdkfz_I_cog shader static_sdkfz_I_cog
+ 	surface sdkfz_rims shader static_sdkfz_rims 
+	surface sdkfz_F_cog shader static_sdkfz_F_cog 
+	surface sdkfz_O_cog shader static_sdkfz_O_cog 
+	surface sdkfz_W_TRED shader static_sdkfz_W_TRED 
+	surface sdkfz_wheel shader static_sdkfz_wheel
+	surface sdkfz shader static_sdkfz 
+}
+
+animations
+{
+	idle     sdkfz.skc
+}
+
+/*QUAKED static_vehicle_german_sdkfz (0.5 0.0 0.5) (-64 -48 0) (64 48 128)
+SdKfz Halftrack
+*/

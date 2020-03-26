@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/bunker
+	skelmodel filter_thing.skd
+	surface filter_thing shader filter_thing
+}
+
+animations
+{
+	idle     filter_thing.skc
+}
+
+/*QUAKED static_furniture_filter-thing (0.5 0.0 0.5) (-16 -16 0) (24 24 40)
+*/

@@ -1,0 +1,59 @@
+TIKI
+setup
+{
+	scale 0.52
+	path models/human/allied_army_soldier	// Set path to set skelmodel from
+	skelmodel usarmy.skd			// Set body model
+
+	surface ranger_pants shader army_pantsgreen
+	surface us_top shader us_top
+	surface armband shader army_engineer
+	surface us_top_c shader us_top_c
+
+	path models/human/heads			// Set new path for head model
+	skelmodel head1.skd		// Set head model
+	surface head shader dolf_dirty
+
+	path models/human/hands			
+	skelmodel hand.skd		
+	surface hand shader handsnew
+
+	path models/equipment/USGear/helmets
+
+//	skelmodel us_helmet.skd
+//	surface us_helmet shader us-helmet_engineer01
+
+	skelmodel haversack.skd
+	surface haversack shader usequip
+
+	skelmodel garandbelt.skd
+	surface garandbelt shader usammobelt
+	
+	skelmodel 45holster.skd
+	surface 45holster shader 45holster
+
+
+
+	scale 0.52				// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	radius 20				// defines size of shadow
+
+	path models/human/animation
+
+}
+
+init
+{
+	server
+	{
+      	classname Object
+		setsize "-16 -16 0" "16 16 8"
+	}
+}
+
+animations
+{
+	idle		deaths/pose_b(front).skc
+}
+
+/*QUAKED animate_deadbodies_dead-2nd-ranger-engineer2 (1.0 0.5 0.0) (-16 -16 0) (16 16 96)
+*/

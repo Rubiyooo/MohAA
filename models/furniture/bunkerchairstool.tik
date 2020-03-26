@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+//	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+ 	scale 0.37	//changed by Radek, any questions? call ext. 136
+	path models/furniture/chairs
+	skelmodel bunkerchairstool.skd
+	surface bunkerchairstool shader bunkerchairstool
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     bunkerchairstool.skc
+}
+
+/*QUAKED static_furniture_bunkerchairstool (0.0 0.75 0.5) (-16 -16 0) (16 16 32)
+*/

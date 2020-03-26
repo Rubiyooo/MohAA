@@ -1,0 +1,59 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+		angles 270 0 0
+	}
+	client
+	{
+		cache textures/drip.spr
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+			// first bit of lingering smoke
+
+			enter originspawn
+			(
+				model textures/drip.spr
+				count 1
+				life 2.5
+				scale 0.15
+				randvel 0 0 range -200 -225
+				dietouch
+				bouncefactor 0
+				alpha 1
+				color 0.7 0.7 0.7
+				offsetalongaxis crandom 4 crandom 4 crandom 4
+				physicsrate every
+				collision
+			)
+		}
+	}
+}
+
+/*QUAKED fx_drip_water (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+*/

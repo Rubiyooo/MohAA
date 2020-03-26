@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/phonograph
+	skelmodel phonograph.skd
+	surface phonograph shader static_phonograph
+	surface phonograph shader static_phonograph
+}
+
+animations
+{
+	idle     phonograph.skc
+}
+
+/*QUAKED static_furniture_phonograph (0.5 0.0 0.5) (-12 -12 0) (12 12 12)
+*/

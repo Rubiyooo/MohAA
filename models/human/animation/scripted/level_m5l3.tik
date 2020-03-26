@@ -1,0 +1,8 @@
+animations // Now list all of the animations and any special commands for them
+{
+$path models/human/animation
+
+	//----------
+	//plunger animations have been moved to plunger.tik, for inclusion in m6l3a
+	//----------
+}

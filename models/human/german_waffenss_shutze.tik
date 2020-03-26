@@ -1,0 +1,204 @@
+TIKI
+setup
+{
+	scale 0.52					// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+
+	path models/human/german_waffenss_shutze
+	skelmodel waffen_ss_shutze.skd
+
+	surface pants shader shutzpants
+	surface tunic shader shutzshirt
+      surface tunic_cull shader shutzshirt_cull
+
+
+//	path models/human/heads
+//	skelmodel head1.skd
+//	surface head shader dolf
+	$include models/human/heads/german_young_heads.tik
+
+
+	path models/human/hands
+	skelmodel hand.skd
+	surface hand shader handsnew
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+	
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** p-38 pistol
+	case weapon "Walter P38"
+	{
+		path models/gear/g_headgear
+
+		skelmodel coveredhelmet.skd
+		surface outside shader camohelm
+		surface inside shader german-helmet_inside
+
+
+
+		path models/gear/ss
+
+		skelmodel ssholster.skd
+		surface ssholster shader german_holster
+
+		skelmodel ssloadout.skd
+		surface ssloadout shader german_gear
+
+
+	}
+
+	//*** regular KAR 98
+	case weapon "Mauser KAR 98K"
+	{
+		path models/gear/g_headgear
+
+		skelmodel coveredhelmet.skd
+		surface outside shader camohelm
+		surface inside shader german-helmet_inside
+
+
+
+		path models/gear/ss
+
+		skelmodel sskarclips.skd
+		surface sskarclips shader german_riflebelt
+
+		skelmodel ssloadout.skd
+		surface ssloadout shader german_gear
+
+	}
+
+	//*** KAR 98 sniper
+	case weapon "Mauser KAR 98D Sniper"
+	{
+		path models/gear/g_headgear
+
+		skelmodel coveredhelmet.skd
+		surface outside shader camohelm
+		surface inside shader german-helmet_inside
+
+		path models/gear/ss
+
+		skelmodel sskarclips.skd
+		surface sskarclips shader german_riflebelt
+
+		skelmodel ssloadout.skd
+		surface ssloadout shader german_gear
+
+	}
+	
+
+	//*** MP40 submachinegun
+	case weapon "MP40"
+	{
+		path models/gear/g_headgear
+
+		skelmodel coveredhelmet.skd
+		surface outside shader camohelm
+		surface inside shader german-helmet_inside
+
+		path models/gear/ss
+
+		skelmodel ssloadout.skd
+		surface ssloadout shader german_gear
+
+
+		skelmodel ssmp40clips.skd
+		surface ssmp40clips shader ammo_pouch
+
+	}
+
+	//*** mp44 / stg44 machinegun
+	case weapon "StG44"
+	{
+		path models/gear/g_headgear
+
+		skelmodel coveredhelmet.skd
+		surface outside shader camohelm
+		surface inside shader german-helmet_inside
+
+		path models/gear/ss
+
+		skelmodel ssloadout.skd
+		surface ssloadout shader german_gear
+
+
+		skelmodel ssmp44clips.skd
+		surface ssmp44clips shader mp44ammopouch
+
+	}
+
+	//*** panzerschrek
+	case weapon "Panzerschrek"
+	{
+		path models/gear/g_headgear
+
+		skelmodel coveredhelmet.skd
+		surface outside shader camohelm
+		surface inside shader german-helmet_inside
+
+
+
+		path models/gear/ss
+
+		skelmodel ssholster.skd
+		surface ssholster shader german_holster
+
+		skelmodel ssloadout.skd
+		surface ssloadout shader german_gear
+
+	}
+//*** end weapon equipment assignment
+//************************************
+
+
+	
+
+
+
+
+
+	scale 0.52				// Set default scale to 16/30.5 since world is
+						// in 16 units per foot and model is in cm's
+	path models/human/protoanimations	// Set path to set animations from
+
+	radius 20				// Defines size of shadow
+}
+
+init
+{
+	server
+	{
+      	classname Actor
+		setsize "-16 -16 0" "16 16 92"
+		german
+		health 100
+		weapon "Mauser KAR 98K"
+
+		// Make him mumble but not breathe steam
+		exec global/breathe.scr 0 1
+
+		// Set up the helmet for popping off
+		// <surface to turn off> <model to spawn> <speed to throw it at> <damage multiplier for helmet shots>
+		sethelmet "models/gear/german_sshelmet.tik" 150 0.1 "outside" "inside"  
+	}
+}
+
+//
+// include the base animations definition
+//
+
+$include models/human/animation/dialogue/generic_dialogue_german.tik
+$include models/human/new_generic_human.tik
+//$include models/human/animation/dialogue/M3L1_dialogue_german.tik
+//$include models/human/animation/helmet_flyoff/helmet_flyoff_german_sscovered.tik
+
+/*QUAKED ai_german_waffenss_shutze (1.0 0.5 0.0) (-16 -16 0) (16 16 92)
+*/

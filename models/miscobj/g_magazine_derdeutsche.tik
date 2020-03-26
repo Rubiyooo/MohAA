@@ -1,0 +1,27 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/magazines
+	skelmodel magazine.skd
+	surface magazine shader g_magazine_derdeutsche
+}
+
+init
+{
+	server
+	{
+		classname interactobject
+		setsize "-4 -4 0" "4 4 8"
+		killedeffect "" // tiki to spawn when it's destroyed
+		hiteffect "" // tiki to spawn when it's hit
+	}
+}
+
+animations
+{
+	idle     magazine.skc
+}
+
+/*QUAKED interactobject_magazine_german_derdeutsche (0.0 0.75 0.5) (-8 -8 0) (8 8 8)
+*/

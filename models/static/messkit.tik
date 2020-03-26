@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/messkit
+	skelmodel messkit.skd
+	surface messkit_1 shader static_messkit_1
+	surface messkit_2 shader static_messkit_2
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle    messkit.skc
+}
+
+/*QUAKED static_item_messkit (0.5 0.0 0.5) (-0 -8 0) (16 8 8)
+*/

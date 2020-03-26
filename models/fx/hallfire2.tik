@@ -1,0 +1,127 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+ 
+init
+{
+	server  
+	{
+		classname Animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+
+		//**********************
+		// cached data goes here
+		//**********************
+
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 0.1 anim idle
+		}
+
+		client
+		{
+			//*****************
+			//sound played here
+			//*****************
+			//enter sound
+
+			enter originspawn
+			(
+				spawnrate 1.00
+				model gren_explosion.spr
+				count 6
+				color 4.50 0.20 0.00
+				collision
+				bouncefactor 1.00
+				scale 0.50
+				life 3.00
+				scalerate 3.00
+				velocity 300.00
+				scalemax 3.00
+				fade
+				inwardsphere
+				align
+			)
+
+			enter commanddelay 1.000 originspawn
+			(
+				spawnrate 1.00
+				model gren_explosion.spr
+				count 2
+				alpha 0.50
+				color 3.00 2.00 1.00
+				collision
+				bouncefactor 0.30
+				scale 2.00
+				life 4.00
+				scalerate 0.80
+				velocity 320.00
+				scalemax 2.00
+				fade
+			)
+
+			enter originspawn
+			(
+				spawnrate 1.00
+				model air_explosion.spr
+				color 1.00 1.00 1.00
+				collision
+				bouncefactor 0.30
+				scale 0.50
+				life 3.00
+				scalerate 1.00
+				velocity 400.00
+				scalemax 2.00
+				fade
+				align
+			)
+
+			enter commanddelay 1.000 originspawn
+			(
+				spawnrate 1.00
+				model gren_explosion.spr
+				count 2
+				alpha 0.50
+				color 4.00 2.00 2.00
+				collision
+				bouncefactor 0.30
+				scale 0.50
+				life 3.00
+				scalerate 1.00
+				velocity 300.00
+				scalemax 1.00
+				fade
+				align
+			)
+		}
+	}
+}
+
+//************************************
+//***        IMPORTANT
+//***     RENAME THE QUAKE-ED COMMENT
+//***     IN CONJUNCTION WITH THE
+//***  LD ENTITY MENU LAYOUT.DOC
+//***   UP IN SOURCE SAFE!!!!!!!!!!!!
+//************************************
+
+/*QUAKED fx_explosion_hallfire (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+close quarters fireball in true Die Hard fashion
+*/

@@ -1,0 +1,31 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 0.52
+	path models/human/Allied_ranger_soldier
+	skelmodel Allied_ranger_soldier.skb
+	surface pants shader Ranger_pants 
+      surface assault_vest shader Ranger_top 
+	surface face shader slick
+	surface helmet shader ranger_helmet  
+	surface hand shader hand
+}
+
+init
+{
+	server
+	{
+	classname animate
+	}
+}
+
+animations
+{
+	idle     Allied_ranger_soldier.skc
+}
+
+/*QUAKED posed_allied_ranger_soldier (0.5 .25 0.25) (-32 -32 0) (32 32 128)
+badass
+*/

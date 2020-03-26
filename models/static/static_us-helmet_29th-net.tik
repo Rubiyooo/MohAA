@@ -1,0 +1,16 @@
+TIKI
+setup // Tells model how to be created
+{
+	scale 0.52					// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/equipment/usgear/helmets	// Set path relative to game directory
+	skelmodel us_helmetstatic.skd			// Set base model for skeletal animation
+	surface us_helmetstatic shader static_us-helmet_29th-net
+}
+
+animations // Now list all of the animations and any special commands for them
+{
+	idle		us_helmetstatic.skc
+}
+
+/*QUAKED static_equipment_us-helmet29th-net (0.5 0.0 0.5) (-8 -8 0) (8 8 16)
+*/

@@ -1,0 +1,67 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+ 
+init
+{
+	server  
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+
+		cache models/fx/bh_foliage_leaf.tik
+
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+			//*****************
+			//sound played here
+			//*****************
+			//enter sound
+
+			enter originspawn
+			(
+				spawnrate 1.00
+				model models/fx/bh_foliage_leaf.tik
+				count 5
+				color 1.00 1.00 1.00
+				scale 3.00
+				life 7.00
+				velocity 300.00
+				radialvelocity 0.00 10.00 110.00
+				accel 0.00 0.00 -20.00
+				angles crandom -20 crandom 40 crandom 60
+				avelocity crandom -60 range 140 -70 range 40 -120
+				scalemin 1.00
+				scalemax 4.00
+				fade
+			)
+		}
+	}
+}
+
+/*QUAKED fx_leaves_blowing (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+blowing leaves Apt to change as effect is being fine tuned.
+follows direction fo pointer
+*/

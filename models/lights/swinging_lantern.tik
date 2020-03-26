@@ -1,0 +1,33 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/lights/swinging_lantern
+	skelmodel lantern.skd
+	surface glantern shader glantern
+	surface glanternglass shader glanternglass
+	surface glanterncull shader glanterncull
+}
+init 
+{
+	server
+	{
+		attachmodel models/fx/lanternflame.tik tag_barrel 1
+//		attachmodel models/emitters/lanternflame.tik tag_barrel 1
+	}
+}
+
+animations
+{
+	idle		lantern.skc
+	light_off	lantern.skc
+	{
+		server 
+		{
+			enter removeattachedmodel tag_barrel
+		}
+	}
+}
+
+/*QUAKED lamp_swinging-lantern (0.5 0.0 0.5) (-8 -8 0) (8 8 24)
+*/

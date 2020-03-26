@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/trainswitch
+	skelmodel trainswitch.skd
+	surface trainswitch shader trainswitch
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle	trainswitch.skc
+	move	trainswitch_move.skc
+}
+
+/*QUAKED static_equipment_trainswitch (0.0 0.75 0.5) (-36 -4 0) (8 4 56)
+*/

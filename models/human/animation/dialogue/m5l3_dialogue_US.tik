@@ -1,0 +1,356 @@
+setup
+{
+	path models/human/animation/dialogue/m5l3/A
+}
+
+animations
+{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////    new animations    ///////////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+	///////////(these are OLD - SEE M5L1 SNIPER TOWN)////////////////
+
+
+
+	streamed_dfr_scripted_M5L3_01c	actor_M5L3_01.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_01c
+		}
+	}
+
+	dfr_scripted_M5L3_02g	actor_M5L3_02.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_02g
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_03c	actor_M5L3_03.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_03c
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_04g	actor_M5L3_04.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_04g
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_05f	actor_M5L3_05.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_05f
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_06h	actor_M5L3_06.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_06h
+		}
+	}
+
+
+	dfr_scripted_M5L3_07f	actor_M5L3_07.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_07f
+		}
+	}
+
+	dfr_scripted_M5L3_08c	actor_M5L3_08.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_08c
+		}
+	}
+
+	dfr_scripted_M5L3_09f	actor_M5L3_09.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_09f
+		}
+	}
+
+	dfr_scripted_M5L3_10c	actor_M5L3_10.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_10c
+		}
+	}
+
+	dfr_scripted_M5L3_11h	actor_M5L3_11.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_11h
+		}
+	}
+
+	dfr_scripted_M5L3_12c	actor_M5L3_12.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_12c
+		}
+	}
+
+	dfr_scripted_M5L3_13f	actor_M5L3_13.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_13f
+		}
+	}
+
+	dfr_scripted_M5L3_14c	actor_M5L3_14.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_14c
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_15f	actor_M5L3_15.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_15f
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_16c	actor_M5L3_16.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_16c
+		}
+	}
+
+	dfr_scripted_M5L3_17g	actor_M5L3_17.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_17g
+		}
+	}
+
+	dfr_scripted_M5L3_18f	actor_M5L3_18.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_18f
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_21c	actor_M5L3_21.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_21c
+		}
+	}
+
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////    old animations    ///////////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+	dfr_scripted_M5L3_02g		dfr_scripted_M5L3_02g.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_02g
+		}
+	}
+	dfr_scripted_M5L3_07f		dfr_scripted_M5L3_07f.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_07f
+		}
+	}
+
+	dfr_scripted_M5L3_08c		dfr_scripted_M5L3_08c.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_08c
+		}
+	}
+	dfr_scripted_M5L3_09f		actor_M5L3_09.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_09f
+		}
+	}
+	dfr_scripted_M5L3_10c		actor_M5L3_10.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_10c
+		}
+	}
+
+	dfr_scripted_M5L3_11h		actor_M5L3_11.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_11h
+		}
+	}
+
+	dfr_scripted_M5L3_12c		actor_M5L3_12.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_12c
+		}
+	}
+
+	dfr_scripted_M5L3_13f		actor_M5L3_13.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_13f
+		}
+	}
+
+	dfr_scripted_M5L3_14c	dfr_scripted_M5L3_14c.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_14c
+		}
+	}
+
+	dfr_scripted_M5L3_17g	dfr_scripted_M5L3_17g.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_17g
+		}
+	}
+
+	dfr_scripted_M5L3_18f	dfr_scripted_M5L3_18f.skc
+	{
+		client
+		{
+			first sound dfr_scripted_M5L3_18f
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_01c	streamed_dfr_scripted_M5L3_01c.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_01c
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_03c	streamed_dfr_scripted_M5L3_03c.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_03c
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_04g	streamed_dfr_scripted_M5L3_04g.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_04g
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_05f	streamed_dfr_scripted_M5L3_05f.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_05f
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_06h	streamed_dfr_scripted_M5L3_06h.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_06h
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_15f	streamed_dfr_scripted_M5L3_15f.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_15f
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_16c	streamed_dfr_scripted_M5L3_16c.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_16c
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_19c	streamed_dfr_scripted_M5L3_19c.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_19c
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_20f	streamed_dfr_scripted_M5L3_20f.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_20f
+		}
+	}
+
+	streamed_dfr_scripted_M5L3_21c	streamed_dfr_scripted_M5L3_21c.skc
+	{
+		client
+		{
+			first sound streamed_dfr_scripted_M5L3_21c
+		}
+	}
+
+	dfr_follow_05g			actor_follow_05.skc
+	{
+		client
+		{
+			first sound dfr_follow_05g
+		}
+	}
+
+
+
+}

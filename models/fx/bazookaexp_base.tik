@@ -1,0 +1,178 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		cache gren_boom.spr
+		cache vsssource.spr
+
+		sfx sound bazooka_exp
+
+		// big, sudden flash of light
+		delayedsfx 0.1 blockdlight 300 0.25
+		(
+			color 0.7 0.7 0.7
+			colorvelocity -2.2 -2.2 -2.2
+			scalerate -1.0
+		)
+		
+		// smaller, decaying light
+		sfx blockdlight 250 0.65
+		(
+			//color 0.5 0.4 0.3
+			color 0.89 0.9 0.8039
+			colorvelocity -0.5 -0.5 -0.5
+			scalerate -0.6
+		)
+		
+		// sparks
+//		delayedsfx 0.1 originspawn
+//		(
+//			alpha 0.5
+//			offset crandom 10 crandom 10 crandom 10
+//			count 30
+//			model models/fx/bh_metal_fastpiece.tik
+//			align
+//			randvel crandom 700 crandom 700 crandom 700
+//			accel 0 0 -3000
+//			life 0.15 0.1
+//			scalemin 2.0
+//			scalemax 4.0
+//			scalerate -0.6
+//			fade
+//		)
+
+		// animated explosion
+		sfx originspawn
+		(
+			model gren_boom.spr
+			randvel 0 0 20
+			alpha 1.0
+			life 0.35
+			scale .5
+//			offset 0 0 16
+//			scalerate 0.8
+			fadedelay 0.5
+		)
+
+		// bright flash
+//		sfx originspawn
+//		(
+//			model grenexp_flash.spr
+//			color 1 .9 .7
+//			scalerate 9
+//			life 0.1
+//			fade
+//		)
+
+		// spherical smoke
+//		sfx originspawn
+//		(
+//			volumetric
+//			model grenade
+//			collision
+//			sphere
+//			radius 30
+//			velocity 24
+//			randvel 0 0 12
+//			life 100
+//			scale 12
+//			alpha 0.8
+//			color 0.65 0.6 0.55 // RBG color of the smoke
+//		)
+//
+//		// spherical smoke
+//		delayedsfx 0.1 originspawn
+//		(
+//			volumetric
+//			model grenade
+//			collision
+//			sphere
+//			radius 24
+//			velocity 16
+//			randvel 0 0 10
+//			life 40
+//			scale 12
+//			alpha 0.8
+//			color 0.65 0.6 0.55 // RBG color of the smoke
+//		)
+//
+//		// spherical smoke
+//		delayedsfx 0.2 originspawn
+//		(
+//			volumetric
+//			model grenade
+//			collision
+//			sphere
+//			radius 16
+//			velocity 8
+//			randvel 0 0 8
+//			life 40
+//			scale 12
+//			alpha 0.8
+//			color 0.65 0.6 0.55 // RBG color of the smoke
+//		)
+//
+//		// long lingering smoke
+//		delayedsfx 0.5 originspawn
+//		(
+//			volumetric
+//			model mist
+////			accel 36
+//			collision
+//			velocity 0
+//			randvel 0 0 24
+//			life 20
+//			scale 12
+//			alpha 0.75
+//			color 0.6 0.55 0.5 // RBG color of the smoke
+//		)
+//
+//		// long lingering smoke
+//		delayedsfx 0.6 originspawn
+//		(
+//			volumetric
+//			model mist
+////			accel 36
+//			collision
+//			velocity 0
+//			randvel 0 0 24
+//			life 20
+//			scale 12
+//			alpha 0.75
+//			color 0.6 0.55 0.5 // RBG color of the smoke
+//		)
+
+		sfx originspawn
+		(
+			model vsssource.spr
+			spritegridlighting
+			count 32
+			radius 32
+			radialvelocity 0 64 96
+			friction 0.6
+			color .2 .2 .2
+			alpha 0.7
+			fadein 1.5
+			fadedelay 1.5
+			scalemin 2
+			scalemax 3
+			scalerate .25
+			life 2.5 1
+			collision
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

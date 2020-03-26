@@ -1,0 +1,87 @@
+TIKI
+
+
+
+setup
+{
+	scale 0.52
+	path models/human/manon   		// Set path to set skelmodel from
+	skelmodel manon.skd			// Set body model
+
+	surface coat shader manon_shirt
+	surface cull_coat shader c_manon_shirt
+	surface pants shader manon_pants
+	surface inside shader manon_shirt
+	surface hand shader manon_hands
+
+	path models/human/heads			// Set new path for head model
+	skelmodel manon_head.skd			// Set head model
+	surface manon shader manon_head
+	
+
+	
+
+	
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+	path models/equipment/usgear
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** MP40 submachinegun
+	case weapon "MP40"
+	{
+		
+
+		//path models/gear/manon
+		
+		
+
+	}
+
+//*** end weapon equipment assignment
+//************************************
+
+
+	
+
+	
+
+	scale 0.52				// Set default scale to 16/30.5 since world is
+						// in 16 units per foot and model is in cm's
+	path models/human/protoanimations	// Set path to set animations from
+
+	radius 20				// Defines size of shadow
+}
+
+init
+{
+	server
+	{
+      	classname Actor
+      	american
+		setsize "-16 -16 0" "16 16 92"
+		health 100
+		weapon "MP40"
+
+		// Manon doesn't smoke
+		exec global/setsmoke.scr 0
+	}
+}
+
+//
+// include the base animations definition
+//
+
+$include models/human/animation/dialogue/generic_dialogue_US.tik
+$include models/human/new_generic_human.tik
+
+
+/*QUAKED ai_allied_misc_manon (1.0 0.5 0.0) (-16 -16 0) (16 16 96)
+*/

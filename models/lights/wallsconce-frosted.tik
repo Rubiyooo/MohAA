@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/lights/wallsconce-frosted
+	skelmodel wallsconce-frosted.skd
+	surface wallsconce-frosted shader static_wallsconce-frosted
+}
+
+animations
+{
+	idle    wallsconce-frosted.skc
+}
+
+/*QUAKED static_lamp_wallsconce-frosted (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

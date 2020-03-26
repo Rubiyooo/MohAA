@@ -1,0 +1,61 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+
+		cache grass_piece.spr
+
+		sfx originspawn
+		(
+			model grass_piece.spr
+			count 10
+			color 1.00 1.00 1.00
+			spritegridlighting
+			scale 0.50
+			life 1.70
+			cone 20.00 10.00
+			velocity 700.00
+			randvel 80 random 80 80
+			accel 0.00 0.00 -900.00
+			friction 4.00
+			angles range -90 50 range 50 -90 range -90 50
+			avelocity range -100 50 range -100 50 crandom -50
+			fade
+			offsetalongaxis 0 125 0
+			sphere
+		)
+
+	        sfx originspawn
+		(
+			model grass_piece.spr
+			count 10
+			color 1.00 1.00 1.00
+			spritegridlighting
+			scale 0.20
+			life 1.00
+			scalerate 1.00
+			radius 1.00
+			velocity 100.00
+			radialvelocity 0.00 128.00 600.00
+			scalemin 0.05
+			scalemax 0.09
+			fade
+			randomroll
+			offsetalongaxis 0 125 0
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

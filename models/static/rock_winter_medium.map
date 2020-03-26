@@ -1,0 +1,359 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 2 7 27 ) ( -16 6 15 ) ( 4 18 23 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 4 18 23 ) ( -4 6 10 ) ( 2 7 27 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -16 6 15 ) ( -4 6 10 ) ( 4 18 23 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 2 7 27 ) ( -4 6 10 ) ( -16 6 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 1
+{
+( 4 18 23 ) ( -16 22 16 ) ( -3 25 17 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -3 25 17 ) ( -4 6 10 ) ( 4 18 23 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -16 22 16 ) ( -4 6 10 ) ( -3 25 17 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -16 22 16 ) ( 4 18 23 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 2
+{
+( -27 13 11 ) ( -16 6 15 ) ( -26 -6 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -27 13 11 ) ( -26 -6 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -16 6 15 ) ( -4 6 10 ) ( -26 -6 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -27 13 11 ) ( -4 6 10 ) ( -16 6 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 3
+{
+( -14 -3 28 ) ( -18 -18 22 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -11 -12 28 ) ( -14 -3 28 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -18 -18 22 ) ( -11 -12 28 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -11 -12 28 ) ( -18 -18 22 ) ( -14 -3 28 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 4
+{
+( 3 -17 25 ) ( -14 -3 28 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -11 -12 28 ) ( 3 -17 25 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -14 -3 28 ) ( -11 -12 28 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 3 -17 25 ) ( -11 -12 28 ) ( -14 -3 28 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 5
+{
+( 4 18 23 ) ( 2 7 27 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 17 0 15 ) ( 4 18 23 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 2 7 27 ) ( 17 0 15 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 17 0 15 ) ( 2 7 27 ) ( 4 18 23 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 6
+{
+( -3 25 17 ) ( 9 22 12 ) ( 15 14 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 15 14 15 ) ( -4 6 10 ) ( -3 25 17 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 9 22 12 ) ( -4 6 10 ) ( 15 14 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -3 25 17 ) ( -4 6 10 ) ( 9 22 12 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 7
+{
+( 12 -7 9 ) ( 13 -8 0 ) ( 7 -19 -1 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 7 -19 -1 ) ( -4 6 10 ) ( 12 -7 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 -8 0 ) ( -4 6 10 ) ( 7 -19 -1 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 13 -8 0 ) ( 12 -7 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 8
+{
+( -23 -9 3 ) ( -26 -6 15 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -27 13 11 ) ( -23 -9 3 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -26 -6 15 ) ( -27 13 11 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -23 -9 3 ) ( -27 13 11 ) ( -26 -6 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 9
+{
+( -16 22 16 ) ( -13 27 12 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -27 13 11 ) ( -16 22 16 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -13 27 12 ) ( -27 13 11 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -27 13 11 ) ( -13 27 12 ) ( -16 22 16 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 10
+{
+( -13 27 12 ) ( -25 7 0 ) ( -21 21 1 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -21 21 1 ) ( -4 6 10 ) ( -13 27 12 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -25 7 0 ) ( -4 6 10 ) ( -21 21 1 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -25 7 0 ) ( -13 27 12 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 11
+{
+( -3 29 4 ) ( -13 27 12 ) ( -21 21 1 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -21 21 1 ) ( -4 6 10 ) ( -3 29 4 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -13 27 12 ) ( -4 6 10 ) ( -21 21 1 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -13 27 12 ) ( -3 29 4 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 12
+{
+( 9 22 12 ) ( -3 29 4 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -3 25 17 ) ( 9 22 12 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -3 29 4 ) ( -3 25 17 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -3 25 17 ) ( -3 29 4 ) ( 9 22 12 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 13
+{
+( -5 -9 -1 ) ( 7 -19 -1 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 -25 11 ) ( -5 -9 -1 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 7 -19 -1 ) ( -4 -25 11 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -5 -9 -1 ) ( -4 -25 11 ) ( 7 -19 -1 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 14
+{
+( -5 -9 -1 ) ( -4 -25 11 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -19 -17 9 ) ( -5 -9 -1 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 -25 11 ) ( -19 -17 9 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -5 -9 -1 ) ( -19 -17 9 ) ( -4 -25 11 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 15
+{
+( -23 -9 3 ) ( -5 -9 -1 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -19 -17 9 ) ( -23 -9 3 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -5 -9 -1 ) ( -19 -17 9 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -23 -9 3 ) ( -19 -17 9 ) ( -5 -9 -1 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 16
+{
+( -23 -9 3 ) ( -25 7 0 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -8 9 -3 ) ( -23 -9 3 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -25 7 0 ) ( -8 9 -3 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -8 9 -3 ) ( -25 7 0 ) ( -23 -9 3 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 17
+{
+( -23 -9 3 ) ( -8 9 -3 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -5 -9 -1 ) ( -23 -9 3 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -8 9 -3 ) ( -5 -9 -1 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -23 -9 3 ) ( -5 -9 -1 ) ( -8 9 -3 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 18
+{
+( -25 7 0 ) ( -21 21 1 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -8 9 -3 ) ( -25 7 0 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -21 21 1 ) ( -8 9 -3 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -8 9 -3 ) ( -21 21 1 ) ( -25 7 0 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 19
+{
+( -7 25 -2 ) ( -3 29 4 ) ( -21 21 1 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -21 21 1 ) ( -4 6 10 ) ( -7 25 -2 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -3 29 4 ) ( -4 6 10 ) ( -21 21 1 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -7 25 -2 ) ( -4 6 10 ) ( -3 29 4 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 20
+{
+( -21 21 1 ) ( -7 25 -2 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -8 9 -3 ) ( -21 21 1 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -7 25 -2 ) ( -8 9 -3 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -21 21 1 ) ( -8 9 -3 ) ( -7 25 -2 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 21
+{
+( 13 26 3 ) ( 13 10 0 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 8 21 -2 ) ( 13 26 3 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 10 0 ) ( 8 21 -2 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 26 3 ) ( 8 21 -2 ) ( 13 10 0 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 22
+{
+( -7 25 -2 ) ( 8 21 -2 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -8 9 -3 ) ( -7 25 -2 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 8 21 -2 ) ( -8 9 -3 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -7 25 -2 ) ( -8 9 -3 ) ( 8 21 -2 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 23
+{
+( 8 21 -2 ) ( 13 10 0 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -8 9 -3 ) ( 8 21 -2 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 10 0 ) ( -8 9 -3 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 8 21 -2 ) ( -8 9 -3 ) ( 13 10 0 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 24
+{
+( 13 10 0 ) ( -5 -9 -1 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -8 9 -3 ) ( 13 10 0 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -5 -9 -1 ) ( -8 9 -3 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 10 0 ) ( -8 9 -3 ) ( -5 -9 -1 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 25
+{
+( 13 -8 0 ) ( -5 -9 -1 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 13 10 0 ) ( 13 -8 0 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -5 -9 -1 ) ( 13 10 0 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 10 0 ) ( -5 -9 -1 ) ( 13 -8 0 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 26
+{
+( 13 -19 10 ) ( 3 -17 25 ) ( 17 0 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 17 0 15 ) ( 3 -17 25 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 13 -19 10 ) ( 17 0 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -1 -25 20 ) ( -4 6 10 ) ( 3 -17 25 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 -19 10 ) ( -1 -25 20 ) ( 3 -17 25 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -4 -25 11 ) ( 13 -19 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -1 -25 20 ) ( -4 -25 11 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 -19 10 ) ( -4 -25 11 ) ( -1 -25 20 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 27
+{
+( 2 7 27 ) ( 3 -17 25 ) ( -14 -3 28 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 2 7 27 ) ( -14 -3 28 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -14 -3 28 ) ( 3 -17 25 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 2 7 27 ) ( 17 0 15 ) ( 3 -17 25 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 17 0 15 ) ( -4 6 10 ) ( 3 -17 25 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 17 0 15 ) ( 2 7 27 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 28
+{
+( -18 -18 22 ) ( -11 -12 28 ) ( -1 -25 20 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -18 -18 22 ) ( -1 -25 20 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -11 -12 28 ) ( -18 -18 22 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -11 -12 28 ) ( 3 -17 25 ) ( -1 -25 20 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -1 -25 20 ) ( 3 -17 25 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 3 -17 25 ) ( -11 -12 28 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 29
+{
+( 13 -19 10 ) ( -4 6 10 ) ( 12 -7 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 7 -19 -1 ) ( 12 -7 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 7 -19 -1 ) ( 13 -19 10 ) ( 12 -7 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 7 -19 -1 ) ( -4 -25 11 ) ( 13 -19 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 -19 10 ) ( -4 -25 11 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -4 -25 11 ) ( 7 -19 -1 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 30
+{
+( 12 -7 9 ) ( 17 0 15 ) ( 15 14 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 17 0 15 ) ( -4 6 10 ) ( 15 14 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 12 -7 9 ) ( 15 14 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 12 -7 9 ) ( 13 -19 10 ) ( 17 0 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 -19 10 ) ( -4 6 10 ) ( 17 0 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 13 -19 10 ) ( 12 -7 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 31
+{
+( 14 12 5 ) ( 9 22 12 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 15 14 15 ) ( -4 6 10 ) ( 9 22 12 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 14 12 5 ) ( 15 14 15 ) ( 9 22 12 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 12 -7 9 ) ( 14 12 5 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 15 14 15 ) ( 12 -7 9 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 14 12 5 ) ( 12 -7 9 ) ( 15 14 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 32
+{
+( 14 12 5 ) ( 13 10 0 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 26 3 ) ( -4 6 10 ) ( 13 10 0 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 14 12 5 ) ( 13 26 3 ) ( 13 10 0 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 9 22 12 ) ( 14 12 5 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 26 3 ) ( 9 22 12 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 9 22 12 ) ( 13 26 3 ) ( 14 12 5 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 33
+{
+( -16 6 15 ) ( 2 7 27 ) ( -14 -3 28 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -14 -3 28 ) ( 2 7 27 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -16 6 15 ) ( -4 6 10 ) ( 2 7 27 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -14 -3 28 ) ( -26 -6 15 ) ( -16 6 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -26 -6 15 ) ( -14 -3 28 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -16 6 15 ) ( -26 -6 15 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 34
+{
+( -4 6 10 ) ( -27 13 11 ) ( -16 6 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -16 22 16 ) ( -27 13 11 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -16 22 16 ) ( -16 6 15 ) ( -27 13 11 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -16 6 15 ) ( 4 18 23 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 4 18 23 ) ( -16 22 16 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -16 22 16 ) ( 4 18 23 ) ( -16 6 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 35
+{
+( -25 7 0 ) ( -27 13 11 ) ( -23 -9 3 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -25 7 0 ) ( -23 -9 3 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -27 13 11 ) ( -4 6 10 ) ( -23 -9 3 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -27 13 11 ) ( -13 27 12 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -13 27 12 ) ( -25 7 0 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -25 7 0 ) ( -13 27 12 ) ( -27 13 11 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 36
+{
+( 12 -7 9 ) ( 13 -8 0 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 14 12 5 ) ( 12 -7 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 14 12 5 ) ( 13 -8 0 ) ( 12 -7 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 -8 0 ) ( 13 10 0 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 13 10 0 ) ( 14 12 5 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 14 12 5 ) ( 13 10 0 ) ( 13 -8 0 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 37
+{
+( 4 18 23 ) ( -4 6 10 ) ( -3 25 17 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 15 14 15 ) ( -3 25 17 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 15 14 15 ) ( 4 18 23 ) ( -3 25 17 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( 17 0 15 ) ( 15 14 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 4 18 23 ) ( 17 0 15 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 17 0 15 ) ( 4 18 23 ) ( 15 14 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 38
+{
+( -18 -18 22 ) ( -4 -25 11 ) ( -19 -17 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 -25 11 ) ( -4 6 10 ) ( -19 -17 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -18 -18 22 ) ( -19 -17 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -18 -18 22 ) ( -1 -25 20 ) ( -4 -25 11 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 -25 11 ) ( -1 -25 20 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -1 -25 20 ) ( -18 -18 22 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 39
+{
+( -3 25 17 ) ( -13 27 12 ) ( -3 29 4 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -13 27 12 ) ( -4 6 10 ) ( -3 29 4 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -3 25 17 ) ( -3 29 4 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -16 22 16 ) ( -3 25 17 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -13 27 12 ) ( -16 22 16 ) ( -4 6 10 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -3 25 17 ) ( -16 22 16 ) ( -13 27 12 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 40
+{
+( 8 21 -2 ) ( -4 6 10 ) ( 13 26 3 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -7 25 -2 ) ( -4 6 10 ) ( 8 21 -2 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 8 21 -2 ) ( 13 26 3 ) ( -7 25 -2 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 26 3 ) ( 9 22 12 ) ( -3 29 4 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 9 22 12 ) ( -4 6 10 ) ( -3 29 4 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 26 3 ) ( -4 6 10 ) ( 9 22 12 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( 13 26 3 ) ( -3 29 4 ) ( -7 25 -2 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -3 29 4 ) ( -4 6 10 ) ( -7 25 -2 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 41
+{
+( -4 6 10 ) ( -19 -17 9 ) ( -18 -18 22 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -26 -6 15 ) ( -18 -18 22 ) ( -19 -17 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -23 -9 3 ) ( -19 -17 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -26 -6 15 ) ( -23 -9 3 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -23 -9 3 ) ( -26 -6 15 ) ( -19 -17 9 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -26 -6 15 ) ( -14 -3 28 ) ( -18 -18 22 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -14 -3 28 ) ( -4 6 10 ) ( -18 -18 22 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+( -4 6 10 ) ( -14 -3 28 ) ( -26 -6 15 ) common/snowclip 56 -44 0.00 1 1 536870912 67109024 0 +surfaceparm weaponclip 
+}
+// brush 42
+{
+( -10.999996 21.000004 17 ) ( -23 9 17 ) ( -24 -1.363637 17 ) common/clip -1 28 0.00 1 1 196608 2193 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( 5 -13 28 ) ( -14 -13 28 ) ( -14 5 28 ) common/clip -1 28 0.00 1 1 196608 2193 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( -13 -9 28 ) ( 6 -9 28 ) ( 19 -21 16 ) common/clip -1 47 0.00 1 1 196608 2193 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( 1 -24 28 ) ( 1 32 28 ) ( 14 32 16 ) common/clip -1 47 0.00 1 1 196608 2193 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( 16 -3 16 ) ( 7 -19 16 ) ( 11.500000 -11 28 ) common/clip 0 47 0.00 1 1 196608 2193 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( -10 -23 16 ) ( -21 -6 16 ) ( -15.500000 -14.500000 28 ) common/clip 0 47 0.00 1 1 196608 2193 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( -23 -4 17 ) ( -5 18 17 ) ( 0 6 27 ) common/clip 0 47 0.00 1 1 196608 2193 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( -4 19 17 ) ( 13 15 17 ) ( -1 -5 28 ) common/clip 0 47 0.00 1 1 196608 2193 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+}
+// brush 43
+{
+( 18 34 -3 ) ( -26 34 -3 ) ( -26 -27 -3 ) common/clip 0 28 0.00 1 1 536870912 160 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( -29 -27 16 ) ( -29 34 16 ) ( 15 34 16 ) common/clip 0 28 0.00 1 1 536870912 160 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( -26 -21 15 ) ( 18 -21 15 ) ( 18 -21 2 ) common/clip 0 28 0.00 1 1 536870912 160 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( 15 -26 15 ) ( 15 35 15 ) ( 15 35 2 ) common/clip 0 28 0.00 1 1 536870912 160 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( 18 26 15 ) ( -26 26 15 ) ( -26 26 2 ) common/clip 0 28 0.00 1 1 536870912 160 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( -24 34 15 ) ( -24 -27 15 ) ( -24 -27 2 ) common/clip 0 28 0.00 1 1 536870912 160 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( -13 -21 -3 ) ( -24 -7 -3 ) ( -18.500000 -14 16 ) common/clip 0 28 0.00 1 1 536870912 160 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( -24 13 -3 ) ( -13 25 -3 ) ( -18.500000 19 16 ) common/clip 0 28 0.00 1 1 536870912 160 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( 5 26 -3 ) ( 13 17 -3 ) ( 9 21.500000 16 ) common/clip 0 28 0.00 1 1 536870912 160 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+( 15 -6 -3 ) ( 8 -21 -3 ) ( 11.500000 -13.500000 16 ) common/clip 0 28 0.00 1 1 536870912 160 0 -surfaceparm solid +surfaceparm playerclip +surfaceparm detail 
+}
+}

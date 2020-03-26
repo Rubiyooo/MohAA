@@ -1,0 +1,11 @@
+animations // Now list all of the animations and any special commands for them
+{
+$path models/human/animation
+
+	//----------
+	//plunger animations//
+	//----------
+
+	plunger_set		scripted/set_explosive/plunger_set.skc		
+	plunger_fire	scripted/set_explosive/plunger_fire.skc
+}

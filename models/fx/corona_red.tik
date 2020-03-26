@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 16
+	path models/fx/unitsquare
+	skelmodel unitsquare.skd
+	surface material1 shader corona_red
+}
+
+animations
+{
+	idle     unitsquare.skc
+}
+
+/*QUAKED fx_corona_red (0.5 0.0 0.5) (-8 -8 -8) (8 8 8)
+*/

@@ -1,0 +1,44 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+	}
+
+	client
+	{
+		cache vsssource.spr
+
+		originemitter test
+		(
+			model vsssource.spr
+			color 0.2 0.2 0.2
+			alpha .7
+			fadein 1
+			fadedelay 1
+			spawnrate 32
+			life 3 1
+			circle
+			radius 16
+			radialvelocity 0 96 144
+			friction 0.7
+			scalemin 3
+			scalemax 4
+			scalerate .25
+		)
+	}
+}
+
+animations
+{
+	idle dummy2.skc 
+}

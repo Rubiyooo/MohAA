@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.65			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel airtank.skd
+	surface material1 shader static_yellowtank
+	surface material2 shader static_tanktop
+}
+
+animations
+{
+	idle     airtank.skc
+}
+
+/*QUAKED static_uboat_airtank (0 0 0) (-8 -8 0) (8 8 16)
+*/

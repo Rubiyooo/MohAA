@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/nazi_crate
+	skelmodel nazi_crate.skd
+	surface nazi_crate shader nazi_crate
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     nazi_crate.skc
+}
+
+/*QUAKED static_item_nazicrate (0.5 0.0 0.5) (-16 -32 0) (16 32 24)
+Nazi Crate
+*/

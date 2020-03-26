@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	//scale 1.33			// Convert from inches to game units
+	path models/static/barbwire
+	skelmodel barbwire_long.skd
+	surface bplane shader static_bplane
+	surface bspindle shader static_bspindle
+}
+
+animations
+{
+	idle     barbwire_long.skc
+}
+
+/*QUAKED static_obstacle_barbwire-long (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

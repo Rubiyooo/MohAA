@@ -1,0 +1,104 @@
+animations
+{
+	$path models/human/animation
+
+	//========================
+	// Garand Anims
+	//========================
+	garand_idle1	 	viewmodel/rifle/idle_rifle.skc					crossblend 0.2		weight 1.0
+	//garand_idle2		viewmodel/idle_rifle2.skc						crossblend 0.2		weight 0.5	dontrepeate
+	//garand_idle3		viewmodel/idle_rifle3.skc						crossblend 0.2		weight 0.1	dontrepeate
+	garand_fire			viewmodel/rifle/fire_rifle_stand.skc			crossblend 0.05
+	garand_reload		viewmodel/rifle/vm_riflereload.skc				crossblend 0.05
+	garand_pullout		viewmodel/rifle/raise_rifle_standplayer.skc
+	{
+		client
+		{
+			enter sound snd_rifle_pullout
+		}
+	}
+	garand_putaway		viewmodel/rifle/lower_rifle_stand.skc
+	{
+		client
+		{
+			enter sound snd_rifle_putaway
+		}
+	}
+
+	//========================
+	// Springfield Anims
+	//========================
+	springfield_idle1	 		viewmodel/rifle/idle_rifle.skc					crossblend 0.2		weight 1.0
+	//springfield_idle2			viewmodel/idle_rifle2.skc						crossblend 0.2		weight 0.5	dontrepeate
+	//springfield_idle3			viewmodel/idle_rifle3.skc						crossblend 0.2		weight 0.1	dontrepeate
+	springfield_fire			viewmodel/rifle/fire_rifle_stand.skc			crossblend 0.05
+	springfield_rechamber		viewmodel/rifle/vm_springrecham.skc				crossblend 0.1
+	springfield_reload			viewmodel/rifle/springfield_reload_start.skc	crossblend 0.05
+	springfield_reload_single	viewmodel/rifle/springfield_reload_fill.skc		crossblend 0
+	springfield_reload_end		viewmodel/rifle/springfield_reload_end.skc		crossblend 0.0
+	springfield_pullout			viewmodel/rifle/raise_rifle_standplayer.skc
+	{
+		client
+		{
+			enter sound snd_rifle_pullout
+		}
+	}
+	springfield_putaway			viewmodel/rifle/lower_rifle_stand.skc
+	{
+		client
+		{
+			enter sound snd_rifle_putaway
+		}
+	}
+
+
+	//========================
+	// KAR98 Anims
+	//========================
+	kar98_idle1	 		viewmodel/rifle/idle_rifle.skc			crossblend 0.2		weight 1.0
+	//kar98_idle2		viewmodel/idle_rifle2.skc				crossblend 0.2		weight 0.5	dontrepeate
+	//kar98_idle3		viewmodel/idle_rifle3.skc				crossblend 0.2		weight 0.1	dontrepeate
+	kar98_fire			viewmodel/rifle/fire_rifle_stand.skc	crossblend 0.05
+	kar98_rechamber		viewmodel/rifle/kar98_rechamber.skc		crossblend 0.1
+	kar98_reload		viewmodel/rifle/kar98_reload.skc		crossblend 0.05
+	kar98_pullout		viewmodel/rifle/raise_rifle_standplayer.skc
+	{
+		client
+		{
+			enter sound snd_rifle_pullout
+		}
+	}
+	kar98_putaway		viewmodel/rifle/lower_rifle_stand.skc
+	{
+		client
+		{
+			enter sound snd_rifle_putaway
+		}
+	}
+
+	//========================
+	// KAR98 Sniper Anims
+	//========================
+	kar98sniper_idle1	 		viewmodel/rifle/idle_rifle.skc					crossblend 0.2		weight 1.0
+	//kar98sniper_idle2			viewmodel/idle_rifle2.skc						crossblend 0.2		weight 0.5	dontrepeate
+	//kar98sniper_idle3			viewmodel/idle_rifle3.skc						crossblend 0.2		weight 0.1	dontrepeate
+	kar98sniper_fire			viewmodel/rifle/fire_rifle_stand.skc			crossblend 0.05
+	kar98sniper_rechamber		viewmodel/rifle/kar98_rechamber.skc		crossblend 0.1
+	kar98sniper_reload			viewmodel/rifle/springfield_reload_start.skc	crossblend 0.05
+	kar98sniper_reload_single	viewmodel/rifle/springfield_reload_fill.skc		crossblend 0
+	kar98sniper_reload_end		viewmodel/rifle/springfield_reload_end.skc		crossblend 0.0
+	kar98sniper_pullout			viewmodel/rifle/raise_rifle_standplayer.skc
+	{
+		client
+		{
+			enter sound snd_rifle_pullout
+		}
+	}
+	kar98sniper_putaway			viewmodel/rifle/lower_rifle_stand.skc
+	{
+		client
+		{
+			enter sound snd_rifle_putaway
+		}
+	}
+}

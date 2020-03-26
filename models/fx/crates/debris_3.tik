@@ -1,0 +1,38 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		cache cardboard-gib.spr
+		
+		originspawn
+		(
+			model cardboard-gib.spr
+			count 6
+			offset crandom 16 crandom 16 crandom 16
+			radialvelocity 2 0 64
+			randvel 0 0 32
+			accel 0 0 -400
+			friction 0.25
+			angles crandom 90 crandom 180 crandom 180
+			avelocity 0 0 crandom 360
+			life 8 2
+			fadedelay 7
+			collision
+			bouncefactor 0.2
+			scale 0.5
+		)
+	}
+}
+
+animations
+{
+	idle dummy2.skc
+}

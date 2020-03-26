@@ -1,0 +1,11 @@
+animations 
+{
+	$path models/human/animation
+
+	//----------
+	//hiding in closets
+	//----------
+
+	cabinet_hiding_attack		scripted/hidden_cabinet/jumpout.skc		
+	cabinet_hiding_death		scripted/hidden_cabinet/cabinet_death.skc
+}

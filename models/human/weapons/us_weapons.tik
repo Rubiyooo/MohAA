@@ -1,0 +1,7 @@
+path models/equipment/USGear
+
+case weapon "M1 Garand"
+{
+	skelmodel usriflebelt.skd
+	surface usammobelt shader usammobelt
+}

@@ -1,0 +1,34 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 30 -2 0 ) ( 30 2 0 ) ( -29 2 0 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( 31 2 19 ) ( 31 -2 19 ) ( -30 -2 19 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( -30 -2 18 ) ( 32 -2 18 ) ( 32 -2 -1 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( 71 6 19 ) ( 71 10 19 ) ( 70 10 0 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( -8 2 19 ) ( -70 2 19 ) ( -70 2 0 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( -70 2 19 ) ( -70 -2 19 ) ( -69 -2 0 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+}
+// brush 1
+{
+( -2 -30 0 ) ( 3 -30 0 ) ( 3 30 0 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( -2 31 19 ) ( 3 31 19 ) ( 3 -30 19 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( -10 -70 19 ) ( -5 -70 19 ) ( -5 -70 0 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( 3 -28 19 ) ( 3 -5 19 ) ( 3 -5 12 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( 11 71 19 ) ( 6 71 19 ) ( 6 70 0 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( -2 -5 19 ) ( -2 -28 19 ) ( -2 -28 12 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+}
+// brush 2
+{
+( 0 -72 16 ) ( 0 -72 24 ) ( 48 -48 24 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( 0 -72 24 ) ( 0 -72 16 ) ( -48 -64 16 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( -72 -16 16 ) ( -72 -16 24 ) ( -48 -64 24 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( -72 -16 24 ) ( -72 -16 16 ) ( -56 40 16 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( 80 8 24 ) ( 80 8 16 ) ( 48 -48 16 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( 8 80 16 ) ( 8 80 24 ) ( -56 40 24 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( 8 80 24 ) ( 8 80 16 ) ( 56 64 16 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( 56 64 24 ) ( 56 64 16 ) ( 80 8 16 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( -30 -32 39 ) ( 34 -32 39 ) ( 34 32 39 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+( 41 32 61 ) ( 41 -32 61 ) ( -23 -32 61 ) common/woodclip 0 0 0.00 1 1 983040 34976 0 +surfaceparm detail 
+}
+}

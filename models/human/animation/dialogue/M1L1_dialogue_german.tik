@@ -1,0 +1,307 @@
+setup
+{
+	path models/human/animation/dialogue/m1l1/G
+}
+
+animations
+{
+	$mapspec M1L1
+	{
+	den_scripted_M1L1_01b	den_scripted_M1L1_01b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_01b
+		}
+	}
+
+	den_scripted_M1L1_02d	den_scripted_M1L1_02d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_02d
+		}
+	}
+
+	den_scripted_M1L1_03b	den_scripted_M1L1_03b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_03b
+		}
+	}
+
+	den_scripted_M1L1_04d	den_scripted_M1L1_04d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_04d
+		}
+	}
+
+	den_scripted_M1L1_05b	den_scripted_M1L1_05b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_05b
+		}
+	}
+	den_scripted_M1L1_06b	den_scripted_M1L1_06b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_06b
+		}
+	}
+
+	den_scripted_M1L1_07d	den_scripted_M1L1_07d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_07d
+		}
+	}
+
+	den_scripted_M1L1_08b	den_scripted_M1L1_08b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_08b
+		}
+	}
+
+	den_scripted_M1L1_09d	den_scripted_M1L1_09d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_09d
+		}
+	}
+
+	den_scripted_M1L1_10b	den_scripted_M1L1_10b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_10b
+		}
+	}
+
+	den_scripted_M1L1_11d	den_scripted_M1L1_11d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_11d
+		}
+	}
+
+	den_scripted_M1L1_12b	den_scripted_M1L1_12b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_12b
+		}
+	}
+
+	den_scripted_M1L1_13d	den_scripted_M1L1_13d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_13d
+		}
+	}
+
+	den_scripted_M1L1_14b	den_scripted_M1L1_14b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_14b
+		}
+	}
+
+	den_scripted_M1L1_15d	den_scripted_M1L1_15d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_15d
+		}
+	}
+
+	den_scripted_M1L1_16b	den_scripted_M1L1_16b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_16b
+		}
+	}
+
+	den_scripted_M1L1_17d	den_scripted_M1L1_17d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_17d
+		}
+	}
+
+	den_scripted_M1L1_18b	den_scripted_M1L1_18b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_18b
+		}
+	}
+
+	den_scripted_M1L1_19b	den_scripted_M1L1_19b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_19b
+		}
+	}
+
+	den_scripted_M1L1_20d	den_scripted_M1L1_20d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_20d
+		}
+	}
+
+	den_scripted_M1L1_21b	den_scripted_M1L1_21b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_21b
+		}
+	}
+
+	den_scripted_M1L1_22d	den_scripted_M1L1_22d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_22d
+		}
+	}
+
+	den_scripted_M1L1_23b	den_scripted_M1L1_23b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_23b
+		}
+	}
+
+	den_scripted_M1L1_24d	den_scripted_M1L1_24d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_24d
+		}
+	}
+
+	den_scripted_M1L1_25b	den_scripted_M1L1_25b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_25b
+		}
+	}
+
+	den_scripted_M1L1_26d	den_scripted_M1L1_26d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_26d
+		}
+	}
+
+	den_scripted_M1L1_27b	den_scripted_M1L1_27b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_27b
+		}
+	}
+
+	den_scripted_M1L1_27b	den_scripted_M1L1_27b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_27b
+		}
+	}
+
+	den_scripted_M1L1_28d	den_scripted_M1L1_28d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_28d
+		}
+	}
+
+	den_scripted_M1L1_29b	den_scripted_M1L1_29b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_29b
+		}
+	}
+
+	den_scripted_M1L1_30d	den_scripted_M1L1_30d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_30d
+		}
+	}
+
+	den_scripted_M1L1_31b	den_scripted_M1L1_31b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_31b
+		}
+	}
+
+	den_scripted_M1L1_34d	den_scripted_M1L1_34d.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_34d
+		}
+	}
+
+	den_scripted_M1L1_35b	den_scripted_M1L1_35b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_35b
+		}
+	}
+
+	den_scripted_M1L1_36b	den_scripted_M1L1_36b.skc
+	{
+		client
+		{
+			first sound den_scripted_M1L1_36b
+		}
+	}
+
+	den_scripted_M1L1_32d	den_scripted_M1L1_32d.skc
+	{
+		client
+		{
+			first sound streamed_den_scripted_M1L1_32d
+		}
+	}
+
+	den_scripted_M1L1_33b	den_scripted_M1L1_33b.skc
+	{
+		client
+		{
+			first sound streamed_den_scripted_M1L1_33b
+		}
+	}
+
+	}//end mapspec M1L1
+
+}

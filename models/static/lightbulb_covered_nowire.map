@@ -1,0 +1,16 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 40 -36 18 ) ( -40 -36 18 ) ( -40 32 18 ) common/metalclip 0 0 0.00 0.500000 0.500000 0 0 0 +surfaceparm weaponclip surfaceColor -1.000000 -1.000000 -1.000000 
+( -41 -36 1 ) ( 39 -36 1 ) ( 39 32 1 ) common/metalclip 0 0 0.00 0.500000 0.500000 0 0 0 +surfaceparm weaponclip surfaceColor -1.000000 -1.000000 -1.000000 
+( 0 36 16 ) ( 0 36 0 ) ( 36 22 0 ) common/metalclip 0 0 0.00 0.500000 0.500000 0 0 0 +surfaceparm weaponclip surfaceColor -1.000000 -1.000000 -1.000000 
+( 26 -25 0 ) ( 26 -25 16 ) ( 36 0 16 ) common/metalclip 0 0 0.00 0.500000 0.500000 0 0 0 +surfaceparm weaponclip surfaceColor -1.000000 -1.000000 -1.000000 
+( 0 -36 16 ) ( 0 -36 0 ) ( -26 -26 0 ) common/metalclip 0 0 0.00 0.500000 0.500000 0 0 0 +surfaceparm weaponclip surfaceColor -1.000000 -1.000000 -1.000000 
+( -26 -26 0 ) ( -36 0 0 ) ( -31 -13 16 ) common/metalclip 0 0 0.00 0.500000 0.500000 0 0 0 +surfaceparm weaponclip surfaceColor -1.000000 -1.000000 -1.000000 
+( -36 0 0 ) ( -26 26 0 ) ( -31 13 16 ) common/metalclip 0 0 0.00 0.500000 0.500000 0 0 0 +surfaceparm weaponclip surfaceColor -1.000000 -1.000000 -1.000000 
+( 0 36 0 ) ( 0 36 16 ) ( -26 26 16 ) common/metalclip 0 0 0.00 0.500000 0.500000 0 0 0 +surfaceparm weaponclip surfaceColor -1.000000 -1.000000 -1.000000 
+( 36 0 0 ) ( 36 0 16 ) ( 25 26 16 ) common/metalclip 0 0 0.00 0.500000 0.500000 0 0 0 +surfaceparm weaponclip surfaceColor -1.000000 -1.000000 -1.000000 
+( 0 -36 0 ) ( 0 -36 16 ) ( 26 -25 16 ) common/metalclip 0 0 0.00 0.500000 0.500000 0 0 0 +surfaceparm weaponclip surfaceColor -1.000000 -1.000000 -1.000000 
+}
+}

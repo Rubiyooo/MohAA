@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	scale 1				// Convert from inches to game units
+	path models/static/norstuff
+	skelmodel wirerailholder.skd
+	surface material1 shader static_wirerailholder
+	surface material3 shader static_wirerailholder
+}
+animations
+{
+	idle wirerailholder.skc
+}
+
+/*QUAKED static_obstacle_wirerailholder (0.5 0.0 0.5) (-8 -8 0) (8 8 56)
+*/

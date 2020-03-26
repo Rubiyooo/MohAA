@@ -1,0 +1,20 @@
+animations 
+{
+	$path models/human/animation
+
+	//----------
+	//tank exit animations
+	//----------
+
+
+	tank_exit_1		scripted/exit_tank/exit01.skc
+	tank_exit_2		scripted/exit_tank/exit02.skc
+	tank_exit_3		scripted/exit_tank/exit03.skc
+	tank_exit_4		scripted/exit_tank/exit04.skc
+
+	panzer_exit_1		scripted/exit_tank/panzer_exit01.skc
+	panzer_exit_2		scripted/exit_tank/panzer_exit02.skc
+	panzer_exit_3		scripted/exit_tank/panzer_exit03.skc
+
+
+}

@@ -1,0 +1,28 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/books
+	skelmodel book_closed_thick_lavender.skd
+	surface book5 shader book5
+}
+
+init
+{
+	server
+	{
+		classname interactobject
+		setsize "-4 -4 0" "4 4 8"
+		killedeffect "" // tiki to spawn when it's destroyed
+		hiteffect "" // tiki to spawn when it's hit
+	}
+}
+
+animations
+{
+	idle     book_closed_thick_lavender.skc
+}
+
+/*QUAKED interactobject_decor_book-closed-thick-lavender (0.0 0.75 0.5) (-8 -8 0) (8 8 8)
+Thick lavender closed book.
+*/

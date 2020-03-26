@@ -1,0 +1,4 @@
+	walk_bored_back			walks_runs/boredw_back.skc
+	walk_bored_leftside		Walks_runs/boredw_leftside.skc
+	walk_bored_rightside		Walks_runs/boredw_rightside.skc
+	walk_bored			Walks_runs/boredwalk.skc

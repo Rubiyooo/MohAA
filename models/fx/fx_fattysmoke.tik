@@ -1,0 +1,42 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+animations
+{
+	idle dummy3.skc
+}
+
+init
+{
+	server
+	{
+		hide
+		ghost
+//		classname Animate
+	}
+	client
+	{
+		originemitter akdfjak34
+		(
+			volumetric
+			model fire
+			count 1
+			alpha 0.88
+			color 0.65 0.65 0.65
+			bouncefactor 0.30
+			scale 7.00
+			life 11.00
+			spawnrate 10.00
+			radius 40.00
+			velocity 10.00
+		)
+	}
+}
+
+/*QUAKED fx_fattysmoke (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+*/

@@ -1,0 +1,21 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+		
+		path models/gear/g_headgear
+
+		skelmodel coveredhelmet.skd
+		surface outside shader camohelm
+		surface inside shader german-helmet_inside
+
+
+
+
+
+}
+
+animations
+{
+	idle     coveredhelmet.skc
+}

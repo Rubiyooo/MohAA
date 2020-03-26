@@ -1,0 +1,23 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	scale 1
+	path models/static/natural
+	skelmodel tree_oak.skd
+	surface tree4_1 shader static_tree4_1
+	surface tree4_2 shader static_tree4_2
+	surface tree4_3 shader static_tree4_3
+	surface tree4_4 shader static_tree4_4
+	surface tree4sprite shader static_tree4sprite
+	surface tree4_6 shader static_tree4_6
+	surface tree4_7 shader static_tree4_7
+}
+
+animations
+{
+	idle     tree_oak.skc
+}
+
+/*QUAKED static_natural_tree_oak (0.5 0.0 0.5) (-24 -24 -16) (24 24 632)
+*/

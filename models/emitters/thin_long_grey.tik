@@ -1,0 +1,53 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter thinlonggrey
+		(
+
+			volumetric
+			model greasefire
+			count 1
+			alpha 0.6
+			bouncefactor 0.30
+			scale 10.00
+			life 7.00
+			accel 180.00 0.00 0.00
+			spawnrate 3.00
+			velocity 50.00
+//			offset crandom 20.00 crandom 20.00 crandom 20.00 
+			randvel crandom 5.00 crandom 5.00 crandom 5.00 
+			scalemin 10.00
+			scalemax 100.00
+			color 0.4 0.4 0.4	// RBG color of the smoke
+		)
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+}
+
+/*QUAKED fx_smoke_thinlonggrey (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Thin long grey smoke
+Doesn't collide, so don't obstruct it.
+*/
+
+
+
+ 

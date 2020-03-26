@@ -1,0 +1,14 @@
+TIKI
+setup
+{
+	scale .52
+	path models/fx/muzflash
+	skelmodel mg42_sideflash.skd
+	surface material1 shader mg42_sideflash
+	surface material2 shader mg42_starflash
+}
+
+animations
+{
+	idle mg42_sideflash.skc
+}

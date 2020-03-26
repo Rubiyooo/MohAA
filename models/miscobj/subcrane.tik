@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/subcrane
+	skelmodel subcrane.skd
+	surface material1 shader deckcannon
+	surface material2 shader subcrane
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle	subcrane_move.skc
+}
+
+/*QUAKED static_equipment_subcrane (0.0 0.75 0.5) (-36 -4 0) (8 4 56)
+*/

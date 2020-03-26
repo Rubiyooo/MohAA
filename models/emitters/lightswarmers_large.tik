@@ -1,0 +1,61 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter moth_lite
+		(
+			spawnrate 2.00
+			model moth.spr
+			color 1.00 1.00 1.00
+			varycolor
+			scale 0.3
+			life 3.00
+			radius 27.00
+			velocity 4.00
+			randvel crandom 30 crandom -9 crandom -9
+			avelocity 0 range 10 -40
+			scalemin 0.08
+			scalemax 0.10
+			fade
+			randomroll
+			swarm 24 11.000000 21.000000
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron moth_lite
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff moth_lite
+		}
+	}
+}
+
+/*QUAKED fx_nature_largeswarmers (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Moth flutterings around light source of ld's choice.
+*/

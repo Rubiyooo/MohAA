@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.75			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel tiefenmesser.skd
+	surface casing shader static_blackgauge
+	surface face shader static_gyrocompass
+	surface glass shader static_glass
+}
+
+animations
+{
+	idle     tiefenmesser.skc
+}
+
+/*QUAKED static_uboat_gyrocompass (0 0 0) (-8 -8 0) (8 8 16)
+*/

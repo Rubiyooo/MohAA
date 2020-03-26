@@ -1,0 +1,36 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 0.52
+	path models/human/German_afrika_private
+	skelmodel German_afrika_private.skd
+	surface pants shader DAK_pants_green
+      surface tunic shader DAK_private_tunic
+	surface head shader facewrap
+	surface hands shader hand
+	surface helmet shader DAK_helmet
+	surface gear shader german_gear
+	surface belt shader riflebelt
+
+ 	radius 20				// defines size of shadow
+}
+
+init
+{
+	server
+	{
+		classname Animate
+		setsize "-16 -16 0" "16 16 92"
+	}
+}
+
+animations
+{
+	idle     German_afrika_private.skc
+}
+
+/*QUAKED posed_german_afrikacorps_private (0.5 .25 0.25) (-16 -16 0) (16 16 92)
+badass
+*/

@@ -1,0 +1,59 @@
+animations 
+{
+	$path models/human/animation
+
+	//----------
+	//interrogation animations
+	//----------
+
+	// Used in m1l2 
+
+	german_hit_1			scripted/interrogation/german_hit_1.skc
+	{
+		client			///go go get the trock moving
+		{
+			9 sound swing
+		}
+	} 
+	german_hit_2			scripted/interrogation/german_hit_2.skc
+	{
+		client			///go go get the trock moving
+		{
+			9 sound swing
+		}
+	} 
+	german_hit_3			scripted/interrogation/german_hit_3.skc
+	{
+		client			///go go get the trock moving
+		{
+			34 sound swing
+		}
+	} 
+	german_hit_idle			scripted/interrogation/german_hit_idle.skc
+
+	oss_hit_1				scripted/interrogation/oss_hit_1.skc
+
+	{
+		client			///go go get the trock moving
+		{
+			11 sound punch
+		}
+	} 
+
+	oss_hit_2				scripted/interrogation/oss_hit_2.skc
+	{
+		client			///go go get the trock moving
+		{
+			11 sound punch
+		}
+	} 
+	oss_hit_3				scripted/interrogation/oss_hit_3.skc
+	{
+		client			///go go get the trock moving
+		{
+			35 sound punch
+		}
+	} 
+	oss_hit_idle			scripted/interrogation/oss_hit_idle.skc	
+	oss_getup				scripted/interrogation/oss_getup.skc		
+}

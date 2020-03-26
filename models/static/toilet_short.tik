@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/toilet_short
+	skelmodel toilet_short.skd
+	surface toilet_short shader static_toilet_short
+}
+
+animations
+{
+	idle     toilet_short.skc
+}
+
+/*QUAKED static_toilet_short (0.5 0.0 0.5) (-24 -16 0) (24 16 56)
+*/

@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52
+	path models/miscobj/clipboard_pencil
+	skelmodel pencil.skd
+	surface pencil shader pencil
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     pencil.skc
+}
+
+/*QUAKED static_items_pencil (0.0 0.75 0.5) (-8 -8 0) (8 8 16)
+*/

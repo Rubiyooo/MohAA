@@ -1,0 +1,32 @@
+animations 
+{
+	$path models/human/animation
+
+	//----------
+	// Balcony animations
+	//----------
+
+	// Death
+	death_balcony_intro		scripted/balcony/death_balcony_intro.skc
+	{
+		client
+		{
+			5  bodyfall	//hits railing
+		}
+	} 		
+	death_balcony_loop		scripted/balcony/death_balcony_loop.skc		
+	death_balcony_outtro		scripted/balcony/death_balcony_outtro.skc
+	{
+		client
+		{
+			0  bodyfall //back
+		}
+	}
+			
+	// Peering over the balcony
+	stand_balcony_intro		scripted/balcony/stand_balcony_intro.skc
+	stand_balcony_loop01		scripted/balcony/stand_balcony_loop01(look_around).skc	random
+	stand_balcony_loop02		scripted/balcony/stand_balcony_loop02(still).skc		random
+	stand_balcony_outtro		scripted/balcony/stand_balcony_outtro.skc
+}
+

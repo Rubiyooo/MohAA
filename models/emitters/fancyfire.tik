@@ -1,0 +1,80 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter name2
+		(
+			spawnrate 7.00
+			model fire_ring2.spr
+			alpha 0.90
+			color 1.00 1.00 1.00
+			scale 0.10
+			life 0.90
+			scalerate 1.00
+			radius 2.00
+			velocity 2.00
+			accel 0.00 0.00 20.00
+			offset crandom -2 crandom -2 crandom -2
+			scalemin 0.06
+			scalemax 0.10
+			fade
+			inwardsphere
+			randomroll
+		)
+
+		originemitter name3
+		(
+			spawnrate 7.00
+			model fire_ring2.spr
+			alpha 0.70
+			color 1.00 1.00 1.00
+			scale 0.10
+			life 0.90
+			scalerate 2.00
+			radius 2.00
+			velocity 2.00
+			accel 0.00 0.00 30.00
+			offset crandom -3 crandom -3 crandom -4
+			scalemin 0.06
+			scalemax 0.10
+			fade
+			inwardsphere
+			randomroll
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron name2
+			enter emitteron name3
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff name2
+			enter emitteroff name3
+		}
+	}
+}

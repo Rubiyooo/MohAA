@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/welder_torch
+	skelmodel weldingmask.skd
+	surface all shader weldermask
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle	 weldingmask.skc
+
+}
+
+/*QUAKED static_equipment_welding-mask (0.0 0.75 0.5) (-36 -4 0) (8 4 56)
+*/

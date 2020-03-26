@@ -1,0 +1,115 @@
+path models/human/heads
+
+// Skins allowed:
+// hopper, old_dog, roml, maxwell
+
+// Heads allowed:
+// 1, 2, 4, 5, 6, 7
+
+case headskin hopper
+{
+	surface head shader hopper
+
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head5
+	{
+		skelmodel head5.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	// Heads 1 and 4  aren't allowed with this skin, so use 7 instead
+	case headmodel head1 head4
+	{
+		skelmodel head7.skd
+	}
+}
+
+case headskin old_dog
+{
+	surface head shader old_dog
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	// Heads 4 and 5 aren't allowed with this skin, so use 2 instead.
+	case headmodel head4 head5
+	{
+		skelmodel head2.skd
+	}
+}
+
+case headskin roml
+{
+	surface head shader roml
+
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	// Heads 1, 5 and 6 are not allowed, use 7 instead
+	case headmodel head1 head5 head6
+	{
+		skelmodel head7.skd
+	}
+}
+
+case headskin maxwell
+{
+	surface head shader maxwell
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4	// Head 5 is not allowed with this skin, use 6 instead
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head5	// Head 5 is not allowed with this skin, use 8 instead
+	{
+		skelmodel head8.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	// Head 8 is also allowed with this skin, if it were in this file.
+}

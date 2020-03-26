@@ -1,0 +1,103 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server  
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache vsssource.spr
+		cache models/fx/stickblock.tik
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 0.1 anim idle
+		}
+
+		client
+		{
+			enter originspawn
+			(
+				//spawnrate 1.00
+				model models/fx/stickblock.tik
+				count 6
+				color 1.00 1.00 1.00
+				scale 0.20
+				life 3.00
+				radius 50.00
+				velocity 45.00
+				randvelaxis range 150 -70 crandom -20 40 crandom -5 10
+				accel 0.00 0.00 -200.00
+				friction -1.00
+				offsetalongaxis 0 range 30 40 0
+				angles crandom -180 360 crandom -180 360 range -360 180
+			//	avelocity crandom 60 crandom -400 crandom -120
+				scalemin 0.20
+				scalemax 0.80
+				fade
+				sphere
+			)
+
+			enter originspawn
+			(
+				//spawnrate 1.00
+				model vsssource.spr
+				count 9
+				alpha 0.60
+				color 0.70 0.60 0.40
+				varycolor
+				life 3.00
+				scalerate 2.00
+				radius 20.00
+				velocity 60.00
+			//	angles crandom -180 360 crandom -180 360 range -360 180
+				fade
+				sphere
+				randomroll
+			)
+
+			enter originspawn
+			(
+				//spawnrate 1.00
+				model vsssource.spr
+				count 5
+				alpha 0.50
+				color 1.00 0.90 0.80
+				scale 0.50
+				life 3.50
+				scalerate 3.00
+				velocity 50.00
+			//	angles crandom -180 360 crandom -180 360 range -360 180
+				randvel crandom -180 360 crandom -180 360 range -180 360
+				accel 2.00 4.00 10.00
+				friction 1.00
+				scalemin 0.50
+				scalemax 2.00
+				fade
+				radius 20.00
+				sphere
+				randomroll
+			)
+		}
+	}
+}
+
+
+//no comment, since it is only created by roof_popper.tik

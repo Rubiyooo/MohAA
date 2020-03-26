@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/detpack
+	skelmodel detpack.skd
+	surface tnt1 shader tnt
+	surface tnt2 shader tnt
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     detpack.skc
+}
+
+/*QUAKED static_detpack (0.5 0.5 1.0) (-8 0 -8) (8 16 8)
+*/

@@ -1,0 +1,91 @@
+TIKI
+setup
+{
+	scale 1
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter fountain
+		(
+			spawnrate 150.00
+			model models/fx/bh_metal_fastpiece.tik
+			color 1.00 1.00 1.00
+			life .65
+			velocity 350
+//			radialvelocity 15.00 20.00 100.00
+			offset crandom 1 crandom 1 crandom 1
+			randvel crandom 24 crandom 24 crandom 24
+			accel 0.00 0.00 -300.00
+			avelocity crandom 5 crandom 5 crandom 5
+			alignstretch 0.25
+		)
+		originemitter colliders
+		(
+			spawnrate 3.00
+			model models/fx/bh_metal_fastpiece.tik
+			color 1.00 1.00 1.00
+			collision
+			bouncefactor 0.30
+			scale 0.50
+			life .50
+			velocity 500.00
+			accel 0.00 0.00 -234.00
+			inwardsphere
+			alignstretch 0.05
+		)
+		originemitter sparks1a
+		(
+			spawnrate 30.00
+			model models/fx/bh_metal_fastpiece.tik
+			color 1.00 1.00 1.00
+			bouncefactor 0.40
+			life 1.00
+			scalerate 0.50
+			velocity 150.00
+			randvel range -50 50 range -30 40 range -5 -70
+			accel 0.00 0.00 -300.00
+			friction -1.00
+			avelocity range -70 60 range 50 -20 range 20 -20
+			fade
+			sphere
+			alignstretch 0.10	
+		)
+	}
+}
+
+animations
+{
+ 	idle	 	dummy3.skc
+	start	 	dummy3.skc
+	{
+		client
+	        {
+			enter emitteron colliders
+			enter emitteron fountain
+			enter emitteron sparks1a
+	        }
+	}
+ 	stop	 	dummy3.skc
+	{
+		client
+	        {
+    			enter emitteroff colliders
+			enter emitteroff fountain
+			enter emitteroff sparks1a
+	        }
+	}
+}
+
+/*QUAKED animate_fx_trainsparks (51 2 15) (-16 -16 -16) (16 16 16)
+*/

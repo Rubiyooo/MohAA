@@ -1,0 +1,32 @@
+TIKI
+// The xbeam is an x which is 1 unit in all dimensions, which is located at 
+// -0.5, 0, 0, facing in the -x direction.  You'll need to make variations
+// on it with different shaders I guess.
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world 
+					// is in 16 units per foot and model is in cm's
+	path models/fx/xbeam
+	skelmodel xbeam.skd
+	surface all shader bh_metal_fastpiece
+	
+}
+
+init
+{
+	server
+      {
+      	classname animate
+      	setsize "-1 -0.5 -0.5" "0 0.5 0.5"
+	}
+}
+
+
+animations
+{
+	idle     xbeam.skc
+}
+
+/*QUAKED fx_xbeam (0.5 .25 0.25) (-8 -8 0) (8 8 16)
+standard
+*/

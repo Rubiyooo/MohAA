@@ -1,0 +1,145 @@
+setup
+{
+	path models/human/animation/dialogue/M4L3/G
+}
+
+animations
+{
+//	$mapspec M4L3
+//	{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////    animations    ///////////////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+
+			////// dinner scene ///////
+
+
+	den_M4L3_470a		actor_M4L3_470.skc
+	{
+		client
+		{
+			first sound den_M4L3_470a		/// Hows the ham?
+		}
+	}
+
+	den_M4L3_471f		actor_M4L3_471.skc
+	{
+		client
+		{
+			first sound den_M4L3_471f		// Its excellent. Very juicy.
+		}
+	}
+
+	den_M4L3_472p		actor_M4L3_472.skc
+	{
+		client
+		{
+			first sound den_M4L3_472p		/// I don’t like it. Its not as good as my wife made.
+		}
+	}
+
+	den_M4L3_473a		actor_M4L3_473.skc
+	{
+		client
+		{
+			first sound den_M4L3_473a		/// Nothing is ever as good as your wife's cooking.
+		}
+	}
+
+	den_M4L3_474p		actor_M4L3_474.skc
+	{
+		client
+		{
+			first sound den_M4L3_474p		/// I cant help it if she is a good cook.
+		}
+	}
+
+	den_M4L3_475a		actor_M4L3_475.skc
+	{
+		client
+		{
+			first sound den_M4L3_475a		/// Well you can help by not talking about it at every meal.
+		}
+	}
+
+	den_M4L3_476f		actor_M4L3_476.skc
+	{
+		client
+		{
+			first sound den_M4L3_476f		/// What color hair does your wife have?
+		}
+	}
+
+	den_M4L3_477p		actor_M4L3_477.skc
+	{
+		client
+		{
+			first sound den_M4L3_477p		/// Black.
+		}
+	}
+
+	den_M4L3_478f		actor_M4L3_478.skc
+	{
+		client
+		{
+			first sound den_M4L3_478f		/// Oh that’s very interesting I have a theory about women with black hair.
+		}
+	}
+
+	den_M4L3_479a		actor_M4L3_479.skc
+	{
+		client
+		{
+			first sound den_M4L3_479a		/// You believe that they are better cooks?
+		}
+	}
+
+	den_M4L3_480f		actor_M4L3_480.skc
+	{
+		client
+		{
+			first sound den_M4L3_480f		/// No actually I think that they are more likely to be loyal.
+		}
+	}
+
+	den_M4L3_481p		actor_M4L3_481.skc
+	{
+		client
+		{
+			first sound den_M4L3_481p		/// My wife is very loyal. She writes me every week ten pages.
+		}
+	}
+
+	den_M4L3_482a		actor_M4L3_482.skc
+	{
+		client
+		{
+			first sound den_M4L3_482a		/// Really? She only writes me four. I'm just joking.
+		}
+	}
+
+	den_M4L3_484p		actor_M4L3_484.skc
+	{
+		client
+		{
+			first sound den_M4L3_484p		/// She doesn't write you?
+		}
+	}
+
+	den_M4L3_485a		actor_M4L3_485.skc
+	{
+		client
+		{
+			first sound den_M4L3_485a		/// No no. She doesn't.
+		}
+	}
+
+
+	////////////////////////////////
+
+
+//	}//end mapspec M4L3
+}

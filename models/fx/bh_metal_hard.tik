@@ -1,0 +1,99 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	server
+	{
+	}
+	client
+	{
+		//cache some stuff used in this effect
+		cache bhole_metal.spr // cache the bullet hole shader
+		cache bh_metal_spark.spr
+		cache models/fx/bh_metal_fastpiece.tik
+
+		// sparky spark
+		sfx originspawn
+		(
+			model bh_metal_spark.spr
+			count 2
+			alpha 0.5
+			angles 0 0 random 360
+			life 0.075 0.1
+			scale 0.15
+			scalerate 6
+			fade
+		)
+		
+		// teeny tiny dynamic light
+//		sfx blockdlight 8 0.05 additive
+//		(
+//			color 0.5 0.4 0.3
+//			colorvelocity -0.5 -0.5 -0.5
+//			scalerate -0.6
+//		)
+
+		// quickly dissapearing sparks
+		sfx originspawn
+		(
+			model models/fx/bh_metal_fastpiece.tik
+			alpha 0.5
+//			offsetalongaxis random 3 crandom 1 crandom 1
+			count 2
+			align
+			velocity 150
+			randvelaxis random 150 crandom 100 crandom 100
+			accel 0 0 -800
+			life 0.05 0.25
+			scalemin 0.8
+			scalemax 1.4
+			scalerate -1.0
+//			fadedelay 0.1
+		)
+
+		// slightly delayed, quickly dissapearing sparks
+		delayedsfx 0.1 originspawn
+		(
+			model models/fx/bh_metal_fastpiece.tik
+			alpha 0.5
+//			offsetalongaxis random 3 crandom 1 crandom 1
+			count 2
+			align
+			velocity 150
+			randvelaxis random 150 crandom 100 crandom 100
+			accel 0 0 -800
+			life 0.05 0.25
+			scalemin 0.8
+			scalemax 1.4
+			scalerate -1.0
+//			fadedelay 0.1
+		)
+		
+		// small bit of lingering smoke
+		sfx originspawn
+		(
+			volumetric
+			model bulletimpact	// sets the type of smoke
+			life 10		// amount of smoke
+			scale 1.5	// radius
+			alpha 0.2	// density
+			color 0.8 0.8 0.8	// RBG color of the smoke
+			velocity 2	// base velocity away from the surface
+			randvelaxis random 6 0 0	// velocity offset
+			offsetalongaxis random 20 crandom 4 crandom 4	// positional offset
+//			collision // turn on collision detection
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc
+}

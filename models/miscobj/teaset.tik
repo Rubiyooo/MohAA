@@ -1,0 +1,28 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/teaset
+	skelmodel t_set.skb
+	surface s_pieces shader s_pieces
+	surface s_tray shader s_tray
+}
+
+init
+{
+	server
+	{
+		classname interactobject
+		setsize "-8 -8 0" "8 8 16"
+		killedeffect "" // tiki to spawn when it's destroyed
+		hiteffect "" // tiki to spawn when it's hit
+	}
+}
+
+animations
+{
+	idle     t_set.skc
+}
+
+/*QUAKED interactobject_decor_teaset (0.0 0.75 0.5) (-8 -8 0) (8 8 16)
+*/

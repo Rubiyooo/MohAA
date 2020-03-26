@@ -1,0 +1,75 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		cache bodyhitpuff.spr
+		
+		// sound parms: soundName channel volume min_distance pitch randompitch
+		sfx sound snd_bh_flesh auto 1.5 128 0.8 0.2
+	
+		// first bit of lingering smoke
+		sfx originspawn
+		(
+			model bodyhitpuff.spr
+			scalerate 5
+			angles 0 0 random 360
+			avelocity 0 0 crandom 360
+			life .167 				// amount of smoke //.125 //.25
+			scale .4				// radius
+			alpha .7				// density
+			color 0.7 0.7 0.7			// RBG color of the smoke
+			velocity 160 				// base velocity away from the surface //240 //120
+			randvelaxis random 2 2 2		// velocity offset
+			offsetalongaxis 2 crandom 1 crandom 1	// positional offset
+			fade
+		)
+		
+		// second bit of lingering smoke
+		sfx originspawn
+		(
+			model bodyhitpuff.spr
+			scalerate 5
+			angles 0 0 random 360
+			avelocity 0 0 crandom 180
+			life .333		 		// amount of smoke //.25 //.5
+			scale .2				// radius
+			alpha 0.5				// density
+			color 0.7 0.7 0.7			// RBG color of the smoke
+			velocity 80 				// base velocity away from the surface //120 //60
+			randvelaxis random 2 2 2		// velocity offset
+			offsetalongaxis 2 crandom 1 crandom 1	// positional offset
+			fade
+		)
+		
+		// third bit of lingering smoke
+		sfx originspawn
+		(
+			model bodyhitpuff.spr
+			scalerate 5
+			angles 0 0 random 360
+			avelocity 0 0 crandom 90
+			life .666 				// amount of smoke //.5 //1
+			scale .3				// radius
+			alpha 0.3				// density
+			color 0.7 0.7 0.7			// RBG color of the smoke
+			velocity 40 				// base velocity away from the surface //60 //30
+			randvelaxis random 2 2 2		// velocity offset
+			offsetalongaxis 2 crandom 1 crandom 1	// positional offset
+			fade
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc
+}

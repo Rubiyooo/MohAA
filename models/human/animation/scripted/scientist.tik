@@ -1,0 +1,67 @@
+animations
+{
+	$path models/human/animation
+
+	//Scientist animation in M2L1,M2l2,M2l3,M6l1,M6l3
+
+	//----------
+	//scientist animations//
+	//----------
+
+	//REMEMBER TO ATTACH:  attached_clipboard.tik
+	scientist_attachclipboard			scripted/scientist/scientist_thought.skc
+	{
+		server
+		{
+			entry attachmodel models/miscobj/attached_clipboard.tik	tag_weapon_right
+			entry attachmodel models/miscobj/pencil.tik	tag_weapon_left
+		}
+	}
+	scientist_detachclipboard			scripted/scientist/scientist_thought.skc
+	{
+		server
+		{
+			entry	removeattachedmodel tag_weapon_left	
+			entry	removeattachedmodel tag_weapon_right	
+		}
+	}
+
+	scientist_chalkboard			scripted/scientist/scientist_chalkboard.skc
+	scientist_chalkboard_start		scripted/scientist/scientist_chalkboard_end.skc
+	scientist_chalkboard_end		scripted/scientist/scientist_chalkboard_start.skc
+	scientist_clipboard_start			scripted/scientist/scientist_clipboard_start.skc
+	scientist_clipboard			scripted/scientist/scientist_clipboard.skc
+	scientist_clipboard_end			scripted/scientist/scientist_clipboard_end.skc
+	scientist_hide				scripted/scientist/scientist_hide.skc
+	scientist_hide_twitch			scripted/scientist/scientist_hide_twitch.skc
+	scientist_run				scripted/scientist/scientist_run.skc
+	scientist_scratch				scripted/scientist/scientist_scratch.skc
+	scientist_thought				scripted/scientist/scientist_thought.skc
+	scientist_thought_start			scripted/scientist/scientist_thought_start.skc
+	scientist_thought_end			scripted/scientist/scientist_thought_start.skc
+	scientist_walk				scripted/scientist/scientist_walk.skc
+	scientist_surrender			scripted/scientist/scientist_surrender.skc
+	// TODO: Put surrender_loop into sourcesafe and reenable this line.
+	//	scientist_surrender_loop		scripted/scientist/scientist_surrender_loop.skc
+
+	scientist_wallchart_depressed_sci1			scripted/scientist/scientist_wallchart_depressed_sci1.skc
+	scientist_wallchart_depressed_sci2			scripted/scientist/scientist_wallchart_depressed_sci2.skc
+	scientist_wallchart_depressedtoidle_sci1	scripted/scientist/scientist_wallchart_depressedtoidle_sci1.skc
+	scientist_wallchart_depressedtoidle_sci2	scripted/scientist/scientist_wallchart_depressedtoidle_sci2.skc
+	scientist_wallchart_idle1_sci1				scripted/scientist/scientist_wallchart_idle1(looknod)_sci1.skc
+	scientist_wallchart_idle1_sci2				scripted/scientist/scientist_wallchart_idle1(looknod)_sci2.skc
+	scientist_wallchart_idle2_sci1				scripted/scientist/scientist_wallchart_idle2(pointout)_sci1.skc
+	scientist_wallchart_idle2_sci2				scripted/scientist/scientist_wallchart_idle2(pointout)_sci2.skc
+	scientist_wallchart_idle3_sci1				scripted/scientist/scientist_wallchart_idle3(excited)_sci1.skc
+	scientist_wallchart_idle3_sci2				scripted/scientist/scientist_wallchart_idle3(excited)_sci2.skc
+	scientist_wallchart_idletodepressed_sci1	scripted/scientist/scientist_wallchart_idletodepressed_sci1.skc
+	scientist_wallchart_idletodepressed_sci2	scripted/scientist/scientist_wallchart_idletodepressed_sci2.skc
+
+	scientist_standtable_straighttolean			scripted/scientist/scientist_standtable_straighttolean.skc
+	scientist_standtable_lean01					scripted/scientist/scientist_standtable_lean01(point).skc
+	scientist_standtable_lean02					scripted/scientist/scientist_standtable_lean02(dr_evil).skc
+	scientist_standtable_lean03					scripted/scientist/scientist_standtable_lean03(basic).skc
+	scientist_standtable_leantostraight			scripted/scientist/scientist_standtable_leantostraight.skc
+	scientist_standtable_straight				scripted/scientist/scientist_standtable_straight.skc
+}
+

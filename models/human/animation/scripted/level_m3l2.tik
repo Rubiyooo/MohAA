@@ -1,0 +1,4 @@
+animations // Now list all of the animations and any special commands for them
+{
+$path models/human/animation
+}

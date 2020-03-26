@@ -1,0 +1,27 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel enigmaopen.skd
+//	surface material2 shader static_enigmatext
+//	surface material1 shader static_enigma
+	surface material2 shader enigmatext
+	surface material1 shader enigma
+	
+}
+init
+{
+	server
+	{
+		classname animate
+	}
+}
+animations
+{
+	idle     enigmaopen.skc
+}
+
+/*QUAKED animate_equipment_enigmaopen (0 0 0) (-56 -24 0) (56 24 8)
+Nate 11/Oct/2001 12:19 - enigma for uboat opened
+*/

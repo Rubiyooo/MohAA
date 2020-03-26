@@ -1,0 +1,18 @@
+animations
+{
+	$path models/human/animation
+
+	jog_still		walks_runs/jog_still.skc			autosteps_run
+	jog_forward		walks_runs/jog_forward.skc			autosteps_run
+	jog_forward_up	walks_runs/jog_forward_up.skc		autosteps_run
+	jog_forward_down	walks_runs/jog_forward_down.skc	autosteps_run
+	jog_back		walks_runs/jog_back.skc				autosteps_run
+	jog_back_up		walks_runs/jog_back_up.skc			autosteps_run
+	jog_back_down	walks_runs/jog_back_down.skc		autosteps_run
+	jog_right		walks_runs/jog_right.skc			autosteps_run
+	jog_right_up	walks_runs/jog_right_up.skc			autosteps_run
+	jog_right_down	walks_runs/jog_right_down.skc		autosteps_run
+	jog_left		walks_runs/jog_left.skc				autosteps_run
+	jog_left_up		walks_runs/jog_left_up.skc			autosteps_run
+	jog_left_down	walks_runs/jog_left_down.skc		autosteps_run
+}

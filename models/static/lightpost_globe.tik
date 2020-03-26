@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/lamp
+	skelmodel g_lightpost.skd
+	surface globe shader static_globe
+	surface g_post shader static_g_post
+}
+
+animations
+{
+	idle     g_lightpost.skc
+}
+
+/*QUAKED static_lamp_lightpost-globe (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

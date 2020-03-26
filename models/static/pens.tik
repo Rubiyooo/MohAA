@@ -1,0 +1,29 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/pens
+	skelmodel pens.skd
+	surface grn_metal_mug shader static_grn_metal_mug
+	surface pencils_01 shader static_pencils_01
+	surface pencils_02 shader static_pencils_02
+	surface pencils_03 shader static_pencils_03
+	surface pens_01 shader static_pens_01
+	surface pens_04 shader static_pens_04
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle    metal_mug.skc
+}
+
+/*QUAKED static_item_pens (0.5 0.0 0.5) (-0 -8 0) (16 8 8)
+*/

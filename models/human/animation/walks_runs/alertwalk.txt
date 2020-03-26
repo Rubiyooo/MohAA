@@ -1,0 +1,13 @@
+	walk_alert_backdown		walks_runs/alertw_backdown.skc
+	walk_alert_backward		Walks_runs/alertw_backward.skc
+	walk_alert_backwardup		Walks_runs/alertw_backwardup.skc
+	walk_alert_forward		Walks_runs/alertw_forward.skc
+	walk_alert_forwarddown		Walks_runs/alertw_forwarddown.skc
+	walk_alert_forwardup		Walks_runs/alertw_forwardup.skc
+	walk_alert_left90		Walks_runs/alertw_left90.skc
+	walk_alert_left90down		Walks_runs/alertw_left90down.skc
+	walk_alert_left90up		Walks_runs/alertw_left90up.skc
+	walk_alert_right90		Walks_runs/alertw_right90.skc
+	walk_alert_right90down		Walks_runs/alertw_right90down.skc
+	walk_alert_right90up		Walks_runs/alertw_right90up.skc
+	walk_alert_still		Walks_runs/alertw_still.skc.

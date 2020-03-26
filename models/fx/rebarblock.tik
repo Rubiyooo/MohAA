@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 1			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/fx/destruction/rebarblock
+	skelmodel rebarblock.skd
+	surface material1 shader rebarblock
+      surface material2 shader rebarblockcull
+}
+
+init
+{
+	server
+	{
+		classname Object
+	}
+}
+
+animations
+{
+	idle     rebarblock.skc
+}
+
+/*QUAKED fx_debrisobject_rebarblock(0.0 0.75 0.5) (-16 -16 0) (8 16 56)
+*/

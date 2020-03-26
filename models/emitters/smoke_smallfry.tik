@@ -1,0 +1,59 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter smallsmoke
+		(
+			spawnrate 23.00
+			model vsssource.spr
+			alpha 0.30
+			color 1.00 1.00 1.00
+			scale 0.10
+			life 3.00
+			scalerate 0.60
+			velocity 20.00
+			randvel range -1 3 range -15 23 range 0.09 10
+			accel 0.00 0.00 10.00
+			friction 2.00
+			fade
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron smallsmoke
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff smallsmoke
+		}
+	}
+}
+
+/*QUAKED fx_smoke_smallfry (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Smoke from wiring or cigarette
+Doesn't collide.
+*/

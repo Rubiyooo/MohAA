@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/wicker_basket_2
+	skelmodel wicker_basket_2.skd
+	surface wicker_basket_2 shader static_wicker_basket_2
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle    wicker_basket_2.skc
+}
+
+/*QUAKED static_item_wicker-basket-2 (0.5 0.0 0.5) (-0 -8 0) (16 8 8)
+*/

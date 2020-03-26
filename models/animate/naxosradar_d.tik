@@ -1,0 +1,26 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel naxosradar_d.skd
+	surface material1 shader naxosradar
+	surface material2 shader naxosinside
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     naxosradar_d.skc
+}
+
+/*QUAKED animate_equipment_naxosradar-d (0 0 0) (0 0 0) (0 0 0)
+Nate - 27/Sep/2001 13:51 - Naxosradar gets damaged
+*/

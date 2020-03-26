@@ -1,0 +1,33 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 2 -5 0 ) ( 2 -5 5 ) ( 5 -2 5 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+( -2 -5 0 ) ( -2 -5 5 ) ( 2 -5 5 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+( -2 -5 1 ) ( -5 -2 1 ) ( -5 -2 5 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+( -5 2 0 ) ( -5 2 5 ) ( -5 -2 5 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+( -5 2 5 ) ( -5 2 0 ) ( -2 5 0 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+( 2 5 0 ) ( 2 5 5 ) ( -2 5 5 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+( 5 2 0 ) ( 5 2 5 ) ( 2 5 5 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+( 5 -2 0 ) ( 5 -2 5 ) ( 5 2 5 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+( -5 -2 1 ) ( -2 -5 1 ) ( 2 -5 1 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+( 6 6 5 ) ( 6 -6 5 ) ( -6 -6 5 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+( -3.500000 5 2 ) ( -5 -5 3 ) ( -2 -5 1 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+( 3.500000 5 2 ) ( 2 -5.000046 1 ) ( 5 -5.000046 3 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+( -5 -2 1 ) ( -5 -5 3 ) ( 5 -3.500000 2 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+( -5 5 3 ) ( -5 2 1 ) ( 5 3.500000 2 ) common/glassclip 0 0 0.00 1 1 262144 4196512 0 -surfaceparm playerclip +surfaceparm detail 
+}
+// brush 1
+{
+( 8 -3 7 ) ( 8 -3 6 ) ( 3 -8 6 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 -surfaceparm playerclip +surfaceparm detail 
+( -3 -8 6 ) ( -3 -8 7 ) ( 3 -8 7 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 -surfaceparm playerclip +surfaceparm detail 
+( -3 -8 7 ) ( -3 -8 6 ) ( -8 -4 6 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 -surfaceparm playerclip +surfaceparm detail 
+( -8 4 6 ) ( -8 4 7 ) ( -8 -4 7 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 -surfaceparm playerclip +surfaceparm detail 
+( -8 4 7 ) ( -8 4 6 ) ( -4 8 6 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 -surfaceparm playerclip +surfaceparm detail 
+( 4 8 6 ) ( 4 8 7 ) ( -4 8 7 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 -surfaceparm playerclip +surfaceparm detail 
+( 8 3 6 ) ( 8 3 7 ) ( 4 8 7 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 -surfaceparm playerclip +surfaceparm detail 
+( 8 -3 6 ) ( 8 -3 7 ) ( 8 3 7 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 -surfaceparm playerclip +surfaceparm detail 
+( -9 -9 5 ) ( 9 -9 5 ) ( 9 10 5 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 -surfaceparm playerclip +surfaceparm detail 
+( 9 10 7 ) ( 9 -9 7 ) ( -9 -9 7 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 -surfaceparm playerclip +surfaceparm detail 
+}
+}

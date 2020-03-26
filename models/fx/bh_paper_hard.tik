@@ -1,0 +1,106 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		//cache some stuff used in this effect
+		cache bhole_paper.spr // cache the bullet hole shader
+		
+		cache bh_wood_piece.spr
+		cache models/fx/bh_wood_puff.tik
+
+		// puffy puff
+		sfx originspawn
+		(
+			model models/fx/bh_wood_puff.tik
+			alpha 1.0
+			count 1
+			life 5.0 6.5
+			scalemin 0.02
+            scalemax 0.08
+            angles random 360 random 360 0
+            avelocity crandom 200 crandom 200 crandom 200
+            wind
+            velocity 20
+		)
+
+		// chunky chunks of chunky stuff (colliders)
+		sfx originspawn
+		(
+			model cardboard_light.spr
+			spawnrange 1536
+			alpha 1.0
+			angles random 360 random 360 0
+			offsetalongaxis 2 crandom 1 crandom 1 
+			count 3
+			velocity 50
+			randvelaxis random 150 crandom 32 crandom 32
+			accel 0 0 -60
+			life 4.0 6.0
+			scalemin 0.01
+			scalemax 0.05
+			fadedelay 2.0
+			collision
+//			bouncefactor 0.2
+//			bouncesound snd_bh_debris_stone
+		)
+
+		// first bit of lingering smoke
+		sfx originspawn
+		(
+			volumetric
+			model bulletimpact	// sets the type of smoke
+			life 2		// amount of smoke
+			scale 1.5	// radius
+			alpha 0.3	// density
+			color 0.7 0.7 0.7	// RBG color of the smoke
+			velocity 32	// base velocity away from the surface
+			randvelaxis random 4 0 0	// velocity offset
+			offsetalongaxis 4 crandom 4 crandom 4	// positional offset
+//			collision // turn on collision detection
+		)
+		
+		// second bit of lingering smoke
+		delayedsfx 0.15 originspawn
+		(
+			volumetric
+			model bulletimpact	// sets the type of smoke
+			life 4		// amount of smoke
+			scale 1.5	// radius
+			alpha 0.25	// density
+			color 0.7 0.7 0.7	// RBG color of the smoke
+			velocity 20	// base velocity away from the surface
+			randvelaxis random 4 0 0	// velocity offset
+			offsetalongaxis 4 crandom 2 crandom 2	// positional offset
+//			collision // turn on collision detection
+		)
+		
+		// third bit of lingering smoke
+		delayedsfx 0.3 originspawn
+		(
+			volumetric
+			model bulletimpact	// sets the type of smoke
+			life 5		// amount of smoke
+			scale 1.5	// radius
+			alpha 0.25	// density
+			color 0.7 0.7 0.7	// RBG color of the smoke
+			velocity 16	// base velocity away from the surface
+			randvelaxis random 4 0 0	// velocity offset
+			offsetalongaxis 4 crandom 2 crandom 2	// positional offset
+//			collision // turn on collision detection
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

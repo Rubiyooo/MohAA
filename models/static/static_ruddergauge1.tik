@@ -1,0 +1,19 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel ruddergauge.skd
+	surface material1 shader static_ruddergauge1
+	surface material2 shader static_ruddergaugebody
+	surface material3 shader static_blackgauge
+	surface material4 shader static_glass
+}
+
+animations
+{
+	idle     ruddergauge.skc
+}
+
+/*QUAKED static_uboat_ruddergauge1 (0 0 0) (-8 -8 0) (8 8 16)
+*/

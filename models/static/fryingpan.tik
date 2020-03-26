@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/fryingpan
+	skelmodel fryingpan.skd
+	surface fryingpan shader static_fryingpan
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     fryingpan.skc
+}
+
+/*QUAKED static_item_fryingpan (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

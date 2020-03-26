@@ -1,0 +1,23 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	//scale .12			// Convert from inches to game units
+	path models/static/welding_torch
+	skelmodel welding_torch2.skd
+	surface material1 shader static_tanks
+	surface material2 shader static_tanktop
+	surface material3 shader static_wheel
+	surface material4 shader static_welder
+	surface material5 shader static_redhose
+	surface material6 shader static_greenhose
+	surface material7 shader static_weldertorch
+}
+
+animations
+{
+	idle welding_torch2.skc
+}
+
+/*QUAKED static_equipment_welding-torch (0.5 0.0 0.5) (-24 -24 -48) (8 24 72)
+*/

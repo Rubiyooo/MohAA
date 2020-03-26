@@ -1,0 +1,12 @@
+	walk_crouch_back		walks_runs/crouchw_back.skc
+	walk_crouch_backdown		Walks_runs/crouchw_backdown.skc
+	walk_crouch_backup		Walks_runs/crouchw_backup.skc
+	walk_crouch_forward		Walks_runs/crouchw_forward.skc
+	walk_crouch_forwarddown		Walks_runs/crouchw_forwarddown.skc
+	walk_crouch_left		Walks_runs/crouchw_left.skc
+	walk_crouch_leftdown		Walks_runs/crouchw_leftdown.skc
+	walk_crouch_leftup		Walks_runs/crouchw_leftup.skc
+	walk_crouch_right		Walks_runs/crouchw_right.skc
+	walk_crouch_rightdown		Walks_runs/crouchw_rightdown.skc
+	walk_crouch_rightup		Walks_runs/crouchw_rightup.skc
+	

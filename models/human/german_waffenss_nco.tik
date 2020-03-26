@@ -1,0 +1,147 @@
+TIKI
+setup
+{
+	scale 0.52					// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+
+	path models/human/german_waffenss_nco	// Set path to set skelmodel from
+	skelmodel ssnco.skd		// Set body model
+
+	surface top shader shutzshirt_nco
+	surface pants shader shutzpants_nco
+	surface culltop shader cull_shutzshirt_nco
+
+
+
+//	path models/human/heads			// Set new path for head model
+//	skelmodel head8.skd			// Set head model
+//	surface head shader hopper
+	$include models/human/heads/german_old_heads.tik
+
+	path models/human/hands
+	skelmodel hand.skd
+	surface hand shader handsnew
+
+	
+
+	
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+	path models/equipment/germangear
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+		//skelmodel german_holster.skd
+		//surface german_holster shader german_holster
+	}
+
+	//*** p-38 pistol
+	case weapon "Walter P38"
+	{
+		path models/gear/g_headgear
+
+		skelmodel ssncocap.skd
+		surface ssncocap shader ssncohat
+		
+
+
+		path models/gear/ss
+
+		skelmodel ssholster.skd
+		surface ssholster shader german_holster
+
+		skelmodel ssloadout.skd
+		surface ssloadout shader german_gear
+
+	}
+
+	//*** regular KAR 98
+	case weapon "Mauser KAR 98K"
+	{
+		path models/gear/g_headgear
+
+		skelmodel ssncocap.skd
+		surface ssncocap shader ssncohat
+
+
+
+		path models/gear/ss
+
+		skelmodel sskarclips.skd
+		surface sskarclips shader german_riflebelt
+
+		skelmodel ssloadout.skd
+		surface ssloadout shader german_gear
+
+	}
+	
+	//*** MP40 submachinegun
+	case weapon "MP40"
+	{
+		path models/gear/g_headgear
+
+		skelmodel ssncocap.skd
+		surface ssncocap shader ssncohat
+
+		path models/gear/ss
+
+		skelmodel ssloadout.skd
+		surface ssloadout shader german_gear
+
+
+		skelmodel ssmp40clips.skd
+		surface ssmp40clips shader ammo_pouch
+
+	}
+	
+	//*** mp44 / stg44 machinegun
+	case weapon "StG44"
+	{
+		path models/gear/g_headgear
+
+		skelmodel ssncocap.skd
+		surface ssncocap shader ssncohat
+
+
+
+		path models/gear/ss
+
+		skelmodel ssmp44clips.skd
+		surface ssmp44clips shader german_holster
+
+		skelmodel ssloadout.skd
+		surface ssloadout shader mp44ammopouch
+	}
+//*** end weapon equipment assignment
+//************************************
+
+
+	radius 20					// Defines size of shadow
+}
+
+init
+{
+	server
+	{
+     	 	classname Actor
+    	  	german
+		setsize "-16 -16 0" "16 16 92"
+		health 100
+		weapon "MP40"
+
+		// Make him mumble but not breathe steam
+		exec global/breathe.scr 0 1
+
+		// Set up the helmet for popping off
+		// <surface to turn off> <model to spawn> <speed to throw it at> <damage multiplier for helmet shots>
+		sethelmet "models/gear/german_ssnco.tik" 200 4 "ssncocap"
+	}
+}
+
+$include models/human/animation/dialogue/generic_dialogue_german.tik
+$include models/human/new_generic_human.tik
+//$include models/human/animation/helmet_flyoff/helmet_flyoff_german_ssnco.tik
+
+/*QUAKED ai_german_waffenss_nco (1.0 0.5 0.0) (-16 -16 0) (16 16 92)
+*/

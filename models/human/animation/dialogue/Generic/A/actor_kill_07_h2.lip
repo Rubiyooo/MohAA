@@ -1,0 +1,362 @@
+<Num channels> 40
+<Num samples> 8
+<Channel> BROW_frown
+30
+11
+1
+1
+14
+36
+55
+65
+<Channel> BROW_lift
+0
+1
+2
+4
+5
+6
+8
+9
+<Channel> BROW_R_lift
+0
+0
+0
+0
+0
+0
+4
+9
+<Channel> BROW_worry
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> EYE_blink
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> EYES_down
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> EYES_Excited
+100
+100
+100
+100
+100
+100
+100
+100
+<Channel> EYES_L_squint
+32
+30
+28
+26
+24
+22
+20
+18
+<Channel> EYES_left
+1
+0
+0
+0
+0
+0
+0
+0
+<Channel> EYES_narrow
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> EYES_right
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> EYES_smile
+25
+9
+2
+3
+18
+40
+58
+68
+<Channel> EYES_up
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> JAW_open-closed
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> JAW_open-open
+0
+7
+5
+1
+1
+1
+0
+0
+<Channel> LIPS_compressed
+50
+48
+47
+46
+45
+44
+43
+41
+<Channel> MOUTH_grimace
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> MOUTH_L_smile_closed
+0
+0
+0
+8
+23
+38
+49
+55
+<Channel> MOUTH_L_smile_open
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> MOUTH_L_snarl_closed
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> MOUTH_L_snarl_open
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> MOUTH_smile_closed
+20
+19
+19
+19
+19
+19
+19
+19
+<Channel> MOUTH_smile_open
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> MOUTH_Snarl_closed
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> MOUTH_Snarl_open
+0
+0
+0
+0
+0
+0
+0
+1
+<Channel> VISEME_Bump
+0
+0
+0
+0
+0
+32
+75
+35
+<Channel> VISEME_Cage
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Church
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Earth
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Eat
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Fave
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_If
+0
+45
+56
+22
+60
+8
+0
+0
+<Channel> VISEME_New
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Oat
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Ox
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Roar
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Size
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Though
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Told
+0
+0
+0
+0
+0
+0
+0
+0
+<Channel> VISEME_Wet
+0
+0
+0
+0
+0
+0
+0
+0

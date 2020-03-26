@@ -1,0 +1,134 @@
+animations
+{
+	$path models/human/animation
+
+	//----------
+	//chair and table animations//
+	//
+	//use these chairs and tables
+	//C:\games\MOHPC\GAME\main\models\furniture		cardchair.tik
+	//C:\games\MOHPC\GAME\main\models\furniture		cardtable.tik
+	//----------
+
+
+	///deaths///
+
+	chair_death_forwards			scripted/table/actor_shootchair_forwards.skc
+	chair_death_backwards			scripted/table/actor_shootchair_backwards.skc
+
+	///stand///
+
+	chair_curious_stand			scripted/table/actor_chairstand_slow.skc
+	{
+		server
+		{
+			3	removeattachedmodel tag_weapon_left
+		}
+	}
+	chair_alert_stand			scripted/table/actor_chairstand_fast.skc
+	{
+		server
+		{
+			3	removeattachedmodel tag_weapon_left
+		}
+	}
+	chair_alert_scientist			scripted/table/actor_chairstand_scientist.skc
+
+	///sit///
+
+	chair_sit				scripted/table/actor_sitchair.skc
+
+	///idles///
+
+	chair_actor2_idleloop			scripted/table/actor_m1l1_cardIDLE02.skc
+	{
+		server
+		{
+		 	first	attachmodel models/miscobj/cardhand02.tik tag_weapon_left
+		}
+	}
+
+	chair_actor1_idleloop			scripted/table/actor_m1l1_cardIDLE01.skc
+	{
+		server
+		{
+		 	first	attachmodel models/miscobj/cardhand01.tik tag_weapon_left
+		}
+	}
+
+
+	///write///
+
+	chair_write				scripted/table/actor_sit_write.skc
+
+
+	///radio///
+
+	chair_radio_generic				scripted/table/actor_radio_op.skc
+
+	chair_radio_tune				scripted/table/actor_radio_tune.skc		
+	chair_radio_talkstart				scripted/table/actor_radio_talkon.skc	
+	chair_radio_talkidle				scripted/table/actor_radio_talkidle.skc
+	chair_radio_talkend				scripted/table/actor_radio_talkoff.skc
+	chair_radio_listenidle				scripted/table/actor_radio_listenidle.skc
+
+		
+	///dialogue///
+	//go fish card game animation (in M1L2 and others)
+
+	chair_actor1_queen	scripted/table/actor_m1l1_07.skc	
+	{
+		client
+		{
+			5 sound den_scripted_M1L1_07d		/// Give me your queen.
+		}
+	}
+
+	chair_actor2_fish	scripted/table/actor_m1l1_08.skc	
+	{
+		client
+		{
+			20 sound den_scripted_M1L1_08b 		/// Go fish.
+		}
+	}
+
+
+	chair_actor1_drawcard	scripted/table/actor_m1l1_09.skc	
+	{
+		client
+		{
+			first sound den_scripted_M1L1_09d 	///  You cheat! You always cheat at this game.
+		}
+
+		server
+			{
+				21 attachmodel models/miscobj/cardsingle.tik tag_weapon_right
+				28 removeattachedmodel tag_weapon_right
+			}
+	}
+
+	chair_actor2_king	scripted/table/actor_m1l1_11.skc	
+	{
+		client
+		{
+			10 sound den_scripted_M1L1_11d		 /// Give me your king.
+		}
+	}
+
+	chair_actor1_fish	scripted/table/actor_m1l1_12.skc	
+	{
+		client
+		{
+			10 sound den_scripted_M1L1_12b		  /// Go fish.
+		}
+	}
+
+	chair_actor2_drawcard			scripted/table/actor_m1l1_pickup.skc		
+	{
+		server
+			{
+				17 attachmodel models/miscobj/cardsingle.tik tag_weapon_right
+				34 removeattachedmodel tag_weapon_right
+			}
+	}
+}

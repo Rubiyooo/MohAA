@@ -1,0 +1,34 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 0.52
+	path models/human/German_misc_kradshutzen
+	skelmodel German_misc_kradshutzen.skb
+	surface pants shader Wehrmact_pants
+      surface trench shader Motorpool_trench 
+	surface face shader Dolf
+	surface helmet shader motorpool_helmet
+	surface hand shader hand
+
+	radius 20				// defines size of shadow
+}
+
+init
+{
+	server
+	{
+		classname Animate
+		setsize "-16 -16 0" "16 16 92"
+	}
+}
+
+animations
+{
+	idle     German_misc_kradshutzen.skc
+}
+
+/*QUAKED posed_german_misc_kradshutzen(0.5 .25 0.25) (-16 -16 0) (16 16 92)
+badass
+*/

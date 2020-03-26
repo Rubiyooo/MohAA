@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 1.0			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/fx/destruction/window_pane
+	skelmodel window_pane.skd
+	surface material1 shader wood_latice
+}
+
+init
+{
+	server
+	{
+		classname Object
+	}
+}
+
+animations
+{
+	idle     window_pane.skc
+}
+
+/*QUAKED fx_debrisobject_windowpane(0.0 0.75 0.5) (-16 -16 0) (8 16 56)
+*/

@@ -1,0 +1,199 @@
+
+animations
+{
+	$path models/human/animation
+
+	opel_driver			scripted/opel/driver_idle.skc
+	opel_driver_death		scripted/opel/driver_death.skc
+	opel_passenger		scripted/opel/passenger_getvisa.skc
+
+	opel_passenger1		vehicle_artillery/opel_passenger1.skc
+	opel_passenger2		vehicle_artillery/opel_passenger2.skc
+	opel_passenger3		vehicle_artillery/opel_passenger3.skc
+	opel_passenger4		vehicle_artillery/opel_passenger4.skc
+	opel_passenger5		vehicle_artillery/opel_passenger5.skc
+	opel_passenger6		vehicle_artillery/opel_passenger6.skc
+
+	opel_still_passenger1	vehicle_artillery/opel_still_passenger1.skc
+	opel_still_passenger2	vehicle_artillery/opel_still_passenger2.skc
+	opel_still_passenger3	vehicle_artillery/opel_still_passenger3.skc
+	opel_still_passenger4	vehicle_artillery/opel_still_passenger4.skc
+	opel_still_passenger5	vehicle_artillery/opel_still_passenger5.skc
+	opel_still_passenger6	vehicle_artillery/opel_still_passenger6.skc
+
+
+
+
+
+
+//VISA KILL
+
+
+
+
+
+	driver_getvisa		scripted/opel/driver_getvisa.skc
+	{
+		server
+		{
+			0 attachmodel models/items/papers.tik tag_weapon_left
+			1 attachedmodelanim tag_weapon_left visa
+			15 removeattachedmodel tag_weapon_left
+		}
+	}
+
+	
+	driver_idlevisa		scripted/opel/driver_idlevisa_dial.skc	
+	driver_killvisa		scripted/opel/driver_killvisa_dial.skc	
+	
+	guard_getvisa		scripted/opel/guard_getvisa.skc
+	{
+		client
+		{
+			  
+			10 sound den_m1l1_101b  
+		}
+	
+		server
+		{
+			enter attachmodel models/weapons/mp40.tik tag_weapon_left
+			15 attachmodel models/items/papers.tik tag_weapon_right
+			16 attachedmodelanim tag_weapon_right visa
+		}
+	}
+	guard_idlevisa		scripted/opel/guard_idlevisa_dial.skc
+	{
+		server
+		{
+			107 removeattachedmodel tag_weapon_right
+		}
+
+
+		client
+		{
+			107 tagspawn tag_weapon_right
+			(
+				spawnrange 2000					// Visibility distance for created object
+				count 1						// How many to create
+				model models/items/papers.tik
+				scale 1.0
+				velocity 50					// Velocity in x-axis of spawn bone
+				randvel range 15 30 crandom 15 range 2 10	// x, y, z random
+				friction 2 // 1 kills 2/3 vel per sec
+				emitterangles 0 0 0				// Aligns object to emitter
+				avelocity -200  -500 0				// Angular velocity, p, y, r
+				accel 0 0 -600					// Acceleration, x, y, z
+				life 2.0					// How long it lasts before removal
+				fadedelay 1.7					// How long to wait before beginning to fade
+				collision					// Turns collision on
+				bouncefactor 0.0				// How high to bounce.  Also turns collision on.
+			)
+
+			  
+			43 sound den_m1l1_100b  
+			103 sound den_m1l1_104b 
+		}
+
+	}
+	guard_killvisa		scripted/opel/guard_killvisa_dial.skc
+	{
+		server
+		{
+			7 attachedmodelanim tag_weapon_left guardfire_a
+			8 attachedmodelanim tag_weapon_left guardfire_b
+			9 attachedmodelanim tag_weapon_left guardfire_a
+			25 removeattachedmodel tag_weapon_left
+			}
+		client
+		{
+			14  bodyfall   //knees
+			27 bodyfall   //face
+			42 bodyfall   //face
+		}
+	}
+
+	passenger_getvisa		scripted/opel/passenger_getvisa.skc
+	passenger_idlevisa	scripted/opel/passenger_idlevisa_dial.skc
+	passenger_killvisa	scripted/opel/passenger_killvisa_dial.skc
+	{
+		server
+		{
+			0 attachmodel models/weapons/colt45.tik tag_weapon_right
+			7 attachedmodelanim tag_weapon_right guardfire_ii
+			10 attachedmodelanim tag_weapon_right guardfire_i
+			23 attachedmodelanim tag_weapon_right guardfire_ii
+			38 attachedmodelanim tag_weapon_right guardfire_i
+			54 attachedmodelanim tag_weapon_right guardfire_ii
+			60 attachedmodelanim tag_weapon_right guardfire_i
+			73 attachedmodelanim tag_weapon_right guardfire_ii
+			78 attachedmodelanim tag_weapon_right guardfire_i
+		}
+
+	}
+
+
+
+
+
+
+//VISA OK
+
+
+
+
+
+
+
+
+	driver_getvisa_ok		scripted/opel/driver_getvisa.skc
+	{
+		server
+		{
+			0 attachmodel models/items/papers.tik tag_weapon_left
+			1 attachedmodelanim tag_weapon_left visa
+			15 removeattachedmodel tag_weapon_left
+		}
+	}
+
+	driver_idlevisa_ok	scripted/opel/driver_idlevisa.skc
+	driver_returnvisa_ok	scripted/opel/driver_returnvisa.skc
+	{
+		server
+		{
+			34 attachmodel models/items/papers.tik tag_weapon_left
+			last removeattachedmodel tag_weapon_left
+		}
+	}
+
+	passenger_getvisa_ok	scripted/opel/passenger_getvisa.skc
+	passenger_idlevisa_ok	scripted/opel/passenger_idlevisa.skc
+	passenger_returnvisa_ok	scripted/opel/passenger_idlevisa.skc
+
+	guard_getvisa_ok		scripted/opel/guard_getvisa.skc
+	{
+		client
+		{
+			  
+			10 sound den_m1l1_101b  
+		}
+	
+		server
+		{
+			1 weaponcommand mainhand attachtohand offhand
+			15 attachmodel models/items/papers.tik tag_weapon_right
+			16 attachedmodelanim tag_weapon_right visa
+		}
+	}
+	
+	guard_idlevisa_ok		scripted/opel/guard_idlevisa.skc
+	guard_returnvisa_ok	scripted/opel/guard_returnvisa.skc
+	{
+		server
+		{
+			33 removeattachedmodel tag_weapon_right
+			last weaponcommand mainhand attachtohand mainhand
+		}
+	}
+
+}
+

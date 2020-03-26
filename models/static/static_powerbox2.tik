@@ -1,0 +1,20 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel tan_power_box2.skd
+	surface tanpower1 shader static_tanpower1
+	surface subknob1 shader static_subknob1
+	surface tanpower2 shader static_tanpower2
+	surface tanpower3 shader static_tanpower3
+	surface valve_black1 shader static_valve_black1
+}
+
+animations
+{
+	idle     tan_power_box2.skc
+}
+
+/*QUAKED static_uboat_tan-power-box2 (0 0 0) (-16 -16 0) (24 24 40)
+*/

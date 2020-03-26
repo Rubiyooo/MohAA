@@ -1,0 +1,20 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/loveseat
+	skelmodel loveseat.skd
+	surface loveseat1 shader static_loveseat_d1
+	surface loveseat3 shader static_loveseat_d1
+	surface loveseat4 shader static_loveseat_d1
+	surface loveseat5 shader static_loveseat_d1
+	surface loveseat6 shader static_loveseat_d1
+}
+
+animations
+{
+	idle     loveseat.skc
+}
+
+/*QUAKED static_furniture_loveseatdestroyed (0.5 0.0 0.5) (-8 -8 0) (8 8 16)
+*/

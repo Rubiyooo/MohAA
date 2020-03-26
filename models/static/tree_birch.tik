@@ -1,0 +1,20 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/natural
+	skelmodel birch.skd
+	surface tree2_1 shader static_tree2_1
+	surface tree2_2 shader static_tree2_2
+	surface tree2_3 shader static_tree2_3
+	surface tree2_4 shader static_tree2_4
+	surface tree2sprite shader static_tree2sprite
+}
+
+animations
+{
+	idle     birch.skc
+}
+
+/*QUAKED static_natural_tree_birch (0.5 0.0 0.5) (-16 -16 -8) (16 16 1024)
+*/

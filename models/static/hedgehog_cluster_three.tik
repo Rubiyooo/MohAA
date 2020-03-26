@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	//scale 1.33			// Convert from inches to game units
+	path models/static/hedgehog
+	skelmodel hedgehog_cluster_three.skd
+	surface hedgehog shader static_hedgehog 
+}
+
+animations
+{
+	idle     hedgehog_cluster_three.skc
+}
+
+/*QUAKED static_obstacle_hedgehog-cluster-three (0.5 0.0 0.5) (-32 -32 0) (32 32 128)
+*/

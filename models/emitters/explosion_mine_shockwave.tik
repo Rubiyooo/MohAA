@@ -1,0 +1,117 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+ 
+init
+{
+	server  
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache dirtcloud.spr
+		cache vsssource.spr
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+	{
+		server
+		{
+		}
+
+		client
+		{
+			// chunky sprites
+
+			enter originspawn
+			(
+				count 6
+				model dirtcloud.spr
+				circle
+				radius 16
+				offset 0 0 16
+				radialvelocity 0 64 128
+				accel 0 0 -100
+				avelocity 0 0 crandom 90
+				angles crandom 45 crandom 45 crandom 180
+				life 3 1
+				scalemin .3
+				scalemax .5
+				scalerate .2
+				fadedelay 1.5
+				alpha 0.7
+				color .32 .28 .24
+			)
+			enter originspawn
+			(
+				count 10
+				model dirtcloud.spr
+				circle
+				radius 48
+				offset 0 0 24
+				radialvelocity 0 64 128
+				accel 0 0 -100
+				angles crandom 45 crandom 45 crandom 180
+				avelocity 0 0 crandom 90
+				life 3 1
+				scalemin .3
+				scalemax .5
+				scalerate .2
+				fadedelay 1.5
+				alpha 0.7
+				color .32 .28 .24
+			)
+
+			// dusty sprites
+
+			enter originspawn
+			(
+				count 6
+				model vsssource.spr
+				circle
+				radius 32
+				offset 0 0 32
+				radialvelocity 0 64 128
+				clampvel -128 128 -128 128 0 0
+				angles crandom 45 crandom 45 crandom 180
+				avelocity 0 0 crandom 90
+				life 3 1
+				scalemin 1
+				scalemax 2
+				scalerate .5
+				fadedelay 2
+				alpha 0.7
+				color .32 .28 .24
+			)
+			enter originspawn
+			(
+				count 10
+				model vsssource.spr
+				circle
+				radius 64
+				offset 0 0 32
+				radialvelocity 0 64 128
+				clampvel -128 128 -128 128 0 0
+				angles crandom 45 crandom 45 crandom 180
+				avelocity 0 0 crandom 90
+				life 3 1
+				scalemin 1
+				scalemax 2
+				scalerate .5
+				fadedelay 2
+				alpha 0.7
+				color .32 .28 .24
+			)
+		}
+	}
+}

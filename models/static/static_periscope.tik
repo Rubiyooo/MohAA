@@ -1,0 +1,21 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel periscope.skd
+	surface material5 shader static_subgreeble
+	surface material6 shader static_scopeface
+	surface material7 shader static_subalum
+	surface material8 shader static_scopebody
+	surface material10 shader static_scopeface
+
+}
+
+animations
+{
+	idle     periscope.skc
+}
+
+/*QUAKED static_uboat_periscope (0 0 0) (-56 -24 0) (56 24 8)
+*/

@@ -1,0 +1,26 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	//scale 1.33			// Convert from inches to game units
+	path models/miscobj/detonator
+	skelmodel detonator.skd
+	surface detonator shader detonator
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     detonator.skc
+	fire	   detonator_fire.skc
+}
+
+/*QUAKED static_equipment_detonator (0.0 0.75 0.5) (-8 -16 0) (8 16 40)
+*/

@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.0429
+	path models/static/lamp
+	skelmodel bulbcovernowire.skd
+	surface material1 shader static_bulbcover_one
+ 	surface material2 shader static_bulbcover_two
+}
+
+animations
+{
+	idle     bulbcovernowire.skc
+}
+
+/*QUAKED static_lamp_lightbulb-covered-nowire (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

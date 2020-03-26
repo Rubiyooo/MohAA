@@ -1,0 +1,144 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+ 
+init
+{
+	server  
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+		angles 270 0 0
+	}
+	client
+	{
+		cache dustdrop.spr
+		cache vsssource.spr
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+			// big roof piece
+			enter originspawn
+			(
+			spawnrate 1.00
+			model models/fx/wood_latice.tik
+			count 2
+			color 1.00 1.00 1.00
+			varycolor
+			life 3.00
+			radius 40.00
+			randvel 30 0 range -20 25
+			accel 30.00 10.00 -200.00
+			friction 1.00
+			angles range 30 -40 crandom -20 crandom -20
+			fade
+			circle
+		      )
+
+			enter originspawn
+			(
+			spawnrate 1.00
+			model models/fx/woodbeams.tik
+			count 3
+			color 1.00 1.00 1.00
+			life 3.00
+			scalerate 1.00
+			radius 30.00
+			velocity 40.00
+			accel 0.00 0.00 -100.00
+			angles range 30 -90 crandom -50 range 60 -30
+			avelocity range 100 -50 crandom -20 range -30 -70
+			scalemin 1.00
+			scalemax 2.00
+			circle
+		      )
+
+                  enter originspawn
+                  (
+			spawnrate 1.00
+			model models/fx/wood_brace.tik
+			count 4
+			color 1.00 1.00 1.00
+			life 2.00
+			scalerate 0.40
+			radius 30.00
+			velocity 3.00
+			accel -90.00 45.00 -275.00
+			angles crandom -50 range 369 -180 crandom -70
+			scalemin 1.00
+			scalemax 1.30
+			sphere
+		      )
+			
+                  enter originspawn
+                  (
+			spawnrate 1.00
+			model vsssource.spr
+			count 5
+			alpha 0.50
+			color 1.00 0.90 0.80
+			scale 0.50
+			life 1.50
+			scalerate 3.00
+			radius 10.00
+			velocity 20.00
+			randvel crandom -5 crandom -5 range 30 -20
+			accel 2.00 4.00 10.00
+			friction -2.00
+			offsetalongaxis 0 crandom -90 0
+			scalemin 0.50
+			scalemax 2.00
+			fade
+			sphere
+			randomroll
+		      )
+                  
+                  enter originspawn
+                  (
+				spawnrate 1.00
+				model vsssource.spr
+				count 5
+				alpha 0.50
+				color 1.00 0.90 0.80
+				scale 0.50
+				life 1.50
+				scalerate 3.00
+				radius 10.00
+				velocity 20.00
+				randvel crandom -5 crandom -5 range 30 -20
+				accel 2.00 4.00 10.00
+				friction -2.00
+				offsetalongaxis 0 crandom -90 0
+				scalemin 0.50
+				scalemax 2.00
+				fade
+				sphere
+				randomroll
+			)
+		}
+	}
+}
+/*QUAKED fx_exploder_rooflift (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Smoke from fire.
+Doesn't collide.
+*/
+/*QUAKED fx_exploder_roof (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+*/

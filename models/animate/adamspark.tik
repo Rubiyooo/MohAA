@@ -1,0 +1,120 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+			cache models/fx/bh_metal_fastpiece.tik
+			cache corona_reg.spr
+			cache vsssource.spr
+
+			originemitter name1
+			(
+				spawnrate 50.00
+				model models/fx/bh_metal_fastpiece.tik
+				count 10
+				alpha 0.50
+				color 2.00 2.00 2.00
+				scale .90
+				life .5
+				velocity 800.00
+				randvelaxis range 34 -90 range 20 -60 range 32 -80
+				accel 0.00 0.00 -600.00
+				friction -3.00
+				offsetalongaxis range 20 -30 range 30 -70 0
+				fade
+				sphere
+				alignstretch 0.07
+			)
+
+
+			originemitter name2
+			(
+				spawnrate 1.00
+				model corona_reg.spr
+				count 4
+				color 1.00 1.00 1.00
+				scale 0.09
+				life 0.15
+				scalerate 12.00
+				velocity 12.00
+				accel 0.00 0.00 -120.00
+				avelocity 0 -90 0
+				scalemin 0.05
+				scalemax 0.50
+				fade
+				randomroll
+			)
+
+			originemitter name3
+			(
+				spawnrate 1.00
+				model corona_reg.spr
+				color 1.00 1.00 1.00
+				life 0.03
+			)
+
+
+			originemitter smoke
+			(
+				spawnrate 1.00
+				model vsssource.spr
+				count 3
+				alpha 0.30
+				color 1.00 1.00 1.00
+				life 1.00
+				scalerate 1.5
+				accel 0.00 0.00 23.00
+				randomroll
+			)
+			originemitter spark
+			(
+				spawnrate 20.00
+				model models/fx/bh_metal_fastpiece.tik
+				count 10
+				color 1.00 1.00 1.00
+				life .5
+				velocity 800.00
+				inwardsphere
+				align
+			)
+            
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter sound short_circuit
+			enter 		 		emitteron	name1
+			enter commanddelay	.25	emitteroff	name1
+			enter commanddelay	.25	emitteron	name3
+			enter commanddelay	.5	emitteroff	name3
+			enter commanddelay	.5	emitteron	spark
+			enter commanddelay	.5	emitteroff	spark
+			enter commanddelay	1	emitteron	name2
+			enter commanddelay	1	emitteroff	name2
+			enter commanddelay	1	emitteron	smoke
+			enter commanddelay	2	emitteroff	smoke
+		}
+	}
+}
+
+/*QUAKED fx_exploder_adamspark (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+*/

@@ -1,0 +1,9 @@
+animations
+{
+$path models/human/animation
+
+	open_gate_a		scripted/open_gate/m2l1_gate_open_a.skc
+	open_gate_b		scripted/open_gate/m2l1_gate_open_b.skc
+	open_gate_loop	scripted/open_gate/m2l1_gate_open_loop.skc
+	open_gate_death	scripted/open_gate/m2l1_gate_open_death.skc
+}

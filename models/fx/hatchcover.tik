@@ -1,0 +1,21 @@
+TIKI
+setup
+{
+	scale 1			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/fx/destruction/hatchcover
+	skelmodel hatchcover.skd
+	surface material1 shader miscpieces2
+}
+
+init
+{
+	server
+	{
+		classname Object
+	}
+}
+
+animations
+{
+	idle     hatchcover.skc
+}

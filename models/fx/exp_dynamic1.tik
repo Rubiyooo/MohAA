@@ -1,0 +1,98 @@
+TIKI
+setup
+{
+	scale 0.02
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		cache explosed2.spr
+		cache fire_ring.spr
+		cache vsssource.spr
+	}
+}
+
+animations
+{
+	aaaa dummy2.skc // hack to allow the idle anim's entry commands to run
+	idle dummy2.skc
+	{
+		client
+		{
+			enter sound gas_explode
+
+			enter commanddelay 0.500 originspawn
+			(
+				model explosed2.spr
+				count 4
+				color 1.00 1.00 1.00
+				varycolor
+				scale 0.10
+				life 4.00
+				scalerate 5.00
+				radius 7.00
+				velocity 5.00
+				radialvelocity 5.00 5.00 10.00
+				randvel range 100 -50 range 100 -50 range 100 -50
+				accel 0.00 0.00 40.00
+				friction 0.20
+				offset crandom -4 crandom -4 crandom -20
+				offsetalongaxis crandom -20 crandom -20 random -40
+				avelocity random -20 crandom -40 crandom -50
+				scalemin 0.50
+				scalemax 0.80
+				fade
+				sphere
+			)
+
+			enter originspawn
+			(
+				model vsssource.spr
+				count 4
+				alpha 0.80
+				color 0.10 0.10 0.10
+				life 6.00
+				scalerate 7.00
+				velocity 5.00
+				accel 0.00 0.00 70.00
+				offsetalongaxis crandom -20 crandom -20 random -40
+				fade
+				sphere
+			)
+
+			enter originspawn
+			(
+				model explosed2.spr
+				color 1.00 1.00 1.00
+				scale 2.00
+				life 4.00
+				scalerate 5.00
+				radius 10.00
+				radialvelocity 0.00 5.00 7.00
+				scalemin 0.60
+				scalemax 1.00
+				fade
+				sphere
+				randomroll
+			)
+
+			enter commanddelay 0.500 originspawn
+			(
+				model fire_ring.spr
+				color 1.00 1.00 1.00
+				scale 0.50
+				life 0.70
+				scalerate 8.00
+				offsetalongaxis 0 0 -70
+				fade
+			)
+		}
+	}
+} 
+
+/*QUAKED fx_explosions_dynamic1(0.0 0.75 0.5) (-16 -16 0) (8 16 56)
+*/

@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/furniture/chairs
+	skelmodel roundedchair.skd
+	surface roundedchair shader roundedchair_d
+	surface roundedchairback shader roundedchairback_d
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     roundedchair.skc
+}
+
+/*QUAKED static_furniture_roundedchair-d (0.0 0.75 0.5) (-16 -16 0) (16 16 64)
+*/

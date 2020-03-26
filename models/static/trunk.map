@@ -1,0 +1,12 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 26 24 0 ) ( 0 24 0 ) ( 0 -20 0 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 0 -20 31 ) ( 0 24 31 ) ( 26 24 31 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 1 -24 32 ) ( 27 -24 32 ) ( 27 -24 0 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 27 -20 32 ) ( 27 24 32 ) ( 27 24 0 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 26 24 32 ) ( 0 24 32 ) ( 0 24 0 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+( 0 24 32 ) ( 0 -20 32 ) ( 0 -20 0 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm detail 
+}
+}

@@ -1,0 +1,37 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 0.52
+	path models/human/German_panzer_grenadier
+	skelmodel German_panzer_grenadier.skb
+	surface pants shader Panzer_pants
+      surface tunic2 shader Panzer_G_tunic
+ 	surface tunic7 shader Panzer_G_tunic
+	surface face shader Dolf
+	surface ammo shader ammopacks 
+	surface pack shader pack2
+	surface hands shader hand 
+
+	radius 20				// defines size of shadow
+
+}
+
+init
+{
+	server
+	{
+		classname Animate
+		setsize "-16 -16 0" "16 16 92"
+	}
+}
+
+animations
+{
+	idle     German_panzer_grenadier.skc
+}
+
+/*QUAKED posed_german_panzer_grenadier (0.5 .25 0.25) (-16 -16 0) (16 16 92)
+badass
+*/

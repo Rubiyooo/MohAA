@@ -1,0 +1,4 @@
+death_mortar_flip			death_mortar_flip.skc
+death_mortar_high			death_mortar_high.ksc
+death_mortar_medium			death_mortar_medium.skc
+death_mortar_twist			death_mortar_twist.skc

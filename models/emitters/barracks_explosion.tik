@@ -1,0 +1,163 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+			originemitter metalchunk
+			(
+				spawnrate 4.00
+				model models/fx/metal_section.tik
+				count 4
+				color 1.00 1.00 1.00
+				collision
+				bouncefactor 0.30
+				life 1.00
+				radius 10.00
+				velocity 400.00
+				radialvelocity 10.00 10.00 100.00
+				accel 0.00 0.00 -200.00
+				offsetalongaxis 0 crandom -40 crandom -30
+				angles range -220 -440 crandom -220 range -220 110
+				avelocity crandom -400 crandom -400 crandom -300
+				scalemin 0.30
+				scalemax 1.00
+			)
+
+			originemitter metal
+			(
+				spawnrate 2.00
+				model models/fx/metal_section.tik
+				count 4
+				color 1.00 1.00 1.00
+				collision
+				bouncefactor 0.30
+				scale 0.30
+				life 2.00
+				radius 10.00
+				velocity 600.00
+				radialvelocity 10.00 10.00 100.00
+				randvelaxis crandom -200 crandom -200 crandom -20
+				accel 0.00 0.00 -200.00
+				friction -1.00
+				angles range -220 -440 crandom -220 range -220 110
+				avelocity crandom -400 crandom -400 crandom -300
+				scalemin 0.30
+				scalemax 1.00
+			)
+
+			originemitter exploder
+			(
+				spawnrate 2.00
+			  	count 1.00
+				model air_explosion.spr
+				alpha 0.50
+				color 0.40 0.40 0.40
+				varycolor
+				scale 1.00
+				life 0.50
+				scalerate 1.00
+				scalemin 0.20
+				scalemax 2.00
+				fade
+				align
+			)
+
+			commanddelay 0.200 originemitter flash
+			(
+				spawnrate 1.00
+				count 1
+				model air_explosion.spr
+				alpha 0.40
+				color 1.00 1.00 1.00
+				scale 3.00
+				life 0.3
+				scalerate 9.00
+				offsetalongaxis 0 crandom -64 0
+				scalemin 0.50
+				scalemax 2.00
+				fadedelay 0.00
+			)
+
+			originemitter smoke
+			(
+				spawnrate 5.00
+				model vsssource2.spr
+				count 5
+				alpha 0.70
+				color 0.20 0.20 0.20
+				life 5.00
+				scalerate 7.00
+				radius 22.00
+				velocity 100.00
+				accel 0.00 0.00 333.00
+				friction 1.00
+				fade
+				randomroll
+			)
+			// mushroom cloud
+			originemitter test
+		(
+			model vsssource.spr
+			color 0.2 0.2 0.2
+			alpha .7
+			fadein 1
+			fadedelay 1
+			spawnrate 32
+			life 3 1
+			circle
+			radius 16
+			radialvelocity 0 96 144
+			friction 0.7
+			scalemin 3
+			scalemax 4
+			scalerate .25
+		(	
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron metalchunk
+			enter emitteron flash
+			enter emitteron exploder
+			enter emitteron metal
+			enter emitteron smoke
+			enter emitteron bolt
+
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff metalchunk
+			enter emitteroff flash
+			enter emitteroff exploder
+			enter emitteroff metal
+			enter emitteroff smoke
+			enter emitteroff smoke
+		}
+	}
+}
+
+/*QUAKED fx_exploder_barracks (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+airfield
+*/

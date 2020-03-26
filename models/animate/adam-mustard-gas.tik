@@ -1,0 +1,60 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache vsssource.spr
+		
+		originemitter mustard_gas
+		(
+			spawnrate 5.00
+			model vsssource.spr
+			alpha 0.80
+			color 0.7 0.6 0.3
+			scale 0.25
+			life 1.00
+			scalerate 8.00
+			velocity 60.00
+			randvelaxis range 10 -10 range 10 -10 range 10 -10
+			accel 0.00 0.00 90.00
+			fade
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter loopsound steamloop
+			enter emitteron mustard_gas
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff mustard_gas
+		}
+	}
+}
+
+/*QUAKED animate_fx_adam-mustard-gas(0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Senn's Sexy Mustard Gas
+*/

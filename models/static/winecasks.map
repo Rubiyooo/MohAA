@@ -1,0 +1,150 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -7 -41 25 ) ( 26 -41 25 ) ( 26 -29 15 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -7 -41 43 ) ( 26 -41 43 ) ( 26 -41 25 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -7 -29 54 ) ( 26 -29 54 ) ( 26 -41 43 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 26 -29 54 ) ( -7 -29 54 ) ( -7 -15 54 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 26 -15 54 ) ( -7 -15 54 ) ( -7 -2 43 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 26 -2 43 ) ( -7 -2 43 ) ( -7 -2 25 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -7 -14 15 ) ( 26 -14 15 ) ( 26 -2 25 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -7 -29 15 ) ( 26 -29 15 ) ( 26 -14 15 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -27 -36 34 ) ( -27 -36 32 ) ( -27 -4 32 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 26 -5 32 ) ( 26 -37 32 ) ( 26 -37 34 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 1
+{
+( -7 -20 59 ) ( 26 -20 59 ) ( 26 -8 49 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -7 -20 77 ) ( 26 -20 77 ) ( 26 -20 59 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -7 -8 88 ) ( 26 -8 88 ) ( 26 -20 77 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 26 -8 88 ) ( -7 -8 88 ) ( -7 6 88 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 26 6 88 ) ( -7 6 88 ) ( -7 19 77 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 26 19 77 ) ( -7 19 77 ) ( -7 19 59 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -7 7 49 ) ( 26 7 49 ) ( 26 19 59 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -7 -8 49 ) ( 26 -8 49 ) ( 26 7 49 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -27 -15 68 ) ( -27 -15 66 ) ( -27 17 66 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 26 16 66 ) ( 26 -16 66 ) ( 26 -16 68 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 2
+{
+( -7 1 25 ) ( 26 1 25 ) ( 26 13 15 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -7 1 43 ) ( 26 1 43 ) ( 26 1 25 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -7 13 54 ) ( 26 13 54 ) ( 26 1 43 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 26 13 54 ) ( -7 13 54 ) ( -7 27 54 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 26 27 54 ) ( -7 27 54 ) ( -7 40 43 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 26 40 43 ) ( -7 40 43 ) ( -7 40 25 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -7 28 15 ) ( 26 28 15 ) ( 26 40 25 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -7 13 15 ) ( 26 13 15 ) ( 26 28 15 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -27 6 34 ) ( -27 6 32 ) ( -27 38 32 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 26 37 32 ) ( 26 5 32 ) ( 26 5 34 ) common/woodclip 0 0 0.00 1 1 536870912 16544 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 3
+{
+( 74 41 13 ) ( 23 41 13 ) ( 23 24 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 23 -3 15 ) ( 23 14 15 ) ( 74 14 15 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 23 -44 16 ) ( 74 -44 16 ) ( 74 -44 14 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 25 24 17 ) ( 25 41 17 ) ( 25 41 15 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 74 41 15 ) ( 23 41 15 ) ( 23 41 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 23 41 15 ) ( 23 24 15 ) ( 23 24 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 4
+{
+( 25 41 13 ) ( -26 41 13 ) ( -26 24 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -26 -3 15 ) ( -26 14 15 ) ( 25 14 15 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -26 -44 16 ) ( 25 -44 16 ) ( 25 -44 14 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -24 24 17 ) ( -24 41 17 ) ( -24 41 15 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 25 41 15 ) ( -26 41 15 ) ( -26 41 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -26 41 15 ) ( -26 24 15 ) ( -26 24 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 5
+{
+( -23 14 13 ) ( -26 14 13 ) ( -26 11 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -1 11 15 ) ( -1 14 15 ) ( 2 14 15 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -26 11 15 ) ( -23 11 15 ) ( -23 11 12 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 25 11 15 ) ( 25 14 15 ) ( 25 14 12 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -23 14 15 ) ( -26 14 15 ) ( -26 14 12 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -26 14 15 ) ( -26 11 15 ) ( -26 11 12 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 6
+{
+( -23 -14 13 ) ( -26 -14 13 ) ( -26 -17 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -1 -17 15 ) ( -1 -14 15 ) ( 2 -14 15 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -26 -17 15 ) ( -23 -17 15 ) ( -23 -17 12 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 25 -17 15 ) ( 25 -14 15 ) ( 25 -14 12 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -23 -14 15 ) ( -26 -14 15 ) ( -26 -14 12 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -26 -14 15 ) ( -26 -17 15 ) ( -26 -17 12 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 7
+{
+( 28 -14 1 ) ( -28 -14 1 ) ( -28 -17 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -28 -17 13 ) ( -28 -14 13 ) ( 28 -14 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -28 -17 15 ) ( 28 -17 15 ) ( 28 -17 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -24 -17 16 ) ( -24 -14 16 ) ( -24 -14 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 28 -14 15 ) ( -28 -14 15 ) ( -28 -14 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -26 -14 15 ) ( -26 -17 15 ) ( -26 -17 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 8
+{
+( 28 14 1 ) ( -28 14 1 ) ( -28 11 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -28 11 13 ) ( -28 14 13 ) ( 28 14 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -28 11 15 ) ( 28 11 15 ) ( 28 11 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -24 11 16 ) ( -24 14 16 ) ( -24 14 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 28 14 15 ) ( -28 14 15 ) ( -28 14 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -26 14 15 ) ( -26 11 15 ) ( -26 11 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 9
+{
+( 28 42 1 ) ( -28 42 1 ) ( -28 39 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -28 39 13 ) ( -28 42 13 ) ( 28 42 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -28 39 15 ) ( 28 39 15 ) ( 28 39 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -24 39 16 ) ( -24 42 16 ) ( -24 42 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 28 42 15 ) ( -28 42 15 ) ( -28 42 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -26 42 15 ) ( -26 39 15 ) ( -26 39 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 10
+{
+( 77 42 1 ) ( 21 42 1 ) ( 21 39 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 21 39 13 ) ( 21 42 13 ) ( 77 42 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 21 39 15 ) ( 77 39 15 ) ( 77 39 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 25 39 16 ) ( 25 42 16 ) ( 25 42 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 77 42 15 ) ( 21 42 15 ) ( 21 42 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 23 42 15 ) ( 23 39 15 ) ( 23 39 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 11
+{
+( 77 14 1 ) ( 21 14 1 ) ( 21 11 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 21 11 13 ) ( 21 14 13 ) ( 77 14 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 21 11 15 ) ( 77 11 15 ) ( 77 11 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 25 11 16 ) ( 25 14 16 ) ( 25 14 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 77 14 15 ) ( 21 14 15 ) ( 21 14 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 23 14 15 ) ( 23 11 15 ) ( 23 11 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 12
+{
+( 77 -14 1 ) ( 21 -14 1 ) ( 21 -17 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 21 -17 13 ) ( 21 -14 13 ) ( 77 -14 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 21 -17 15 ) ( 77 -17 15 ) ( 77 -17 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 25 -17 16 ) ( 25 -14 16 ) ( 25 -14 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 77 -14 15 ) ( 21 -14 15 ) ( 21 -14 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 23 -14 15 ) ( 23 -17 15 ) ( 23 -17 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 13
+{
+( 77 -41 1 ) ( 21 -41 1 ) ( 21 -44 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 21 -44 13 ) ( 21 -41 13 ) ( 77 -41 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 21 -44 15 ) ( 77 -44 15 ) ( 77 -44 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 25 -44 16 ) ( 25 -41 16 ) ( 25 -41 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 77 -41 15 ) ( 21 -41 15 ) ( 21 -41 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 23 -41 15 ) ( 23 -44 15 ) ( 23 -44 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 14
+{
+( 28 -41 1 ) ( -28 -41 1 ) ( -28 -44 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -28 -44 13 ) ( -28 -41 13 ) ( 28 -41 13 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -28 -44 15 ) ( 28 -44 15 ) ( 28 -44 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -24 -44 16 ) ( -24 -41 16 ) ( -24 -41 1 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( 28 -41 15 ) ( -28 -41 15 ) ( -28 -41 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+( -26 -41 15 ) ( -26 -44 15 ) ( -26 -44 0 ) common/metalclip 0 0 0.00 1 1 327680 32928 0 +surfaceparm playerclip +surfaceparm weaponclip +surfaceparm detail 
+}
+}

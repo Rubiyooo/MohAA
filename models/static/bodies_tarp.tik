@@ -1,0 +1,19 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/bodies_tarp
+	skelmodel bodies_tarp.skd
+	surface tarp shader static_tarp
+	surface feet2 shader static_feet
+	surface feet3 shader static_feet
+	surface feet4 shader static_feet
+}
+
+animations
+{
+	idle     bodies_tarp.skc
+}
+
+/*QUAKED static_deadbodies_bodies-under-tarp (0.5 0.0 0.5) (-64 -32 0) (72 32 64)
+*/

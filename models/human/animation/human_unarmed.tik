@@ -1,0 +1,194 @@
+animations // Now list all of the animations and any special commands for them
+{
+$path models/human/animation
+
+//--------
+//Curious//
+//--------
+
+unarmed_stand_curious			weapon_unarmed/unarmed_stand_curious.skc
+unarmed_stand_surprise			weapon_pistol/curious/pistol_stand_surprise.skc
+unarmed_stand_shock			weapon_grenade/curious/grenade_stand_shock.skc				
+unarmed_stand_identify			weapon_rifle/curious/rifle_stand_identify.skc				
+unarmed_stand_flinch			weapon_rifle/flinch.skc 			
+
+unarmed_walk_curious_back		weapon_pistol/curious/pistol_walk_curious_backward.skc
+unarmed_walk_curious_forward		weapon_pistol/curious/pistol_walk_curious_forward.skc
+unarmed_walk_curious_left		walks_runs/curiousw_left90.skc
+unarmed_walk_curious_right		walks_runs/curiousw_right90.skc
+
+//----------------
+// Alert
+//---------------- 
+
+unarmed_walk_alert_forward		weapon_unarmed/alert_walk.skc								autosteps_walk		
+unarmed_walk_alert_back		walks_runs/alertw_backward.skc							autosteps_walk
+unarmed_walk_alert_left			walks_runs/alertw_left.skc								autosteps_walk
+unarmed_walk_alert_right		walks_runs/alertw_right.skc								autosteps_walk
+
+unarmed_stand_alert			weapon_unarmed/unarmed_stand_alert_a(action).skc
+unarmed_stand_alert_legs		alert/alert_legs_leftforward.skc							
+
+unarmed_stand_dodge_left		weapon_grenade/alert/grenade_stand_dodge_left.skc			
+unarmed_stand_dodge_right		weapon_grenade/alert/grenade_stand_dodge_right.skc				
+
+unarmed_standtocrouch_dive		alert/standtocrouch_dive.skc	autosteps_run
+unarmed_standtocrouch_run		alert/standtocrouch_run.skc		autosteps_run
+
+unarmed_crouch_alert			idle/unarmed_crouch_alert.skc
+
+
+//----------------
+//Walks and Runs//
+//----------------
+unarmed_run_forward			walks_runs/alert_run.skc								autosteps_run
+unarmed_run_left				walks_runs/alert_run.skc								autosteps_run
+unarmed_run_right				walks_runs/alert_run.skc								autosteps_run
+unarmed_run_back			walks_runs/alert_run.skc								autosteps_run
+
+unarmed_alert_sprint_forward 	walks_runs/alert_sprint.skc								autosteps_run
+unarmed_alert_sprint_back 		walks_runs/alert_sprint.skc								autosteps_run
+unarmed_alert_sprint_right 		walks_runs/alert_sprint.skc								autosteps_run
+unarmed_alert_sprint_left 		walks_runs/alert_sprint.skc								autosteps_run
+
+unarmed_alert_walk_forward 		walks_runs/alert_walk.skc								autosteps_walk
+unarmed_alert_walk_back			walks_runs/alert_walk.skc								autosteps_walk
+unarmed_alert_walk_left 		walks_runs/alert_walk.skc								autosteps_walk
+unarmed_alert_walk_right 		walks_runs/alert_walk.skc								autosteps_walk
+
+unarmed_walk_patrol_forward		weapon_pistol/walks_runs/pistol_walk_patrol_forward.skc			autosteps_walk
+unarmed_walk_patrol_back		weapon_pistol/walks_runs/pistol_walk_patrol_forward.skc			autosteps_walk
+unarmed_walk_patrol_right		weapon_pistol/walks_runs/pistol_walk_patrol_forward.skc			autosteps_walk
+unarmed_walk_patrol_left		weapon_pistol/walks_runs/pistol_walk_patrol_forward.skc			autosteps_walk
+
+unarmed_crouchrun_forward		weapon_unarmed/unarmed_crouch_run.skc							autosteps_run
+unarmed_crouchrun_back			weapon_unarmed/unarmed_crouch_run.skc							autosteps_run
+unarmed_crouchrun_right			weapon_unarmed/unarmed_crouch_run.skc							autosteps_run
+unarmed_crouchrun_left			weapon_unarmed/unarmed_crouch_run.skc							autosteps_run	
+
+unarmed_injurerun_forward		weapon_unarmed/unarmed_injurerun.skc						autosteps_run
+unarmed_injurerun_back			weapon_unarmed/unarmed_injurerun.skc						autosteps_run
+unarmed_injurerun_right			weapon_unarmed/unarmed_injurerun.skc						autosteps_run
+unarmed_injurerun_left			weapon_unarmed/unarmed_injurerun.skc						autosteps_run
+		
+unarmed_walk_forward			walks_runs/alert_walk.skc						autosteps_walk
+unarmed_walk_left				walks_runs/alertw_left.skc						autosteps_walk	
+unarmed_walk_right				walks_runs/alertw_right.skc						autosteps_walk	
+unarmed_walk_back				walks_runs/alertw_backward.skc					autosteps_walk
+	
+//----------------
+//HIT ANIMATIONS//
+//----------------
+
+//Stand//
+
+unarmed_stand_hit_head			weapon_grenade/minor_pain/grenade_stand_hit_head.skc				autosteps_walk
+unarmed_stand_hit_uppertorso01	weapon_grenade/minor_pain/grenade_stand_hit_head.skc 		random	autosteps_walk
+unarmed_stand_hit_uppertorso02	weapon_grenade/minor_pain/grenade_stand_hit_torso.skc 		random	autosteps_walk
+unarmed_stand_hit_lowertorso		weapon_grenade/minor_pain/grenade_stand_hit_lowertorso.skc		autosteps_walk
+unarmed_stand_hit_leg			weapon_grenade/minor_pain/grenade_stand_hit_leg.skc					autosteps_walk
+unarmed_stand_hit_Larm			weapon_grenade/minor_pain/grenade_stand_hit_head.skc				autosteps_walk
+unarmed_stand_hit_Rarm			weapon_grenade/minor_pain/grenade_stand_hit_rarm.skc				autosteps_walk
+unarmed_stand_hit_lowerback_back	weapon_grenade/minor_pain/grenade_stand_hit_lowerback.skc		autosteps_walk
+
+//Crouch//
+
+unarmed_crouch_hit_head			weapon_pistol/minor_pain/pistol_crouch_hit_head.skc						autosteps_walk
+unarmed_crouch_hit_uppertorso01	weapon_pistol/minor_pain/pistol_crouch_hit_torso.skc			random	autosteps_walk
+unarmed_crouch_hit_uppertorso02	weapon_pistol/minor_pain/pistol_crouch_hit_front.skc			random	autosteps_walk
+unarmed_crouch_hit_lowertorso		weapon_pistol/minor_pain/pistol_crouch_hit_front_flyback.skc		autosteps_walk
+unarmed_crouch_hit_leg			weapon_pistol/minor_pain/pistol_crouch_hit_front_flyback.skc			autosteps_walk
+unarmed_crouch_hit_Larm			weapon_pistol/minor_pain/pistol_crouch_hit_front_flyback.skc			autosteps_walk
+unarmed_crouch_hit_Rarm			weapon_pistol/minor_pain/pistol_crouch_hit_front.skc					autosteps_walk
+unarmed_crouch_hit_back			weapon_pistol/minor_pain/pistol_crouch_hit_head.skc					autosteps_walk
+
+//Prone//
+
+unarmed_prone_hit_head			weapon_pistol/minor_pain/pistol_prone_hit_head.skc
+unarmed_prone_hit_uppertorso		weapon_pistol/minor_pain/pistol_prone_hit_head.skc
+unarmed_prone_hit_lowertorso		weapon_pistol/minor_pain/pistol_prone_hit_head.skc
+unarmed_prone_hit_leg			weapon_pistol/minor_pain/pistol_prone_hit_leg.skc
+unarmed_prone_hit_Larm			weapon_pistol/minor_pain/pistol_prone_hit_head.skc
+unarmed_prone_hit_Rarm			weapon_pistol/minor_pain/pistol_prone_hit_head.skc
+
+//Floor//
+
+unarmed_floor_hit				weapon_grenade/minor_pain/grenade_floor_hit_torso.skc
+
+//-----------------
+//PAIN ANIMATIONS//
+//-----------------
+
+unarmed_pain_flooridle			weapon_grenade/major_pain/grenade_pain_flooridle.skc
+unarmed_pain_crawl			weapon_grenade/major_pain/grenade_pain_crawl.skc
+unarmed_pain_floortodeath		weapon_grenade/major_pain/grenade_pain_floortodeath.skc
+unarmed_pain_floortoknees		weapon_grenade/major_pain/grenade_pain_floortoknees.skc
+unarmed_pain_crawltodeath		weapon_grenade/major_pain/grenade_pain_crawltodeath.skc
+unarmed_pain_crawltofloor		weapon_grenade/major_pain/grenade_pain_crawltofloor.skc
+unarmed_pain_standtoknees		weapon_grenade/major_pain/grenade_pain_standtoknees.skc
+unarmed_pain_kneesidle			weapon_grenade/major_pain/grenade_pain_kneesidle.skc
+unarmed_pain_kneestocrawl		weapon_grenade/major_pain/grenade_pain_kneestocrawl.skc
+unarmed_pain_kneestodeath		weapon_grenade/major_pain/grenade_pain_kneestodeath.skc
+unarmed_pain_kneestofloor		weapon_grenade/major_pain/grenade_pain_kneestofloor.skc
+unarmed_pain_kneestostand		weapon_grenade/major_pain/grenade_pain_kneestostand.skc
+unarmed_pain_standleft			weapon_grenade/major_pain/grenade_pain_standleft.skc
+unarmed_pain_standright			weapon_grenade/major_pain/grenade_pain_standright.skc
+unarmed_pain_standstraight		weapon_grenade/major_pain/grenade_pain_standstraight.skc
+
+//-------
+// Prone (Alert)
+//-------
+
+unarmed_prone_walk_back			weapon_grenade/prone/grenade_prone_walk_back.skc
+unarmed_prone_roll_left			weapon_grenade/prone/grenade_prone_roll_left.skc
+unarmed_prone_roll_right		weapon_grenade/prone/grenade_prone_roll_right.skc
+unarmed_prone_turn_left			weapon_grenade/prone/grenade_prone_turn_left.skc
+unarmed_prone_turn_right		weapon_grenade/prone/grenade_prone_turn_right.skc
+unarmed_prone_pullout			weapon_grenade/prone/grenade_prone_takeout.skc
+unarmed_prone_putaway			weapon_grenade/prone/grenade_prone_putaway.skc
+unarmed_prone_throw_straight		weapon_grenade/prone/grenade_prone_throw_straight.skc
+unarmed_prone_throw_left		weapon_grenade/prone/grenade_prone_throw_left.skc
+unarmed_prone_throw_right		weapon_grenade/prone/grenade_prone_throw_right.skc
+unarmed_prone_walk			weapon_grenade/prone/grenade_prone_walk_forward.skc
+unarmed_prone_walk_right		weapon_grenade/prone/grenade_prone_walk_right.skc
+unarmed_prone_walk_left			weapon_grenade/prone/grenade_prone_walk_left.skc
+unarmed_prone_idle			weapon_unarmed/unarmed_prone_bored.skc
+unarmed_prone_idle			weapon_unarmed/unarmed_prone_bored.skc
+
+//---------
+//Crouch (Alert)
+//---------
+
+unarmed_crouch_prone			weapon_grenade/prone/grenade_crouchtoprone.skc
+unarmed_crouch_walk_forward		weapon_grenade/crouch/grenade_crouch_walk.skc				autosteps_walk
+unarmed_crouch_walk_back		weapon_grenade/crouch/grenade_crouch_walk_back.skc			autosteps_walk
+unarmed_crouch_walk_left		weapon_grenade/crouch/grenade_crouch_walk_left.skc			autosteps_walk
+unarmed_crouch_walk_right		weapon_grenade/crouch/grenade_crouch_walk_right.skc			autosteps_walk
+
+//-------
+//Idle/Bored
+//-------
+
+unarmed_stand_bored_a_intro		idle/unarmed_idle_moretough_intro.skc
+unarmed_stand_bored_a01			idle/unarmed_idle_moretough01(loop).skc		weight 2
+unarmed_stand_bored_a02			idle/unarmed_idle_moretough02(twitch).skc		weight 1 dontrepeate
+unarmed_stand_bored_a_outtro		idle/unarmed_idle_moretough_outtro.skc
+unarmed_stand_bored_b_intro		idle/unarmed_idle_lesstough_intro.skc
+unarmed_stand_bored_b			idle/unarmed_idle_lesstough.skc
+unarmed_stand_bored_b_outtro		idle/unarmed_idle_lesstough_outtro.skc
+
+unarmed_squat_intro			idle/unarmed_idle_squat_intro.skc
+unarmed_squat				idle/unarmed_idle_squat.skc
+unarmed_squat_outtro			idle/unarmed_idle_squat_outtro.skc
+
+unarmed_stand_nervous_a			misc/nervousb.skc							
+unarmed_stand_nervous_b			misc/nervousb.skc						
+unarmed_stand_nervous_c			misc/nervousb.skc							
+
+
+//--------
+// Fancy extra behaviors
+//--------
+
+unarmed_diveongrenade			misc/takecover_slide_rifle.skc
+}

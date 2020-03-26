@@ -1,0 +1,33 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 0.52
+	path models/miscobj/radar
+	skelmodel radar.skd
+	surface radar4 shader static_radar
+	surface radar3 shader static_radar
+	surface radar2 shader static_radar
+	surface radar1 shader static_radarcull
+
+
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+
+animations
+{
+	idle     radar.skc
+}
+
+/*QUAKED static_equipment_radarstation (0.5 .25 0.25) (-32 -32 0) (32 32 128)
+German Radar station.
+*/

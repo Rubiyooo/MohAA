@@ -1,0 +1,93 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter fire1
+		(
+			spawnrate 25.00
+			model models/fx/bh_metal_fastpiece.tik
+			alpha 0.50
+			color 1.00 1.00 1.00
+			varycolor
+			life 1.00
+			scalerate 0.50
+			accel 0.00 0.00 10.00
+			offset random -2 random -2 random -2
+			offsetalongaxis range 1 0.5 range -0.06 0.1 crandom -1
+			angles 90 crandom -10 crandom 5
+			avelocity crandom -50 crandom -22 range -80 40
+			fade
+			alignstretch 3.00
+			scale 2.0
+		)
+		originemitter smoke1
+		(
+			spawnrate 13.00
+			model vsssource.spr
+			alpha 0.10
+			color 0.20 0.20 0.20
+			life 1.00
+			randvel crandom -10 crandom -10 crandom -10
+			accel 0.00 0.00 112.00
+		)
+		originemitter smoke2
+		(
+			spawnrate 32.00
+			model vsssource.spr
+			alpha 0.10
+			color 1.00 1.00 1.00
+			scale 0.10
+			life 1.00
+			scalerate 3.00
+			velocity 23.00
+			randvel randvel crandom -10 crandom -10 crandom -10
+			accel 0.00 0.00 112.00
+			offsetalongaxis 0 0 6
+			fadedelay 0.00
+			fadein 0.000000
+			randomroll
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron fire1
+			enter emitteron smoke1
+			enter emitteron smoke2
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff fire1
+			enter emitteroff smoke1
+			enter emitteroff smoke2
+
+		}
+	}
+}
+
+/*QUAKED fx_destruction_flamefinger (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+for fire aftermath ...
+*/

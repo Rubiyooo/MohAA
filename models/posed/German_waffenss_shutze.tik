@@ -1,0 +1,36 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 0.52
+	path models/human/German_waffenss_shutze
+	skelmodel German_waffenss_shutze.skb
+	surface pants shader shutzpants
+      surface tunic shader shutzshirt
+	surface face shader Dolf
+	surface helmet shader camohelm
+	surface gear shader Wehrmact_gear
+	surface ammo_pouch shader ammo_pouch
+	surface hands shader hand
+
+	radius 20				// defines size of shadow
+}
+
+init
+{
+	server
+	{
+		classname Animate
+		setsize "-16 -16 0" "16 16 92"
+	}
+}
+
+animations
+{
+	idle     German_waffenss_shutze.skc
+}
+
+/*QUAKED posed_german_waffenss_shutze(0.5 .25 0.25) (-16 -16 0) (16 16 92)
+badass
+*/

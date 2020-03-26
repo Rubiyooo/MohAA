@@ -1,0 +1,19 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/vehicles/dtruck
+	skelmodel dtruck.skd
+	surface dtruckwindow shader static_dtruckwindow
+	surface dtruck3 shader static_dtruck2
+	surface dtruck2 shader static_dtruck2
+}
+
+animations
+{
+	idle     dtruck.skc
+}
+
+/*QUAKED static_vehicle_europe_deliverytruck-grey (0.5 0.0 0.5) (-104 -48 0) (104 48 88)
+Grey European Delivery Truck
+*/

@@ -1,0 +1,35 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 0.52
+	path models/human/french_resistance
+	skelmodel resistance_jeff.skd
+	surface pants shader greypants
+      surface coat2 shader greycoat
+	surface coat6 shader greycoat
+	surface head shader jeff
+	surface hat shader greyhat
+	surface hands shader handsnew
+
+	radius 20				// defines size of shadow
+}
+
+init
+{
+	server
+	{
+		classname Animate
+		setsize "-16 -16 0" "16 16 92"
+	}
+}
+
+animations
+{
+	idle     resistance_jeff.skc
+}
+
+/*QUAKED posed_allied_resistance-jeff(0.5 .25 0.25) (-16 -16 0) (16 16 92)
+badass
+*/

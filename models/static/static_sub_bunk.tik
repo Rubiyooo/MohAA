@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel sub_bunk.skd
+	surface sub_bunk shader static_sub_bunk
+}
+
+animations
+{
+	idle     sub_bunk.skc
+}
+
+/*QUAKED static_furniture_sub-bunk (0.5 0.0 0.5) (-56 -24 0) (56 24 8)
+*/

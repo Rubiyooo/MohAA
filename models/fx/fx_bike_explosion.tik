@@ -1,0 +1,117 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+ 
+init
+{
+	server
+	{
+		notsolid
+		rendereffects +dontdraw
+	}
+
+	client
+	{
+		cache models/fx/bp_debris1.tik
+		cache models/fx/ibeam_piece.tik
+		cache fire_ring.spr
+		cache vsssource.spr
+	}
+}
+
+animations
+{
+	idle dummy2.skc
+	start dummy2.skc
+	{
+		server    
+		{ 
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+
+			entry commanddelay 0.100 originspawn
+			(
+				spawnrate 1.00
+				model models/fx/bp_debris1.tik
+				count 5
+				color 1.00 1.00 1.00
+				collision
+				bouncefactor 0.30
+				scale 0.10
+				life 2.50
+				velocity 500.00
+				randvel crandom -60 crandom -50 0
+				accel 0.00 0.00 -120.00
+				angles crandom 20 crandom 30 crandom -30
+				avelocity range 22 -50 range 22 -50 range 22 -50
+				scalemin 0.05
+				scalemax 0.20
+				fade
+				sphere
+			)
+
+			entry commanddelay 0.200 originspawn
+			(
+				spawnrate 1.00
+				model models/fx/ibeam_piece.tik
+				count 5
+				color 1.00 1.00 1.00
+				scale 0.70
+				life 2.00
+				velocity 5000.00
+				angles crandom -80 range -360 180 range 23 -64
+				avelocity 0 crandom -50 0
+				sphere
+			)
+
+			entry commanddelay 0.500 originspawn
+			(
+				spawnrate 1.00
+				model fire_ring.spr
+				color 1.00 1.00 1.00
+				scale 0.70
+				life 0.50 
+				scalerate 3.00
+				fade
+			)
+
+			entry originspawn
+			(
+				spawnrate 1.00
+				model fire_ring.spr
+				count 6
+				alpha 0.50
+				color 1.00 1.00 1.00
+				scale 0.20
+				life 0.50
+				scalerate 5.00
+				velocity 700.00
+				sphere
+				fade
+			)
+
+			entry originspawn
+			(
+				spawnrate 1.00
+				model vsssource.spr
+				count 6
+				alpha 0.90
+				color 0.10 0.10 0.10
+				scale 0.30
+				life 3.00
+				scalerate 33.00
+				velocity 300.00
+				fade
+				fadein 0.000000
+				sphere
+			)
+		}
+	}
+}

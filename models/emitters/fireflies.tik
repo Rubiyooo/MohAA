@@ -1,0 +1,57 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter fireflies
+		(
+			spawnrate 0.75 //originally was 4.00
+			model firefly.spr
+			color 1.00 1.00 1.00
+			scale 0.06
+			life 0.70
+			radius 50.00
+			randvelaxis range -2 12 range 2 -16 range 2 -13
+			offset range 14 -9 range -9 3 range -12 6
+			offsetalongaxis range 12 -19 range 43 -90 crandom -50
+			fade
+			swarm 66 0.070000 0.200000
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron fireflies
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff fireflies
+		}
+	}
+}
+
+/*QUAKED fx_nature_lightningbugs (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Use ONLY in spring and summer levels as they freeze when it gets colder out...:P
+*/

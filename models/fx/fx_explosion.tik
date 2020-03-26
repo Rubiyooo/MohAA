@@ -1,0 +1,42 @@
+TIKI
+setup
+   {
+   scale 1.0
+   path models/fx/dummy
+	skelmodel dummy2.skd
+   }
+ 
+init
+   {
+   server  
+      {
+      hide
+      ghost
+      classname    Explosion
+      radiusdamage 100
+      radius       200
+      meansofdeath explosion
+      life         0
+      knockback    250
+      svflags +sendonce
+      }
+   client
+      {
+      }
+   }
+
+animations
+   {
+   idle dummy2.skc
+      {
+      server    
+         { 
+         last stopanimating
+         }
+      client
+         {
+         entry sound big_explosion
+         }
+      }
+   }
+

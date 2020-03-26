@@ -1,0 +1,87 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/emitters/breath_emitter
+	skelmodel breath_emitter.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+//		tagemitter "smoke emitter" heavysmoke
+//		(
+//			spawnrate 14.00
+//			model vsssource.spr
+//			alpha .2
+//			color .60 .60 .60
+//			scale 0.05
+//			life 2.00
+//			scalerate 1.60
+//			accel 0.00 0.00 40.00
+//			friction 2.00
+//			offsetalongaxis -9 0 -4
+//			randvelaxis -50 range -5 5 range -5 5 
+//			fade
+//		)
+		tagemitter "smoke emitter" heavysmoke
+		(
+			spawnrate 14.00
+			model vsssource.spr
+			alpha .15
+			color .70 .70 .70
+			scale 0.1
+			life 2.00
+			scalerate 3.0
+			accel 0 0 40
+			friction 2.00
+			offsetalongaxis -9 0 -4
+			randvelaxis range -40 -20 range -5 5 range -5 10 
+			fade
+		)
+		tagemitter "smoke emitter" lightsmoke
+		(
+			spawnrate 12.00
+			model vsssource.spr
+			alpha .15
+			color .70 .70 .70
+			scale 0.1
+			life 1.50
+			scalerate 3.0
+			accel 0 0 40
+			friction 2.00
+			offsetalongaxis -9 0 -4
+			randvelaxis range -50 -30 range -5 5 range -5 10 
+			fade
+		)
+	}
+}
+
+animations
+{
+	idle breath_emitter.skc
+	{
+		client
+		{
+			2 emitteroff heavysmoke
+			1 emitteron lightsmoke
+		}
+		server
+        {
+			5 remove
+        }
+	}
+}
+
+/*QUAKED fx_smoke_breath (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Smoke from fire.
+Doesn't collide.
+*/
+

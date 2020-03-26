@@ -1,0 +1,51 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter widerdarktranstall
+		(
+			volumetric
+			model greasefire
+			count 1
+			alpha 0.3
+			bouncefactor 0.30
+			scale 24.00
+			life 30.00
+			accel 180.00 0.00 0.00
+			spawnrate 1.00
+			velocity 50.00
+			offset crandom 20.00 crandom 20.00 crandom 20.00 
+			randvel crandom 5.00 crandom 5.00 crandom 5.00 
+			scalemin 24.00
+			scalemax 24.00
+			color 0.18 0.19 0.18	// RBG color of the smoke
+		)
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+}
+
+/*QUAKED fx_smoke_widerdarktranstall (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+wider dark transparent tall smoke
+Doesn't collide, so don't obstruct it.
+*/
+
+
+ 

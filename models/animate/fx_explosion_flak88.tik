@@ -1,0 +1,126 @@
+TIKI
+setup
+{
+	scale 1.00
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+	}
+	
+	client
+	{
+		cache models/fx/gas_mushroom_cloud.tik
+		cache models/fx/ibeam_piece.tik
+		cache models/fx/bp_debris1.tik
+		cache gren_explosion.spr
+		cache bh_stone_piece.spr
+	}
+}
+
+animations
+{
+	aaaa dummy2.skc // hack to allow the idle anim's entry commands to run
+	idle dummy2.skc
+	{
+		client
+		{
+			//enter sound gas_explode
+
+//			enter originspawn
+//			(
+//				model models/fx/bp_debris1.tik
+//				count 2
+//				color 1.00 1.00 1.00
+//				collision
+//				bouncefactor 0.30
+//				scale 0.30
+//				life 1.00
+//				velocity 330.00
+//				accel 0.00 0.00 -200.00
+//				offsetalongaxis 0 0 -20
+//				angles crandom -12 crandom -12 crandom -60
+//				avelocity 90 0 200
+//				scalemin 0.10
+//				scalemax 0.40
+//				fade
+//				sphere
+//			)
+
+			enter originspawn
+			(
+				model models/fx/ibeam_piece.tik
+				count 2
+				color 1.00 1.00 1.00
+				scale 0.50
+				life 1.00
+				velocity 300.00
+				angles crandom -40 0 360
+				avelocity 20 70 500
+				fade
+				sphere
+			)
+
+			enter originspawn
+			(
+				model bh_stone_piece.spr
+				count 12
+				color 1.00 1.00 1.00
+				scale 0.50
+				life 2.00
+				velocity 700.00
+				accel 0.00 0.00 -600.00
+				avelocity 70 60 0
+				scalemin 0.50
+				scalemax 1.00
+				fade
+				sphere
+				randomroll
+			)
+
+			enter originspawn
+			(
+				model models/fx/gas_mushroom_cloud.tik
+				count 2
+				color 1.00 1.00 1.00
+				life 1.00
+				scalerate 0.50
+				velocity 300.00
+				accel 0.00 0.00 600.00
+				scalemin 0.60
+				scalemax 1.00
+				fade
+				inwardsphere
+			)
+
+			enter originspawn
+			(
+				model gren_explosion.spr
+				count 3
+				color 1.00 1.00 1.00
+				scale 2.00
+				life 0.70
+				scalerate 0.80
+				accel 0.00 0.00 200.00
+				offset crandom -30 crandom -30 crandom -50
+				offsetalongaxis 0 0 crandom -10
+				angles crandom -4 range 4 -32 range 12 -8
+				avelocity range 6 10 range 6 10 range 6 10
+				scalemin 1.20
+				scalemax 2.00
+				fade
+				sphere
+			)
+		}
+	}
+}
+
+/*QUAKED animate_fx_explosion-flakk88 (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Benson Russell - 9-27-2001 - explosion effect for destroying a flakk88
+*/
+

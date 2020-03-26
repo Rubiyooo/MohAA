@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/furniture/table
+	skelmodel anim_table.skd
+	surface worktable shader static_worktable
+	surface cardpile  shader cardpile
+}
+
+init
+{
+	server
+	{
+		classname animate
+	}
+}
+
+animations
+{
+	idle     anim_table.skc
+}
+
+/*QUAKED animate_furniture_cardtable (0.0 0.75 0.5) (0 -40 0) (52 40 50)
+*/

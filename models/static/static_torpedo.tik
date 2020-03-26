@@ -1,0 +1,21 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel torpedo.skd
+	surface material3 shader static_torpedonose
+	surface material1 shader static_torpedotail
+	surface material4 shader static_torpedo_tip
+	surface material2 shader static_torpedobody
+	surface material5 shader static_torpedoprop
+
+}
+
+animations
+{
+	idle     torpedo.skc
+}
+
+/*QUAKED static_uboat_torpedo (0 0 0) (-56 -24 0) (56 24 8)
+*/

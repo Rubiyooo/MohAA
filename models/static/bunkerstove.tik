@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/bunkerstove
+	skelmodel bunkerstove.skd
+	surface bunkerstove shader bunkerstove
+}
+
+animations
+{
+	idle     bunkerstove.skc
+}
+
+/*QUAKED static_equipment_bunkerstove (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

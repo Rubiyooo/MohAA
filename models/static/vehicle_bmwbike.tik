@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52
+   	path models/vehicles/bmwbike
+	skelmodel bmwbike.skd
+   	surface all shader static_bmwbike
+}
+
+animations
+{
+   	idle bmwbike.skc
+}
+
+/*QUAKED static_vehicle_german_bmwbike (0.5 0.0 0.5) (-48 -24 0) (48 24 56)
+*/

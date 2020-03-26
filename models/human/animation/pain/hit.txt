@@ -1,0 +1,15 @@
+rifle_hit_knees_torso		pain/riflep_kneeshit.skc
+	rifle_hit_stand_rarm		pain/riflep_stand_rarm.skc
+	rifle_hit_crouch_back		pain/rifle_hit_crouch_back.skc
+	rifle_hit_crouch_Rshoulder	pain/rifle_hit_crouch_Rshoulder.skc
+	rifle_hit_crouch_torso		pain/rifle_hit_crouch_torso.skc
+	rifle_hit_floor_torso		pain/rifle_hit_floor_torso.skc
+	rifle_hit_knees_back		pain/rifle_hit_knees_back.skc
+	rifle_hit_knees_head		pain/rifle_hit_knees_head.skc
+	rifle_hit_stand_leg		pain/rifle_hit_stand_leg.skc
+	rifle_hit_stand_head		pain/rifle_hit_stand_head.skc
+	rifle_hit_stand_head01		pain/rifle_hit_stand_head01.skc
+	rifle_hit_stand_lower_back	pain/rifle_hit_stand_lower_back.skc
+	rifle_hit_stand_rarm2		pain/rifle_hit_stand_rarm.skc
+	rifle_hit_stand_Rshoulder	pain/rifle_hit_stand_Rshoulder.skc
+	rifle_hit_stand_torso		pain/rifle_hit_stand_torso

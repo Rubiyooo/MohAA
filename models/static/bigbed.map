@@ -1,0 +1,30 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -86 52 9 ) ( -87 52 9 ) ( -87 -53 9 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -86 -53 64 ) ( -86 52 64 ) ( -85 52 64 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -86 -54 74 ) ( -85 -54 74 ) ( -85 -54 61 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -85 -54 57 ) ( -85 51 57 ) ( -85 51 44 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -85 51 74 ) ( -86 51 74 ) ( -86 51 61 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -86 51 70 ) ( -86 -54 70 ) ( -86 -54 57 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+}
+// brush 1
+{
+( 39 51 13 ) ( 38 51 13 ) ( 38 44 13 ) common/woodclip 1 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 38 44 50 ) ( 38 51 50 ) ( 39 51 50 ) common/woodclip 1 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 38 -54 42 ) ( 39 -54 42 ) ( 39 -54 8 ) common/woodclip 1 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 39 44 47 ) ( 39 51 47 ) ( 39 51 13 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 39 51 47 ) ( 38 51 47 ) ( 38 51 13 ) common/woodclip 1 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 38 51 47 ) ( 38 44 47 ) ( 38 44 13 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+}
+// brush 2
+{
+( 17 54 13 ) ( -85 54 13 ) ( -85 -58 13 ) common/paperclip 0 0 0.00 1 1 983040 2208 0 
+( -85 41 46 ) ( 38 41 46 ) ( 38 -41 47 ) common/paperclip 0 0 0.00 1 1 983040 2208 0 
+( -85 -41 47 ) ( 38 -41 47 ) ( 38 -56 13 ) common/paperclip 0 0 0.00 1 1 983040 2208 0 
+( 38 -58 47 ) ( 38 54 47 ) ( 38 54 13 ) common/paperclip 0 0 0.00 1 1 983040 2208 0 
+( 38 41 46 ) ( -85 41 46 ) ( -85 54 13 ) common/paperclip 0 0 0.00 1 1 983040 2208 0 
+( -85 54 47 ) ( -85 -58 47 ) ( -85 -58 13 ) common/paperclip 0 0 0.00 1 1 983040 2208 0 
+}
+}

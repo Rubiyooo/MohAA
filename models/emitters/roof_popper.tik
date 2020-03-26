@@ -1,0 +1,103 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server  
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache models/fx/wood_brace.tik
+		cache models/fx/woodbeams.tik
+		cache models/fx/wood_latice.tik
+		cache models/emitters/roof_popper2.tik
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 0.1 anim idle
+		}
+		client
+		{
+			enter originspawn
+			(
+				//spawnrate 1.00
+				model models/fx/wood_latice.tik
+				count 2
+				color 1.00 1.00 1.00
+				varycolor
+				life 3.00
+				radius 40.00
+				randvel 0 range -20 25 0
+				accel 30.00 10.00 -200.00
+				friction 1.00
+				angles range 30 -40 crandom -20 crandom -20
+				fade
+				circle
+			)
+
+			enter originspawn
+			(
+				//spawnrate 1.00
+				model models/fx/woodbeams.tik
+				count 3
+				color 1.00 1.00 1.00
+				life 3.00
+				scalerate 1.00
+				radius 30.00
+				velocity 40.00
+				accel 0.00 0.00 -100.00
+				angles range 30 -90 crandom -50 range 60 -30
+				avelocity range 100 -50 crandom -20 range -30 -70
+				scalemin 1.00
+				scalemax 2.00
+				circle
+			)
+
+			enter originspawn
+			(
+				//spawnrate 1.00
+				model models/fx/wood_brace.tik
+				count 4
+				color 1.00 1.00 1.00
+				life 2.00
+				scalerate 0.40
+				radius 30.00
+				velocity 3.00
+				accel -90.00 45.00 -275.00
+				angles crandom -50 range 369 -180 crandom -70
+				scalemin 1.00
+				scalemax 1.30
+				sphere
+			)
+
+			enter originspawn
+			(
+				//spawnrate 1.00
+				model models/emitters/roof_popper2.tik
+				count 1
+			)
+		}
+
+      }
+}
+
+
+//QUAKED fx_special_emitter_roofpopper(0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+//duh roof duh roof duh roof iz on fyYarrr

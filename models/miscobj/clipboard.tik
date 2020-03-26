@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52
+	path models/miscobj/clipboard_pencil
+	skelmodel clipboard.skd
+	surface all shader clipboard
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     clipboard.skc
+}
+
+/*QUAKED static_items_clipboard(0.0 0.75 0.5) (-8 -8 0) (8 8 16)
+*/

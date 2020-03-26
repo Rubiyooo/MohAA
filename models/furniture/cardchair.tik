@@ -1,0 +1,67 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/furniture/chairs
+	skelmodel anim_chair_none.skd
+	surface bunkerchair shader bunkerchair
+	surface bunkerchair2 shader bunkerchair2
+}
+
+init
+{
+	server
+	{
+		classname anim
+	}
+}
+
+animations
+{
+	idle						anim_chair_none.skc
+
+	///deaths///
+
+	chair_death_forwards			anim_chair_forwards.skc
+	{
+		client			
+		{
+			02 sound shuttersqueak_02
+		}
+	} 
+	chair_death_forwards_end		end_chair_forwards.skc
+
+	chair_death_backwards			anim_chair_backwards.skc
+	{
+		client			
+		{
+			08 sound kick_chair
+		}
+	} 
+	chair_death_backwards_end		end_chair_backwards.skc
+
+
+	///stand///
+
+	chair_curious_stand			anim_chair_slow.skc
+	{
+		client			
+		{
+			first sound shuttersqueak_02
+		}
+	} 
+	chair_curious_stand_end			end_chair_slow.skc
+
+	chair_alert_stand				anim_chair_fast.skc
+	{
+		client			
+		{
+			05 sound kick_chair
+		}
+	} 	
+	chair_alert_stand_end			end_chair_fast.skc
+
+}
+
+/*QUAKED static_furniture_card-chair (0.0 0.75 0.5) (-16 -16 0) (16 16 56)
+*/

@@ -1,0 +1,74 @@
+animations 
+{
+	$path models/human/animation
+
+	// These animations need the following models cached by the level script:
+	//client
+	//{
+	//	cache models/miscobj/crate_carry.tik 
+	//	cache models/fx/crates/debris_0.tik
+	//}
+
+
+	//----------
+	//Crate animations//
+	//----------
+
+	crate_stand_idle		scripted/crate_carry/crate_stand_idle.skc
+	crate_pickup1		scripted/crate_carry/crate_pickup1.skc		
+
+	crate_detach		scripted/crate_carry/crate_attach.skc
+	{
+		server
+		{
+			enter removeattachedmodel tag_weapon_right
+		}
+	}
+
+	crate_pickup2		scripted/crate_carry/crate_pickup2.skc
+	{
+		server
+		{
+			enter attachmodel models/miscobj/crate_carry.tik tag_weapon_right
+		}
+	}	
+	crate_walk			scripted/crate_carry/crate_walk.skc		
+	crate_putdown1		scripted/crate_carry/crate_putdown1.skc		
+
+	crate_putdown2		scripted/crate_carry/crate_putdown2.skc
+	{
+		server
+		{
+			enter removeattachedmodel tag_weapon_right
+		}
+	}
+	crate_drop		scripted/crate_carry/crate_drop.skc		
+	{
+		server
+		{
+			4 removeattachedmodel tag_weapon_right 
+			//3 attachmodel models/fx/crates/debris_0.tik tag_weapon_right
+			//4 removeattachedmodel tag_weapon_right 
+		}
+		client
+		{
+			3 originspawn
+			(
+				model models/fx/crates/debris_0.tik
+				count 1
+				offset 0 0 0
+				radialvelocity 2 0 64
+				randvel 0 0 0
+				accel 0 0 0
+				friction 0.25
+				angles crandom 90 crandom 180 crandom 180
+				avelocity 0 0 crandom 360
+				life 8 2
+				fadedelay 7
+				collision
+				bouncefactor 0.2
+				scale 0.5
+			)
+		}
+	}
+}

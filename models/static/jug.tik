@@ -1,0 +1,28 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/metal_containers
+	skelmodel jug.skd
+	surface jug shader static_jug
+}
+
+init
+{
+	server
+	{
+		classname animate
+		setsize "-4 -4 0" "4 4 4"
+//		seatoffset "-14 0 24"
+//		gravity 1.5
+//		vehiclespeed 800
+	}
+}
+
+animations
+{
+	idle     jug.skc
+}
+
+/*QUAKED static_decor_jug (0.5 0.0 0.5) (-8 -8 0) (8 8 16)
+*/

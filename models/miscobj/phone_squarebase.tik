@@ -1,0 +1,26 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/miscobj/phones
+	skelmodel phone_squarebase.skd
+	surface phone1 shader phone1
+	surface dial shader dial
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     phone_squarebase.skc
+}
+
+/*QUAKED static_decor_phone-squarebase (0.0 0.75 0.5) (-8 -8 0) (8 8 8)
+Desk phone with square base.
+*/

@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel calendar.skd
+	surface material1 shader static_calendarskin
+}
+
+animations
+{
+	idle     calendar.skc
+}
+
+/*QUAKED static_uboat_calendar (0 0 0) (0 0 0) (0 0 0)
+*/

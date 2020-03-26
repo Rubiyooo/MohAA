@@ -1,0 +1,140 @@
+setup
+{
+	path models/human/animation/dialogue/M4L1/A
+}
+
+animations
+{
+
+
+			/////////////////////////////////////////////////////////////////////////////
+			////////////////////////////    animations    ///////////////////////////////
+			/////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	////////////////// pilot joins ////////////////////
+
+
+	dfr_M4L1_400h_1	actor_M4L1_400.skc
+	{
+		client		/// I'm lucky you came along. There's a Maquis safehouse right near here.  It's over that way.
+		{
+			first sound dfr_M4L1_400h_1
+		}
+	}
+
+	dfr_M4L1_401h_1	actor_M4L1_401.skc
+	{
+		client		/// Its that way.
+		{
+			first sound dfr_M4L1_401h_1
+		}
+	}
+
+	dfr_M4L1_402h_1	actor_M4L1_402.skc
+	{
+		client		/// That’s the house.
+		{
+			first sound dfr_M4L1_402h_1
+		}
+	}
+
+
+
+	dfr_M4L1_405h_1	actor_M4L1_405.skc
+	{
+		client		/// Come on. There's a place to hide in the cellar.
+		{
+			first sound dfr_M4L1_405h_1
+		}
+	}
+
+	////////////////// germans leave ////////////////////
+
+
+	dfr_M4L1_406h	actor_M4L1_406.skc
+	{
+		client		/// I'm staying here.
+		{
+			first sound dfr_M4L1_406h
+		}
+	}
+
+	dfr_M4L1_407h	actor_M4L1_407.skc
+	{
+		client		/// There's another safe house in town. That’s probably where your contact is.
+		{
+			first sound dfr_M4L1_407h
+		}
+	}
+
+	////////////////// player reaches Manon ////////////////////
+
+
+	dfr_M4L1_408n_2	actor_M4L1_408.skc
+	{
+		client		/// You are the American agent?
+		{
+			first sound dfr_M4L1_408n_2
+		}
+	}
+
+	dfr_M4L1_409n_2	actor_M4L1_409.skc
+	{
+		client		/// You didn't have too much trouble getting here I hope.
+		{
+			first sound dfr_M4L1_409n_2
+		}
+	}
+
+	dfr_M4L1_410n_2	actor_M4L1_410.skc
+	{
+		client		/// We have prepared some explosives for you to use.  They are in this bag.
+		{
+			first sound dfr_M4L1_410n_2
+		}
+	}
+
+	dfr_M4L1_411n_2	actor_M4L1_411.skc
+	{
+		client		/// I also have a pistol with a silencer for you.
+		{
+			first sound dfr_M4L1_411n_2
+		}
+	}
+
+	dfr_M4L1_412n_2	actor_M4L1_412.skc
+	{
+		client		/// You won't want to use those guns you are carrying, they make far too much noise.
+		{
+			first sound dfr_M4L1_412n_2
+		}
+	}
+
+	dfr_M4L1_413n_2	actor_M4L1_413.skc
+	{
+		client		/// You should leave them here.
+		{
+			first sound dfr_M4L1_413n_2
+		}
+	}
+
+	dfr_M4L1_414n_2	actor_M4L1_414.skc
+	{
+		client		/// Here are some papers which explain your mission.
+
+		{
+			first sound dfr_M4L1_414n_2
+		}
+	}
+
+	actor_M4L1_walk		actor_M4L1_walk.skc  // manon's reaction to you walking into the room
+	
+
+	actor_M4L1_idle		actor_M4L1_idle.skc  
+
+
+
+}

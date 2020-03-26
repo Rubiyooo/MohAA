@@ -1,0 +1,28 @@
+TIKI
+setup
+{
+	scale 0.52				// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/vehicles/panzer_iv
+	skelmodel panzer_iv.skd
+	surface tread shader panzer_iv_tread_eun
+	surface frontwheel shader panzer_iv_frontwheel_eun
+     	surface frontwheelband shader panzer_iv_frontwheelband_eun
+ 	surface backwheel shader panzer_iv_backwheel_eun
+	surface backwheelband shader panzer_iv_backwheelband_eun
+	surface smallwheel shader panzer_iv_smallwheel_eun
+      	surface smallwheelband shader panzer_iv_smallwheelband_eun
+     	surface verysmallwheel shader panzer_iv_verysmallwheel_eun
+      	surface backwheelaxel shader panzer_iv_backwheelaxel_eun
+      	surface turret shader panzer_iv_turret_eu
+      	surface boxes shader panzer_iv_boxes_eu
+      	surface undercarriage shader panzer_iv_undercarriage_eu
+}
+
+animations
+{
+	idle     panzer_iv.skc
+}
+
+/*QUAKED static_vehicle_german_panzer-iv-europe (0.5 0.0 0.5) (0 0 0) (0 0 0)
+panzer_iv
+*/

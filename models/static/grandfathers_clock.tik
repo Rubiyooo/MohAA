@@ -1,0 +1,27 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/grandfathers_clock
+	skelmodel grandfathers_clock.skd
+	surface grandfathers_clock shader grandfathers_clock
+	surface grandfathers_clock_pendulum shader grandfathers_clock_pendulum1
+	surface grandfathers_clock_face shader grandfathers_clock_face
+	surface grandfathers_clock_glass shader grandfathers_clock_glass
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     grandfathers_clock.skc
+}
+
+/*QUAKED static_furniture_grandfathers-clock (0.0 0.75 0.5) (-16 -16 0) (16 16 64)
+*/

@@ -1,0 +1,122 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter fountain
+		(
+			spawnrate 300.00
+			model models/fx/bh_metal_fastpiece.tik
+			color 1.00 1.00 1.00
+			life .75
+		//	velocity 453.00
+			radialvelocity 15.00 20.00 100.00
+			randvelaxis range 294 312 range -12 24 range -12 24
+			accel 0.00 0.00 -300.00
+			avelocity crandom 5 crandom 5 crandom 5
+			alignstretch 0.09
+		)
+		originemitter flash
+		(
+			spawnrate 20.00
+			model corona_util.spr
+			alpha 0.70
+			color 1.50 0.10 0.10
+			scale 0.02
+			life 0.07
+			scalerate 0.02
+			scalemin 0.02
+			scalemax 0.50
+			flickeralpha
+			randomroll
+		)
+		originemitter colliders
+		(
+			spawnrate 5.00
+			model models/fx/bh_metal_fastpiece.tik
+			color 1.00 1.00 1.00
+			collision
+			bouncefactor 0.30
+			scale 0.50
+			life .50
+			velocity 500.00
+			accel 0.00 0.00 -234.00
+			inwardsphere
+			alignstretch 0.05
+		)
+		originemitter sparks1a
+		(
+			spawnrate 30.00
+			model models/fx/bh_metal_fastpiece.tik
+			color 1.00 1.00 1.00
+			bouncefactor 0.40
+			life 1.00
+			scalerate 0.50
+			velocity 150.00
+			randvel range -50 50 range -30 40 range -5 -70
+			accel 0.00 0.00 -300.00
+			friction -1.00
+			avelocity range -70 60 range 50 -20 range 20 -20
+			fade
+			sphere
+			alignstretch 0.10	
+		)
+                originemitter sparksmoke
+		(
+			spawnrate 23.00
+			model vsssource.spr
+			alpha 0.30
+			color 1.00 1.00 1.00
+			scale 0.10
+			life 1.00
+			scalerate 0.60
+			velocity 20.00
+			randvel range -1 3 range -15 3 range 15 -1
+			fade
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron colliders
+			enter emitteron flash
+			enter emitteron fountain
+			enter emitteron sparks1a
+			enter emitteron sparksmoke
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff colliders
+			enter emitteroff flash
+			enter emitteroff fountain
+			enter emitteroff sparks1a
+			enter emitteroff sparksmoke
+		}
+	}
+}
+
+/*QUAKED fx_norway_blowtorch (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+cutting welder
+*/

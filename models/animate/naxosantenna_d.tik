@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel naxosantenna_d.skd
+	surface material1 shader naxosantenna
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     naxosantenna_d.skc
+}
+
+/*QUAKED animate_equipment_naxosantenna-d (0 0 0) (0 0 0) (0 0 0)
+Nate - 27/Sep/2001 13:50 - Naxos gets damaged
+*/

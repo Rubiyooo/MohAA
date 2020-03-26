@@ -1,0 +1,162 @@
+path models/human/heads
+
+// Skins allowed:
+// covered, bensonazi, bignose, dolf, hans, gunter
+// (I used z1, z2 etc to weight the chances of getting a guy with a mask on. Hopefully
+// they'll be sorted alphabetically so these won't get in the way in lists in radiant.)
+
+// Heads allowed:
+// 1, 2, 4, 6, 7, 8
+
+case headskin covered z1 z2 z3 z4 z5 z6 z7 z8
+{
+	skelmodel dakhead.skd
+	surface head shader facewrap
+}
+
+case headskin bensonazi
+{
+	surface head shader bensonazi
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin bignose
+{
+	surface head shader bignose
+
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	// heads 1, 2 & 8 are not allowed with this skin, so make them use head4 instead
+	case headmodel head1 head2 head8
+	{
+		skelmodel head4.skd
+	}
+}
+
+case headskin dolf
+{
+	surface head shader dolf
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin hans
+{
+	surface head shader hans
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+	// head4 is not allowed with this skin, so make it use head6 instead
+	case headmodel head4
+	{
+		skelmodel head6.skd
+	}
+}
+
+// Gunter doesn't work for some reason...?
+case headskin gunter
+{
+	surface head shader gunter
+
+//	surface head shader slick
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}

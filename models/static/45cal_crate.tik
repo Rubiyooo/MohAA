@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/crates
+	skelmodel 45cal_crate.skd
+	surface 45cal_crate shader static_45cal_crate
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     45cal_crate.skc
+}
+
+/*QUAKED static_item_45cal_crate (0.5 0.0 0.5) (-16 -16 0) (16 16 16)
+*/

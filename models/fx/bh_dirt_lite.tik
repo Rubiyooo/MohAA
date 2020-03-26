@@ -1,0 +1,67 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	server
+	{
+	}
+	client
+	{
+		//cache some stuff used in this effect
+		cache bhole_dirt.spr // cache the bullet hole shader
+		cache bh_dirt_piece.spr
+
+		// chunky chunks of chunky stuff
+		sfx originspawn
+		(
+			model bh_dirt_piece.spr
+			spawnrange 1536
+			spritegridlighting
+			alpha 0.75
+			angles 0 0 random 360
+			offsetalongaxis random 4 crandom 3 crandom 3
+			count 3
+			velocity 40
+			randvelaxis random 125 crandom 24 crandom 24
+			accel 0 0 -800
+			life 0.6 0.7
+			scalemin 0.2
+			scalemax 0.3
+			fadedelay 0.5
+//			collision
+//			dietouch
+//			bouncefactor 0.1
+//			bouncesound snd_bh_debris_dirt
+		)
+
+		sfx originspawn
+		(
+			model dustdrop.spr
+			angles 0 0 crandom 180
+			avelocity 0 0 crandom 180
+			count 6
+			scalemin 0.1
+			scalemax 0.2
+			cone 4 3
+			radialvelocity 32 0 0
+			friction .5
+			accel 0 0 -400
+//			color .4 .375 .3125
+			color .7 .7 .7
+			fade
+			life 0.5 0.5
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/bunkerlights
+	skelmodel cagelight.skd
+	surface housing shader static_wallcage
+	surface lightbulb shader static_lightbulb
+	surface wirecage shader static_wirecage2
+}
+
+animations
+{
+	idle     cagelight.skc
+}
+
+/*QUAKED static_lamp_bunker-cagelight (0 0 0) (0 0 0) (0 0 0)
+*/

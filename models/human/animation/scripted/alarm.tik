@@ -1,0 +1,8 @@
+
+animations
+{
+	$path models/human/animation
+
+	alarm_switchon	scripted/alarm/alarm_switchon.skc
+}
+

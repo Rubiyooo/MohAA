@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel panelknob-big.skd
+	surface material1 shader static_subknob1
+}
+
+animations
+{
+	idle     panelknob-big.skc
+}
+
+/*QUAKED static_uboat_panelknob-big (0 0 0) (0 0 0) (0 0 0)
+*/

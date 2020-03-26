@@ -1,0 +1,42 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		cache cardboard_light.spr
+		
+		sound snd_crate_woodsm auto 0.8 256 1 0 0.2
+
+		originspawn
+		(
+			model cardboard_light.spr
+			count 5
+			offset crandom 8 crandom 8 crandom 8
+			radialvelocity 2 0 64
+			randvel 0 0 32
+			accel 0 0 -300
+			friction 0.25
+			angles crandom 90 crandom 180 crandom 180
+			avelocity crandom 30 crandom 30 crandom 360
+			life 8 2
+			fadedelay 7
+			collision
+			bouncefactor 0.2
+			scale 0.125
+			spritegridlighting
+		)
+	}
+}
+
+animations
+{
+	idle dummy2.skc
+
+}

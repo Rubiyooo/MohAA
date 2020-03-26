@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/lights/ceilinglamp1
+	skelmodel ceilinglamp1.skd
+	surface ceilinglamp1 shader static_ceilinglamp1
+}
+
+animations
+{
+	idle    ceilinglamp1.skc
+}
+
+/*QUAKED static_lamp_ceilinglamp1 (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

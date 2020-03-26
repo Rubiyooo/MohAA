@@ -1,0 +1,130 @@
+Card Game
+
+/// 2 players ///
+
+/actor types/
+
+actor 01 - angry german
+actor 02 - relaxed german 
+
+they are facing each other across the table...
+
+/breackdown/
+
+1. 
+actor 01 - chair_actor1_queen		/// "give me your queen" ///
+actor 02 - chair_actor2_idleloop	/// idle ///
+ 
+2.
+actor 01 - chair_actor1_idleloop	/// idle ///
+actor 02 - chair_actor2_fish		/// "dont have it, go fish" ///
+
+3.
+actor 01 - chair_actor1_drawcard	/// "you cheat" ... he draws a card///
+actor 02 - chair_actor2_idleloop	/// idle ///
+
+4.
+actor 01 - chair_actor1_idleloop	/// idle ///
+actor 02 - chair_actor2_king		/// "give me your king" ///
+
+5.
+actor 01 - chair_actor1_fish		/// "go fish"///
+actor 02 - chair_actor2_idleloop	/// idle ///
+
+6.
+actor 01 - chair_actor1_idleloop	/// idle ///
+actor 02 - chair_actor2_drawcard	/// he draws a card ///
+ 
+7.
+actor 01 - chair_actor1_idleloop	/// idle ///
+actor 02 - chair_actor2_idleloop	/// idle ///
+
+ repeat
+
+
+
+
+/// 3 players ///
+
+/actor types/
+
+actor 01 - angry german
+actor 02 - relaxed german
+actor 03 - another relaxed german 
+
+actor 01 and 02 are facing each other across the table,
+actor 03 is sitting to one side of the table.
+
+/breackdown/
+
+1.
+actor 01 - chair_actor1_idleloop	/// idle ///
+actor 02 - chair_actor2_king		/// "give me your king" ///
+actor 03 - chair_actor2_idleloop	/// idle ///
+
+2.
+actor 01 - chair_actor1_fish		/// "go fish"///
+actor 02 - chair_actor2_idleloop	/// idle ///
+actor 03 - chair_actor2_idleloop	/// idle ///
+
+3.
+actor 01 - chair_actor1_idleloop	/// idle ///
+actor 02 - chair_actor2_drawcard	/// he draws a card ///
+actor 03 - chair_actor2_idleloop	/// idle ///
+
+4. 
+actor 01 - chair_actor1_queen		/// "give me your queen" ///
+actor 02 - chair_actor2_idleloop	/// idle ///
+actor 03 - chair_actor2_idleloop	/// idle ///
+ 
+5.
+actor 01 - chair_actor1_idleloop	/// idle ///
+actor 02 - chair_actor2_fish		/// "dont have it, go fish" ///
+actor 03 - chair_actor2_idleloop	/// idle ///
+
+6.
+actor 01 - chair_actor1_drawcard	/// "you cheat" ... he draws a card///
+actor 02 - chair_actor2_idleloop	/// idle ///
+actor 03 - chair_actor2_idleloop	/// idle ///
+
+7.
+actor 01 - chair_actor1_idleloop	/// idle ///
+actor 02 - chair_actor2_king		/// "give me your king" ///
+actor 03 - chair_actor2_idleloop	/// idle ///
+
+8.
+actor 01 - chair_actor1_fish		/// "go fish"///
+actor 02 - chair_actor2_idleloop	/// idle ///
+actor 03 - chair_actor2_idleloop	/// idle ///
+
+9.
+actor 01 - chair_actor1_idleloop	/// idle ///
+actor 02 - chair_actor2_drawcard	/// he draws a card ///
+actor 03 - chair_actor2_idleloop	/// idle ///
+ 
+10.
+actor 01 - chair_actor1_idleloop	/// idle ///
+actor 02 - chair_actor2_idleloop	/// idle ///
+actor 03 - chair_actor2_idleloop	/// idle ///
+
+11.
+actor 01 - chair_actor1_idleloop	/// idle ///
+actor 02 - chair_actor2_idleloop	/// idle ///
+actor 03 - chair_actor2_king		/// "give me your king"  + use eyes only lookat towards actor 01///
+
+12.
+actor 01 - chair_actor1_fish		/// "go fish"///
+actor 02 - chair_actor2_idleloop	/// idle ///
+actor 03 - chair_actor2_idleloop	/// idle  + use eyes only lookat towards actor 01///
+
+13.
+actor 01 - chair_actor1_idleloop	/// idle ///
+actor 02 - chair_actor2_idleloop	/// idle ///
+actor 03 - chair_actor2_drawcard	/// he draws a card ///
+
+14.
+actor 01 - chair_actor1_idleloop	/// idle ///
+actor 02 - chair_actor2_idleloop	/// idle ///
+actor 03 - chair_actor2_idleloop	/// idle ///
+
+ repeat

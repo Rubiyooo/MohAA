@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel eot.skd
+	surface glass shader static_glass
+	surface body shader static_telegraphface1
+	surface face shader static_telegraphbody1
+}
+
+animations
+{
+	idle     eot.skc
+}
+
+/*QUAKED static_uboat_engine-order-telegraph1 (0 0 0) (-8 -8 0) (8 8 16)
+*/

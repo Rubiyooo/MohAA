@@ -1,0 +1,150 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+		angles 270 0 0
+	}
+	client
+	{
+		cache mortar_dirthit.spr
+		cache mortar_dirthit2.spr
+		cache dirtplume.spr
+		cache models/emitters/mortar_dirt_dustcloud.tik
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+//			enter sound mortar weapon 2.5 650
+
+			enter originspawn
+			(
+				volumetric
+				model mist
+				collision
+				count 30
+				life 15
+				color .8 .8 .8 .5
+				scale 6
+				randvel 32 32 random 32
+				offsetalongaxis crandom 64 crandom 64 random 32
+				smokeparms 0 2.5 2.5
+			)
+
+			enter originspawn
+			(
+				model mortar_dirthit.spr
+				count 1
+				life 1.8
+				scale .25
+				scalerate 8
+				randvel 0 0 480
+				accel 0 0 -320
+				offset 0 0 48
+				fadedelay .8
+				physicsrate every
+			)
+
+			enter originspawn
+			(
+				model mortar_dirthit2.spr
+				count 1
+				life 1
+				scale .25
+				scalerate 8
+				randvel 0 0 512
+				offset 0 0 40
+				fadedelay .6
+				physicsrate every
+			)
+
+			// chunky sprites
+
+			enter originspawn
+			(
+				count 20
+				model dirtplume.spr
+				offsetalongaxis crandom 16 crandom 16 32
+				angles crandom 45 crandom 45 crandom 180
+				velocity 500
+				randvel crandom 175 crandom 175 random 400
+				clampvel -175 175 -175 175 -450 99999
+				avelocity 0 0 crandom 90
+				accel 0 0 -800
+				life 3.5 .5
+				scalemin .4
+				scalemax .6
+				scalerate .2
+				fadedelay 1.5
+			)
+			enter originspawn
+			(
+				count 15
+				model dirtplume.spr
+				offsetalongaxis crandom 64 crandom 64 32
+				angles crandom 45 crandom 45 crandom 180
+				velocity 300
+				randvel crandom 125 crandom 125 random 400
+				clampvel -125 125 -125 125 -450 99999
+				avelocity 0 0 crandom 90
+				accel 0 0 -800
+				life 3.5 .5
+				scalemin .4
+				scalemax .6
+				scalerate .2
+				fadedelay 1.5
+			)
+			enter originspawn
+			(
+				count 10
+				model dirtplume.spr
+				offsetalongaxis crandom 64 crandom 64 32
+				angles crandom 45 crandom 45 crandom 180
+				velocity 100
+				randvel crandom 75 crandom 75 random 400
+				clampvel -75 75 -75 75 -450 99999
+				avelocity 0 0 crandom 90
+				accel 0 0 -800
+				life 3.5 .5
+				scalemin .4
+				scalemax .6
+				scalerate .2
+				fadedelay 1.5
+			)
+
+			// vaporous sprites
+			enter originspawn
+			(
+				model models/emitters/mortar_dirt_dustcloud.tik
+				life .1
+				angles 270 0 0
+			)
+		}
+	}
+}
+
+/*QUAKED fx_mortar_dirt-nosound (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+explosion from mortar hitting dirt
+*/

@@ -1,0 +1,18 @@
+	walk_curious_backleft45		walks_runs/curiousw_backleft45.skc
+	walk_curious_backright45	Walks_runs/curiousw_backright45.skc
+	walk_curious_backwarddown	Walks_runs/curiousw_backwarddown.skc
+	walk_curious_backwards		Walks_runs/curiousw_backwards.skc
+	walk_curious_backwardup		Walks_runs/curiousw_backwardup.skc
+	walk_curious_forward		Walks_runs/curiousw_forward.skc
+	walk_curious_forwarddown	Walks_runs/curiousw_forwarddown.skc
+	walk_curious_forwardup		Walks_runs/curiousw_forwardup.skc
+	walk_curious_left45		Walks_runs/curiousw_left45.skc
+	walk_curious_left90		Walks_runs/curiousw_left90.skc
+	walk_curious_left90down		Walks_runs/curiousw_left90down.skc
+	walk_curious_left90up		walks_runs/curiousw_left90up.skc
+	walk_curious_right45		Walks_runs/curiousw_right45.skc
+	walk_curious_right90		Walks_runs/curiousw_right90.skc
+	walk_curious_right90down	Walks_runs/curiousw_right90down.skc
+	walk_curious_right90up		Walks_runs/curiousw_right90up.skc
+	walk_curious_stationary		walks_runs/curiousw_stationary.skc
+

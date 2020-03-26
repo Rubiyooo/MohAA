@@ -1,0 +1,26 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/crates
+	skelmodel mg42ammoboxwbelt.skd
+	surface mg42ammobox1 shader static_mg42ammobox
+	surface mg42ammobox2 shader static_mg42ammoboxcull
+	surface shellbelt shader grenadier_shells
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     mg42ammoboxwbelt.skc
+}
+
+/*QUAKED static_item_mg42ammobox-wbelt (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

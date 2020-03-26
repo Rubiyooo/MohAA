@@ -1,0 +1,21 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/natural
+	skelmodel tree_regularpalm.skd
+	surface palmregtrunk shader static_palmregtrunk
+	surface palmfill shader static_palmfill
+	surface palmcross shader static_palmcross
+	surface regpalmsprite shader regpalmsprite
+
+	lod_scale 100 // to prevent the continous LOD system from messing with this model
+}
+
+animations
+{
+	idle     tree_regularpalm.skc
+}
+
+/*QUAKED static_natural_tree_regularpalm (0.5 0.0 0.5) (-16 -16 -8) (16 16 296)
+*/

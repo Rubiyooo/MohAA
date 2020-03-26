@@ -1,0 +1,24 @@
+animations 
+{
+	$path models/human/animation
+
+	//-----------------
+	// Jeep animations
+	//-----------------
+
+
+	jeep_idle_still			scripted/jeep/jeep_still_idle.skc
+	jeep_idle_drive			scripted/jeep/jeep_drive_idle.skc
+	jeep_idle_drive_left20		scripted/jeep/jeep_idle_drive_left20.skc
+	jeep_idle_drive_left40		scripted/jeep/jeep_idle_drive_left40.skc
+	jeep_idle_drive_left60		scripted/jeep/jeep_idle_drive_left60.skc
+	jeep_idle_drive_left80		scripted/jeep/jeep_idle_drive_left80.skc
+	jeep_drive_leftturn		scripted/jeep/jeep_idle_drive_leftturn.skc
+	jeep_idle_drive_right20		scripted/jeep/jeep_idle_drive_right20.skc
+	jeep_idle_drive_right40		scripted/jeep/jeep_idle_drive_right40.skc
+	jeep_idle_drive_right60		scripted/jeep/jeep_idle_drive_right60.skc
+	jeep_idle_drive_right80		scripted/jeep/jeep_idle_drive_right80.skc
+	jeep_drive_rightturn		scripted/jeep/jeep_idle_drive_rightturn.skc
+	jeep_drive_gearchange_up	scripted/jeep/jeep_drive_gearchange_up.skc
+	jeep_drive_gearchange_down	scripted/jeep/jeep_drive_gearchange_down.skc
+}

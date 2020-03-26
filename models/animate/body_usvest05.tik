@@ -1,0 +1,37 @@
+TIKI
+setup
+{
+	scale 0.52		// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	// I invented this directory, you'll need to make it and put your
+	// skl's, skd's, skd's and batch files into it.
+	path models/animate/bodies
+	// I also invented this filename...change it to whatever yours is.
+	skelmodel body_usvest05.skd
+	// Static models need special shaders, Brad or Justin can help you here
+	surface topbody shader static_ranger_top_dirt
+	surface bottombody shader static_ranger_pants_dirt
+	surface hands shader static_handsnew
+	surface head shader static_slick_dirty
+}
+
+init
+{
+	server
+	{
+		classname animate
+	}
+
+}
+
+animations
+{
+	// I invented this filename as well.  Change it as you see fit.
+	idle     body_usvest05.skc
+}
+
+// The name in the QUAKED section is particularly important for static models.
+// It needs to be all lowercase, and have underscores to mark sub-directories.
+// I hope this name is acceptable tothe level designers.
+
+/*QUAKED animate_deadbodies_dday-pose-5 (0.5 0.0 0.5) (-64 -32 0) (40 32 16)
+*/

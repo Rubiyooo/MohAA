@@ -1,0 +1,12 @@
+// Dead body poses
+
+animations
+{
+	$path models/human/animation
+
+	dead_pose1		deaths/pose_a(leftside).skc
+	dead_pose2		deaths/pose_b(front).skc
+	dead_pose3		deaths/pose_c(back).skc
+
+
+}

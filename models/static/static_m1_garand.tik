@@ -1,0 +1,19 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/weapons/m1_garand
+	skelmodel static_garand.skd
+	surface gun1 shader static_garand
+	surface gun2 shader static_garand
+	surface gun3 shader static_garand
+}
+
+animations
+{
+	idle	static_garand.skc
+}
+
+/*QUAKED static_weapon_allied_m1-garand (0.5 0.0 0.5) (-8 -8 -8) (8 8 8)
+American rifle - M1 Garand.
+*/

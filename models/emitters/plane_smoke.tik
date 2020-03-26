@@ -1,0 +1,62 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		cache vsssource.spr
+		cache smokeswirl.spr
+
+		originemitter smoke2
+		(
+			spawnrate 120.00
+			model vsssource.spr
+			color 0.10 0.10 0.10
+			life 6.00
+			scalerate 5.00
+			accel 0.00 0.00 60.00
+			offset crandom -7 crandom -7 crandom -7
+			scalemin 0.20
+			scalemax 0.90
+			fade
+		)
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+			enter emitteron smoke1
+			enter emitteron smoke2
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    		enter emitteroff smoke1
+			enter emitteroff smoke2
+		}
+	}
+}
+
+/*QUAKED fx_smoke_m5l1a-plane (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+Smoke from fire.
+Doesn't collide.
+*/

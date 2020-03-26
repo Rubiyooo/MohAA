@@ -1,0 +1,16 @@
+TIKI
+setup
+{
+	scale 0.85			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel speakerbox1.skd
+	surface speakerbox1 shader static_speakerbox1
+}
+
+animations
+{
+	idle     speakerbox1.skc
+}
+
+/*QUAKED static_uboat_speakerbox1 (0.5 0.0 0.5) (0 -8 0) (8 8 16)
+*/

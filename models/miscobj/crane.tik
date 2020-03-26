@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	//scale 1.33			// Convert from inches to game units
+	path models/miscobj/crane
+	skelmodel crane.skd
+	surface all shader static_crane
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     crane.skc
+}
+
+/*QUAKED static_equipment_crane (0.0 0.75 0.5) (-8 -8 -8) (8 8 8)
+*/

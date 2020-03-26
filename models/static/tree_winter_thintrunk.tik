@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/natural
+	skelmodel tree_winter_thintrunk.skd
+	surface tree5s_1 shader static_tree5s_1
+	surface tree5s_2 shader static_tree5s_2
+	// surface tree5s_3 shader static_tree5s_3
+}
+
+animations
+{
+	idle     tree_winter_thintrunk.skc
+}
+
+/*QUAKED static_natural_tree_winter-thintrunk (0.5 0.0 0.5) (-8 -8 -24) (8 8 456)
+*/

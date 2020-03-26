@@ -1,0 +1,28 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/metal_containers
+	skelmodel bottle_large.skd
+	surface bottle_large shader static_bottle_large
+}
+
+init
+{
+	server
+	{
+		classname animate
+		setsize "-4 -4 0" "4 4 4"
+//		seatoffset "-14 0 24"
+//		gravity 1.5
+//		vehiclespeed 800
+	}
+}
+
+animations
+{
+	idle     bottle_large.skc
+}
+
+/*QUAKED static_decor_bottle-large (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

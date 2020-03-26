@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	//scale 1.33			// Convert from inches to game units
+	path models/static/ramp
+	skelmodel ramp_tripleleg.skd
+	surface ramp shader static_ramp
+}
+
+animations
+{
+	idle     ramp_tripleleg.skc
+}
+
+/*QUAKED static_obstacle_ramp-tripleleg (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

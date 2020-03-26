@@ -1,0 +1,7 @@
+
+	opel_passenger1		opel_passenger1.skc
+	opel_passenger2		opel_passenger2.skc
+	opel_passenger3		opel_passenger3.skc
+	opel_passenger4		opel_passenger4.skc
+	opel_passenger5		opel_passenger5.skc
+	opel_passenger6		opel_passenger6.skc		

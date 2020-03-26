@@ -1,0 +1,21 @@
+animations 
+{
+	$path models/human/animation
+
+	//----------
+	//throwing helmet off animations//
+	//----------
+
+
+	throw_helmet		scripted/throw_helmet/german_throw_helmet.skc		
+	{
+		server
+		{
+			2	weaponcommand mainhand attachtohand offhand
+			7	surface helmet	+nodraw
+			7	attachmodel models/miscobj/helmet_hand.tik tag_weapon_right
+			16	removeattachedmodel tag_weapon_right
+			34	weaponcommand mainhand attachtohand mainhand
+		}
+	}
+}

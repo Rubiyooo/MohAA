@@ -1,0 +1,15 @@
+animations // Now list all of the animations and any special commands for them
+{
+	death_backgrenade	deaths/death_backgrenade.skc
+	death_chest		deaths/death_chest.skc
+	death_choke		deaths/death_choke.skc
+	death_crotch		deaths/death_crotch.skc
+	death_fire		deaths/death_fire.skc
+	death_frontcrouch	deaths/death_frontcrouch.skc
+	death_gassing		deaths/death_gassing.skc
+	death_grenade		deaths/death_grenade.skc
+	death_headpistol	deaths/death_headpistol.skc
+	death_run01		deaths/death_run01.skc
+	death_run02		deaths/death_run02.skc
+	death_run03		deaths/death_run03.skc
+}

@@ -1,0 +1,11 @@
+	run_injured			walks_runs/run_injured.skc
+	run_injured_back		Walks_runs/run_injured_back.skc
+	run_injured_left		Walks_runs/run_injured_left.skc
+	run_injured_right		Walks_runs/run_injured_right.skc
+	run_injured_step		Walks_runs/run_injured_step.skc
+	walk_injured			Walks_runs/walk_injured.skc
+	walk_injured_back		Walks_runs/walk_injured_back.skc
+	walk_injured_left		Walks_runs/walk_injured_left.skc
+	walk_injured_right		Walks_runs/walk_injured_right.skc
+	walk_injured_step		Walks_runs/walk_injured_step.skc
+	

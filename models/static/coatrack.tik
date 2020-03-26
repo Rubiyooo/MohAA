@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/coatrack
+	skelmodel coatrack.skd
+	surface coatrack shader static_coatrack
+}
+
+animations
+{
+	idle     coatrack.skc
+}
+
+/*QUAKED static_furniture_coatrack (0.5 0.0 0.5) (-16 -32 0) (16 32 120)
+Wardrobe
+*/

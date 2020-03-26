@@ -1,0 +1,132 @@
+TIKI
+setup
+{
+	scale 0.52
+	path models/human/allied_army_soldier	// Set path to set skelmodel from
+	skelmodel usarmy.skd			// Set body model
+
+	surface ranger_pants shader hbtpants
+	surface us_top shader hbt_jacket
+	surface armband shader hbt_pfc
+	surface us_top_c shader hbt_jacket_c
+
+//	path models/human/heads			// Set new path for head model
+//	skelmodel head4.skd			// Set head model
+//	surface head shader slick_dirty
+	$include models/human/heads/us_young_heads.tik
+
+	path models/human/hands
+	skelmodel hand.skd
+	surface hand shader handsnew
+
+	
+
+//************************************
+//*** weapon equipment assignment - Justin modify the equipment skelmodels in here
+	path models/equipment/usgear
+
+	//*** no weapon assigned
+	case weapon "none"
+	{
+	}
+
+	//*** colt 45 pistol
+	case weapon "colt 45"
+	{
+		path models/gear/us
+	
+		skelmodel 45holster.skd
+		surface 45holster shader 45holster
+
+		skelmodel haversack.skd
+		surface haversack shader usequip
+	}
+
+	//*** m1 garand rifle
+	case weapon "m1 garand"
+	{
+		path models/gear/us
+
+		skelmodel haversack.skd
+		surface haversack shader usequip
+
+		skelmodel garandbelt.skd
+		surface garandbelt shader usammobelt
+	}
+	
+	//*** springfield rifle
+	case weapon "springfield '03 sniper"
+	{
+		path models/gear/us
+
+		skelmodel haversack.skd
+		surface haversack shader usequip
+
+		skelmodel garandbelt.skd
+		surface garandbelt shader usammobelt
+	}
+
+	//*** bar machinegune
+	case weapon "bar"
+	{
+		path models/gear/us
+	
+		skelmodel haversack.skd
+		surface haversack shader usequip
+
+		skelmodel barbelt.skd
+		surface barbelt shader barbelt
+	}
+	
+	//*** bazooka
+	case weapon "bazooka"
+	{
+		path models/gear/us
+
+		skelmodel haversack.skd
+		surface haversack shader usequip
+
+		skelmodel garandbelt.skd
+		surface garandbelt shader usammobelt
+	}
+//*** end weapon equipment assignment
+//************************************
+
+	path models/equipment/USGear/helmets
+	skelmodel us_helmet.skd
+	surface us_helmet shader us-helmet_private
+
+
+	scale 0.52				// Set default scale to 16/30.5 since world is
+						// in 16 units per foot and model is in cm's
+	path models/human/protoanimations	// Set path to set animations from
+
+	radius 20				// Defines size of shadow
+}
+
+init
+{
+	server
+	{
+      	classname Actor
+      	american
+		setsize "-16 -16 0" "16 16 92"
+		health 100
+		weapon "M1 Garand"
+
+		// Set up the helmet for popping off
+		// <model to spawn> <speed to throw it at> <damage multiplier for helmet shots> <surface(s) to turn off>
+		sethelmet "models/equipment/usgear/helmet_ranger_private.tik" 150 0.1 "us_helmet" 
+	}
+}
+
+//
+// include the base animations definition
+//
+
+$include models/human/new_generic_human.tik
+$include models/human/animation/dialogue/generic_dialogue_US.tik
+//$include models/human/animation/helmet_flyoff/helmet_flyoff_ranger_private.tik
+
+/*QUAKED ai_allied_1st-ranger_private (1.0 0.5 0.0) (-16 -16 0) (16 16 96)
+*/

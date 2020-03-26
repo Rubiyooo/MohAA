@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/flags
+	skelmodel nazibanner2.skd
+	surface material1 shader static_flagtop
+	surface material2 shader static_nazibanner2
+}
+
+animations
+{
+	idle     nazibanner2.skc
+}
+
+/*QUAKED static_flags_nazibanner2 (0.5 0 0.5) (0 0 0) (0 0 0)
+*/

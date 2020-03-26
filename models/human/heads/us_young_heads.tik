@@ -1,0 +1,543 @@
+path models/human/heads
+
+// Skins allowed:
+// bensonazi, bignose, gunter, slick, srg, tom,
+// us_north, us_thomas, us_z, us_j, us_senn, us_powzer, us_mike, 
+// us_chance, us_bob, us_dave
+
+// Heads allowed:
+// 1, 2, 4, 5, 6, 7, 8
+
+case headskin us_north
+{
+	surface head shader us_north
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4	// Not allowed
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head5	// Not allowed
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin us_thomas
+{
+	surface head shader us_thomas
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4	// Not allowed
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head5
+	{
+		skelmodel head5.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin us_z
+{
+	surface head shader us_z
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4	// Not allowed
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head5
+	{
+		skelmodel head5.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin us_j
+{
+	surface head shader us_j
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4	// Not allowed
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head5	// Not allowed
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin us_senn
+{
+	surface head shader us_senn
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4	// Not allowed
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head5
+	{
+		skelmodel head5.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin us_powzer
+{
+	surface head shader us_powzer
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4	// Not allowed
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head5	// Not allowed
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin us_mike
+{
+	surface head shader us_mike
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4	// Not allowed
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head5	// Not allowed
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin us_chance
+{
+	surface head shader us_chance
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head5
+	{
+		skelmodel head5.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin us_bob
+{
+	surface head shader us_bob
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head5
+	{
+		skelmodel head5.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin us_dave
+{
+	surface head shader us_dave
+
+	case headmodel head1	// Not allowed
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head5	// Not allowed
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8	// Not allowed
+	{
+		skelmodel head7.skd
+	}
+}
+
+case headskin bensonazi
+{
+	surface head shader bensonazi
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head5	// Not allowed
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin bignose
+{
+	surface head shader bignose
+
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head5	// Not allowed
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	// heads 1, 2 & 8 are not allowed with this skin, so make them use head4 instead
+	case headmodel head1 head2 head8
+	{
+		skelmodel head4.skd
+	}
+}
+
+// Gunter doesn't work for some reason
+//case headskin gunter
+//{
+//	surface head shader gunter
+//
+//	surface head shader slick
+//
+//	case headmodel head1
+//	{
+//		skelmodel head1.skd
+//	}
+//	case headmodel head2
+//	{
+//		skelmodel head2.skd
+//	}
+//	case headmodel head4
+//	{
+//		skelmodel head4.skd
+//	}
+//	case headmodel head6
+//	{
+//		skelmodel head6.skd
+//	}
+//	case headmodel head7
+//	{
+//		skelmodel head7.skd
+//	}
+//	case headmodel head8
+//	{
+//		skelmodel head8.skd
+//	}
+//}
+
+case headskin slick
+{
+	surface head shader slick
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head5	// Not allowed
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin srg
+{
+	surface head shader srg
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head4
+	{
+		skelmodel head4.skd
+	}
+	case headmodel head5	// Not allowed
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head6
+	{
+		skelmodel head6.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+}
+
+case headskin tom
+{
+	surface head shader tom
+
+	case headmodel head1
+	{
+		skelmodel head1.skd
+	}
+	case headmodel head2
+	{
+		skelmodel head2.skd
+	}
+	case headmodel head5	// Not allowed
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head7
+	{
+		skelmodel head7.skd
+	}
+	case headmodel head8
+	{
+		skelmodel head8.skd
+	}
+	// Heads 4 and 6 are not allowed, use 2 instead
+	case headmodel head4 head6
+	{
+		skelmodel head2.skd
+	}
+}
+

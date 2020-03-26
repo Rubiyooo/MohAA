@@ -1,0 +1,11 @@
+	walk_being_carried_forward		scripted/carrywalkbeingcarried.skc
+	walk_carrying_forward			scripted/carrywalkcarrying.skc
+	walk_being_carried_left			scripted/carrywalkleftbeingcarried.skc
+	walk_carrying_left			scripted/carrywalkleftcarrying.skc
+	walk_being_carried_right		scripted/carrywalkrightbeingcarried.skc
+	walk_carrying_right			scripted/carrywalkrightcarrying.skc
+	
+	walk_being_carried_end			scripted/carrywalkendbeingcarried.skc
+	walk_carrying_end			scripted/carrywalkendcarrying.skc
+	walk_being_carried_start		scripted/carrywalkstartbeingcarried.skc
+	walk_carrying_start			scripted/carrywalkstartcarrying.skc

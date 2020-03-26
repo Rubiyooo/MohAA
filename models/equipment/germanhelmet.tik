@@ -1,0 +1,37 @@
+TIKI
+setup // Tells model how to be created
+{
+	scale 0.52				// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+//	scale 0.55				// Seems to work better than 0.52
+	lod_bias -0.4
+	path models/equipment/germangear	// Set path relative to game directory
+	skelmodel helmet.skb			// Set base model for skeletal animation
+	surface origin shader blank
+	surface helmet shader german_helmet
+//	radius 20				// Defines size of shadow
+}
+
+// $define... // If I wanted to define any macros, here would be the place.
+
+init // initialization section is run when model is created.
+{
+	server
+	{
+		classname DynItem
+		// Put any server commands for initialising the model here
+		// For a complete listing of server commands and their purposes, see
+		// \source\source\fgame\entity.cpp (lines 390 to 1190 or so)
+		setsize "-6 -6 6" "6 6 12"
+	}
+	client
+	{
+		// If there are any client initialization commands, put them here
+		// For a complete listing of client commands and their purposes, see
+		// \source\source\cgame\cg_commands.cpp (to line 1150 or so)
+	}
+} // End of initialization section
+
+animations // Now list all of the animations and any special commands for them
+{
+	idle		helmet.skc
+}

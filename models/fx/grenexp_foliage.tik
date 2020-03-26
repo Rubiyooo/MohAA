@@ -1,0 +1,88 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		cache vsssource.spr
+		cache models/fx/bh_metal_fastpiece.tik
+		cache models/fx/bh_foliage_leaf.tik
+
+		// dusty sprites
+
+		sfx originspawn
+		(
+			count 8
+			model vsssource.spr
+			circle
+			radius 16
+			offset 0 0 16
+			radialvelocity 0 64 128
+			friction 1
+			clampvel -999 999 -999 999 0 0
+			angles crandom 45 crandom 45 crandom 180
+			avelocity 0 0 crandom 90
+			life 8 1
+			fadedelay 7
+			scalemin .5
+			scalemax .75
+			scalerate .5
+			alpha 0.15
+			color .5 .5 .5
+			spritegridlighting
+			collision
+			bouncefactor .2
+		)
+
+		sfx originspawn
+		(
+			count 12
+			model vsssource.spr
+			circle
+			radius 32
+			offset 0 0 16
+			radialvelocity 0 128 192
+			friction 0.6
+			clampvel -999 999 -999 999 0 0
+			angles crandom 45 crandom 45 crandom 180
+			avelocity 0 0 crandom 90
+			life 2 1
+			scalemin 1
+			scalemax 1.25
+			scalerate 1
+			fadedelay 1
+			alpha 0.15
+			color .5 .5 .5
+			spritegridlighting
+			collision
+			bouncefactor .2
+		)
+
+		sfx originspawn
+		(
+			model models/fx/bh_foliage_leaf.tik
+			count 21
+			color 1.00 1.00 1.00
+			scale 3.00
+			life 1.75 2.00
+			velocity 600.00
+			accel 0.00 0.00 -250.00
+			friction 3.00
+			fade
+			sphere
+			randomroll
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

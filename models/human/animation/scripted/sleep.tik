@@ -1,0 +1,14 @@
+animations 
+{
+	$path models/human/animation
+
+	//----------
+	// Sleeping in bunk
+	//----------
+
+	sleep_lowerbunk		scripted/sleep/sleep_lowerbunk.skc
+	jumpup_lowerbunk		scripted/sleep/jumpup_lowerbunk.skc
+	sleep_middlebunk		scripted/sleep/sleep_middlebunk.skc
+	jumpup_middlebunk		scripted/sleep/jumpup_middlebunk.skc
+
+}

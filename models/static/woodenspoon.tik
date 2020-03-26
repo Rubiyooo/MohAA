@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/woodenspoon
+	skelmodel woodenspoon.skd
+	surface woodenspoon shader static_woodenspoon
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle    woodenspoon.skc
+}
+
+/*QUAKED static_item_woodenspoon (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

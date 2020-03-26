@@ -1,0 +1,25 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/v2
+	skelmodel v2.skd
+	surface v2 shader v2
+}
+
+init
+{
+	server
+	{
+		classname animate
+	}
+}
+
+animations
+{
+	idle     v2.skc
+}
+
+/*QUAKED animate_equipment_v2 (0.5 0.0 0.5) (-56 -152 0) (56 104 88)
+V2 Rocket
+*/

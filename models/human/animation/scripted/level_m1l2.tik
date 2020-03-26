@@ -1,0 +1,15 @@
+animations
+{
+$path models/human/animation
+
+	// M1L2
+	//------
+// The prisoners are included in prisoners.tik
+//	1stguard			scripted/prisoners/1stguard.skc
+//	1stprisoner			scripted/prisoners/1stprisoner.skc
+//	2ndguard			scripted/prisoners/2ndguard.skc
+//	2ndprisoner			scripted/prisoners/2ndprisoner.skc
+
+	truckworker1		scripted/level_m1l2/truckworker_1.skc
+	truckworker2		scripted/level_m1l2/truckworker_2.skc
+}

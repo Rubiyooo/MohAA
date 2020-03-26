@@ -1,0 +1,18 @@
+TIKI
+setup
+{
+	scale 0.52			
+	path models/miscobj/playing_cards
+	skelmodel singlecard.skd
+	surface detonator shader pencil 	/// temp
+}
+
+
+
+animations
+{
+	idle     singlecard.skc
+}
+
+/*QUAKED interactobject_item_singlecard (0.0 0.75 0.5) (-8 -16 0) (8 16 40)
+*/

@@ -1,0 +1,108 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+
+init
+{
+	server
+	{
+		classname effectentity
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+		originemitter sparks1a
+		(
+			spawnrate 20.00
+			model models/fx/bh_metal_fastpiece.tik
+			color 1.00 1.00 1.00
+			collision
+			bouncefactor 0.40
+			life 1.50
+			scalerate 0.50
+			velocity 350.00
+			randvel range -50 50 range -30 40 range -5 -70
+			accel 0.00 0.00 -300.00
+			friction -1.00
+			avelocity range -70 60 range 50 -20 range 20 -20
+			fade
+			sphere
+			alignstretch 0.04
+		)
+            originemitter sparksmoke
+		(
+			spawnrate 23.00
+			model vsssource.spr
+			alpha 0.30
+			color 1.00 1.00 1.00
+			scale 0.10
+			life 3.00
+			scalerate 0.60
+			velocity 20.00
+			randvel range -1 3 range -15 23 range 0.09 10
+			accel 0.00 0.00 100.00
+			friction 2.00
+			fade
+		)
+            originemitter sparksflash
+		(
+			spawnrate 21.00
+			model corona_util.spr
+			color 1.00 1.00 1.00
+			scale 0.00
+			life 0.20
+			scalerate 2.00
+			scalemin 0.01
+			scalemax 0.20
+			fade
+			randomroll
+		)
+            originemitter sparks1b
+		(
+			spawnrate 50.00
+			model models/fx/bh_metal_fastpiece.tik
+			count 13
+			color 1.00 1.00 1.00
+			scale 0.80
+			life 1.00
+			velocity 400.00
+			accel 0.00 0.00 -900.00
+			friction -40.00
+			sphere
+			alignstretch 0.05
+		)	
+	}
+}
+
+animations
+{
+        idle dummy3.skc
+	start dummy3.skc
+	{
+		client
+	        {
+		  enter emitteron sparks1a
+                  enter emitteron sparksmoke
+                  enter emitteron sparksflash
+                  enter emitteron sparks1b
+	        }
+	}
+	stop dummy3.skc
+	{
+		client
+	        {
+	    	  enter emitteroff sparks1a
+                  enter emitteroff sparksmoke
+                  enter emitteroff sparksflash
+                  enter emitteroff sparks1b
+		}
+	}
+}
+
+/*QUAKED fx_fire_electrical (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+*/

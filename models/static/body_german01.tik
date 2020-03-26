@@ -1,0 +1,26 @@
+TIKI
+setup
+{
+	scale 0.52		// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/bodies	
+	skelmodel body_germ01.skd
+	surface hand shader static_handsnew
+	surface head shader static_dolf
+	surface gear shader static_german_gear
+	surface pants shader static_wehrmact_pants_fgrey
+	surface jacket shader static_wehrmact_tunic_fieldgrey
+	surface belt shader static_german_riflebelt
+	surface helmet shader static_wehrmact_helmet
+}
+
+animations
+{
+		idle     body_germ01.skc
+}
+
+// The name in the QUAKED section is particularly important for static models.
+// It needs to be all lowercase, and have underscores to mark sub-directories.
+// I hope this name is acceptable tothe level designers.
+
+/*QUAKED static_deadbodies_dday-german-base-pose-1 (0.5 0.0 0.5) (-32 -32 0) (32 32 128)
+*/

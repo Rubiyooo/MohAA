@@ -1,0 +1,24 @@
+animations // Now list all of the animations and any special commands for them
+{
+$path models/human/animation
+
+	//----------
+	//Dinner Party!!!!
+	//----------
+
+	dinner_bottomleft_eating		scripted/level_m4l3/dinner_bottomleft_eating.skc
+	dinner_bottomleft_leap			scripted/level_m4l3/dinner_bottomleft_leap.skc
+	dinner_bottomleft_resting		scripted/level_m4l3/dinner_bottomleft_resting.skc
+	dinner_relaxed_eating			scripted/level_m4l3/dinner_relaxed_eating.skc
+	dinner_relaxed_leap			scripted/level_m4l3/dinner_relaxed_leap.skc
+	dinner_relaxed_resting			scripted/level_m4l3/dinner_relaxed_resting.skc
+	dinner_topleft_eating			scripted/level_m4l3/dinner_topleft_eating.skc
+	dinner_topleft_resting			scripted/level_m4l3/dinner_topleft_resting.skc
+	dinner_topleft_leap			scripted/level_m4l3/dinner_topleft_leap.skc
+	dinner_topright_eating			scripted/level_m4l3/dinner_topright_eating.skc
+	dinner_topright_leap			scripted/level_m4l3/dinner_topright_leap.skc
+	dinner_topright_resting			scripted/level_m4l3/dinner_topright_resting.skc
+
+
+	wavingtruckon			scripted/level_m4l3/wavingtruck.skc
+}

@@ -1,0 +1,26 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/uboot
+	skelmodel lowerhull.skd
+	surface material26 shader static_hulltop1d
+	surface material19 shader static_hulltop1e
+	surface material2 shader static_hulltop1a
+	surface material14 shader static_metaldeck_plating
+	surface material5 shader static_periscopes
+	surface material25 shader static_miscpieces
+	surface material10 shader static_deckcannon
+	surface material6 shader static_subrailing
+	surface material11 shader static_blackhull1
+	surface material1 shader static_wooddeck
+	surface material3 shader static_hulltop1c
+}
+
+animations
+{
+	idle     lowerhull.skc
+}
+
+/*QUAKED static_vehicles_uboat-lowerhull (0.5 .25 0.25) (-2150 -212 0) (2150 212 750)
+*/

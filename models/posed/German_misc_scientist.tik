@@ -1,0 +1,34 @@
+TIKI
+setup
+{
+	//scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	scale 0.52
+	path models/human/German_misc_scientist
+	skelmodel German_misc_scientist.skb
+	surface pants shader scientistpants
+	surface head shader hopper
+	surface coat shader scientistcoat
+	surface hands shader hand
+
+	radius 20				// defines size of shadow
+
+}
+
+init
+{
+	server
+	{
+		classname Animate
+		setsize "-16 -16 0" "16 16 92"
+	}
+}
+
+animations
+{
+	idle     German_misc_scientist.skc
+}
+
+/*QUAKED posed_german_misc_scientist(0.5 .25 0.25) (-16 -16 0) (16 16 92)
+badass
+*/

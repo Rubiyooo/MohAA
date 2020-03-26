@@ -1,0 +1,23 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world 
+						// is in 16 units per foot and model is in cm's
+	//scale 1.33				// Convert from inches to game units
+	path models/static/piperplane
+	skelmodel piperplane.skd
+	surface plane1 shader static_piperplane
+	surface plane3 shader static_piperplane
+	surface window shader static_piperplane_w
+	surface plane4 shader static_piperplane
+     
+}
+
+animations
+{
+	idle     piperplane.skc
+}
+
+/*QUAKED static_vehicle_piperplane(0.5 .25 0.25) (-32 -32 0) (32 32 128)
+static - for explosive sequence
+*/

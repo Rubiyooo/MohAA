@@ -1,0 +1,90 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+		{
+			cache waterplume.spr
+			cache water_g.spr
+			cache ripple.spr
+
+			sfx sound arty_exp_water
+		
+		delayed sfx 0.090 originspawn
+		(
+			model oceanspray.spr
+			count 5
+			color 1.00 1.00 1.00
+			scale 0.10
+			life 1.10
+			scalerate 12.00
+			cone 30.00 10.00
+			velocity 10.00
+			accel 0.00 0.00 18.00
+			fade
+			circle
+		)
+
+		delayed sfx 0.480 originspawn
+		(
+			model water_drop1.spr
+			count 21
+			color 1.00 1.00 1.00
+			varycolor
+			scale 0.10
+			life 1.00
+			cone 11.00 2.00
+			velocity 210.00
+			randvel crandom -50 crandom -70 90
+			accel 0.00 0.00 -90.00
+			friction 1.00
+			offsetalongaxis 0 0 25
+			scalemin 0.01
+			scalemax 0.06
+			fade
+			sphere
+			align
+			randomroll
+		)
+
+		sfx originspawn
+		(
+			model water_g.spr
+			count 5
+			alpha 0.51
+			color 1.00 1.00 1.00
+			scale 0.30
+			life 0.90
+			scalerate 15.00
+			cone 10.00 2.00
+			velocity 120.00
+			radialvelocity 20.00 0.00 0.00
+			randvel 0 0 90
+			accel 0.00 0.00 -240.00
+			fade
+			sphere
+		)
+
+		sfx originspawn
+		(
+			model explosed.spr
+			color 0.20 0.30 1.00
+			scale 0.20
+			life 0.80
+			scalerate 8.00
+			fade
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

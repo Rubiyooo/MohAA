@@ -1,0 +1,137 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		//cache some stuff used in this effect
+		cache bhole_stone.spr // cache the bullet hole shader
+		cache bh_stone_piece.spr
+		cache models/fx/bh_stone_puff.tik
+
+		// chunky chunks of chunky stuff (colliders)
+		sfx originspawn
+		(
+			model stonechip.spr
+			spawnrange 1536
+			spritegridlighting
+			alpha 0.75
+			angles 0 0 crandom 180
+			avelocity 0 0 crandom 180
+			offsetalongaxis random 4 crandom 3 crandom 3
+			count 2
+			velocity 240
+			randvelaxis random 300 crandom 400 crandom 400
+			accel 0 0 -800
+			life 1.6 0.8
+			scalemin 0.1
+			scalemax 0.25
+			fadedelay 0.6
+			collision
+//			bouncefactor 0.2
+//			bouncesound snd_bh_debris_stone
+		)
+
+		// chunky chunks of chunky stuff (non-colliders)
+		sfx originspawn
+		(
+			model bh_stone_piece.spr
+			spawnrange 1536
+			spritegridlighting
+			alpha 0.75
+			angles 0 0 crandom 180
+			avelocity 0 0 crandom 180
+			offsetalongaxis random 4 crandom 3 crandom 3
+			count 2
+			velocity 240
+			randvelaxis random 300 crandom 400 crandom 400
+			accel 0 0 -800
+			life 1.6 0.8
+			scalemin 0.1
+			scalemax 0.25
+			fadedelay 0.6
+//			collision
+//			bouncefactor 0.2
+//			bouncesound snd_bh_debris_stone
+		)
+
+		sfx originspawn
+		(
+			model vsssource.spr
+			cone 24 10
+			count 5
+			scalemin .7
+			scalemax 1
+			scalerate 1
+//			radialvelocity 128 0 16
+			randvelaxis random 96 crandom 24 crandom 24
+			friction 2
+			life .3 .2
+			alpha 0.1
+			fade
+			color .7 .7 .7
+			varycolor
+			spritegridlighting
+		)
+
+		// first bit of lingering smoke
+//		sfx originspawn
+//		(
+//			volumetric
+//			model bulletimpact	// sets the type of smoke
+//			life 10		// amount of smoke
+//			scale 1.5	// radius
+//			alpha 0.3	// density
+//			color 0.7 0.7 0.7	// RBG color of the smoke
+//			velocity 12	// base velocity away from the surface
+//			randvelaxis random 4 0 0	// velocity offset
+//			offsetalongaxis 4 crandom 4 crandom 4	// positional offset
+////			collision // turn on collision detection
+//			smokeparms 0 .8 0
+//		)
+//
+//		// second bit of lingering smoke
+//		delayedsfx 0.15 originspawn
+//		(
+//			volumetric
+//			model bulletimpact	// sets the type of smoke
+//			life 10		// amount of smoke
+//			scale 1.5	// radius
+//			alpha 0.25	// density
+//			color 0.7 0.7 0.7	// RBG color of the smoke
+//			velocity 10	// base velocity away from the surface
+//			randvelaxis random 4 0 0	// velocity offset
+//			offsetalongaxis 4 crandom 2 crandom 2	// positional offset
+////			collision // turn on collision detection
+//			smokeparms 0 .8 0
+//		)
+//
+//		// third bit of lingering smoke
+//		delayedsfx 0.3 originspawn
+//		(
+//			volumetric
+//			model bulletimpact	// sets the type of smoke
+//			life 10		// amount of smoke
+//			scale 1.5	// radius
+//			alpha 0.25	// density
+//			color 0.7 0.7 0.7	// RBG color of the smoke
+//			velocity 8	// base velocity away from the surface
+//			randvelaxis random 4 0 0	// velocity offset
+//			offsetalongaxis 4 crandom 2 crandom 2	// positional offset
+////			collision // turn on collision detection
+//			smokeparms 0 .8 0
+//		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc
+}

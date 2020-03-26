@@ -1,0 +1,21 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/natural
+	skelmodel tree_shortpalm.skb
+	surface shortpalmtrunk shader static_shortpalmtrunk
+	surface shortpalmfill shader static_shortpalmfill
+	surface shortpalmcross shader static_shortpalmcross
+	surface shortpalmsprite shader static_shortpalmsprite
+	
+	lod_scale 100 // to prevent the continous LOD system from messing with this model
+}
+
+animations
+{
+	idle     tree_shortpalm.skc
+}
+
+/*QUAKED static_natural_tree_shortpalm (0.5 0.0 0.5) (-32 -32 0) (32 32 128)
+*/

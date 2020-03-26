@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/lights/wallsconce-single
+	skelmodel wallsconce-single.skd
+	surface wallsconce-single1 shader static_wallsconce-single
+	surface wallsconce-single2 shader static_wallsconce-single2
+}
+
+animations
+{
+	idle    wallsconce-single.skc
+}
+
+/*QUAKED static_lamp_wallsconce-single (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

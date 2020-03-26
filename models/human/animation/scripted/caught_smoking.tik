@@ -1,0 +1,11 @@
+animations // Now list all of the animations and any special commands for them
+{
+$path models/human/animation
+
+	//----------
+	//Caught Smoking Animations//
+	//----------
+
+	caught_smoking1		scripted/smoking/caught_smoking1.skc		
+	caught_smoking2		scripted/smoking/caught_smoking2.skc
+}

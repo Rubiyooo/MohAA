@@ -1,0 +1,103 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy3.skd
+}
+ 
+init
+{
+	server  
+	{
+		classname Animate
+		notsolid
+		rendereffects +dontdraw
+	}
+	client
+	{
+
+		//**********************
+		// cached data goes here
+		//**********************
+
+	}
+}
+
+animations
+{
+	idle dummy3.skc
+
+	start dummy3.skc
+	{
+		server
+		{
+			last commanddelay 1 anim idle
+		}
+
+		client
+		{
+			//*****************
+			//sound played here
+			//*****************
+			//enter sound
+
+			//**************************************
+			0 commanddelay 1.000 originspawn
+			(
+				spawnrate 4.00
+				model oceanspray.spr
+				alpha 0.40
+				color 1.00 1.00 1.00
+				scale 0.30
+				life 2.00
+				scalerate 3.00
+				offsetalongaxis range 130 180 0 0
+				scalemin 0.30
+				scalemax 2.00
+				fade
+				randomroll
+			)
+
+			0 originspawn
+			(
+				spawnrate 30.00
+				model oceanspray.spr
+				alpha 0.50
+				color 1.00 1.00 1.00
+				scale 0.10
+				life 1.00
+				scalerate 1.00
+				velocity 300.00
+				radialvelocity 7.00 0.00 0.00
+				friction -0.50
+				offsetalongaxis range 9 8 0 0
+				angles range -30 80 0 range -60 40
+				avelocity range 50 -70 range 100 -40 range 50 80
+				scalemin 0.10
+				scalemax 1.50
+				fade
+			)
+
+			0 originspawn
+			(
+				spawnrate 1.00
+				model none
+				color 1.00 1.00 1.00
+				life 1.00
+			)
+		}
+	}
+}
+
+//************************************
+//***        IMPORTANT
+//***     RENAME THE QUAKE-ED COMMENT
+//***     IN CONJUNCTION WITH THE
+//***  LD ENTITY MENU LAYOUT.DOC
+//***   UP IN SOURCE SAFE!!!!!!!!!!!!
+//************************************
+
+/*QUAKED fx_steam_pipe-steam (0.0 0.5 0.5) (-8 -8 -8) (8 8 8)
+steam
+*/

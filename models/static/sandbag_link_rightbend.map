@@ -1,0 +1,21 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 11 -15 0 ) ( -15 -15 0 ) ( -15 -26 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( 6 -11 47 ) ( 6 -26 47 ) ( -11 -26 47 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( -15 -26 47 ) ( 11 -26 47 ) ( 11 -26 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( 6 -26 47 ) ( 6 -11 47 ) ( 11 -11 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( 11 -11 47 ) ( -15 -11 47 ) ( -15 -11 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( -11 -11 47 ) ( -11 -26 47 ) ( -15 -26 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+}
+// brush 1
+{
+( -9 11 0 ) ( -26 11 0 ) ( -26 -16 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( 7 -11 47 ) ( -26 -11 47 ) ( -26 8 47 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( -26 -11 47 ) ( 7 -11 47 ) ( 14 -15 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( 7 -15 47 ) ( -7 11 47 ) ( 0 11 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( -7 8 47 ) ( -26 8 47 ) ( -26 11 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+( -26 11 56 ) ( -26 -16 56 ) ( -26 -16 0 ) common/dirtclip 0 0 0.00 1 1 327680 131232 0 +surfaceparm detail 
+}
+}

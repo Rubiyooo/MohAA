@@ -1,0 +1,119 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+ 
+init
+{
+	server  
+	{
+		hide
+		ghost
+		classname    Explosion
+		radiusdamage 120
+		meansofdeath explosion
+		life         0
+		svflags +sendonce
+	}
+	client
+	{
+		cache models/explrock.tik
+		cache models/fx_spark.tik
+		cache explosion1.spr
+		cache explsmoke.spr
+		cache explshock.spr
+		cache fireswipe2.spr
+	}
+}
+
+animations
+{
+	idle dummy2.skc
+	{
+		server    
+		{ 
+			last stopanimating
+		}
+
+		client
+		{
+			entry sound grenade_explode
+
+			entry originspawn explode
+			(
+				count 1
+				model explosion1.spr
+				angles 0 0 crandom 360
+				velocity 0
+				randvel crandom 10 crandom 10 crandom 10
+				accel 0 0 0
+				life 0.98
+				scale 2.0
+				scalerate 0.8
+				fadedelay 0.6
+			)
+
+			entry originspawn smoke
+			(
+				count 7
+				model explsmoke.spr
+				angles 0 0 crandom 360
+				randvel crandom 45 crandom 45 80
+				color 1 1 1
+				accel 0 0 -150
+				life 2.0
+				scale 2.0
+				scalerate 0.6
+				fadein 0.5
+				fade
+			)
+
+			entry originspawn sparks
+			(
+				alpha 0.5
+				offset crandom 10 crandom 10 crandom 10
+				count 40
+				model models/fx_spark.tik
+				align
+				randvel crandom 420 crandom 420 crandom 420
+				life 0.5
+				scalemin 0.9
+				scalemax 3.0
+				scalerate -0.6
+				fadedelay 0.25
+			)
+
+			entry originspawn shockwave1
+			(
+				count 1
+				model explshock.spr
+				angles 0 crandom 360 0
+				velocity 0
+				life 0.22
+				scale 2.0
+				scalerate 8.0
+				fade
+			)
+
+			entry originspawn debris
+			(
+				offset crandom 10 crandom 10 crandom 10
+				count 6
+				model models/explrock.tik
+				randvel crandom 320 crandom 320 crandom 320
+				avelocity crandom 180 crandom 180 crandom 180
+				accel 0 0 -1410
+				life 2
+				scalemin 0.6
+				scalemax 1.4
+				collision
+				bouncefactor 0.2
+				trail "fireswipe2" tag_p1 tag_p2 0.8
+				fade
+			)
+		}
+	}
+}

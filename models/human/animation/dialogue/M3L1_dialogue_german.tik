@@ -1,0 +1,118 @@
+setup
+{
+	path models/human/animation/dialogue/m3l1/G
+}
+
+animations
+{
+	den_scripted_M3L1_01b	den_scripted_M3L1_01b.skc
+	{
+		client
+		{
+			first sound den_scripted_M3L1_01b
+		}
+	}
+	den_scripted_M3L1_02d	den_scripted_M3L1_02d.skc
+	{
+		client
+		{
+			first sound den_scripted_M3L1_02d
+		}
+	}
+
+	den_scripted_M3L1_03b	den_scripted_M3L1_03b.skc
+	{
+		client
+		{
+			first sound den_scripted_M3L1_03b
+		}
+	}
+
+	den_scripted_M3L1_04d	den_scripted_M3L1_04d.skc
+	{
+		client
+		{
+			first sound den_scripted_M3L1_04d
+		}
+	}
+
+	den_scripted_M3L1_05b	den_scripted_M3L1_05b.skc
+	{
+		client
+		{
+			first sound den_scripted_M3L1_05b
+		}
+	}
+
+	den_scripted_M3L1_06b	den_scripted_M3L1_06b.skc
+	{
+		client
+		{
+			first sound den_scripted_M3L1_06b
+		}
+	}
+
+	den_scripted_M3L1_08d	den_scripted_M3L1_08d.skc
+	{
+		client
+		{
+			first sound den_scripted_M3L1_08d
+		}
+	}
+
+	//den_scripted_M3L1_09b	den_scripted_M3L1_09b.skc
+//	{
+//		client
+//		{
+//			first sound den_scripted_M3L1_09b
+//		}
+//	}
+
+	den_scripted_M3L1_10d	den_scripted_M3L1_10d.skc
+	{
+		client
+		{
+			first sound den_scripted_M3L1_10d
+		}
+	}
+
+	den_scripted_M3L1_11d	den_scripted_M3L1_11d.skc
+	{
+		client
+		{
+			first sound den_scripted_M3L1_11d
+		}
+	}
+
+	den_scripted_M3L1_12b	den_scripted_M3L1_12b.skc
+	{
+		client
+		{
+			first sound den_scripted_M3L1_12b
+		}
+	}
+
+	den_scripted_M3L1_13d	den_scripted_M3L1_13d.skc
+	{
+		client
+		{
+			first sound den_scripted_M3L1_13d
+		}
+	}
+
+	den_scripted_M3L1_14d	den_scripted_M3L1_14d.skc
+	{
+		client
+		{
+			first sound den_scripted_M3L1_14d
+		}
+	}
+
+	den_scripted_M3L1_09				actor_streamedG_M3L1_09.skc
+	{
+		client
+		{
+			first sound streamed_den_scripted_M3L1_09b
+		}
+	}
+}

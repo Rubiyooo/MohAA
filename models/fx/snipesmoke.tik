@@ -1,0 +1,69 @@
+TIKI
+setup
+{
+	scale 0.02
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		cache explosed2.spr
+		cache fire_ring.spr
+		cache vsssource.spr
+	}
+}
+
+animations
+{
+	aaaa dummy2.skc // hack to allow the idle anim's entry commands to run
+	idle dummy2.skc
+	{
+		client
+		{
+			//enter sound gas_explode
+			enter originspawn
+			(
+				count 1
+				model vsssource.spr
+				alpha 0.20
+				color 1.00 1.00 1.00
+				spritegridlighting
+				life 0.80
+				scalerate 1.00
+				velocity 20.00
+				offsetalongaxis 10 0 0
+				fade
+			)
+
+			enter originspawn
+			(
+				spawnrate 1.00
+				model vsssource.spr
+				alpha 0.20
+				color 1.00 1.00 1.00
+				spritegridlighting
+				life 1.00
+				velocity 40.00
+				offsetalongaxis 20 0 0
+				fade
+			)
+
+			enter originspawn
+			(
+				spawnrate 1.00
+				model vsssource.spr
+				alpha 0.20
+				color 1.00 1.00 1.00
+				spritegridlighting
+				life 1.20
+				scalerate 2.50
+				velocity 60.00
+				offsetalongaxis 30 0 0
+				fade
+			)
+		}
+	}
+} 

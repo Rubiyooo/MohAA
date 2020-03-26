@@ -1,0 +1,90 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	server
+	{
+	}
+	client
+	{
+		//cache some stuff used in this effect
+		cache bhole_carpet.spr // cache the bullet hole shader
+
+		cache models/fx/bh_wood_piece.tik
+		cache models/fx/bh_wood_puff.tik
+
+		// concentrated puff of wood debris
+		sfx originspawn
+		(
+			model models/fx/bh_wood_puff.tik
+			spawnrange 1536
+			alpha 1.0
+			count 1
+			life 0.35
+			scale 8
+		)
+
+		// wood chunks
+		sfx originspawn
+		(
+			model models/fx/bh_wood_piece.tik
+			spawnrange 1536
+			alpha 1.0
+			count 3
+			angles random 360 random 360 0
+			avelocity crandom 180 crandom 180 0
+			velocity 75
+			randvelaxis random 125 crandom 60 crandom 60
+			accel 0 0 -800
+			life 0.6 0.7
+			scalemin 0.6
+			scalemax 1.4
+			fadedelay 0.5
+		)
+
+		// slightly delayed, wood chunks
+		delayedsfx 0.1 originspawn
+		(
+			model models/fx/bh_wood_piece.tik
+			spawnrange 1536
+			alpha 1.0
+			count 2
+			angles random 360 random 360 0
+			avelocity crandom 180 crandom 180 0
+			velocity 75
+			randvelaxis random 125 crandom 60 crandom 60
+			accel 0 0 -800
+			life 0.6 0.7
+			scalemin 0.6
+			scalemax 1.4
+			fadedelay 0.5
+		)
+		
+		// small bit of lingering smoke
+		sfx originspawn
+		(
+			volumetric
+			model bulletimpact	// sets the type of smoke
+			life 10		// amount of smoke
+			scale 1.0	// radius
+			alpha 0.2	// density
+			color 0.8 0.8 0.8	// RBG color of the smoke
+			velocity 2	// base velocity away from the surface
+			randvelaxis random 6 0 0	// velocity offset
+			offsetalongaxis random 20 crandom 4 crandom 4	// positional offset
+//			collision // turn on collision detection
+		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

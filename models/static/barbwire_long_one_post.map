@@ -1,0 +1,109 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 12 171 -1 ) ( -45 171 -1 ) ( -45 -97 -1 ) common/clip 0 0 0.00 1 1 196608 2193 0 
+( -45 -97 289 ) ( -45 171 289 ) ( 12 171 289 ) common/clip 0 0 0.00 1 1 196608 2193 0 
+( -42 -212 104 ) ( 15 -212 104 ) ( 15 -212 1 ) common/clip 0 0 0.00 1 1 196608 2193 0 
+( 35 -97 104 ) ( 35 171 104 ) ( 35 171 1 ) common/clip 0 0 0.00 1 1 196608 2193 0 
+( 10 242 104 ) ( -47 242 104 ) ( -47 242 1 ) common/clip 0 0 0.00 1 1 196608 2193 0 
+( -34 170 104 ) ( -34 -98 104 ) ( -34 -98 1 ) common/clip 0 0 0.00 1 1 196608 2193 0 
+}
+// brush 1
+{
+( 31.484039 242 102 ) ( 32.571609 242 102 ) ( 11.743301 11 102 ) common/nodraw -56 2 0.00 -0.125000 3.640625 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -30.256838 13 -1 ) ( -31.345015 13 -1 ) ( 10.654959 13 102 ) common/nodraw -56 -13 0.00 -0.125000 2.656250 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -10.516402 242 -1 ) ( 31.483572 242 102 ) ( 10.655262 11 102 ) common/bplaneclip -14 -57 0.00 0.910156 0.664063 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 32.571526 242 102 ) ( -9.428495 242 -1 ) ( -30.256800 11 -1 ) common/nodraw 2 -13 0.00 -3.640625 2.656250 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -9.428412 242 -1 ) ( -10.516813 242 -1 ) ( -31.345135 11 -1 ) common/nodraw -56 2 0.00 -0.125000 3.640625 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -10.516565 242 -1 ) ( -9.428535 242 -1 ) ( 32.571487 242 102 ) common/nodraw -56 -13 0.00 -0.125000 2.656250 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 2
+{
+( 2.000174 -215 0.000011 ) ( 2.739527 -215 0.000011 ) ( -27.260475 16 -0.999992 ) common/nodraw -24 57 0.00 -0.124998 -3.609375 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 34.739841 -215 105.000008 ) ( 33.999928 -215 105.000008 ) ( 3.999912 16 104.000008 ) common/nodraw -24 57 0.00 -0.124998 -3.609375 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 33.999931 -212 105 ) ( 34.740379 -212 105 ) ( 2.740309 -212 0.000378 ) common/nodraw -24 10 0.00 -0.124998 -2.734375 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 2.739864 -215 -0.000023 ) ( 34.739967 -215 105.000015 ) ( 4.739957 16 104.000015 ) common/nodraw 0 0 0.00 1 1 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 4.739583 19 104.000008 ) ( 3.999919 19 104.000008 ) ( -27.999842 19 -0.999634 ) common/nodraw -24 10 0.00 -0.124998 -2.734375 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 33.999813 -215 105.000008 ) ( 2.000013 -215 -0.000145 ) ( -28.000004 16 -1.000145 ) common/bplaneclip -235 43 0.00 -0.902344 -0.683594 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 3
+{
+( -11.999557 19 104 ) ( -3.999100 19 104 ) ( -24.999100 -214 104 ) common/nodraw -56 -56 0.00 -0.125000 3.640625 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 10.000488 -212 1 ) ( 2.000031 -212 1 ) ( -39.999969 -212 104 ) common/nodraw -56 -13 0.00 -0.125000 2.656250 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 31.000458 19 1 ) ( 10.000458 -214 1 ) ( -31.999512 -214 104 ) common/bplaneclip -233 -56 0.00 -0.910156 0.664063 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 9.000153 -214 1 ) ( 30.000153 19 1 ) ( -11.999840 19 104 ) common/nodraw -56 -13 0.00 -3.640625 2.656250 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 31.000046 19 1 ) ( 23.000427 19 1 ) ( 2.000427 -214 1 ) common/nodraw -56 -56 0.00 -0.125000 3.640625 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 23.000031 19 1 ) ( 31.000885 19 1 ) ( -10.999100 19 104 ) common/nodraw -56 -13 0.00 -0.125000 2.656250 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 4
+{
+( -2.000007 -219.999969 132 ) ( 3.999583 -219.999969 132 ) ( 2.999566 -202.999969 -35 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 4.000008 -219.999695 132 ) ( 4.000008 -214.000031 132 ) ( 3.000007 -197.000031 -35 ) common/woodclip 42 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( 4 -215 132 ) ( -2 -215 132 ) ( -3 -197 -35 ) common/woodclip 0 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -2.000007 -214.000031 132 ) ( -2.000007 -219.999695 132 ) ( -3.000007 -202.999680 -35 ) common/woodclip 42 0 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -3.000007 -184 -18 ) ( -3.000007 -227 -23 ) ( 4.000072 -205.500000 -20.500000 ) common/woodclip 0 -42 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+( -2.912650 -227 116 ) ( -2.912650 -208 118 ) ( 4.000008 -217.500000 117 ) common/woodclip 0 -42 0.00 1 1 537853952 18592 0 +surfaceparm detail 
+}
+// brush 5
+{
+( -10.999496 16 52.999943 ) ( -27.000061 16 69.000504 ) ( -28.000061 -212 65.000496 ) common/bspindleclip -30 233 90.00 0.990000 0.700000 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -26 -206 85 ) ( -26 -206 64 ) ( -25 10 67 ) common/bspindleclip -32 23 2.00 0.990000 0.800000 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -25 16 87.999405 ) ( -8.999420 16 104.000031 ) ( -9.999405 -212 100.000031 ) common/bspindleclip -31 57 1.00 0.990000 0.600000 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -7.999084 16 104 ) ( 13.000168 16 104 ) ( 12.000183 -212 100 ) common/bspindleclip -29 -128 270.00 -0.990000 0.700000 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 13 16 104.000015 ) ( 29 16 88.000076 ) ( 28 -212 84.000076 ) common/bspindleclip -30 -128 269.00 -0.990000 0.700000 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 29 -206 63 ) ( 29 -206 84 ) ( 29 10 88 ) common/bspindleclip -33 -29 182.00 -0.990000 0.800000 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 27 16 64.998985 ) ( 12.000977 16 49.999939 ) ( 11.000977 -212 45.999939 ) common/bspindleclip -32 -41 181.00 -0.990000 0.700000 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 14.000671 16 50.999939 ) ( -7.998520 16 50.999939 ) ( -8.998520 -212 46.999939 ) common/bspindleclip -31 234 90.00 0.990000 0.700000 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 90 11 81 ) ( 90 11 25 ) ( 98 11 25 ) common/nodraw 0 0 0.00 1 1 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 29 -206 84 ) ( 29 -206 63 ) ( 12 -206 47 ) common/nodraw 0 0 0.00 1 1 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 6
+{
+( 11 14 53 ) ( 27 14 69 ) ( 28 242 65 ) common/bspindleclip 1 -23 -90.00 0.989990 0.700012 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 25 14 66 ) ( 25 14 88 ) ( 26 242 84 ) common/bspindleclip 0 22 179.00 0.989983 -0.799995 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 22 14 90 ) ( 6 14 106 ) ( 7 242 102 ) common/bspindleclip 2 -130 90.00 -0.990000 0.600000 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 8 14 104 ) ( -13 14 104 ) ( -12 242 100 ) common/bspindleclip 2 127 -90.00 0.989990 -0.699997 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -13 14 104 ) ( -29 14 88 ) ( -28 242 84 ) common/bspindleclip 1 127 -91.00 0.990019 -0.699997 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -29 14 88 ) ( -29 14 65 ) ( -28 242 61 ) common/bspindleclip -2 -32 178.00 0.990013 0.799998 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -27 14 65 ) ( -12 14 50 ) ( -11 242 46 ) common/bspindleclip 1 11 90.00 -0.989989 -0.699997 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -14 14 51 ) ( 8 14 51 ) ( 9 242 47 ) common/bspindleclip 1 -22 -90.00 0.990021 0.700012 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -92 19 83 ) ( -92 19 27 ) ( -100 19 27 ) common/nodraw 0 0 -180.00 1 -1 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -2 236 49 ) ( 6 236 49 ) ( 6 236 105 ) common/nodraw 0 0 -180.00 1 -1 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 7
+{
+( -8.999675 240 8 ) ( -24.999718 240 24 ) ( -25.999681 12.000015 20 ) common/bspindleclip 2 -22 -90.00 0.990000 -0.600000 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -21.999672 240 21 ) ( -21.999672 240 43 ) ( -22.999689 12.000038 39 ) common/bspindleclip 1 -39 -179.00 0.989981 -0.799998 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -19.999680 239.999969 45 ) ( -3.999699 240 61 ) ( -4.999668 12.000023 57 ) common/bspindleclip 1 230 -179.25 0.990121 -0.599954 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -6.999697 240 59 ) ( 14.000299 239.999969 59 ) ( 13.000312 12.000031 55 ) common/bspindleclip 0 129 -90.00 0.990036 0.699989 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 14.000299 239.999969 59 ) ( 30.000320 239.999969 43 ) ( 29.000319 12 39 ) common/bspindleclip 2 122 -91.00 0.989996 0.699974 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 31.000320 239.999969 43 ) ( 31.000320 239.999969 20 ) ( 30.000319 12 16 ) common/bspindleclip 2 35 -178.00 0.990021 0.799998 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 31.000298 240 20 ) ( 16.000320 239.999969 5 ) ( 15.000303 12.000031 1 ) common/bspindleclip 1 -226 -179.25 0.990075 0.699967 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 16.000290 239.999969 6 ) ( -5.999697 240 6 ) ( -6.999659 12.000023 2 ) common/bspindleclip 2 -23 -90.00 0.990074 -0.699982 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 94.000320 235.999969 38 ) ( 94.000320 235.999969 -18 ) ( 102.000305 236 -18 ) common/nodraw 30 19 0.00 0.999966 1 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -17.999680 19.000015 59 ) ( -25.999664 19.000053 59 ) ( -25.999664 19.000053 115 ) common/nodraw -1 19 0.00 1.000008 1 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 8
+{
+( 9.000069 -211.000458 7 ) ( 25.000114 -211.000458 23 ) ( 26.000076 16.999481 19 ) common/bspindleclip -30 -22 90.00 0.990021 -0.599968 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 24 11 40 ) ( 24 11 18 ) ( 23 -205 21 ) common/bspindleclip 226 -39 -1.00 0.990011 0.799982 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 22.000076 -211.000443 44 ) ( 6.000092 -211.000473 60 ) ( 7.000061 16.999466 56 ) common/bspindleclip -30 232 -0.75 0.990106 0.599947 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 7.000092 -211.000473 58 ) ( -13.999886 -211.000443 58 ) ( -12.999924 16.999428 54 ) common/bspindleclip -30 129 90.00 0.989990 0.699905 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -14.999886 -211.000443 58 ) ( -30.999916 -211.000443 42 ) ( -29.999901 16.999489 38 ) common/bspindleclip -30 130 90.00 0.990000 0.600000 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -30 -205 41 ) ( -30 -205 22 ) ( -30 11 17 ) common/bspindleclip -29 34 -2.00 0.990014 -0.799976 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -28.999901 -211.000488 19 ) ( -13.999908 -211.000443 4 ) ( -12.999901 16.999451 0 ) common/bspindleclip -29 30 358.25 0.989984 -0.699944 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -15.999893 -211.000443 5 ) ( 6.000092 -211.000473 5 ) ( 7.000061 16.999466 1 ) common/bspindleclip -29 -23 90.00 0.990097 -0.700012 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -30 -206 22 ) ( -30 -206 41 ) ( -15 -206 58 ) common/nodraw -34 18 -180.00 0.999985 -1 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 24 11 18 ) ( 24 11 40 ) ( 9 11 54 ) common/nodraw 0 18 -180.00 1 -1 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+}
+// brush 9
+{
+( 27.479298 13 -1 ) ( 28.351217 13 -1 ) ( -1.648797 244 -1 ) common/nodraw -47 -1 0.00 -0.124998 -3.609375 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -2.649397 13 104 ) ( -3.520439 13 104 ) ( -33.520435 244 104 ) common/nodraw -47 -1 0.00 -0.124998 -3.609375 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 28.350723 13 -1 ) ( 27.479359 13 -1 ) ( -3.520380 13 104 ) common/nodraw -47 10 0.00 -0.124998 -2.734375 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( 28.351185 13 -1 ) ( -2.648809 13 104 ) ( -32.648827 244 104 ) common/bplaneclip -13 44 0.00 0.902344 -0.683594 991232 264352 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -2.520639 242 -1 ) ( -1.648891 242 -1 ) ( -32.648506 242 104 ) common/nodraw -47 10 0.00 -0.124998 -2.734375 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+( -3.520444 13 104 ) ( 27.479305 13 -1 ) ( -2.520690 244 -1 ) common/nodraw 1 0 -180.00 1 -1 536870912 2224 0 -surfaceparm solid -surfaceparm playerclip -surfaceparm monsterclip +surfaceparm weaponclip +surfaceparm detail 
+}
+}

@@ -1,0 +1,23 @@
+TIKI
+setup // Tells model how to be created
+{
+	scale 0.52				// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/equipment/usgear/helmets		// Set path relative to game directory
+	skelmodel us_helmet.skd			// Set base model for skeletal animation
+	surface us_helmet shader us-helmet_captain
+}
+
+init // Initialization section is run when model is created.
+{
+	server
+	{
+	}
+	client
+	{
+	}
+} // End of initialization section
+
+animations // Now list all of the animations and any special commands for them
+{
+	idle		us_helmet.skc
+}

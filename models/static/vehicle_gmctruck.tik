@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/vehicles/gmc/
+	skelmodel gmctruck.skd
+	surface gmcwindow shader static_gmcwindow
+	surface gmc_tred shader static_gmc_tred
+	surface gmc_hub1 shader static_gmc_hub
+	surface gmc_hub7 shader static_gmc_hub
+	surface gmc_hub8 shader static_gmc_hub
+	surface gmctruck4 shader static_gmctruck
+	surface gmctruck5 shader static_gmctruck
+	surface gmctruck6 shader static_gmctruck
+}
+
+animations
+{
+	idle     gmctruck.skc
+}
+
+/*QUAKED static_vehicle_allied_gmctruck (0.5 0.0 0.5) (-168 -64 0) (176 64 160)
+static: gmc truck
+*/

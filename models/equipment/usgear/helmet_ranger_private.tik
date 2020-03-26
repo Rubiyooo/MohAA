@@ -1,0 +1,30 @@
+TIKI
+setup
+{
+	path models/equipment/USGear/helmets
+
+	skelmodel us_helmetflyoff.skd
+	surface us_helmet shader us-helmet_private
+
+	scale 0.52				// Set default scale to 16/30.5 since world is 
+						// in 16 units per foot and model is in cm's
+	radius 5				// Defines size of shadow
+	//origin 0 0 -50	// This command is broken so I had to make a seperate model.
+}
+
+init
+{
+	server
+	{
+      	classname Animate
+		setsize "-8 -8 -8" "8 8 8"
+	}
+}
+
+//
+// include the base animations definition
+//
+animations
+{
+	idle	us_helmetflyoff.skc
+}

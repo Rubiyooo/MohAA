@@ -1,0 +1,98 @@
+TIKI
+setup
+{
+	scale 1.0
+	path models/fx/dummy
+	skelmodel dummy2.skd
+}
+
+init
+{
+	client
+	{
+		//cache some stuff used in this effect
+		cache bhole_glass.spr // cache the bullet hole shader
+		
+		cache bh_stone_piece.spr
+		cache models/fx/bh_stone_puff.tik
+
+		sfx originspawn
+			(
+				spawnrate 2.00
+				model glass_small.spr
+				count 8
+				color 1.00 1.00 1.00
+				collision
+				bouncefactor 3.00
+				scale 0.05
+				life 1.00
+				scalerate 0.50
+				radius 8.00
+				velocity 7000.00
+				radialvelocity 0.00 40.00 500.00
+				randvel 90 random 90 90
+				friction -8.00
+				angles range 30 80 range 30 80 range 30 80
+				avelocity range 330 20 range 20 330 range 330 20
+				scalemin 0.05
+				scalemax 0.10
+				fade
+				align
+			)
+
+		sfx originspawn
+			(
+				spawnrate 4.00
+				model glass_small.spr
+				count 5
+				alpha 0.50
+				color 1.00 1.00 1.00
+				scale 0.05
+				life 1.00
+				scalerate 1.00
+				radius 1.00
+				velocity 500.00
+				radialvelocity 0.00 128.00 600.00
+				scalemin 0.05
+				scalemax 0.09
+				fade
+				randomroll
+			)
+		
+		// first bit of lingering smoke
+		sfx originspawn
+		(
+			volumetric
+			model bulletimpact	// sets the type of smoke
+			life 10		// amount of smoke
+			scale 1.5	// radius
+			alpha 0.3	// density
+			color 0.7 0.7 0.7	// RBG color of the smoke
+			velocity 10	// base velocity away from the surface
+			randvelaxis random 4 0 0	// velocity offset
+			offsetalongaxis 4 crandom 4 crandom 4	// positional offset
+//			collision // turn on collision detection
+		)
+		
+		// second bit of lingering smoke
+//		delayedsfx 0.15 originspawn
+//		(
+//			volumetric
+//			model bulletimpact	// sets the type of smoke
+//			life 10		// amount of smoke
+//			scale 1.0	// radius
+//			alpha 0.3	// density
+//			color 0.7 0.7 0.7	// RBG color of the smoke
+//			velocity 8	// base velocity away from the surface
+//			randvelaxis random 4 0 0	// velocity offset
+//			offsetalongaxis 4 crandom 2 crandom 2	// positional offset
+//			collision // turn on collision detection
+//		)
+	}
+}
+
+// This section is just needed to be a valid tiki file
+animations
+{
+	idle dummy2.skc 
+}

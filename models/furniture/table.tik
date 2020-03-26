@@ -1,0 +1,24 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/furniture/table
+	skelmodel table.skd
+	surface table shader static_table
+}
+
+init
+{
+	server
+	{
+		classname object
+	}
+}
+
+animations
+{
+	idle     table.skc
+}
+
+/*QUAKED static_furniture_table (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

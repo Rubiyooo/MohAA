@@ -1,0 +1,17 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/clocks
+	skelmodel static_clock3.skd
+	surface clockside shader static_clockface1
+	surface clockface shader static_blackclock2
+}
+
+animations
+{
+	idle     static_clock3.skc
+}
+
+/*QUAKED static_furniture_clock3 (0.5 0.0 0.5) (0 0 0) (0 0 0)
+*/

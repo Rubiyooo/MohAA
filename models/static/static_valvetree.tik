@@ -1,0 +1,19 @@
+TIKI
+setup
+{
+	scale 0.52			// Set default scale to 16/30.5 since world is in 16 units per foot and model is in cm's
+	path models/static/submodels
+	skelmodel valvetree.skd
+	surface material4 shader static_valvepipes
+	surface material1 shader static_valvetree
+	surface material3 shader static_subvalve-red-black
+
+}
+
+animations
+{
+	idle     valvetree.skc
+}
+
+/*QUAKED static_uboat_valvetree (0 0 0) (-56 -24 0) (56 24 8)
+*/
